@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form8
+Partial Class Aku
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -74,7 +74,7 @@ Partial Class Form8
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "ALLAHUAKBAR33X"
         '
-        'Form8
+        'Aku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -84,8 +84,8 @@ Partial Class Form8
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form8"
-        Me.Text = "Form8"
+        Me.Name = "Aku"
+        Me.Text = "Aku aku aku"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
