@@ -22,5 +22,80 @@ A1K3_Projek Akhir
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.appointment">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.appointment__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.appointment1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.avatar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.close15px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.dashboard__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.dashboard__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.logout__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.logout__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.logout__3_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.maximize15px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.minimize15px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.transaction__3_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
