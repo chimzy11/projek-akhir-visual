@@ -89,4 +89,96 @@ Public Class dashboardAdmin
     Private Sub btnJadwal_Click(sender As Object, e As EventArgs) Handles btnJadwal.Click
         OpenChildForm(New formJadwal)
     End Sub
+
+    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Panel7_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Panel9_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Panel11_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel10_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel8_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel6_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btnDataMaster_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class

@@ -22,7 +22,7 @@ Partial Class formJadwal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formJadwal))
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
@@ -43,9 +43,10 @@ Partial Class formJadwal
         '
         Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.btnSearch.Enabled = False
-        Me.btnSearch.Location = New System.Drawing.Point(1021, 61)
+        Me.btnSearch.Location = New System.Drawing.Point(681, 40)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(476, 51)
+        Me.btnSearch.Size = New System.Drawing.Size(317, 33)
         Me.btnSearch.TabIndex = 0
         Me.btnSearch.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.btnSearch.UseVisualStyleBackColor = False
@@ -56,9 +57,10 @@ Partial Class formJadwal
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(1034, 73)
+        Me.txtSearch.Location = New System.Drawing.Point(689, 47)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(430, 26)
+        Me.txtSearch.Size = New System.Drawing.Size(287, 17)
         Me.txtSearch.TabIndex = 1
         Me.txtSearch.Text = "Search"
         '
@@ -68,13 +70,14 @@ Partial Class formJadwal
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Title, Me.Column1, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 178)
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 116)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(1474, 680)
+        Me.DataGridView1.Size = New System.Drawing.Size(983, 442)
         Me.DataGridView1.TabIndex = 19
         '
         'Title
@@ -116,9 +119,10 @@ Partial Class formJadwal
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(453, 155)
+        Me.Label1.Location = New System.Drawing.Point(302, 101)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(295, 20)
+        Me.Label1.Size = New System.Drawing.Size(200, 13)
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "ini nanti diedit pas udah ada datanya yek"
         '
@@ -130,10 +134,11 @@ Partial Class formJadwal
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(285, 35)
+        Me.Button3.Location = New System.Drawing.Point(190, 23)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(5, 15, 0, 0)
-        Me.Button3.Size = New System.Drawing.Size(112, 99)
+        Me.Button3.Padding = New System.Windows.Forms.Padding(3, 10, 0, 0)
+        Me.Button3.Size = New System.Drawing.Size(75, 64)
         Me.Button3.TabIndex = 21
         Me.Button3.Text = "Hapus"
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -146,10 +151,11 @@ Partial Class formJadwal
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(154, 35)
+        Me.Button2.Location = New System.Drawing.Point(103, 23)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(5, 15, 0, 0)
-        Me.Button2.Size = New System.Drawing.Size(112, 99)
+        Me.Button2.Padding = New System.Windows.Forms.Padding(3, 10, 0, 0)
+        Me.Button2.Size = New System.Drawing.Size(75, 64)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = "Edit "
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -162,10 +168,11 @@ Partial Class formJadwal
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(22, 35)
+        Me.Button1.Location = New System.Drawing.Point(15, 23)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(5, 15, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(112, 99)
+        Me.Button1.Padding = New System.Windows.Forms.Padding(3, 10, 0, 0)
+        Me.Button1.Size = New System.Drawing.Size(75, 64)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "Tambah "
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -173,10 +180,10 @@ Partial Class formJadwal
         '
         'formJadwal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1778, 1024)
+        Me.ClientSize = New System.Drawing.Size(913, 487)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -185,8 +192,9 @@ Partial Class formJadwal
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.btnSearch)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "formJadwal"
-        Me.Text = "formJadwal"
+        Me.Text = "A"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
