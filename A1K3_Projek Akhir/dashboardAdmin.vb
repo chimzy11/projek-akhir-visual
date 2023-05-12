@@ -55,4 +55,12 @@
     Private Sub Label10_Click(sender As Object, e As EventArgs)
         Label10.Font = New Font(Label10.Font, FontStyle.Underline)
     End Sub
+
+    Private Sub Label10_Click_1(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
+    End Sub
 End Class
