@@ -74,7 +74,7 @@ Partial Class formEdit
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(644, 605)
+        Me.Panel1.Size = New System.Drawing.Size(644, 1050)
         Me.Panel1.TabIndex = 46
         '
         'Button4
@@ -350,7 +350,7 @@ Partial Class formEdit
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1225, 605)
+        Me.ClientSize = New System.Drawing.Size(1924, 1050)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Panel1)

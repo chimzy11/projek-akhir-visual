@@ -80,3 +80,12 @@ C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\De
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\mysql.data.dll
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.dashboardAdmin.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDashboard.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete

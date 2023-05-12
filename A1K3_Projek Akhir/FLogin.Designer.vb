@@ -34,14 +34,14 @@ Partial Class FLogin
         Me.Label6 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.bLogin = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.tPassword = New System.Windows.Forms.TextBox()
+        Me.tUsername = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelFormLogin.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -121,14 +121,14 @@ Partial Class FLogin
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.CheckBox1)
         Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.bLogin)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Controls.Add(Me.PictureBox3)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.Controls.Add(Me.TextBox2)
-        Me.Panel3.Controls.Add(Me.TextBox1)
+        Me.Panel3.Controls.Add(Me.tPassword)
+        Me.Panel3.Controls.Add(Me.tUsername)
         Me.Panel3.Location = New System.Drawing.Point(168, 94)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(443, 554)
@@ -179,19 +179,19 @@ Partial Class FLogin
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Forgot Password?"
         '
-        'Button1
+        'bLogin
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button1.Location = New System.Drawing.Point(66, 388)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 47)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Sign In"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.bLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.bLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bLogin.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bLogin.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bLogin.Location = New System.Drawing.Point(66, 388)
+        Me.bLogin.Name = "bLogin"
+        Me.bLogin.Size = New System.Drawing.Size(114, 47)
+        Me.bLogin.TabIndex = 8
+        Me.bLogin.Text = "Sign In"
+        Me.bLogin.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -203,52 +203,6 @@ Partial Class FLogin
         Me.Label4.Size = New System.Drawing.Size(225, 57)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "SIGN IN"
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(62, 293)
-        Me.Label3.Name = "Label3"
-        Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label3.Size = New System.Drawing.Size(101, 31)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Password"
-        '
-        'Label2
-        '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(62, 201)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 31)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Username"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox2.Location = New System.Drawing.Point(66, 327)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(317, 34)
-        Me.TextBox2.TabIndex = 1
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox1.Location = New System.Drawing.Point(66, 235)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(317, 34)
-        Me.TextBox1.TabIndex = 0
         '
         'PictureBox2
         '
@@ -272,6 +226,52 @@ Partial Class FLogin
         Me.PictureBox3.Size = New System.Drawing.Size(23, 21)
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(62, 293)
+        Me.Label3.Name = "Label3"
+        Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label3.Size = New System.Drawing.Size(101, 31)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Password"
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(62, 201)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(101, 31)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Username"
+        '
+        'tPassword
+        '
+        Me.tPassword.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.tPassword.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tPassword.ForeColor = System.Drawing.Color.DimGray
+        Me.tPassword.Location = New System.Drawing.Point(66, 327)
+        Me.tPassword.Multiline = True
+        Me.tPassword.Name = "tPassword"
+        Me.tPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tPassword.Size = New System.Drawing.Size(317, 34)
+        Me.tPassword.TabIndex = 1
+        '
+        'tUsername
+        '
+        Me.tUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.tUsername.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tUsername.ForeColor = System.Drawing.Color.DimGray
+        Me.tUsername.Location = New System.Drawing.Point(66, 235)
+        Me.tUsername.Multiline = True
+        Me.tUsername.Name = "tUsername"
+        Me.tUsername.Size = New System.Drawing.Size(317, 34)
+        Me.tUsername.TabIndex = 0
         '
         'PictureBox1
         '
@@ -319,14 +319,15 @@ Partial Class FLogin
     Friend WithEvents Label6 As Label
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents bLogin As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tPassword As TextBox
+    Friend WithEvents tUsername As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label10 As Label
 End Class
