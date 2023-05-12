@@ -5,9 +5,12 @@ Public Class FLogin
     Sub ProgramHide()
         Me.Hide()
     End Sub
+    Private Sub FLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call KoneksiDatabase()
+    End Sub
+
 
     Private Sub bLogin_Click(sender As Object, e As EventArgs) Handles bLogin.Click
-        Call KoneksiDatabase()
         Dim input As String = tUsername.Text.Trim()
         Dim Username As String = tUsername.Text
         Dim password As String = tPassword.Text
@@ -24,7 +27,7 @@ Public Class FLogin
         CMD = New MySqlCommand(queryString, CONN)
         RD = CMD.ExecuteReader()
         If RD.Read() Then
-            If RD.GetString(2) = "equiter" And RD.GetString(3) = "equiter" Then
+            If RD.GetString(3) = "equiter" And RD.GetString(4) = "equiter" Then
                 Me.Visible = False
                 RD.Close()
                 Call ProgramHide()
@@ -42,8 +45,8 @@ Public Class FLogin
         End If
     End Sub
 
-    Private Sub FLogin_Load(sender As Object, e As EventArgs)
-        Koneksi.KoneksiDatabase()
+    Private Sub lSignUp_Click(sender As Object, e As EventArgs) Handles lSignUp.Click
+        Call ProgramHide()
+        FRegistrasi.Show()
     End Sub
-
 End Class
