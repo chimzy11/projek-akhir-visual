@@ -97,6 +97,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboardAdmin.Designer.vb">
+      <DependentUpon>dashboardAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FLogin.Designer.vb">
       <DependentUpon>FLogin.vb</DependentUpon>
     </Compile>
@@ -127,6 +133,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dashboardAdmin.resx">
+      <DependentUpon>dashboardAdmin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +173,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize15px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
