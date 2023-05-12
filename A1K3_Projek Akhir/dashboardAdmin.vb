@@ -47,4 +47,12 @@
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 
     End Sub
+
+    Private Sub Panel14_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs)
+        Label10.Font = New Font(Label10.Font, FontStyle.Underline)
+    End Sub
 End Class
