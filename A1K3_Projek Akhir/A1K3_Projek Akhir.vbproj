@@ -134,6 +134,12 @@
     <Compile Include="formTambah.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formTransaksi.Designer.vb">
+      <DependentUpon>formTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRegistrasi.Designer.vb">
       <DependentUpon>FRegistrasi.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formTambah.resx">
       <DependentUpon>formTambah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTransaksi.resx">
+      <DependentUpon>formTransaksi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRegistrasi.resx">
       <DependentUpon>FRegistrasi.vb</DependentUpon>
