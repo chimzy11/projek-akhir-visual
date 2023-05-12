@@ -9,7 +9,7 @@ Module Koneksi
 
     Sub KoneksiDatabase()
         Try
-            Dim STR As String = "server=localhost;userid=root;password=;database=teatertix"
+            Dim STR As String = "server=localhost;userid=root;password=;database=equiter"
             CONN = New MySqlConnection(STR)
             If CONN.State = ConnectionState.Closed Then
                 CONN.Open()
