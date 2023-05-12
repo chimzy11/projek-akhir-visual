@@ -74,3 +74,8 @@ C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debu
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDashboard.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
