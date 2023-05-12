@@ -1,4 +1,7 @@
-﻿Public Class dashboardAdmin
+﻿Imports System.Xml.Serialization
+
+Public Class dashboardAdmin
+    Private currentChildForm As Form
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -20,9 +23,22 @@
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub OpenChildForm(childForm As Form)
+        'open only form
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
 
+        currentChildForm = childForm
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        panelDesktop.Controls.Add(childForm)
+        panelDesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
     End Sub
+
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
@@ -40,9 +56,7 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-    End Sub
 
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 
@@ -52,19 +66,27 @@
 
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs)
-        Label10.Font = New Font(Label10.Font, FontStyle.Underline)
-    End Sub
+    ' Private Sub Label10_Click(sender As Object, e As EventArgs)
+    ' Label10.Font = New Font(Label10.Font, FontStyle.Underline)
+    ' End Sub
 
-    Private Sub Label10_Click_1(sender As Object, e As EventArgs) Handles Label10.Click
-
-    End Sub
-
-    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+    Private Sub Label10_Click_1(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+    Private Sub Label11_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+        OpenChildForm(New formDashboard)
+    End Sub
+
+    Private Sub btnJadwal_Click(sender As Object, e As EventArgs) Handles btnJadwal.Click
+        OpenChildForm(New formJadwal)
     End Sub
 End Class
