@@ -12,7 +12,6 @@ Public Class FLogin
         Dim Username As String = tUsername.Text
         Dim password As String = tPassword.Text
 
-
         Dim isEmail As Boolean = input.Contains("@")
 
         Dim queryString As String
