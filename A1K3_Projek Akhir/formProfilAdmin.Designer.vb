@@ -48,17 +48,40 @@ Partial Class formProfilAdmin
         Me.btnDataMaster = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.panelDesktop = New System.Windows.Forms.Panel()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnMax = New System.Windows.Forms.Button()
         Me.btnMin = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel11.SuspendLayout()
+        Me.panelDesktop.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -73,7 +96,7 @@ Partial Class formProfilAdmin
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 62)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(270, 388)
+        Me.Panel1.Size = New System.Drawing.Size(270, 425)
         Me.Panel1.TabIndex = 5
         '
         'Panel5
@@ -86,7 +109,7 @@ Partial Class formProfilAdmin
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(270, 388)
+        Me.Panel5.Size = New System.Drawing.Size(270, 425)
         Me.Panel5.TabIndex = 4
         '
         'Panel7
@@ -99,7 +122,7 @@ Partial Class formProfilAdmin
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(270, 388)
+        Me.Panel7.Size = New System.Drawing.Size(270, 425)
         Me.Panel7.TabIndex = 4
         '
         'Panel9
@@ -118,7 +141,7 @@ Partial Class formProfilAdmin
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(270, 388)
+        Me.Panel9.Size = New System.Drawing.Size(270, 425)
         Me.Panel9.TabIndex = 5
         '
         'Panel11
@@ -126,7 +149,7 @@ Partial Class formProfilAdmin
         Me.Panel11.Controls.Add(Me.Label8)
         Me.Panel11.Controls.Add(Me.Button7)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel11.Location = New System.Drawing.Point(0, 330)
+        Me.Panel11.Location = New System.Drawing.Point(0, 367)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(270, 58)
         Me.Panel11.TabIndex = 4
@@ -343,12 +366,191 @@ Partial Class formProfilAdmin
         '
         'panelDesktop
         '
+        Me.panelDesktop.Controls.Add(Me.Panel13)
         Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelDesktop.Location = New System.Drawing.Point(0, 62)
         Me.panelDesktop.Margin = New System.Windows.Forms.Padding(2)
         Me.panelDesktop.Name = "panelDesktop"
-        Me.panelDesktop.Size = New System.Drawing.Size(800, 388)
+        Me.panelDesktop.Size = New System.Drawing.Size(913, 425)
         Me.panelDesktop.TabIndex = 7
+        '
+        'Panel13
+        '
+        Me.Panel13.Controls.Add(Me.TextBox1)
+        Me.Panel13.Controls.Add(Me.TextBox2)
+        Me.Panel13.Controls.Add(Me.Label17)
+        Me.Panel13.Controls.Add(Me.Label15)
+        Me.Panel13.Controls.Add(Me.Label14)
+        Me.Panel13.Controls.Add(Me.Label13)
+        Me.Panel13.Controls.Add(Me.Button8)
+        Me.Panel13.Controls.Add(Me.Button5)
+        Me.Panel13.Controls.Add(Me.Panel14)
+        Me.Panel13.Location = New System.Drawing.Point(272, 0)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(641, 485)
+        Me.Panel13.TabIndex = 0
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.TextBox1.Location = New System.Drawing.Point(317, 358)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(220, 25)
+        Me.TextBox1.TabIndex = 10
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.TextBox2.Location = New System.Drawing.Point(317, 427)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(220, 25)
+        Me.TextBox2.TabIndex = 9
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(126, 319)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(0, 13)
+        Me.Label17.TabIndex = 7
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(320, 399)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(76, 25)
+        Me.Label15.TabIndex = 5
+        Me.Label15.Text = "Alamat"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(108, 317)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(0, 13)
+        Me.Label14.TabIndex = 4
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(312, 319)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(147, 25)
+        Me.Label13.TabIndex = 3
+        Me.Label13.Text = "Nomor Telepon"
+        '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.location
+        Me.Button8.Location = New System.Drawing.Point(226, 409)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(81, 43)
+        Me.Button8.TabIndex = 2
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.phone_call
+        Me.Button5.Location = New System.Drawing.Point(226, 337)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(57, 40)
+        Me.Button5.TabIndex = 1
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Panel14.Controls.Add(Me.Label18)
+        Me.Panel14.Controls.Add(Me.TextBox4)
+        Me.Panel14.Controls.Add(Me.TextBox3)
+        Me.Panel14.Controls.Add(Me.Button3)
+        Me.Panel14.Controls.Add(Me.Label12)
+        Me.Panel14.Controls.Add(Me.Label11)
+        Me.Panel14.Controls.Add(Me.Label10)
+        Me.Panel14.Controls.Add(Me.PictureBox1)
+        Me.Panel14.Location = New System.Drawing.Point(86, 40)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(571, 250)
+        Me.Panel14.TabIndex = 0
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.TextBox4.Location = New System.Drawing.Point(218, 98)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(220, 25)
+        Me.TextBox4.TabIndex = 11
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.TextBox3.Location = New System.Drawing.Point(221, 169)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(220, 25)
+        Me.TextBox3.TabIndex = 10
+        '
+        'Button3
+        '
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.user__4_
+        Me.Button3.Location = New System.Drawing.Point(14, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(52, 53)
+        Me.Button3.TabIndex = 6
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(72, 10)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(139, 30)
+        Me.Label12.TabIndex = 5
+        Me.Label12.Text = "Profil Admin"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(216, 140)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(68, 25)
+        Me.Label11.TabIndex = 4
+        Me.Label11.Text = "E-Mail"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(213, 70)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(64, 25)
+        Me.Label10.TabIndex = 3
+        Me.Label10.Text = "Nama"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 71)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(146, 165)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'Label9
         '
@@ -368,7 +570,7 @@ Partial Class formProfilAdmin
         Me.Panel4.Controls.Add(Me.btnMin)
         Me.Panel4.Controls.Add(Me.btnClose)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(683, 0)
+        Me.Panel4.Location = New System.Drawing.Point(796, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(117, 62)
         Me.Panel4.TabIndex = 2
@@ -410,29 +612,53 @@ Partial Class formProfilAdmin
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Panel12)
         Me.Panel3.Controls.Add(Me.Label9)
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(800, 62)
+        Me.Panel3.Size = New System.Drawing.Size(913, 62)
         Me.Panel3.TabIndex = 6
+        '
+        'Panel12
+        '
+        Me.Panel12.Location = New System.Drawing.Point(272, 62)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(929, 526)
+        Me.Panel12.TabIndex = 0
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(56, 149)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(56, 13)
+        Me.Label18.TabIndex = 12
+        Me.Label18.Text = "foto admin"
         '
         'formProfilAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(913, 487)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelDesktop)
         Me.Controls.Add(Me.Panel3)
         Me.Name = "formProfilAdmin"
         Me.Text = "formProfilAdmin"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
+        Me.panelDesktop.ResumeLayout(False)
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
+        Me.Panel14.ResumeLayout(False)
+        Me.Panel14.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -472,4 +698,24 @@ Partial Class formProfilAdmin
     Friend WithEvents btnMin As Button
     Friend WithEvents btnClose As Button
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Label17 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label18 As Label
 End Class

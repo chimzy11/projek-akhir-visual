@@ -24,11 +24,11 @@ Partial Class dashboardAdmin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardAdmin))
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnMin = New System.Windows.Forms.Button()
-        Me.btnMax = New System.Windows.Forms.Button()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnMax = New System.Windows.Forms.Button()
+        Me.btnMin = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnJadwal = New System.Windows.Forms.Button()
         Me.btnDashboard = New System.Windows.Forms.Button()
@@ -43,17 +43,17 @@ Partial Class dashboardAdmin
         Me.btnDataMaster = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -75,16 +75,39 @@ Partial Class dashboardAdmin
         Me.Panel3.Size = New System.Drawing.Size(913, 62)
         Me.Panel3.TabIndex = 3
         '
-        'btnClose
+        'Label9
         '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(72, 26)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(18, 18)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Stencil", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(52, 10)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(161, 39)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "equiter"
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.btnMax)
+        Me.Panel4.Controls.Add(Me.btnMin)
+        Me.Panel4.Controls.Add(Me.btnClose)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel4.Location = New System.Drawing.Point(796, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(117, 62)
+        Me.Panel4.TabIndex = 2
+        '
+        'btnMax
+        '
+        Me.btnMax.FlatAppearance.BorderSize = 0
+        Me.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMax.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.maximize15px
+        Me.btnMax.Location = New System.Drawing.Point(52, 26)
+        Me.btnMax.Name = "btnMax"
+        Me.btnMax.Size = New System.Drawing.Size(18, 18)
+        Me.btnMax.TabIndex = 4
+        Me.btnMax.UseVisualStyleBackColor = True
         '
         'btnMin
         '
@@ -98,39 +121,16 @@ Partial Class dashboardAdmin
         Me.btnMin.Text = " "
         Me.btnMin.UseVisualStyleBackColor = True
         '
-        'btnMax
+        'btnClose
         '
-        Me.btnMax.FlatAppearance.BorderSize = 0
-        Me.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMax.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.maximize15px
-        Me.btnMax.Location = New System.Drawing.Point(52, 26)
-        Me.btnMax.Name = "btnMax"
-        Me.btnMax.Size = New System.Drawing.Size(18, 18)
-        Me.btnMax.TabIndex = 4
-        Me.btnMax.UseVisualStyleBackColor = True
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.btnMax)
-        Me.Panel4.Controls.Add(Me.btnMin)
-        Me.Panel4.Controls.Add(Me.btnClose)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(796, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(117, 62)
-        Me.Panel4.TabIndex = 2
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Stencil", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(52, 10)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(161, 39)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "equiter"
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(72, 26)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(18, 18)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -206,7 +206,7 @@ Partial Class dashboardAdmin
         Me.panelDesktop.Location = New System.Drawing.Point(270, 62)
         Me.panelDesktop.Margin = New System.Windows.Forms.Padding(2)
         Me.panelDesktop.Name = "panelDesktop"
-        Me.panelDesktop.Size = New System.Drawing.Size(643, 270)
+        Me.panelDesktop.Size = New System.Drawing.Size(643, 425)
         Me.panelDesktop.TabIndex = 4
         '
         'Panel10
@@ -284,34 +284,8 @@ Partial Class dashboardAdmin
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(270, 270)
+        Me.Panel5.Size = New System.Drawing.Size(270, 425)
         Me.Panel5.TabIndex = 4
-        '
-        'Panel6
-        '
-        Me.Panel6.Location = New System.Drawing.Point(272, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(660, 49)
-        Me.Panel6.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, 40)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(270, 46)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Dashboard"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(1, 55)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(5, 20)
-        Me.Label2.TabIndex = 3
         '
         'Panel7
         '
@@ -323,34 +297,8 @@ Partial Class dashboardAdmin
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(270, 270)
+        Me.Panel7.Size = New System.Drawing.Size(270, 425)
         Me.Panel7.TabIndex = 4
-        '
-        'Panel8
-        '
-        Me.Panel8.Location = New System.Drawing.Point(272, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(660, 49)
-        Me.Panel8.TabIndex = 1
-        '
-        'Button2
-        '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(0, 40)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(270, 46)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Dashboard"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(1, 55)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(5, 20)
-        Me.Label3.TabIndex = 3
         '
         'Panel9
         '
@@ -368,7 +316,7 @@ Partial Class dashboardAdmin
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(270, 270)
+        Me.Panel9.Size = New System.Drawing.Size(270, 425)
         Me.Panel9.TabIndex = 5
         '
         'Panel11
@@ -376,10 +324,18 @@ Partial Class dashboardAdmin
         Me.Panel11.Controls.Add(Me.Label8)
         Me.Panel11.Controls.Add(Me.Button7)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel11.Location = New System.Drawing.Point(0, 212)
+        Me.Panel11.Location = New System.Drawing.Point(0, 367)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(270, 58)
         Me.Panel11.TabIndex = 4
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(-1, 18)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(5, 20)
+        Me.Label8.TabIndex = 10
         '
         'Button7
         '
@@ -398,13 +354,57 @@ Partial Class dashboardAdmin
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Label8
+        'Label3
         '
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(-1, 18)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(5, 20)
-        Me.Label8.TabIndex = 10
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(1, 55)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(5, 20)
+        Me.Label3.TabIndex = 3
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(0, 40)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(270, 46)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Dashboard"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Panel8
+        '
+        Me.Panel8.Location = New System.Drawing.Point(272, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(660, 49)
+        Me.Panel8.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(1, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(5, 20)
+        Me.Label2.TabIndex = 3
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(0, 40)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(270, 46)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Dashboard"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Location = New System.Drawing.Point(272, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(660, 49)
+        Me.Panel6.TabIndex = 1
         '
         'Panel1
         '
@@ -416,7 +416,7 @@ Partial Class dashboardAdmin
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 62)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(270, 270)
+        Me.Panel1.Size = New System.Drawing.Size(270, 425)
         Me.Panel1.TabIndex = 2
         '
         'dashboardAdmin
@@ -424,7 +424,7 @@ Partial Class dashboardAdmin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(913, 332)
+        Me.ClientSize = New System.Drawing.Size(913, 487)
         Me.Controls.Add(Me.panelDesktop)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
