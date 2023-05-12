@@ -7,6 +7,7 @@ Public Class FLogin
     End Sub
 
     Private Sub bLogin_Click(sender As Object, e As EventArgs) Handles bLogin.Click
+        Call KoneksiDatabase()
         Dim input As String = tUsername.Text.Trim()
         Dim Username As String = tUsername.Text
         Dim password As String = tPassword.Text
@@ -45,4 +46,5 @@ Public Class FLogin
     Private Sub FLogin_Load(sender As Object, e As EventArgs)
         Koneksi.KoneksiDatabase()
     End Sub
+
 End Class
