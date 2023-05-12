@@ -72,3 +72,5 @@ C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debu
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.xml
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.pdb
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
+C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
+C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources

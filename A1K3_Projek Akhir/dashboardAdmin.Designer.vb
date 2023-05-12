@@ -22,21 +22,17 @@ Partial Class dashboardAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardAdmin))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnJadwal = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -50,10 +46,15 @@ Partial Class dashboardAdmin
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.panelDesktop = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnJadwal = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.btnMax = New System.Windows.Forms.Button()
         Me.btnMin = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.panelDesktop = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -145,24 +146,6 @@ Partial Class dashboardAdmin
         Me.Label8.Size = New System.Drawing.Size(8, 31)
         Me.Label8.TabIndex = 10
         '
-        'Button7
-        '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button7.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.logout__2_
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(0, 5)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button7.Size = New System.Drawing.Size(405, 71)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "   Logout"
-        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button7.UseVisualStyleBackColor = True
-        '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -171,24 +154,6 @@ Partial Class dashboardAdmin
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(8, 31)
         Me.Label7.TabIndex = 9
-        '
-        'Button6
-        '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button6.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(0, 280)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(405, 71)
-        Me.Button6.TabIndex = 8
-        Me.Button6.Text = "   Transaksi"
-        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -199,24 +164,6 @@ Partial Class dashboardAdmin
         Me.Label6.Size = New System.Drawing.Size(8, 31)
         Me.Label6.TabIndex = 7
         '
-        'btnJadwal
-        '
-        Me.btnJadwal.FlatAppearance.BorderSize = 0
-        Me.btnJadwal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnJadwal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.btnJadwal.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.appointment__1_
-        Me.btnJadwal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnJadwal.Location = New System.Drawing.Point(0, 203)
-        Me.btnJadwal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnJadwal.Name = "btnJadwal"
-        Me.btnJadwal.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.btnJadwal.Size = New System.Drawing.Size(405, 71)
-        Me.btnJadwal.TabIndex = 6
-        Me.btnJadwal.Text = "   Jadwal Teater"
-        Me.btnJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnJadwal.UseVisualStyleBackColor = True
-        '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -226,24 +173,6 @@ Partial Class dashboardAdmin
         Me.Label5.Size = New System.Drawing.Size(8, 31)
         Me.Label5.TabIndex = 5
         '
-        'Button4
-        '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button4.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(0, 128)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(405, 71)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "   Profil"
-        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -252,24 +181,6 @@ Partial Class dashboardAdmin
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(8, 31)
         Me.Label4.TabIndex = 3
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.FlatAppearance.BorderSize = 0
-        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.btnDashboard.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.dashboard__2_
-        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 62)
-        Me.btnDashboard.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.btnDashboard.Size = New System.Drawing.Size(405, 71)
-        Me.btnDashboard.TabIndex = 2
-        Me.btnDashboard.Text = "   Dashboard"
-        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDashboard.UseVisualStyleBackColor = True
         '
         'Panel10
         '
@@ -401,6 +312,104 @@ Partial Class dashboardAdmin
         Me.Panel4.Size = New System.Drawing.Size(176, 95)
         Me.Panel4.TabIndex = 2
         '
+        'panelDesktop
+        '
+        Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelDesktop.Location = New System.Drawing.Point(405, 95)
+        Me.panelDesktop.Name = "panelDesktop"
+        Me.panelDesktop.Size = New System.Drawing.Size(1515, 415)
+        Me.panelDesktop.TabIndex = 4
+        '
+        'Button7
+        '
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Button7.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.logout__2_
+        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.Location = New System.Drawing.Point(0, 5)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button7.Size = New System.Drawing.Size(405, 71)
+        Me.Button7.TabIndex = 10
+        Me.Button7.Text = "   Logout"
+        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Button6.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
+        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button6.Location = New System.Drawing.Point(0, 280)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button6.Size = New System.Drawing.Size(405, 71)
+        Me.Button6.TabIndex = 8
+        Me.Button6.Text = "   Transaksi"
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'btnJadwal
+        '
+        Me.btnJadwal.FlatAppearance.BorderSize = 0
+        Me.btnJadwal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnJadwal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnJadwal.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.appointment__1_
+        Me.btnJadwal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnJadwal.Location = New System.Drawing.Point(0, 203)
+        Me.btnJadwal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnJadwal.Name = "btnJadwal"
+        Me.btnJadwal.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnJadwal.Size = New System.Drawing.Size(405, 71)
+        Me.btnJadwal.TabIndex = 6
+        Me.btnJadwal.Text = "   Jadwal Teater"
+        Me.btnJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnJadwal.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Button4.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button4.Location = New System.Drawing.Point(0, 128)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button4.Size = New System.Drawing.Size(405, 71)
+        Me.Button4.TabIndex = 4
+        Me.Button4.Text = "   Profil"
+        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDashboard.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.dashboard__2_
+        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 62)
+        Me.btnDashboard.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnDashboard.Size = New System.Drawing.Size(405, 71)
+        Me.btnDashboard.TabIndex = 2
+        Me.btnDashboard.Text = "   Dashboard"
+        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnDashboard.UseVisualStyleBackColor = True
+        '
         'btnMax
         '
         Me.btnMax.FlatAppearance.BorderSize = 0
@@ -438,14 +447,6 @@ Partial Class dashboardAdmin
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'panelDesktop
-        '
-        Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelDesktop.Location = New System.Drawing.Point(405, 95)
-        Me.panelDesktop.Name = "panelDesktop"
-        Me.panelDesktop.Size = New System.Drawing.Size(1515, 415)
-        Me.panelDesktop.TabIndex = 4
-        '
         'dashboardAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -455,6 +456,7 @@ Partial Class dashboardAdmin
         Me.Controls.Add(Me.panelDesktop)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "dashboardAdmin"
         Me.Text = "dashboardAdmin"

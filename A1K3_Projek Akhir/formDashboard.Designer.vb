@@ -25,6 +25,7 @@ Partial Class formDashboard
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formDashboard))
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -227,6 +228,7 @@ Partial Class formDashboard
         Me.Controls.Add(Me.Panel12)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Chart1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "formDashboard"
         Me.Text = "formDashboard"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -20,9 +20,10 @@
     Private Sub txtSearch_Enter(sender As Object, e As EventArgs) Handles txtSearch.Enter
         If txtSearch.Text = "Search" Then
             txtSearch.Text = ""
-            txtSearch.ForeColor = Color.Black
+            txtSearch.ForeColor = Color.FromArgb(132, 123, 112)
         End If
     End Sub
+
 
     Private Sub txtSearch_Leave(sender As Object, e As EventArgs) Handles txtSearch.Leave
         If txtSearch.Text = "" Then
@@ -31,7 +32,7 @@
         End If
     End Sub
 
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+    Private Sub Label8_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -44,6 +45,10 @@
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class

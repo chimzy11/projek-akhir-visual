@@ -110,6 +110,12 @@
     <Compile Include="FLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formEdit.Designer.vb">
+      <DependentUpon>formEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formDashboard.Designer.vb">
       <DependentUpon>formDashboard.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,12 @@
       <DependentUpon>formJadwal.vb</DependentUpon>
     </Compile>
     <Compile Include="formJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTambah.Designer.vb">
+      <DependentUpon>formTambah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formTambah.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRegistrasi.Designer.vb">
@@ -152,11 +164,17 @@
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formEdit.resx">
+      <DependentUpon>formEdit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formDashboard.resx">
       <DependentUpon>formDashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formJadwal.resx">
       <DependentUpon>formJadwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTambah.resx">
+      <DependentUpon>formTambah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRegistrasi.resx">
       <DependentUpon>FRegistrasi.vb</DependentUpon>
