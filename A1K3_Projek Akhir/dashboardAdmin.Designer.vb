@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class dashboardAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class dashboardAdmin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardAdmin))
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -73,7 +73,7 @@ Partial Class dashboardAdmin
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1370, 95)
+        Me.Panel3.Size = New System.Drawing.Size(1824, 95)
         Me.Panel3.TabIndex = 3
         '
         'Label9
@@ -93,7 +93,7 @@ Partial Class dashboardAdmin
         Me.Panel4.Controls.Add(Me.btnMin)
         Me.Panel4.Controls.Add(Me.btnClose)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(1194, 0)
+        Me.Panel4.Location = New System.Drawing.Point(1648, 0)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(176, 95)
@@ -213,7 +213,7 @@ Partial Class dashboardAdmin
         Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelDesktop.Location = New System.Drawing.Point(405, 95)
         Me.panelDesktop.Name = "panelDesktop"
-        Me.panelDesktop.Size = New System.Drawing.Size(965, 654)
+        Me.panelDesktop.Size = New System.Drawing.Size(1419, 759)
         Me.panelDesktop.TabIndex = 4
         '
         'Panel10
@@ -300,7 +300,7 @@ Partial Class dashboardAdmin
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(405, 654)
+        Me.Panel5.Size = New System.Drawing.Size(405, 759)
         Me.Panel5.TabIndex = 4
         '
         'Panel7
@@ -314,7 +314,7 @@ Partial Class dashboardAdmin
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(405, 654)
+        Me.Panel7.Size = New System.Drawing.Size(405, 759)
         Me.Panel7.TabIndex = 4
         '
         'Panel9
@@ -335,7 +335,7 @@ Partial Class dashboardAdmin
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(405, 654)
+        Me.Panel9.Size = New System.Drawing.Size(405, 759)
         Me.Panel9.TabIndex = 5
         '
         'Panel11
@@ -343,7 +343,7 @@ Partial Class dashboardAdmin
         Me.Panel11.Controls.Add(Me.Label8)
         Me.Panel11.Controls.Add(Me.bLogout)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel11.Location = New System.Drawing.Point(0, 565)
+        Me.Panel11.Location = New System.Drawing.Point(0, 670)
         Me.Panel11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(405, 89)
@@ -445,7 +445,7 @@ Partial Class dashboardAdmin
         Me.Panel1.Location = New System.Drawing.Point(0, 95)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(405, 654)
+        Me.Panel1.Size = New System.Drawing.Size(405, 759)
         Me.Panel1.TabIndex = 2
         '
         'dashboardAdmin
@@ -453,7 +453,7 @@ Partial Class dashboardAdmin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1824, 854)
         Me.Controls.Add(Me.panelDesktop)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)

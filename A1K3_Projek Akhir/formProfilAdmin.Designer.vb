@@ -482,7 +482,7 @@ Partial Class formProfilAdmin
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.location
-        Me.Button8.Location = New System.Drawing.Point(339, 629)
+        Me.Button8.Location = New System.Drawing.Point(336, 637)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(122, 66)
@@ -494,7 +494,7 @@ Partial Class formProfilAdmin
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.phone_call
-        Me.Button5.Location = New System.Drawing.Point(339, 518)
+        Me.Button5.Location = New System.Drawing.Point(354, 533)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(86, 62)

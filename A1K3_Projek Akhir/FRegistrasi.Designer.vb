@@ -31,6 +31,7 @@ Partial Class FRegistrasi
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lSignIn = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.tKonfirmasi = New System.Windows.Forms.TextBox()
@@ -40,7 +41,6 @@ Partial Class FRegistrasi
         Me.tEmail = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tNamaLengkap = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.bSignUp = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -49,7 +49,6 @@ Partial Class FRegistrasi
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tPassword = New System.Windows.Forms.TextBox()
         Me.tUsername = New System.Windows.Forms.TextBox()
-        Me.lSignIn = New System.Windows.Forms.Label()
         Me.PanelFormLogin.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -149,7 +148,6 @@ Partial Class FRegistrasi
         Me.Panel3.Controls.Add(Me.tEmail)
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.tNamaLengkap)
-        Me.Panel3.Controls.Add(Me.CheckBox1)
         Me.Panel3.Controls.Add(Me.bSignUp)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.PictureBox2)
@@ -162,6 +160,19 @@ Partial Class FRegistrasi
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(443, 639)
         Me.Panel3.TabIndex = 4
+        '
+        'lSignIn
+        '
+        Me.lSignIn.AutoSize = True
+        Me.lSignIn.BackColor = System.Drawing.Color.Transparent
+        Me.lSignIn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lSignIn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lSignIn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.lSignIn.Location = New System.Drawing.Point(302, 550)
+        Me.lSignIn.Name = "lSignIn"
+        Me.lSignIn.Size = New System.Drawing.Size(75, 25)
+        Me.lSignIn.TabIndex = 0
+        Me.lSignIn.Text = "Sign In"
         '
         'PictureBox6
         '
@@ -265,19 +276,6 @@ Partial Class FRegistrasi
         Me.tNamaLengkap.TabIndex = 1
         Me.tNamaLengkap.TabStop = False
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.CheckBox1.Location = New System.Drawing.Point(221, 551)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(162, 26)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Remember Me?"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'bSignUp
         '
         Me.bSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -372,19 +370,6 @@ Partial Class FRegistrasi
         Me.tUsername.Size = New System.Drawing.Size(317, 34)
         Me.tUsername.TabIndex = 0
         '
-        'lSignIn
-        '
-        Me.lSignIn.AutoSize = True
-        Me.lSignIn.BackColor = System.Drawing.Color.Transparent
-        Me.lSignIn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lSignIn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lSignIn.ForeColor = System.Drawing.Color.DarkGoldenrod
-        Me.lSignIn.Location = New System.Drawing.Point(300, 589)
-        Me.lSignIn.Name = "lSignIn"
-        Me.lSignIn.Size = New System.Drawing.Size(75, 25)
-        Me.lSignIn.TabIndex = 0
-        Me.lSignIn.Text = "Sign In"
-        '
         'FRegistrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -432,7 +417,6 @@ Partial Class FRegistrasi
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label5 As Label
     Friend WithEvents tEmail As TextBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents tUsername As TextBox
