@@ -85,9 +85,9 @@ Partial Class formTambah
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(1181, 0)
+        Me.Panel1.Location = New System.Drawing.Point(581, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(644, 855)
+        Me.Panel1.Size = New System.Drawing.Size(644, 605)
         Me.Panel1.TabIndex = 24
         '
         'Button4
@@ -350,7 +350,7 @@ Partial Class formTambah
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1825, 855)
+        Me.ClientSize = New System.Drawing.Size(1225, 605)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)

@@ -28,9 +28,9 @@ Partial Class formTransaksi
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formTransaksi))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnMax = New System.Windows.Forms.Button()
         Me.btnMin = New System.Windows.Forms.Button()
@@ -48,6 +48,7 @@ Partial Class formTransaksi
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -98,8 +99,9 @@ Partial Class formTransaksi
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(975, 450)
+        Me.Panel1.Size = New System.Drawing.Size(1462, 692)
         Me.Panel1.TabIndex = 1
         '
         'Panel3
@@ -107,22 +109,11 @@ Partial Class formTransaksi
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(270, 0)
+        Me.Panel3.Location = New System.Drawing.Point(405, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(705, 62)
+        Me.Panel3.Size = New System.Drawing.Size(1057, 95)
         Me.Panel3.TabIndex = 6
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Stencil", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(55, 5)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(161, 39)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "equiter"
         '
         'Panel4
         '
@@ -130,9 +121,10 @@ Partial Class formTransaksi
         Me.Panel4.Controls.Add(Me.btnMin)
         Me.Panel4.Controls.Add(Me.btnClose)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(588, 0)
+        Me.Panel4.Location = New System.Drawing.Point(881, 0)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(117, 62)
+        Me.Panel4.Size = New System.Drawing.Size(176, 95)
         Me.Panel4.TabIndex = 2
         '
         'btnMax
@@ -140,9 +132,10 @@ Partial Class formTransaksi
         Me.btnMax.FlatAppearance.BorderSize = 0
         Me.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMax.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.maximize15px
-        Me.btnMax.Location = New System.Drawing.Point(52, 26)
+        Me.btnMax.Location = New System.Drawing.Point(78, 40)
+        Me.btnMax.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnMax.Name = "btnMax"
-        Me.btnMax.Size = New System.Drawing.Size(18, 18)
+        Me.btnMax.Size = New System.Drawing.Size(27, 28)
         Me.btnMax.TabIndex = 4
         Me.btnMax.UseVisualStyleBackColor = True
         '
@@ -151,9 +144,10 @@ Partial Class formTransaksi
         Me.btnMin.FlatAppearance.BorderSize = 0
         Me.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMin.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.minimize15px
-        Me.btnMin.Location = New System.Drawing.Point(32, 26)
+        Me.btnMin.Location = New System.Drawing.Point(48, 40)
+        Me.btnMin.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnMin.Name = "btnMin"
-        Me.btnMin.Size = New System.Drawing.Size(18, 18)
+        Me.btnMin.Size = New System.Drawing.Size(27, 28)
         Me.btnMin.TabIndex = 1
         Me.btnMin.Text = " "
         Me.btnMin.UseVisualStyleBackColor = True
@@ -163,9 +157,10 @@ Partial Class formTransaksi
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(72, 26)
+        Me.btnClose.Location = New System.Drawing.Point(108, 40)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(18, 18)
+        Me.btnClose.Size = New System.Drawing.Size(27, 28)
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
@@ -173,10 +168,9 @@ Partial Class formTransaksi
         '
         Me.panelDesktop.Controls.Add(Me.DataGridView2)
         Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelDesktop.Location = New System.Drawing.Point(270, 0)
-        Me.panelDesktop.Margin = New System.Windows.Forms.Padding(2)
+        Me.panelDesktop.Location = New System.Drawing.Point(405, 0)
         Me.panelDesktop.Name = "panelDesktop"
-        Me.panelDesktop.Size = New System.Drawing.Size(705, 450)
+        Me.panelDesktop.Size = New System.Drawing.Size(1057, 692)
         Me.panelDesktop.TabIndex = 7
         '
         'DataGridView2
@@ -202,7 +196,8 @@ Partial Class formTransaksi
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView2.GridColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.DataGridView2.Location = New System.Drawing.Point(0, 63)
+        Me.DataGridView2.Location = New System.Drawing.Point(0, 97)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView2.Name = "DataGridView2"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -212,42 +207,50 @@ Partial Class formTransaksi
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridView2.Size = New System.Drawing.Size(887, 150)
+        Me.DataGridView2.RowHeadersWidth = 62
+        Me.DataGridView2.Size = New System.Drawing.Size(1330, 231)
         Me.DataGridView2.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "Nama Pengirim"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.HeaderText = "Nama Penerima"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.HeaderText = "Jumlah Tiket"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.HeaderText = "Judul"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.HeaderText = "No Rekening Pengirim"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.HeaderText = "No Rekening Penerima"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.HeaderText = "Total"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 8
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
         'Panel5
@@ -259,8 +262,9 @@ Partial Class formTransaksi
         Me.Panel5.Controls.Add(Me.Panel2)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(270, 450)
+        Me.Panel5.Size = New System.Drawing.Size(405, 692)
         Me.Panel5.TabIndex = 5
         '
         'Panel7
@@ -272,8 +276,9 @@ Partial Class formTransaksi
         Me.Panel7.Controls.Add(Me.Panel6)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(270, 450)
+        Me.Panel7.Size = New System.Drawing.Size(405, 692)
         Me.Panel7.TabIndex = 4
         '
         'Panel12
@@ -285,8 +290,9 @@ Partial Class formTransaksi
         Me.Panel12.Controls.Add(Me.Panel8)
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel12.Location = New System.Drawing.Point(0, 0)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(270, 450)
+        Me.Panel12.Size = New System.Drawing.Size(405, 692)
         Me.Panel12.TabIndex = 4
         '
         'Panel9
@@ -305,26 +311,40 @@ Partial Class formTransaksi
         Me.Panel9.Controls.Add(Me.Panel10)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(270, 450)
+        Me.Panel9.Size = New System.Drawing.Size(405, 692)
         Me.Panel9.TabIndex = 5
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Stencil", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(82, 8)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(241, 59)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "equiter"
         '
         'Panel11
         '
         Me.Panel11.Controls.Add(Me.Label8)
         Me.Panel11.Controls.Add(Me.Button7)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel11.Location = New System.Drawing.Point(0, 392)
+        Me.Panel11.Location = New System.Drawing.Point(0, 603)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(270, 58)
+        Me.Panel11.Size = New System.Drawing.Size(405, 89)
         Me.Panel11.TabIndex = 4
         '
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(-1, 18)
+        Me.Label8.Location = New System.Drawing.Point(-2, 28)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(5, 20)
+        Me.Label8.Size = New System.Drawing.Size(8, 31)
         Me.Label8.TabIndex = 10
         '
         'Button7
@@ -335,10 +355,11 @@ Partial Class formTransaksi
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Button7.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.logout__2_
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(0, 3)
+        Me.Button7.Location = New System.Drawing.Point(0, 5)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button7.Name = "Button7"
-        Me.Button7.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.Button7.Size = New System.Drawing.Size(270, 46)
+        Me.Button7.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button7.Size = New System.Drawing.Size(405, 71)
         Me.Button7.TabIndex = 10
         Me.Button7.Text = "   Logout"
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -347,9 +368,10 @@ Partial Class formTransaksi
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(1, 196)
+        Me.Label7.Location = New System.Drawing.Point(2, 302)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(5, 20)
+        Me.Label7.Size = New System.Drawing.Size(8, 31)
         Me.Label7.TabIndex = 9
         '
         'Button6
@@ -360,10 +382,11 @@ Partial Class formTransaksi
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Button6.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(0, 182)
+        Me.Button6.Location = New System.Drawing.Point(0, 280)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(270, 46)
+        Me.Button6.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button6.Size = New System.Drawing.Size(405, 71)
         Me.Button6.TabIndex = 8
         Me.Button6.Text = "   Transaksi"
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -372,9 +395,10 @@ Partial Class formTransaksi
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(1, 145)
+        Me.Label6.Location = New System.Drawing.Point(2, 223)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(5, 20)
+        Me.Label6.Size = New System.Drawing.Size(8, 31)
         Me.Label6.TabIndex = 7
         '
         'btnJadwal
@@ -385,10 +409,11 @@ Partial Class formTransaksi
         Me.btnJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.btnJadwal.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.appointment__1_
         Me.btnJadwal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnJadwal.Location = New System.Drawing.Point(0, 132)
+        Me.btnJadwal.Location = New System.Drawing.Point(0, 203)
+        Me.btnJadwal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnJadwal.Name = "btnJadwal"
-        Me.btnJadwal.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.btnJadwal.Size = New System.Drawing.Size(270, 46)
+        Me.btnJadwal.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnJadwal.Size = New System.Drawing.Size(405, 71)
         Me.btnJadwal.TabIndex = 6
         Me.btnJadwal.Text = "   Jadwal Teater"
         Me.btnJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -397,9 +422,10 @@ Partial Class formTransaksi
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(1, 97)
+        Me.Label5.Location = New System.Drawing.Point(2, 149)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(5, 20)
+        Me.Label5.Size = New System.Drawing.Size(8, 31)
         Me.Label5.TabIndex = 5
         '
         'Button4
@@ -410,10 +436,11 @@ Partial Class formTransaksi
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Button4.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(0, 83)
+        Me.Button4.Location = New System.Drawing.Point(0, 128)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(270, 46)
+        Me.Button4.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button4.Size = New System.Drawing.Size(405, 71)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "   Profil"
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -422,9 +449,10 @@ Partial Class formTransaksi
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(1, 55)
+        Me.Label4.Location = New System.Drawing.Point(2, 85)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(5, 20)
+        Me.Label4.Size = New System.Drawing.Size(8, 31)
         Me.Label4.TabIndex = 3
         '
         'btnDashboard
@@ -435,10 +463,11 @@ Partial Class formTransaksi
         Me.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.btnDashboard.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.dashboard__2_
         Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 40)
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 62)
+        Me.btnDashboard.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.btnDashboard.Size = New System.Drawing.Size(270, 46)
+        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnDashboard.Size = New System.Drawing.Size(405, 71)
         Me.btnDashboard.TabIndex = 2
         Me.btnDashboard.Text = "   Dashboard"
         Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -446,87 +475,97 @@ Partial Class formTransaksi
         '
         'Panel10
         '
-        Me.Panel10.Location = New System.Drawing.Point(272, 0)
+        Me.Panel10.Location = New System.Drawing.Point(408, 0)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(660, 49)
+        Me.Panel10.Size = New System.Drawing.Size(990, 75)
         Me.Panel10.TabIndex = 1
         '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(1, 55)
+        Me.Label3.Location = New System.Drawing.Point(2, 85)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(5, 20)
+        Me.Label3.Size = New System.Drawing.Size(8, 31)
         Me.Label3.TabIndex = 3
         '
         'Button2
         '
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(0, 40)
+        Me.Button2.Location = New System.Drawing.Point(0, 62)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(270, 46)
+        Me.Button2.Size = New System.Drawing.Size(405, 71)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Dashboard"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Panel8
         '
-        Me.Panel8.Location = New System.Drawing.Point(272, 0)
+        Me.Panel8.Location = New System.Drawing.Point(408, 0)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(660, 49)
+        Me.Panel8.Size = New System.Drawing.Size(990, 75)
         Me.Panel8.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(1, 55)
+        Me.Label2.Location = New System.Drawing.Point(2, 85)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(5, 20)
+        Me.Label2.Size = New System.Drawing.Size(8, 31)
         Me.Label2.TabIndex = 3
         '
         'Button1
         '
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, 40)
+        Me.Button1.Location = New System.Drawing.Point(0, 62)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(270, 46)
+        Me.Button1.Size = New System.Drawing.Size(405, 71)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Dashboard"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Panel6
         '
-        Me.Panel6.Location = New System.Drawing.Point(272, 0)
+        Me.Panel6.Location = New System.Drawing.Point(408, 0)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(660, 49)
+        Me.Panel6.Size = New System.Drawing.Size(990, 75)
         Me.Panel6.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(1, 55)
+        Me.Label1.Location = New System.Drawing.Point(2, 85)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(5, 20)
+        Me.Label1.Size = New System.Drawing.Size(8, 31)
         Me.Label1.TabIndex = 3
         '
         'btnDataMaster
         '
         Me.btnDataMaster.FlatAppearance.BorderSize = 0
         Me.btnDataMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDataMaster.Location = New System.Drawing.Point(0, 40)
+        Me.btnDataMaster.Location = New System.Drawing.Point(0, 62)
+        Me.btnDataMaster.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnDataMaster.Name = "btnDataMaster"
-        Me.btnDataMaster.Size = New System.Drawing.Size(270, 46)
+        Me.btnDataMaster.Size = New System.Drawing.Size(405, 71)
         Me.btnDataMaster.TabIndex = 2
         Me.btnDataMaster.Text = "Dashboard"
         Me.btnDataMaster.UseVisualStyleBackColor = True
         '
         'Panel2
         '
-        Me.Panel2.Location = New System.Drawing.Point(272, 0)
+        Me.Panel2.Location = New System.Drawing.Point(408, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(660, 49)
+        Me.Panel2.Size = New System.Drawing.Size(990, 75)
         Me.Panel2.TabIndex = 1
         '
         'DataGridView1
@@ -552,7 +591,8 @@ Partial Class formTransaksi
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.DataGridView1.Location = New System.Drawing.Point(500, 72)
+        Me.DataGridView1.Location = New System.Drawing.Point(750, 111)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
@@ -562,51 +602,61 @@ Partial Class formTransaksi
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.DataGridView1.Size = New System.Drawing.Size(907, 150)
+        Me.DataGridView1.RowHeadersWidth = 62
+        Me.DataGridView1.Size = New System.Drawing.Size(1360, 231)
         Me.DataGridView1.TabIndex = 0
         '
         'Column1
         '
         Me.Column1.HeaderText = "Nama Pengirim"
+        Me.Column1.MinimumWidth = 8
         Me.Column1.Name = "Column1"
         '
         'Column2
         '
         Me.Column2.HeaderText = "Nama Penerima"
+        Me.Column2.MinimumWidth = 8
         Me.Column2.Name = "Column2"
         '
         'Column3
         '
         Me.Column3.HeaderText = "Jumlah Tiket"
+        Me.Column3.MinimumWidth = 8
         Me.Column3.Name = "Column3"
         '
         'Column4
         '
         Me.Column4.HeaderText = "Judul"
+        Me.Column4.MinimumWidth = 8
         Me.Column4.Name = "Column4"
         '
         'Column5
         '
         Me.Column5.HeaderText = "No Rekening Pengirim"
+        Me.Column5.MinimumWidth = 8
         Me.Column5.Name = "Column5"
         '
         'Column6
         '
         Me.Column6.HeaderText = "No Rekening Penerima"
+        Me.Column6.MinimumWidth = 8
         Me.Column6.Name = "Column6"
         '
         'Column7
         '
         Me.Column7.HeaderText = "Total"
+        Me.Column7.MinimumWidth = 8
         Me.Column7.Name = "Column7"
         '
         'formTransaksi
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(975, 450)
+        Me.ClientSize = New System.Drawing.Size(1462, 692)
         Me.Controls.Add(Me.Panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "formTransaksi"
         Me.Text = "formTransaksi"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

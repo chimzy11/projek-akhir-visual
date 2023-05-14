@@ -22,21 +22,17 @@ Partial Class formProfilAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formProfilAdmin))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnJadwal = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -55,24 +51,29 @@ Partial Class formProfilAdmin
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnJadwal = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnMax = New System.Windows.Forms.Button()
         Me.btnMin = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -81,9 +82,9 @@ Partial Class formProfilAdmin
         Me.panelDesktop.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel14.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -168,24 +169,6 @@ Partial Class formProfilAdmin
         Me.Label8.Size = New System.Drawing.Size(8, 31)
         Me.Label8.TabIndex = 10
         '
-        'Button7
-        '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button7.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.logout__2_
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(0, 5)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button7.Size = New System.Drawing.Size(405, 71)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "   Logout"
-        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button7.UseVisualStyleBackColor = True
-        '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -194,24 +177,6 @@ Partial Class formProfilAdmin
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(8, 31)
         Me.Label7.TabIndex = 9
-        '
-        'Button6
-        '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button6.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(0, 280)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(405, 71)
-        Me.Button6.TabIndex = 8
-        Me.Button6.Text = "   Transaksi"
-        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -222,24 +187,6 @@ Partial Class formProfilAdmin
         Me.Label6.Size = New System.Drawing.Size(8, 31)
         Me.Label6.TabIndex = 7
         '
-        'btnJadwal
-        '
-        Me.btnJadwal.FlatAppearance.BorderSize = 0
-        Me.btnJadwal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnJadwal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.btnJadwal.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.appointment__1_
-        Me.btnJadwal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnJadwal.Location = New System.Drawing.Point(0, 203)
-        Me.btnJadwal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnJadwal.Name = "btnJadwal"
-        Me.btnJadwal.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.btnJadwal.Size = New System.Drawing.Size(405, 71)
-        Me.btnJadwal.TabIndex = 6
-        Me.btnJadwal.Text = "   Jadwal Teater"
-        Me.btnJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnJadwal.UseVisualStyleBackColor = True
-        '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -249,24 +196,6 @@ Partial Class formProfilAdmin
         Me.Label5.Size = New System.Drawing.Size(8, 31)
         Me.Label5.TabIndex = 5
         '
-        'Button4
-        '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button4.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(0, 128)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(405, 71)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "   Profil"
-        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -275,24 +204,6 @@ Partial Class formProfilAdmin
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(8, 31)
         Me.Label4.TabIndex = 3
-        '
-        'btnDashboard
-        '
-        Me.btnDashboard.FlatAppearance.BorderSize = 0
-        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.btnDashboard.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.dashboard__2_
-        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 62)
-        Me.btnDashboard.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.btnDashboard.Size = New System.Drawing.Size(405, 71)
-        Me.btnDashboard.TabIndex = 2
-        Me.btnDashboard.Text = "   Dashboard"
-        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnDashboard.UseVisualStyleBackColor = True
         '
         'Panel10
         '
@@ -477,30 +388,6 @@ Partial Class formProfilAdmin
         Me.Label13.TabIndex = 3
         Me.Label13.Text = "Nomor Telepon"
         '
-        'Button8
-        '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.location
-        Me.Button8.Location = New System.Drawing.Point(336, 637)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(122, 66)
-        Me.Button8.TabIndex = 2
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.phone_call
-        Me.Button5.Location = New System.Drawing.Point(354, 533)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(86, 62)
-        Me.Button5.TabIndex = 1
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Panel14
         '
         Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -548,18 +435,6 @@ Partial Class formProfilAdmin
         Me.TextBox3.Size = New System.Drawing.Size(328, 36)
         Me.TextBox3.TabIndex = 10
         '
-        'Button3
-        '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.user__4_
-        Me.Button3.Location = New System.Drawing.Point(21, 5)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(78, 82)
-        Me.Button3.TabIndex = 6
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Label12
         '
         Me.Label12.AutoSize = True
@@ -593,16 +468,6 @@ Partial Class formProfilAdmin
         Me.Label10.TabIndex = 3
         Me.Label10.Text = "Nama"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 109)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(219, 254)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -625,6 +490,163 @@ Partial Class formProfilAdmin
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(176, 95)
         Me.Panel4.TabIndex = 2
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Panel12)
+        Me.Panel3.Controls.Add(Me.Label9)
+        Me.Panel3.Controls.Add(Me.Panel4)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1924, 95)
+        Me.Panel3.TabIndex = 6
+        '
+        'Panel12
+        '
+        Me.Panel12.Location = New System.Drawing.Point(408, 95)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(1394, 809)
+        Me.Panel12.TabIndex = 0
+        '
+        'Button7
+        '
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Button7.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.logout__2_
+        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.Location = New System.Drawing.Point(0, 5)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button7.Size = New System.Drawing.Size(405, 71)
+        Me.Button7.TabIndex = 10
+        Me.Button7.Text = "   Logout"
+        Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Button6.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
+        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button6.Location = New System.Drawing.Point(0, 280)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button6.Size = New System.Drawing.Size(405, 71)
+        Me.Button6.TabIndex = 8
+        Me.Button6.Text = "   Transaksi"
+        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'btnJadwal
+        '
+        Me.btnJadwal.FlatAppearance.BorderSize = 0
+        Me.btnJadwal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnJadwal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnJadwal.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.appointment__1_
+        Me.btnJadwal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnJadwal.Location = New System.Drawing.Point(0, 203)
+        Me.btnJadwal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnJadwal.Name = "btnJadwal"
+        Me.btnJadwal.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnJadwal.Size = New System.Drawing.Size(405, 71)
+        Me.btnJadwal.TabIndex = 6
+        Me.btnJadwal.Text = "   Jadwal Teater"
+        Me.btnJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnJadwal.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Button4.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button4.Location = New System.Drawing.Point(0, 128)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.Button4.Size = New System.Drawing.Size(405, 71)
+        Me.Button4.TabIndex = 4
+        Me.Button4.Text = "   Profil"
+        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'btnDashboard
+        '
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDashboard.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.dashboard__2_
+        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDashboard.Location = New System.Drawing.Point(0, 62)
+        Me.btnDashboard.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnDashboard.Size = New System.Drawing.Size(405, 71)
+        Me.btnDashboard.TabIndex = 2
+        Me.btnDashboard.Text = "   Dashboard"
+        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnDashboard.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.location
+        Me.Button8.Location = New System.Drawing.Point(336, 637)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(122, 66)
+        Me.Button8.TabIndex = 2
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.phone_call
+        Me.Button5.Location = New System.Drawing.Point(354, 533)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(86, 62)
+        Me.Button5.TabIndex = 1
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.user__4_
+        Me.Button3.Location = New System.Drawing.Point(21, 5)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(78, 82)
+        Me.Button3.TabIndex = 6
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 109)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(219, 254)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'btnMax
         '
@@ -663,27 +685,6 @@ Partial Class formProfilAdmin
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Panel12)
-        Me.Panel3.Controls.Add(Me.Label9)
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1924, 95)
-        Me.Panel3.TabIndex = 6
-        '
-        'Panel12
-        '
-        Me.Panel12.Location = New System.Drawing.Point(408, 95)
-        Me.Panel12.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(1394, 809)
-        Me.Panel12.TabIndex = 0
-        '
         'formProfilAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -692,6 +693,7 @@ Partial Class formProfilAdmin
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelDesktop)
         Me.Controls.Add(Me.Panel3)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "formProfilAdmin"
         Me.Text = "formProfilAdmin"
@@ -706,10 +708,10 @@ Partial Class formProfilAdmin
         Me.Panel13.PerformLayout()
         Me.Panel14.ResumeLayout(False)
         Me.Panel14.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

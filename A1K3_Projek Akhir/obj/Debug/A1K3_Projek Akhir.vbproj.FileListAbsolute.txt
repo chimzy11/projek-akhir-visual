@@ -113,3 +113,7 @@ C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visu
 C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.pdb
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\mysql.data.dll
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
+C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
+C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
+C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
+C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
