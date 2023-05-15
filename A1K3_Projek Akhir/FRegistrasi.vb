@@ -51,6 +51,7 @@ Public Class FRegistrasi
 
     Private Sub FRegistrasi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
+        tNamaLengkap.Focus()
     End Sub
     Private Sub bSignUp_Click(sender As Object, e As EventArgs) Handles bSignUp.Click
         Dim IDAkun As Integer
@@ -108,4 +109,35 @@ Public Class FRegistrasi
         Call ProgramHide()
         FLogin.Show()
     End Sub
+    Private Sub tNamaLengkap_KeyDown(sender As Object, e As KeyEventArgs) Handles tNamaLengkap.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            tEmail.Focus()
+        End If
+    End Sub
+    Private Sub tEmail_KeyDown(sender As Object, e As KeyEventArgs) Handles tEmail.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            tUsername.Focus()
+        End If
+    End Sub
+    Private Sub tUsername_KeyDown(sender As Object, e As KeyEventArgs) Handles tUsername.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            tPassword.Focus()
+        End If
+    End Sub
+    Private Sub tPassword_KeyDown(sender As Object, e As KeyEventArgs) Handles tPassword.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            tKonfirmasi.Focus()
+        End If
+    End Sub
+    Private Sub tKonfirmasi_KeyDown(sender As Object, e As KeyEventArgs) Handles tKonfirmasi.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+            bSignUp.PerformClick()
+        End If
+    End Sub
+
 End Class

@@ -207,9 +207,9 @@ Partial Class FRegistrasi
         Me.tKonfirmasi.Location = New System.Drawing.Point(66, 485)
         Me.tKonfirmasi.Multiline = True
         Me.tKonfirmasi.Name = "tKonfirmasi"
-        Me.tKonfirmasi.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tKonfirmasi.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.tKonfirmasi.Size = New System.Drawing.Size(317, 34)
-        Me.tKonfirmasi.TabIndex = 0
+        Me.tKonfirmasi.TabIndex = 2
         '
         'PictureBox5
         '
@@ -241,7 +241,7 @@ Partial Class FRegistrasi
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(154, 31)
         Me.Label5.TabIndex = 16
-        Me.Label5.Text = "Email"
+        Me.Label5.Text = "E-mail"
         '
         'tEmail
         '
@@ -355,7 +355,7 @@ Partial Class FRegistrasi
         Me.tPassword.Location = New System.Drawing.Point(66, 400)
         Me.tPassword.Multiline = True
         Me.tPassword.Name = "tPassword"
-        Me.tPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.tPassword.Size = New System.Drawing.Size(317, 34)
         Me.tPassword.TabIndex = 0
         '

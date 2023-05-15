@@ -113,6 +113,12 @@
     <Compile Include="FLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formEdit.Designer.vb">
       <DependentUpon>formEdit.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formEdit.resx">
       <DependentUpon>formEdit.vb</DependentUpon>
@@ -301,6 +310,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_of.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_of1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_of2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
