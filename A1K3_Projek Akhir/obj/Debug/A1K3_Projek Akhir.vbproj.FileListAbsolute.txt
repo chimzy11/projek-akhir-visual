@@ -122,3 +122,6 @@ C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-vis
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources

@@ -94,10 +94,10 @@ Public Class FLogin
     Private Sub pPasswordHide_Click(sender As Object, e As EventArgs) Handles pPasswordHide.Click
         If tPassword.PasswordChar = "●" Then
             tPassword.PasswordChar = ""
-            pPasswordHide.Image = My.Resources.eye_on
+            pPasswordHide.BackgroundImage = My.Resources.eye_on
         Else
             tPassword.PasswordChar = "●"
-            pPasswordHide.Image = My.Resources.eye_on
+            pPasswordHide.BackgroundImage = My.Resources.eye_of
         End If
     End Sub
 
