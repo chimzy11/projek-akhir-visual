@@ -34,4 +34,8 @@
     Private Sub bTambahJadwal_Click(sender As Object, e As EventArgs) Handles bTambahJadwal.Click
         formTambah.Show()
     End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+
+    End Sub
 End Class

@@ -37,21 +37,22 @@ Partial Class formTambah
         Me.bSimpan = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cHari = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.tJudul = New System.Windows.Forms.TextBox()
         Me.tPemain = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -70,26 +71,22 @@ Partial Class formTambah
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.GroupBox1)
+        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.bPilihJenisTiket)
         Me.Panel1.Controls.Add(Me.dTanggal)
         Me.Panel1.Controls.Add(Me.TextBox4)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.cGenre)
         Me.Panel1.Controls.Add(Me.lExit)
         Me.Panel1.Controls.Add(Me.bClear)
         Me.Panel1.Controls.Add(Me.bSimpan)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.cHari)
-        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.tJudul)
         Me.Panel1.Controls.Add(Me.tPemain)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.RadioButton4)
-        Me.Panel1.Controls.Add(Me.RadioButton3)
-        Me.Panel1.Controls.Add(Me.RadioButton2)
-        Me.Panel1.Controls.Add(Me.RadioButton1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -102,20 +99,25 @@ Partial Class formTambah
         '
         'bPilihJenisTiket
         '
-        Me.bPilihJenisTiket.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bPilihJenisTiket.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.bPilihJenisTiket.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.bPilihJenisTiket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bPilihJenisTiket.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bPilihJenisTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.bPilihJenisTiket.Location = New System.Drawing.Point(81, 517)
+        Me.bPilihJenisTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bPilihJenisTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bPilihJenisTiket.Location = New System.Drawing.Point(336, 417)
         Me.bPilihJenisTiket.Name = "bPilihJenisTiket"
-        Me.bPilihJenisTiket.Size = New System.Drawing.Size(224, 47)
+        Me.bPilihJenisTiket.Size = New System.Drawing.Size(233, 47)
         Me.bPilihJenisTiket.TabIndex = 94
         Me.bPilihJenisTiket.Text = "Pilih Jenis Tiket"
         Me.bPilihJenisTiket.UseVisualStyleBackColor = False
         '
         'dTanggal
         '
+        Me.dTanggal.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.dTanggal.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.dTanggal.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.dTanggal.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.dTanggal.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.dTanggal.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dTanggal.Location = New System.Drawing.Point(81, 288)
         Me.dTanggal.Name = "dTanggal"
@@ -131,7 +133,7 @@ Partial Class formTambah
         Me.TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.TextBox4.Location = New System.Drawing.Point(81, 288)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(488, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(200, 26)
         Me.TextBox4.TabIndex = 90
         '
         'Label8
@@ -156,7 +158,7 @@ Partial Class formTambah
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.Button4.Location = New System.Drawing.Point(81, 278)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(488, 47)
+        Me.Button4.Size = New System.Drawing.Size(200, 47)
         Me.Button4.TabIndex = 92
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -166,7 +168,7 @@ Partial Class formTambah
         Me.Label10.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(332, 339)
+        Me.Label10.Location = New System.Drawing.Point(332, 255)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(150, 23)
         Me.Label10.TabIndex = 89
@@ -181,7 +183,7 @@ Partial Class formTambah
         Me.cGenre.FormattingEnabled = True
         Me.cGenre.IntegralHeight = False
         Me.cGenre.Items.AddRange(New Object() {"Drama", "Komedi", "Musikal", "Tragedi"})
-        Me.cGenre.Location = New System.Drawing.Point(336, 364)
+        Me.cGenre.Location = New System.Drawing.Point(336, 280)
         Me.cGenre.Name = "cGenre"
         Me.cGenre.Size = New System.Drawing.Size(233, 35)
         Me.cGenre.TabIndex = 88
@@ -205,7 +207,7 @@ Partial Class formTambah
         Me.bClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bClear.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bClear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.bClear.Location = New System.Drawing.Point(81, 646)
+        Me.bClear.Location = New System.Drawing.Point(81, 625)
         Me.bClear.Name = "bClear"
         Me.bClear.Size = New System.Drawing.Size(488, 47)
         Me.bClear.TabIndex = 46
@@ -219,7 +221,7 @@ Partial Class formTambah
         Me.bSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bSimpan.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.bSimpan.Location = New System.Drawing.Point(81, 593)
+        Me.bSimpan.Location = New System.Drawing.Point(81, 551)
         Me.bSimpan.Name = "bSimpan"
         Me.bSimpan.Size = New System.Drawing.Size(488, 47)
         Me.bSimpan.TabIndex = 41
@@ -232,7 +234,7 @@ Partial Class formTambah
         Me.Label6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(332, 412)
+        Me.Label6.Location = New System.Drawing.Point(332, 326)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(150, 23)
         Me.Label6.TabIndex = 40
@@ -247,22 +249,10 @@ Partial Class formTambah
         Me.cHari.FormattingEnabled = True
         Me.cHari.IntegralHeight = False
         Me.cHari.Items.AddRange(New Object() {"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"})
-        Me.cHari.Location = New System.Drawing.Point(336, 437)
+        Me.cHari.Location = New System.Drawing.Point(336, 351)
         Me.cHari.Name = "cHari"
         Me.cHari.Size = New System.Drawing.Size(233, 35)
         Me.cHari.TabIndex = 39
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(77, 335)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 23)
-        Me.Label4.TabIndex = 37
-        Me.Label4.Text = "Waktu"
         '
         'tJudul
         '
@@ -297,62 +287,6 @@ Partial Class formTambah
         Me.Label3.Size = New System.Drawing.Size(150, 23)
         Me.Label3.TabIndex = 36
         Me.Label3.Text = "Pemain"
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RadioButton4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.RadioButton4.Location = New System.Drawing.Point(81, 471)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(176, 25)
-        Me.RadioButton4.TabIndex = 34
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "21.00 - 23.00 WITA"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.RadioButton3.Location = New System.Drawing.Point(81, 437)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(176, 25)
-        Me.RadioButton3.TabIndex = 32
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "17.00 - 20.00 WITA"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.RadioButton2.Location = New System.Drawing.Point(81, 398)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(176, 25)
-        Me.RadioButton2.TabIndex = 31
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "14.00 - 16.00 WITA"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.RadioButton1.Location = New System.Drawing.Point(81, 361)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(176, 25)
-        Me.RadioButton1.TabIndex = 30
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "10.00 - 12.00 WITA"
-        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -416,6 +350,77 @@ Partial Class formTambah
         Me.PictureBox1.TabIndex = 42
         Me.PictureBox1.TabStop = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RadioButton4)
+        Me.GroupBox1.Controls.Add(Me.RadioButton3)
+        Me.GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(81, 340)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 172)
+        Me.GroupBox1.TabIndex = 95
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RadioButton4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.RadioButton4.Location = New System.Drawing.Point(12, 129)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(176, 25)
+        Me.RadioButton4.TabIndex = 38
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "21.00 - 23.00 WITA"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.RadioButton3.Location = New System.Drawing.Point(12, 95)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(176, 25)
+        Me.RadioButton3.TabIndex = 37
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "17.00 - 20.00 WITA"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.RadioButton2.Location = New System.Drawing.Point(12, 56)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(176, 25)
+        Me.RadioButton2.TabIndex = 36
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "14.00 - 16.00 WITA"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.RadioButton1.Location = New System.Drawing.Point(12, 19)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(176, 25)
+        Me.RadioButton1.TabIndex = 35
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "10.00 - 12.00 WITA"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
         'formTambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -434,6 +439,8 @@ Partial Class formTambah
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -443,14 +450,9 @@ Partial Class formTambah
     Friend WithEvents Panel1 As Panel
     Friend WithEvents tPemain As TextBox
     Friend WithEvents tJudul As TextBox
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents cHari As ComboBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents bSimpan As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -466,4 +468,9 @@ Partial Class formTambah
     Friend WithEvents Button4 As Button
     Friend WithEvents bPilihJenisTiket As Button
     Friend WithEvents dTanggal As DateTimePicker
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
 End Class

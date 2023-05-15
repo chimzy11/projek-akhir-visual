@@ -1,9 +1,9 @@
 ﻿Public Class formTransaksi
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) 
         Me.Close()
     End Sub
 
-    Private Sub btnMax_Click(sender As Object, e As EventArgs) Handles btnMax.Click
+    Private Sub btnMax_Click(sender As Object, e As EventArgs) 
         If Me.WindowState = FormWindowState.Normal Then
             Me.WindowState = FormWindowState.Maximized
         Else
@@ -11,7 +11,7 @@
         End If
 
     End Sub
-    Private Sub DataGridView2_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles DataGridView1.CellFormatting
+    Private Sub DataGridView2_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) 
         If e.RowIndex Mod 2 = 0 Then
             ' Mengatur warna latar belakang baris untuk baris genap
             e.CellStyle.BackColor = Color.FromArgb(250, 246, 243)
@@ -35,11 +35,11 @@
     End Sub
 
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) 
 
     End Sub
 
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) 
 
     End Sub
 End Class
