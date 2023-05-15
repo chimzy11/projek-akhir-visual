@@ -24,7 +24,6 @@
         End If
     End Sub
 
-
     Private Sub txtSearch_Leave(sender As Object, e As EventArgs) Handles txtSearch.Leave
         If txtSearch.Text = "" Then
             txtSearch.Text = "Search"
@@ -32,23 +31,7 @@
         End If
     End Sub
 
-    Private Sub Label8_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
-
-    End Sub
-
-    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
+    Private Sub bTambahJadwal_Click(sender As Object, e As EventArgs) Handles bTambahJadwal.Click
+        formTambah.Show()
     End Sub
 End Class

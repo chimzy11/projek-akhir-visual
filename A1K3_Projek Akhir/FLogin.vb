@@ -34,6 +34,7 @@ Public Class FLogin
     End Sub
 
     Private Sub bLogin_Click(sender As Object, e As EventArgs) Handles bLogin.Click
+        Call KoneksiDatabase()
         If CekDataKosong() = True Then
             Dim input As String = tUsername.Text.Trim()
             Dim Username As String = tUsername.Text
@@ -52,6 +53,7 @@ Public Class FLogin
             RD = CMD.ExecuteReader()
             If RD.Read() Then
                 If RD.GetString(3) = "equiter" And RD.GetString(4) = "equiter" Then
+                    dashboardAdmin.lUsername.Text = RD.GetString(1)
                     Me.Visible = False
                     RD.Close()
                     Call ProgramHide()

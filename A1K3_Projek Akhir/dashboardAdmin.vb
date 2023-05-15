@@ -1,7 +1,11 @@
-﻿Imports System.Xml.Serialization
-
+﻿Imports System.Data.SqlClient
+Imports System.IO
+Imports System.Xml.Serialization
+Imports MySql.Data.MySqlClient
 Public Class dashboardAdmin
     Private currentChildForm As Form
+
+
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -63,8 +67,59 @@ Public Class dashboardAdmin
             Exit Sub
         End If
     End Sub
+    Sub TampilProfil()
+        CMD = New MySqlCommand("SELECT foto FROM akun WHERE id_akun = @id_akun", CONN)
+        CMD.Parameters.AddWithValue("@id_akun", "1") ' Gantilah 'ID_Akun' dengan ID akun yang sesuai
+
+        RD = CMD.ExecuteReader()
+        If RD.Read() Then
+            Dim imageName As String = RD("foto").ToString()
+            Dim imagePath As String = Path.Combine(Application.StartupPath, imageName)
+            If File.Exists(imagePath) Then
+                pProfil.Image = Image.FromFile(imagePath)
+
+                ' Mengubah bentuk PictureBox menjadi lingkaran
+                MakePictureBoxCircular(pProfil)
+            End If
+        End If
+
+        RD.Close()
+    End Sub
 
     Private Sub dashboardAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call KoneksiDatabase()
+        TampilProfil()
         OpenChildForm(New formDashboard)
     End Sub
+
+    Private Sub pProfil_Click(sender As Object, e As EventArgs) Handles pProfil.Click
+        Dim OpenProfil As New OpenFileDialog()
+        OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png;*.gif;*.bmp"
+
+        If OpenProfil.ShowDialog() = DialogResult.OK Then
+            Dim imagePath As String = OpenProfil.FileName
+
+            pProfil.Image = Image.FromFile(imagePath)
+
+            ' Mengupdate foto di database akun
+            CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE id_akun = @id_akun", CONN)
+
+            ' Menambahkan parameter ke command
+            CMD.Parameters.AddWithValue("@foto", imagePath)
+            CMD.Parameters.AddWithValue("@id_akun", "1") ' Gantilah 'ID_Akun' dengan ID akun yang sesuai
+
+            ' Menjalankan perintah SQL
+            CMD.ExecuteNonQuery()
+
+            ' Mengubah bentuk PictureBox menjadi lingkaran
+            MakePictureBoxCircular(pProfil)
+        End If
+    End Sub
+
+    Private Sub MakePictureBoxCircular(pictureBox As PictureBox)
+        Dim path As New Drawing2D.GraphicsPath()
+        path.AddEllipse(0, 0, pictureBox.Width, pictureBox.Height)
+        pictureBox.Region = New Region(path)
+    End Sub
+
 End Class
