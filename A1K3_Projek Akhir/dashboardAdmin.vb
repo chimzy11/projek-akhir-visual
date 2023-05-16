@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.IO
+Imports System.Windows.Forms.DataVisualization.Charting
 Imports System.Xml.Serialization
 Imports MySql.Data.MySqlClient
 Public Class dashboardAdmin
@@ -100,18 +101,10 @@ Public Class dashboardAdmin
             Dim imagePath As String = OpenProfil.FileName
 
             pProfil.Image = Image.FromFile(imagePath)
-
-            ' Mengupdate foto di database akun
             CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE id_akun = @id_akun", CONN)
-
-            ' Menambahkan parameter ke command
             CMD.Parameters.AddWithValue("@foto", imagePath)
-            CMD.Parameters.AddWithValue("@id_akun", "1") ' Gantilah 'ID_Akun' dengan ID akun yang sesuai
-
-            ' Menjalankan perintah SQL
+            CMD.Parameters.AddWithValue("@id_akun", "1")
             CMD.ExecuteNonQuery()
-
-            ' Mengubah bentuk PictureBox menjadi lingkaran
             MakePictureBoxCircular(pProfil)
         End If
     End Sub
@@ -122,4 +115,7 @@ Public Class dashboardAdmin
         pictureBox.Region = New Region(path)
     End Sub
 
+    Private Sub btnProfil_Click(sender As Object, e As EventArgs) Handles btnProfil.Click
+        OpenChildForm(New formProfilAdmin)
+    End Sub
 End Class

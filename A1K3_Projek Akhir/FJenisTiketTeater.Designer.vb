@@ -59,9 +59,9 @@ Partial Class FJenisTiketTeater
         Me.lExit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 20.0!, System.Drawing.FontStyle.Bold)
         Me.lExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lExit.Location = New System.Drawing.Point(356, 0)
+        Me.lExit.Location = New System.Drawing.Point(400, 0)
         Me.lExit.Name = "lExit"
-        Me.lExit.Size = New System.Drawing.Size(133, 42)
+        Me.lExit.Size = New System.Drawing.Size(150, 52)
         Me.lExit.TabIndex = 84
         Me.lExit.Text = "x"
         '
@@ -71,9 +71,9 @@ Partial Class FJenisTiketTeater
         Me.Label3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(39, 26)
+        Me.Label3.Location = New System.Drawing.Point(44, 32)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(133, 18)
+        Me.Label3.Size = New System.Drawing.Size(150, 22)
         Me.Label3.TabIndex = 72
         Me.Label3.Text = " Tiket VIP"
         '
@@ -101,10 +101,10 @@ Partial Class FJenisTiketTeater
         Me.Panel2.Controls.Add(Me.bClear)
         Me.Panel2.Controls.Add(Me.tVIP)
         Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Location = New System.Drawing.Point(7, 6)
+        Me.Panel2.Location = New System.Drawing.Point(8, 8)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(376, 367)
+        Me.Panel2.Size = New System.Drawing.Size(423, 459)
         Me.Panel2.TabIndex = 46
         '
         'Label10
@@ -113,9 +113,9 @@ Partial Class FJenisTiketTeater
         Me.Label10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(36, 156)
+        Me.Label10.Location = New System.Drawing.Point(40, 195)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(133, 18)
+        Me.Label10.Size = New System.Drawing.Size(150, 22)
         Me.Label10.TabIndex = 94
         Me.Label10.Text = " Tiket Reguler"
         '
@@ -125,9 +125,9 @@ Partial Class FJenisTiketTeater
         Me.Label9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(36, 88)
+        Me.Label9.Location = New System.Drawing.Point(40, 110)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(133, 18)
+        Me.Label9.Size = New System.Drawing.Size(150, 22)
         Me.Label9.TabIndex = 79
         Me.Label9.Text = "Tiket Premium"
         '
@@ -137,9 +137,9 @@ Partial Class FJenisTiketTeater
         Me.Label7.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(203, 155)
+        Me.Label7.Location = New System.Drawing.Point(242, 192)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(93, 21)
+        Me.Label7.Size = New System.Drawing.Size(105, 26)
         Me.Label7.TabIndex = 90
         Me.Label7.Text = "Harga"
         '
@@ -149,10 +149,10 @@ Partial Class FJenisTiketTeater
         Me.txtHargaReguler.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHargaReguler.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaReguler.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtHargaReguler.Location = New System.Drawing.Point(213, 186)
+        Me.txtHargaReguler.Location = New System.Drawing.Point(254, 230)
         Me.txtHargaReguler.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHargaReguler.Name = "txtHargaReguler"
-        Me.txtHargaReguler.Size = New System.Drawing.Size(114, 17)
+        Me.txtHargaReguler.Size = New System.Drawing.Size(128, 21)
         Me.txtHargaReguler.TabIndex = 93
         Me.txtHargaReguler.Text = "Rp"
         '
@@ -164,10 +164,10 @@ Partial Class FJenisTiketTeater
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(207, 179)
+        Me.Button5.Location = New System.Drawing.Point(247, 222)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(124, 31)
+        Me.Button5.Size = New System.Drawing.Size(140, 39)
         Me.Button5.TabIndex = 92
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -177,9 +177,9 @@ Partial Class FJenisTiketTeater
         Me.Label8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(138, 186)
+        Me.Label8.Location = New System.Drawing.Point(155, 232)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(50, 17)
+        Me.Label8.Size = New System.Drawing.Size(86, 29)
         Me.Label8.TabIndex = 91
         Me.Label8.Text = "STOK"
         '
@@ -189,10 +189,10 @@ Partial Class FJenisTiketTeater
         Me.tReguler.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tReguler.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tReguler.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tReguler.Location = New System.Drawing.Point(45, 186)
+        Me.tReguler.Location = New System.Drawing.Point(51, 232)
         Me.tReguler.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tReguler.Name = "tReguler"
-        Me.tReguler.Size = New System.Drawing.Size(83, 17)
+        Me.tReguler.Size = New System.Drawing.Size(93, 21)
         Me.tReguler.TabIndex = 89
         '
         'Button6
@@ -203,10 +203,10 @@ Partial Class FJenisTiketTeater
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(39, 179)
+        Me.Button6.Location = New System.Drawing.Point(44, 224)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(93, 31)
+        Me.Button6.Size = New System.Drawing.Size(105, 39)
         Me.Button6.TabIndex = 88
         Me.Button6.UseVisualStyleBackColor = False
         '
@@ -216,9 +216,9 @@ Partial Class FJenisTiketTeater
         Me.Label4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(203, 90)
+        Me.Label4.Location = New System.Drawing.Point(242, 110)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 21)
+        Me.Label4.Size = New System.Drawing.Size(105, 26)
         Me.Label4.TabIndex = 84
         Me.Label4.Text = "Harga"
         '
@@ -228,10 +228,10 @@ Partial Class FJenisTiketTeater
         Me.txtHargaPremium.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHargaPremium.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaPremium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtHargaPremium.Location = New System.Drawing.Point(213, 121)
+        Me.txtHargaPremium.Location = New System.Drawing.Point(254, 149)
         Me.txtHargaPremium.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHargaPremium.Name = "txtHargaPremium"
-        Me.txtHargaPremium.Size = New System.Drawing.Size(114, 17)
+        Me.txtHargaPremium.Size = New System.Drawing.Size(128, 21)
         Me.txtHargaPremium.TabIndex = 87
         Me.txtHargaPremium.Text = "Rp"
         '
@@ -243,10 +243,10 @@ Partial Class FJenisTiketTeater
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(207, 114)
+        Me.Button3.Location = New System.Drawing.Point(247, 140)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(124, 31)
+        Me.Button3.Size = New System.Drawing.Size(140, 39)
         Me.Button3.TabIndex = 86
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -256,9 +256,9 @@ Partial Class FJenisTiketTeater
         Me.Label6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(138, 121)
+        Me.Label6.Location = New System.Drawing.Point(155, 151)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 17)
+        Me.Label6.Size = New System.Drawing.Size(76, 28)
         Me.Label6.TabIndex = 85
         Me.Label6.Text = "STOK"
         '
@@ -268,10 +268,10 @@ Partial Class FJenisTiketTeater
         Me.tPremium.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tPremium.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tPremium.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tPremium.Location = New System.Drawing.Point(45, 121)
+        Me.tPremium.Location = New System.Drawing.Point(51, 151)
         Me.tPremium.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tPremium.Name = "tPremium"
-        Me.tPremium.Size = New System.Drawing.Size(83, 17)
+        Me.tPremium.Size = New System.Drawing.Size(93, 21)
         Me.tPremium.TabIndex = 83
         '
         'Button4
@@ -282,10 +282,10 @@ Partial Class FJenisTiketTeater
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(39, 114)
+        Me.Button4.Location = New System.Drawing.Point(44, 142)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(93, 31)
+        Me.Button4.Size = New System.Drawing.Size(105, 39)
         Me.Button4.TabIndex = 82
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -295,9 +295,9 @@ Partial Class FJenisTiketTeater
         Me.Label5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(203, 21)
+        Me.Label5.Location = New System.Drawing.Point(242, 24)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(93, 21)
+        Me.Label5.Size = New System.Drawing.Size(105, 26)
         Me.Label5.TabIndex = 79
         Me.Label5.Text = "Harga"
         '
@@ -307,10 +307,10 @@ Partial Class FJenisTiketTeater
         Me.txtHargaVIP.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHargaVIP.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaVIP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtHargaVIP.Location = New System.Drawing.Point(213, 52)
+        Me.txtHargaVIP.Location = New System.Drawing.Point(254, 63)
         Me.txtHargaVIP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHargaVIP.Name = "txtHargaVIP"
-        Me.txtHargaVIP.Size = New System.Drawing.Size(114, 17)
+        Me.txtHargaVIP.Size = New System.Drawing.Size(128, 21)
         Me.txtHargaVIP.TabIndex = 81
         Me.txtHargaVIP.Text = "Rp"
         '
@@ -322,10 +322,10 @@ Partial Class FJenisTiketTeater
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(207, 45)
+        Me.Button1.Location = New System.Drawing.Point(247, 54)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(124, 31)
+        Me.Button1.Size = New System.Drawing.Size(140, 39)
         Me.Button1.TabIndex = 80
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -335,9 +335,9 @@ Partial Class FJenisTiketTeater
         Me.Label1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(138, 52)
+        Me.Label1.Location = New System.Drawing.Point(155, 65)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 17)
+        Me.Label1.Size = New System.Drawing.Size(76, 21)
         Me.Label1.TabIndex = 79
         Me.Label1.Text = "STOK"
         '
@@ -350,10 +350,10 @@ Partial Class FJenisTiketTeater
         Me.bClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bClear.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bClear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bClear.Location = New System.Drawing.Point(37, 290)
+        Me.bClear.Location = New System.Drawing.Point(42, 362)
         Me.bClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bClear.Name = "bClear"
-        Me.bClear.Size = New System.Drawing.Size(297, 38)
+        Me.bClear.Size = New System.Drawing.Size(340, 48)
         Me.bClear.TabIndex = 79
         Me.bClear.Text = "Clear"
         Me.bClear.UseVisualStyleBackColor = False
@@ -364,10 +364,10 @@ Partial Class FJenisTiketTeater
         Me.tVIP.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tVIP.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tVIP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tVIP.Location = New System.Drawing.Point(45, 52)
+        Me.tVIP.Location = New System.Drawing.Point(51, 65)
         Me.tVIP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tVIP.Name = "tVIP"
-        Me.tVIP.Size = New System.Drawing.Size(83, 17)
+        Me.tVIP.Size = New System.Drawing.Size(93, 21)
         Me.tVIP.TabIndex = 73
         '
         'Button2
@@ -378,10 +378,10 @@ Partial Class FJenisTiketTeater
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(39, 45)
+        Me.Button2.Location = New System.Drawing.Point(44, 56)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(93, 31)
+        Me.Button2.Size = New System.Drawing.Size(105, 39)
         Me.Button2.TabIndex = 71
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -394,10 +394,10 @@ Partial Class FJenisTiketTeater
         Me.bSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bSimpan.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bSimpan.Location = New System.Drawing.Point(46, 249)
+        Me.bSimpan.Location = New System.Drawing.Point(52, 311)
         Me.bSimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bSimpan.Name = "bSimpan"
-        Me.bSimpan.Size = New System.Drawing.Size(292, 38)
+        Me.bSimpan.Size = New System.Drawing.Size(338, 48)
         Me.bSimpan.TabIndex = 78
         Me.bSimpan.Text = "Simpan"
         Me.bSimpan.UseVisualStyleBackColor = False
@@ -408,10 +408,10 @@ Partial Class FJenisTiketTeater
         Me.Panel1.Controls.Add(Me.bSimpan)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(26, 52)
+        Me.Panel1.Location = New System.Drawing.Point(29, 65)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(376, 367)
+        Me.Panel1.Size = New System.Drawing.Size(423, 459)
         Me.Panel1.TabIndex = 83
         '
         'Label2
@@ -420,19 +420,19 @@ Partial Class FJenisTiketTeater
         Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label2.Font = New System.Drawing.Font("Stencil", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(83, 13)
+        Me.Label2.Location = New System.Drawing.Point(93, 16)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(246, 31)
+        Me.Label2.Size = New System.Drawing.Size(277, 39)
         Me.Label2.TabIndex = 82
         Me.Label2.Text = "Jenis Tiket"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'FJenisTiketTeater
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(402, 418)
+        Me.ClientSize = New System.Drawing.Size(452, 522)
         Me.ControlBox = False
         Me.Controls.Add(Me.lExit)
         Me.Controls.Add(Me.Panel1)

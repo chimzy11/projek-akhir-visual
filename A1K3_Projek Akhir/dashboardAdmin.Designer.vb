@@ -31,10 +31,10 @@ Partial Class dashboardAdmin
         Me.btnMax = New System.Windows.Forms.Button()
         Me.btnMin = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnProfil = New System.Windows.Forms.Button()
         Me.btnJadwal = New System.Windows.Forms.Button()
         Me.btnDashboard = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.panelDesktop = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -166,23 +166,23 @@ Partial Class dashboardAdmin
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnProfil
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button4.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(0, 128)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(405, 71)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "   Profil"
-        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnProfil.FlatAppearance.BorderSize = 0
+        Me.btnProfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfil.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnProfil.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_
+        Me.btnProfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnProfil.Location = New System.Drawing.Point(0, 128)
+        Me.btnProfil.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnProfil.Name = "btnProfil"
+        Me.btnProfil.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnProfil.Size = New System.Drawing.Size(405, 71)
+        Me.btnProfil.TabIndex = 4
+        Me.btnProfil.Text = "   Profil"
+        Me.btnProfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnProfil.UseVisualStyleBackColor = True
         '
         'btnJadwal
         '
@@ -220,23 +220,23 @@ Partial Class dashboardAdmin
         Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnDashboard.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnTransaksi
         '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button6.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(0, 280)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(405, 71)
-        Me.Button6.TabIndex = 8
-        Me.Button6.Text = "   Transaksi"
-        Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnTransaksi.FlatAppearance.BorderSize = 0
+        Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTransaksi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnTransaksi.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction__5_
+        Me.btnTransaksi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnTransaksi.Location = New System.Drawing.Point(0, 280)
+        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnTransaksi.Name = "btnTransaksi"
+        Me.btnTransaksi.Padding = New System.Windows.Forms.Padding(22, 0, 0, 0)
+        Me.btnTransaksi.Size = New System.Drawing.Size(405, 71)
+        Me.btnTransaksi.TabIndex = 8
+        Me.btnTransaksi.Text = "   Transaksi"
+        Me.btnTransaksi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnTransaksi.UseVisualStyleBackColor = True
         '
         'panelDesktop
         '
@@ -353,11 +353,11 @@ Partial Class dashboardAdmin
         Me.PanelSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.PanelSidebar.Controls.Add(Me.Panel11)
         Me.PanelSidebar.Controls.Add(Me.Label7)
-        Me.PanelSidebar.Controls.Add(Me.Button6)
+        Me.PanelSidebar.Controls.Add(Me.btnTransaksi)
         Me.PanelSidebar.Controls.Add(Me.Label6)
         Me.PanelSidebar.Controls.Add(Me.btnJadwal)
         Me.PanelSidebar.Controls.Add(Me.Label5)
-        Me.PanelSidebar.Controls.Add(Me.Button4)
+        Me.PanelSidebar.Controls.Add(Me.btnProfil)
         Me.PanelSidebar.Controls.Add(Me.Label4)
         Me.PanelSidebar.Controls.Add(Me.btnDashboard)
         Me.PanelSidebar.Controls.Add(Me.Panel10)
@@ -511,10 +511,10 @@ Partial Class dashboardAdmin
     Friend WithEvents btnMax As Button
     Friend WithEvents btnMin As Button
     Friend WithEvents btnClose As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnProfil As Button
     Friend WithEvents btnJadwal As Button
     Friend WithEvents btnDashboard As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnTransaksi As Button
     Friend WithEvents panelDesktop As Panel
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label4 As Label
