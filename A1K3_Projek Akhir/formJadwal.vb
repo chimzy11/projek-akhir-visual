@@ -25,27 +25,21 @@ Public Class formJadwal
 
     Sub TampilkanGambarPadaGrid()
         For Each row As DataGridViewRow In DGVJadwalTeater.Rows
-            Dim imagePath As String = row.Cells("Gambar").Value.ToString()
+            Dim imageData As Byte() = TryCast(row.Cells("Gambar").Value, Byte())
+            If imageData IsNot Nothing AndAlso imageData.Length > 0 Then
+                Using ms As New MemoryStream(imageData)
+                    Try
+                        row.Cells("Gambar").Value = Image.FromStream(ms)
+                    Catch ex As Exception
+                        row.Cells("Gambar").Value = Nothing
 
-            If File.Exists(imagePath) Then
-                Dim imageColumn As New DataGridViewImageColumn()
-                imageColumn.HeaderText = "Gambar"
-                imageColumn.Name = "Gambar"
-                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-
-                Dim image As Image = Image.FromFile(imagePath)
-
-                Dim bitmap As New Bitmap(image, 20, 20)
-                row.Cells("Gambar").Value = bitmap
-
-                DGVJadwalTeater.Columns.Insert(7, imageColumn)
+                    End Try
+                End Using
             Else
-                row.Cells("Gambar").Value = Nothing
+                row.Cells("Gambar").Value = Nothing ' Tampilkan sel kosong jika data gambar tidak valid
             End If
         Next
     End Sub
-
-
 
     Sub GridJadwalTeater()
         DGVJadwalTeater.Columns(0).Width = 90
