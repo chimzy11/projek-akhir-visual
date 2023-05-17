@@ -27,19 +27,19 @@ Partial Class formDashboard
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formDashboard))
         Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Button10 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.lblTotalUser = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel14.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel12.SuspendLayout()
@@ -56,17 +56,6 @@ Partial Class formDashboard
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(284, 139)
         Me.Panel14.TabIndex = 15
-        '
-        'Button10
-        '
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.theater
-        Me.Button10.Location = New System.Drawing.Point(28, 15)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(64, 71)
-        Me.Button10.TabIndex = 2
-        Me.Button10.UseVisualStyleBackColor = True
         '
         'Label15
         '
@@ -100,17 +89,6 @@ Partial Class formDashboard
         Me.Panel13.Size = New System.Drawing.Size(284, 139)
         Me.Panel13.TabIndex = 14
         '
-        'Button9
-        '
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction_history
-        Me.Button9.Location = New System.Drawing.Point(28, 15)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(64, 71)
-        Me.Button9.TabIndex = 2
-        Me.Button9.UseVisualStyleBackColor = True
-        '
         'Label12
         '
         Me.Label12.AutoSize = True
@@ -142,17 +120,6 @@ Partial Class formDashboard
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(284, 139)
         Me.Panel12.TabIndex = 13
-        '
-        'Button8
-        '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.group__2_
-        Me.Button8.Location = New System.Drawing.Point(37, 23)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(64, 55)
-        Me.Button8.TabIndex = 2
-        Me.Button8.UseVisualStyleBackColor = True
         '
         'Label11
         '
@@ -203,12 +170,45 @@ Partial Class formDashboard
         Me.Chart1.TabIndex = 11
         Me.Chart1.Text = "Chart1"
         '
+        'Button10
+        '
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.theater
+        Me.Button10.Location = New System.Drawing.Point(28, 15)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(64, 71)
+        Me.Button10.TabIndex = 2
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction_history
+        Me.Button9.Location = New System.Drawing.Point(28, 15)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(64, 71)
+        Me.Button9.TabIndex = 2
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.group__2_
+        Me.Button8.Location = New System.Drawing.Point(37, 23)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(64, 55)
+        Me.Button8.TabIndex = 2
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'formDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(913, 487)
+        Me.ClientSize = New System.Drawing.Size(1010, 487)
         Me.Controls.Add(Me.Panel14)
         Me.Controls.Add(Me.Panel13)
         Me.Controls.Add(Me.Panel12)

@@ -125,3 +125,6 @@ C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debu
 C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
 C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
 C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
+C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources

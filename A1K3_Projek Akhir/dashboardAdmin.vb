@@ -118,4 +118,8 @@ Public Class dashboardAdmin
     Private Sub btnProfil_Click(sender As Object, e As EventArgs) Handles btnProfil.Click
         OpenChildForm(New formProfilAdmin)
     End Sub
+
+    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles panelDesktop.Paint
+
+    End Sub
 End Class
