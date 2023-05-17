@@ -107,6 +107,12 @@
     <Compile Include="dashboardAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dashboardUser.Designer.vb">
+      <DependentUpon>dashboardUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FLogin.Designer.vb">
       <DependentUpon>FLogin.vb</DependentUpon>
     </Compile>
@@ -161,6 +167,12 @@
     <Compile Include="formTransaksi.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="fProfilUser.Designer.vb">
+      <DependentUpon>fProfilUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fProfilUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRegistrasi.Designer.vb">
       <DependentUpon>FRegistrasi.vb</DependentUpon>
     </Compile>
@@ -195,6 +207,9 @@
     <EmbeddedResource Include="dashboardAdmin.resx">
       <DependentUpon>dashboardAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dashboardUser.resx">
+      <DependentUpon>dashboardUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formTransaksi.resx">
       <DependentUpon>formTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProfilUser.resx">
+      <DependentUpon>fProfilUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRegistrasi.resx">
       <DependentUpon>FRegistrasi.vb</DependentUpon>
