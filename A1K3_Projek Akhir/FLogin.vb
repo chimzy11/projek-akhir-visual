@@ -31,13 +31,14 @@ Public Class FLogin
             tPassword.Text = loginData(1)
             cRememberMe.Checked = True
         End If
+        lForgotPassword.Enabled = Not cRememberMe.Checked
     End Sub
 
     Private Sub bLogin_Click(sender As Object, e As EventArgs) Handles bLogin.Click
         Call KoneksiDatabase()
         If CekDataKosong() = True Then
             Dim input As String = tUsername.Text.Trim()
-            Dim Username As String = tUsername.Text
+            Dim username As String = tUsername.Text
             Dim password As String = tPassword.Text
 
             Dim isEmail As Boolean = input.Contains("@")
@@ -59,8 +60,10 @@ Public Class FLogin
                     Call ProgramHide()
                     dashboardAdmin.Show()
                 Else
+                    dashboardUser.lUsername.Text = RD.GetString(3)
                     RD.Close()
                     Call ProgramHide()
+                    dashboardUser.Show()
                 End If
 
                 If cRememberMe.Checked = True Then
@@ -69,16 +72,19 @@ Public Class FLogin
                     If My.Computer.FileSystem.FileExists("RememberMe.txt") Then
                         My.Computer.FileSystem.DeleteFile("RememberMe.txt")
                     End If
+                    tUsername.Text = ""
+                    tPassword.Text = ""
+                    cRememberMe.Checked = False
                 End If
             Else
                 RD.Close()
                 MessageBox.Show("Periksa kembali username dan password", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 tUsername.Focus()
-                tUsername.Text = ""
-                tPassword.Text = ""
             End If
         End If
     End Sub
+
+
 
 
     Private Sub lSignUp_Click(sender As Object, e As EventArgs) Handles lSignUp.Click
@@ -114,5 +120,4 @@ Public Class FLogin
             bLogin.PerformClick()
         End If
     End Sub
-
 End Class

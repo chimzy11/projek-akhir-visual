@@ -1,16 +1,4 @@
 ﻿Public Class dashboardUser
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
-
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-
-    End Sub
-
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
-
-    End Sub
-
     Private Sub dashboardUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MenuStripHome.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStripTeater.ForeColor = Color.FromArgb(185, 174, 169)
@@ -30,6 +18,21 @@
         If txtSearch.Text = "" Then
             txtSearch.Text = "Search"
             txtSearch.ForeColor = Color.DarkGray
+        End If
+    End Sub
+    Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
+        Me.Close()
+        fProfilUser.Show()
+    End Sub
+
+    Private Sub bExit_Click(sender As Object, e As EventArgs) Handles bExit.Click
+        Dim X As String
+        X = MessageBox.Show("Yakin keluar dari program ini?", "Konfirmasi",
+                                MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If X = MsgBoxResult.Yes Then
+            End
+        Else
+            Exit Sub
         End If
     End Sub
 End Class

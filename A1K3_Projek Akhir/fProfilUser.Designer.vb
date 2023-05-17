@@ -24,48 +24,61 @@ Partial Class fProfilUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fProfilUser))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lUsername = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.bLogin = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.txtNamaLengkap = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtNo = New System.Windows.Forms.TextBox()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.bBatal = New System.Windows.Forms.Button()
+        Me.bSimpan = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.tPassword = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.lExit = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnSimpan = New System.Windows.Forms.Button()
-        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.tNotelp = New System.Windows.Forms.TextBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tEmail = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.tNamaLengkap = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.bEdit = New System.Windows.Forms.Button()
+        Me.bLogOut = New System.Windows.Forms.Button()
+        Me.lNamaLengkap = New System.Windows.Forms.Label()
+        Me.pProfil = New System.Windows.Forms.PictureBox()
+        Me.bHapusAkun = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.pKembali)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1924, 80)
         Me.Panel1.TabIndex = 0
+        '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(35, 24)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.TabIndex = 106
+        Me.pKembali.TabStop = False
         '
         'Label7
         '
@@ -79,33 +92,20 @@ Partial Class fProfilUser
         Me.Label7.Text = "Profil"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'PictureBox3
+        'lUsername
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(107, 286)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(234, 250)
-        Me.PictureBox3.TabIndex = 8
-        Me.PictureBox3.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(125, 558)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(202, 47)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Username"
+        Me.lUsername.AutoSize = True
+        Me.lUsername.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lUsername.Location = New System.Drawing.Point(139, 557)
+        Me.lUsername.Name = "lUsername"
+        Me.lUsername.Size = New System.Drawing.Size(202, 47)
+        Me.lUsername.TabIndex = 9
+        Me.lUsername.Text = "Username"
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.lExit)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 80)
         Me.Panel2.Name = "Panel2"
@@ -121,40 +121,6 @@ Partial Class fProfilUser
         Me.Panel3.Size = New System.Drawing.Size(1467, 750)
         Me.Panel3.TabIndex = 10
         '
-        'bLogin
-        '
-        Me.bLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bLogin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bLogin.FlatAppearance.BorderSize = 0
-        Me.bLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bLogin.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.bLogin.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bLogin.Location = New System.Drawing.Point(72, 726)
-        Me.bLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.bLogin.Name = "bLogin"
-        Me.bLogin.Size = New System.Drawing.Size(309, 48)
-        Me.bLogin.TabIndex = 11
-        Me.bLogin.Text = "Edit Profile"
-        Me.bLogin.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button1.Location = New System.Drawing.Point(72, 807)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(309, 48)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Logout"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -167,141 +133,60 @@ Partial Class fProfilUser
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.btnBatal)
-        Me.Panel5.Controls.Add(Me.btnSimpan)
+        Me.Panel5.Controls.Add(Me.bBatal)
+        Me.Panel5.Controls.Add(Me.bSimpan)
         Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Controls.Add(Me.txtPass)
+        Me.Panel5.Controls.Add(Me.tPassword)
         Me.Panel5.Controls.Add(Me.Button5)
         Me.Panel5.Controls.Add(Me.Label4)
-        Me.Panel5.Controls.Add(Me.txtNo)
+        Me.Panel5.Controls.Add(Me.tNotelp)
         Me.Panel5.Controls.Add(Me.Button4)
         Me.Panel5.Controls.Add(Me.Label3)
-        Me.Panel5.Controls.Add(Me.txtEmail)
+        Me.Panel5.Controls.Add(Me.tEmail)
         Me.Panel5.Controls.Add(Me.Button2)
         Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Controls.Add(Me.txtNamaLengkap)
+        Me.Panel5.Controls.Add(Me.tNamaLengkap)
         Me.Panel5.Controls.Add(Me.Button3)
         Me.Panel5.Location = New System.Drawing.Point(45, 43)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1467, 750)
         Me.Panel5.TabIndex = 12
         '
-        'txtNamaLengkap
+        'bBatal
         '
-        Me.txtNamaLengkap.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.txtNamaLengkap.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtNamaLengkap.Enabled = False
-        Me.txtNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtNamaLengkap.Location = New System.Drawing.Point(435, 116)
-        Me.txtNamaLengkap.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtNamaLengkap.Name = "txtNamaLengkap"
-        Me.txtNamaLengkap.Size = New System.Drawing.Size(477, 26)
-        Me.txtNamaLengkap.TabIndex = 44
+        Me.bBatal.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bBatal.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bBatal.FlatAppearance.BorderSize = 0
+        Me.bBatal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bBatal.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bBatal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bBatal.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bBatal.Location = New System.Drawing.Point(1199, 11)
+        Me.bBatal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bBatal.Name = "bBatal"
+        Me.bBatal.Size = New System.Drawing.Size(174, 51)
+        Me.bBatal.TabIndex = 57
+        Me.bBatal.Text = "Batal"
+        Me.bBatal.UseVisualStyleBackColor = False
+        Me.bBatal.Visible = False
         '
-        'Button3
+        'bSimpan
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button3.Enabled = False
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(431, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(488, 48)
-        Me.Button3.TabIndex = 45
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(197, 112)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(196, 31)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Nama Lengkap"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(197, 252)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 31)
-        Me.Label3.TabIndex = 46
-        Me.Label3.Text = "Email"
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEmail.Enabled = False
-        Me.txtEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtEmail.Location = New System.Drawing.Point(435, 245)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(477, 26)
-        Me.txtEmail.TabIndex = 47
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button2.Enabled = False
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(428, 232)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(488, 48)
-        Me.Button2.TabIndex = 48
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(200, 362)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 31)
-        Me.Label4.TabIndex = 49
-        Me.Label4.Text = "No Hp"
-        '
-        'txtNo
-        '
-        Me.txtNo.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.txtNo.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtNo.Enabled = False
-        Me.txtNo.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtNo.Location = New System.Drawing.Point(435, 367)
-        Me.txtNo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtNo.Name = "txtNo"
-        Me.txtNo.Size = New System.Drawing.Size(477, 26)
-        Me.txtNo.TabIndex = 50
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button4.Enabled = False
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(428, 358)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(488, 48)
-        Me.Button4.TabIndex = 51
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.bSimpan.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bSimpan.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bSimpan.FlatAppearance.BorderSize = 0
+        Me.bSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bSimpan.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bSimpan.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bSimpan.Location = New System.Drawing.Point(968, 11)
+        Me.bSimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bSimpan.Name = "bSimpan"
+        Me.bSimpan.Size = New System.Drawing.Size(174, 51)
+        Me.bSimpan.TabIndex = 56
+        Me.bSimpan.Text = "Simpan"
+        Me.bSimpan.UseVisualStyleBackColor = False
+        Me.bSimpan.Visible = False
         '
         'Label5
         '
@@ -314,18 +199,18 @@ Partial Class fProfilUser
         Me.Label5.TabIndex = 52
         Me.Label5.Text = "Password"
         '
-        'txtPass
+        'tPassword
         '
-        Me.txtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPass.Enabled = False
-        Me.txtPass.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtPass.Location = New System.Drawing.Point(435, 488)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(477, 26)
-        Me.txtPass.TabIndex = 53
+        Me.tPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.tPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tPassword.Enabled = False
+        Me.tPassword.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tPassword.Location = New System.Drawing.Point(435, 488)
+        Me.tPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tPassword.Name = "tPassword"
+        Me.tPassword.Size = New System.Drawing.Size(477, 26)
+        Me.tPassword.TabIndex = 53
         '
         'Button5
         '
@@ -342,64 +227,199 @@ Partial Class fProfilUser
         Me.Button5.TabIndex = 54
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'lExit
+        'Label4
         '
-        Me.lExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.lExit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 20.0!, System.Drawing.FontStyle.Bold)
-        Me.lExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lExit.Location = New System.Drawing.Point(1869, 3)
-        Me.lExit.Name = "lExit"
-        Me.lExit.Size = New System.Drawing.Size(150, 52)
-        Me.lExit.TabIndex = 85
-        Me.lExit.Text = "x"
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(200, 362)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(93, 31)
+        Me.Label4.TabIndex = 49
+        Me.Label4.Text = "No Hp"
         '
-        'Label6
+        'tNotelp
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(127, 614)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(196, 31)
-        Me.Label6.TabIndex = 55
-        Me.Label6.Text = "Nama Lengkap"
+        Me.tNotelp.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.tNotelp.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tNotelp.Enabled = False
+        Me.tNotelp.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tNotelp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tNotelp.Location = New System.Drawing.Point(435, 367)
+        Me.tNotelp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tNotelp.Name = "tNotelp"
+        Me.tNotelp.Size = New System.Drawing.Size(477, 26)
+        Me.tNotelp.TabIndex = 50
         '
-        'btnSimpan
+        'Button4
         '
-        Me.btnSimpan.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.btnSimpan.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSimpan.FlatAppearance.BorderSize = 0
-        Me.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSimpan.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.btnSimpan.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnSimpan.Location = New System.Drawing.Point(968, 11)
-        Me.btnSimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSimpan.Name = "btnSimpan"
-        Me.btnSimpan.Size = New System.Drawing.Size(174, 51)
-        Me.btnSimpan.TabIndex = 56
-        Me.btnSimpan.Text = "Simpan"
-        Me.btnSimpan.UseVisualStyleBackColor = False
-        Me.btnSimpan.Visible = False
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button4.Enabled = False
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Button4.Location = New System.Drawing.Point(428, 358)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(488, 48)
+        Me.Button4.TabIndex = 51
+        Me.Button4.UseVisualStyleBackColor = False
         '
-        'btnBatal
+        'Label3
         '
-        Me.btnBatal.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.btnBatal.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBatal.FlatAppearance.BorderSize = 0
-        Me.btnBatal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBatal.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBatal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.btnBatal.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnBatal.Location = New System.Drawing.Point(1199, 11)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(174, 51)
-        Me.btnBatal.TabIndex = 57
-        Me.btnBatal.Text = "Batal"
-        Me.btnBatal.UseVisualStyleBackColor = False
-        Me.btnBatal.Visible = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(200, 245)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(80, 31)
+        Me.Label3.TabIndex = 46
+        Me.Label3.Text = "Email"
+        '
+        'tEmail
+        '
+        Me.tEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.tEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tEmail.Enabled = False
+        Me.tEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tEmail.Location = New System.Drawing.Point(435, 245)
+        Me.tEmail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tEmail.Name = "tEmail"
+        Me.tEmail.Size = New System.Drawing.Size(477, 26)
+        Me.tEmail.TabIndex = 47
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button2.Enabled = False
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(428, 232)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(488, 48)
+        Me.Button2.TabIndex = 48
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(197, 112)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(196, 31)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "Nama Lengkap"
+        '
+        'tNamaLengkap
+        '
+        Me.tNamaLengkap.AcceptsReturn = True
+        Me.tNamaLengkap.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.tNamaLengkap.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tNamaLengkap.Enabled = False
+        Me.tNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tNamaLengkap.Location = New System.Drawing.Point(435, 116)
+        Me.tNamaLengkap.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tNamaLengkap.Name = "tNamaLengkap"
+        Me.tNamaLengkap.Size = New System.Drawing.Size(477, 26)
+        Me.tNamaLengkap.TabIndex = 44
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button3.Enabled = False
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Button3.Location = New System.Drawing.Point(431, 107)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(488, 48)
+        Me.Button3.TabIndex = 45
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'bEdit
+        '
+        Me.bEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bEdit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bEdit.FlatAppearance.BorderSize = 0
+        Me.bEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bEdit.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bEdit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bEdit.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bEdit.Location = New System.Drawing.Point(72, 726)
+        Me.bEdit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bEdit.Name = "bEdit"
+        Me.bEdit.Size = New System.Drawing.Size(309, 48)
+        Me.bEdit.TabIndex = 11
+        Me.bEdit.Text = "Edit Profile"
+        Me.bEdit.UseVisualStyleBackColor = False
+        '
+        'bLogOut
+        '
+        Me.bLogOut.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bLogOut.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bLogOut.FlatAppearance.BorderSize = 0
+        Me.bLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bLogOut.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bLogOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bLogOut.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bLogOut.Location = New System.Drawing.Point(72, 865)
+        Me.bLogOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bLogOut.Name = "bLogOut"
+        Me.bLogOut.Size = New System.Drawing.Size(309, 48)
+        Me.bLogOut.TabIndex = 12
+        Me.bLogOut.Text = "Logout"
+        Me.bLogOut.UseVisualStyleBackColor = False
+        '
+        'lNamaLengkap
+        '
+        Me.lNamaLengkap.AutoSize = True
+        Me.lNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lNamaLengkap.Location = New System.Drawing.Point(141, 613)
+        Me.lNamaLengkap.Name = "lNamaLengkap"
+        Me.lNamaLengkap.Size = New System.Drawing.Size(196, 31)
+        Me.lNamaLengkap.TabIndex = 55
+        Me.lNamaLengkap.Text = "Nama Lengkap"
+        '
+        'pProfil
+        '
+        Me.pProfil.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pProfil.BackgroundImage = CType(resources.GetObject("pProfil.BackgroundImage"), System.Drawing.Image)
+        Me.pProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pProfil.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pProfil.Location = New System.Drawing.Point(107, 286)
+        Me.pProfil.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pProfil.Name = "pProfil"
+        Me.pProfil.Size = New System.Drawing.Size(234, 250)
+        Me.pProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pProfil.TabIndex = 8
+        Me.pProfil.TabStop = False
+        '
+        'bHapusAkun
+        '
+        Me.bHapusAkun.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bHapusAkun.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bHapusAkun.FlatAppearance.BorderSize = 0
+        Me.bHapusAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bHapusAkun.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bHapusAkun.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bHapusAkun.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bHapusAkun.Location = New System.Drawing.Point(72, 793)
+        Me.bHapusAkun.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bHapusAkun.Name = "bHapusAkun"
+        Me.bHapusAkun.Size = New System.Drawing.Size(309, 48)
+        Me.bHapusAkun.TabIndex = 56
+        Me.bHapusAkun.Text = "Hapus Akun"
+        Me.bHapusAkun.UseVisualStyleBackColor = False
         '
         'fProfilUser
         '
@@ -407,12 +427,13 @@ Partial Class fProfilUser
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1924, 1050)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.bLogin)
+        Me.Controls.Add(Me.bHapusAkun)
+        Me.Controls.Add(Me.lNamaLengkap)
+        Me.Controls.Add(Me.bLogOut)
+        Me.Controls.Add(Me.bEdit)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.lUsername)
+        Me.Controls.Add(Me.pProfil)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "fProfilUser"
@@ -420,12 +441,12 @@ Partial Class fProfilUser
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -433,28 +454,29 @@ Partial Class fProfilUser
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label7 As Label
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents pProfil As PictureBox
+    Friend WithEvents lUsername As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents bLogin As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents bEdit As Button
+    Friend WithEvents bLogOut As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents tEmail As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtNamaLengkap As TextBox
+    Friend WithEvents tNamaLengkap As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtPass As TextBox
+    Friend WithEvents tPassword As TextBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtNo As TextBox
+    Friend WithEvents tNotelp As TextBox
     Friend WithEvents Button4 As Button
-    Friend WithEvents lExit As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents btnBatal As Button
-    Friend WithEvents btnSimpan As Button
+    Friend WithEvents lNamaLengkap As Label
+    Friend WithEvents bBatal As Button
+    Friend WithEvents bSimpan As Button
+    Friend WithEvents pKembali As PictureBox
+    Friend WithEvents bHapusAkun As Button
 End Class

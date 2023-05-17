@@ -68,45 +68,14 @@ Public Class dashboardAdmin
             Exit Sub
         End If
     End Sub
-    Sub TampilProfil()
-        CMD = New MySqlCommand("SELECT foto FROM akun WHERE id_akun = @id_akun", CONN)
-        CMD.Parameters.AddWithValue("@id_akun", "1") ' Gantilah 'ID_Akun' dengan ID akun yang sesuai
-
-        RD = CMD.ExecuteReader()
-        If RD.Read() Then
-            Dim imageName As String = RD("foto").ToString()
-            Dim imagePath As String = Path.Combine(Application.StartupPath, imageName)
-            If File.Exists(imagePath) Then
-                pProfil.Image = Image.FromFile(imagePath)
-
-                ' Mengubah bentuk PictureBox menjadi lingkaran
-                MakePictureBoxCircular(pProfil)
-            End If
-        End If
-
-        RD.Close()
-    End Sub
 
     Private Sub dashboardAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
-        TampilProfil()
         OpenChildForm(New formDashboard)
     End Sub
 
     Private Sub pProfil_Click(sender As Object, e As EventArgs) Handles pProfil.Click
-        Dim OpenProfil As New OpenFileDialog()
-        OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png;*.gif;*.bmp"
-
-        If OpenProfil.ShowDialog() = DialogResult.OK Then
-            Dim imagePath As String = OpenProfil.FileName
-
-            pProfil.Image = Image.FromFile(imagePath)
-            CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE id_akun = @id_akun", CONN)
-            CMD.Parameters.AddWithValue("@foto", imagePath)
-            CMD.Parameters.AddWithValue("@id_akun", "1")
-            CMD.ExecuteNonQuery()
-            MakePictureBoxCircular(pProfil)
-        End If
+        OpenChildForm(New formProfilAdmin)
     End Sub
 
     Private Sub MakePictureBoxCircular(pictureBox As PictureBox)
@@ -118,8 +87,7 @@ Public Class dashboardAdmin
     Private Sub btnProfil_Click(sender As Object, e As EventArgs) Handles btnProfil.Click
         OpenChildForm(New formProfilAdmin)
     End Sub
-
-    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles panelDesktop.Paint
-
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+        OpenChildForm(New formTransaksi)
     End Sub
 End Class

@@ -5,8 +5,21 @@ Imports System.Windows
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 Public Class formDashboard
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+    Private currentChildForm As Form
+    Private Sub OpenChildForm(childForm As Form)
 
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+
+        currentChildForm = childForm
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        dashboardAdmin.panelDesktop.Controls.Add(childForm)
+        dashboardAdmin.panelDesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
     End Sub
 
 
@@ -29,8 +42,8 @@ Public Class formDashboard
         End Try
     End Sub
 
-    Private Sub lblTotalUser_Click(sender As Object, e As EventArgs) Handles lblTotalUser.Click
-
+    Private Sub lDataUser_Click(sender As Object, e As EventArgs) Handles lDataUser.Click
+        OpenChildForm(New FormDataUser)
     End Sub
 End Class
 

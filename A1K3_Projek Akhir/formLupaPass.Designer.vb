@@ -31,20 +31,21 @@ Partial Class formLupaPass
         Me.lKodeKeamanan = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.bClear = New System.Windows.Forms.Button()
         Me.tKodeKeamanan = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.tEmail = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.lExit = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.tEmail = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -53,7 +54,7 @@ Partial Class formLupaPass
         Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label2.Font = New System.Drawing.Font("Stencil", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(95, 21)
+        Me.Label2.Location = New System.Drawing.Point(109, 21)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(277, 39)
         Me.Label2.TabIndex = 44
@@ -151,6 +152,17 @@ Partial Class formLupaPass
         Me.Panel2.Size = New System.Drawing.Size(423, 459)
         Me.Panel2.TabIndex = 46
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(337, 169)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(23, 21)
+        Me.PictureBox3.TabIndex = 84
+        Me.PictureBox3.TabStop = False
+        '
         'bClear
         '
         Me.bClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
@@ -190,6 +202,28 @@ Partial Class formLupaPass
         Me.Button1.TabIndex = 82
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(193, 170)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 21)
+        Me.PictureBox1.TabIndex = 75
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox4.Location = New System.Drawing.Point(339, 64)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(23, 21)
+        Me.PictureBox4.TabIndex = 74
+        Me.PictureBox4.TabStop = False
+        '
         'tEmail
         '
         Me.tEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
@@ -215,50 +249,16 @@ Partial Class formLupaPass
         Me.Button2.TabIndex = 71
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'lExit
+        'pKembali
         '
-        Me.lExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.lExit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 20.0!, System.Drawing.FontStyle.Bold)
-        Me.lExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lExit.Location = New System.Drawing.Point(403, 5)
-        Me.lExit.Name = "lExit"
-        Me.lExit.Size = New System.Drawing.Size(150, 53)
-        Me.lExit.TabIndex = 81
-        Me.lExit.Text = "x"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(337, 169)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(23, 21)
-        Me.PictureBox3.TabIndex = 84
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(193, 170)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(23, 21)
-        Me.PictureBox1.TabIndex = 75
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Location = New System.Drawing.Point(339, 64)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(23, 21)
-        Me.PictureBox4.TabIndex = 74
-        Me.PictureBox4.TabStop = False
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(31, 21)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(31, 26)
+        Me.pKembali.TabIndex = 86
+        Me.pKembali.TabStop = False
         '
         'formLupaPass
         '
@@ -267,7 +267,7 @@ Partial Class formLupaPass
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(452, 523)
         Me.ControlBox = False
-        Me.Controls.Add(Me.lExit)
+        Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label2)
         Me.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -282,6 +282,7 @@ Partial Class formLupaPass
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -301,5 +302,5 @@ Partial Class formLupaPass
     Friend WithEvents tKodeKeamanan As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents lTextPassword As Label
-    Friend WithEvents lExit As Label
+    Friend WithEvents pKembali As PictureBox
 End Class

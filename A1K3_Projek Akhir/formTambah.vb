@@ -2,20 +2,24 @@
 Imports System.Net
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ListView
 Imports MySql.Data.MySqlClient
+Imports System.Windows.Forms.DataVisualization.Charting
+Imports System.Xml.Serialization
+
 
 Public Class formTambah
+    Private currentChildForm As Form
     Dim gambar As Object
     Sub Clear()
         tJudul.Clear()
-        tPemain.Clear()
+        tKelompok.Clear()
         dTanggal.Value = DateTime.Today
         rJamPertama.Checked = False
         rJamKedua.Checked = False
         rJamKetiga.Checked = False
         rJamKeempat.Checked = False
         cGenre.SelectedIndex = -1
-        cHari.SelectedIndex = -1
         tTiket.Clear()
+        tHari.Clear()
         tHargaTiket.Clear()
         bPilihGambarTiket.Text = "Pilih Gambar Teater"
     End Sub
@@ -25,13 +29,13 @@ Public Class formTambah
 
         If tJudul.Text = "" Then
             Cek = True
-        ElseIf tPemain.Text = "" Then
+        ElseIf tKelompok.Text = "" Then
             Cek = True
         ElseIf rJamPertama.Checked = False And rJamKedua.Checked = False And rJamKetiga.Checked = False And rJamKeempat.Checked = False Then
             Cek = True
         ElseIf cGenre.Text = "" Then
             Cek = True
-        ElseIf cHari.Text = "" Then
+        ElseIf tHari.Text = "" Then
             Cek = True
         Else
             Cek = False
@@ -39,6 +43,21 @@ Public Class formTambah
 
         Return Cek
     End Function
+    Private Sub OpenChildForm(childForm As Form)
+
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+
+        currentChildForm = childForm
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        dashboardAdmin.panelDesktop.Controls.Add(childForm)
+        dashboardAdmin.panelDesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
+    End Sub
     Private Function GetLastID() As Integer
         Dim lastID As Integer = 0
         Dim commandText As String = "SELECT MAX(id_teater) FROM JadwalTeater"
@@ -52,7 +71,7 @@ Public Class formTambah
         Return lastID
     End Function
 
-    Sub Simpan(ByVal gambar As Object)
+    Sub Simpan()
         Dim JamTayang As String = ""
         Dim IdTeater As Integer
 
@@ -80,29 +99,26 @@ Public Class formTambah
         If Not RD.HasRows Then
             RD.Close()
 
-            Dim Simpan As String = "INSERT INTO JadwalTeater (id_teater, judul, pemain, tanggal_pertunjukan, waktu, genre, hari, gambar, tiket, harga_tiket) VALUES
-                        ('" & IdTeater & "', '" & tJudul.Text & "', '" & tPemain.Text & "', '" & dTanggal.Value.ToString("yyyy-MM-dd") & "', '" & JamTayang & "', '" & cGenre.Text & "', '" & cHari.Text & "', @gambar, '" & tTiket.Text & "', '" & tHargaTiket.Text & "')"
+            Dim Simpan As String = "INSERT INTO JadwalTeater (id_teater, judul, kelompok, genre, hari, tanggal_pertunjukkan, waktu, tiket, harga_tiket, gambar) VALUES
+                        ('" & IdTeater & "', '" & tJudul.Text & "', '" & tKelompok.Text & "', '" & cGenre.Text & "', '" & tHari.Text & "', '" & dTanggal.Value.ToString("yyyy-MM-dd") & "', '" & JamTayang & "', '" & tTiket.Text & "', '" & tHargaTiket.Text & "', '" & bPilihGambarTiket.Text & "')"
 
             CMD = New MySqlCommand(Simpan, CONN)
-            CMD.Parameters.Add("@gambar", MySqlDbType.LongBlob).Value = gambar ' Parameter gambar dengan tipe data LongBlob
             CMD.ExecuteNonQuery()
             MsgBox("Jadwal Teater Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+            Me.Close()
+            OpenChildForm(New formJadwal)
         Else
             MsgBox("ID sudah ada!", MsgBoxStyle.Exclamation, "Attention")
         End If
         RD.Close()
     End Sub
     Private Sub bSimpan_Click(sender As Object, e As EventArgs) Handles bSimpan.Click
-        Simpan(gambar)
+        Simpan()
     End Sub
-
-    Private Sub lExit_Click(sender As Object, e As EventArgs) Handles lExit.Click
-        Me.Close()
-    End Sub
-
-
     Private Sub formTambah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         bSimpan.Enabled = False
+        dTanggal.MinDate = DateTime.Today
+        dTanggal.Value = DateTime.Today
     End Sub
 
     Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs) Handles bPilihGambarTiket.Click
@@ -119,18 +135,16 @@ Public Class formTambah
 
             If OpenProfil.ShowDialog() = DialogResult.OK Then
                 imagePath = OpenProfil.FileName
-                bPilihGambarTiket.Text = Path.GetFileName(imagePath) ' Hanya menampilkan nama file
-
-                ' Konversi gambar menjadi byte array
-                Dim imageBytes As Byte() = File.ReadAllBytes(imagePath)
-
-                ' Simpan byte array gambar ke variabel global
-                gambar = imageBytes
+                Dim fileName As String = Path.GetFileNameWithoutExtension(imagePath)
+                Dim fileExtension As String = Path.GetExtension(imagePath)
+                Dim newFileName As String = $"{tJudul.Text}{fileExtension}"
+                bPilihGambarTiket.Text = newFileName
             End If
 
             bSimpan.Enabled = True
         End If
     End Sub
+
 
     Private Sub tHargaTiket_Enter(sender As Object, e As EventArgs) Handles tHargaTiket.Enter
         If tHargaTiket.Text = "Rp" Then
@@ -160,10 +174,10 @@ Public Class formTambah
     Private Sub tJudulKeyDown(sender As Object, e As KeyEventArgs) Handles tJudul.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
-            tPemain.Focus()
+            tKelompok.Focus()
         End If
     End Sub
-    Private Sub tPemain_KeyDown(sender As Object, e As KeyEventArgs) Handles tPemain.KeyDown
+    Private Sub tPemain_KeyDown(sender As Object, e As KeyEventArgs) Handles tKelompok.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
             dTanggal.Select()
@@ -172,21 +186,15 @@ Public Class formTambah
     Private Sub dTanggal_KeyDown(sender As Object, e As KeyEventArgs) Handles dTanggal.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
-            cGenre.Focus()
-            cGenre.DroppedDown = True
-        End If
-    End Sub
-    Private Sub cGenre_KeyDown(sender As Object, e As KeyEventArgs) Handles cGenre.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            e.SuppressKeyPress = True
             rJamPertama.Focus()
         End If
     End Sub
+
     Private Sub gJam_KeyDown(sender As Object, e As KeyEventArgs) Handles rJamPertama.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
-            cHari.Focus()
-            cHari.DroppedDown = True
+            cGenre.Focus()
+            cGenre.DroppedDown = True
         ElseIf e.KeyCode = Keys.Down Then
             Dim checkedButton As RadioButton = gJam.Controls.OfType(Of RadioButton)().FirstOrDefault(Function(r) r.Checked)
             If checkedButton IsNot Nothing Then
@@ -198,13 +206,14 @@ Public Class formTambah
             End If
         End If
     End Sub
-    Private Sub cHari_KeyDown(sender As Object, e As KeyEventArgs) Handles cHari.KeyDown
+
+    Private Sub cGenre_KeyDown(sender As Object, e As KeyEventArgs) Handles cGenre.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
             tTiket.Focus()
         End If
     End Sub
-    
+
     Private Sub tTiket_KeyDown(sender As Object, e As KeyEventArgs) Handles tTiket.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
@@ -222,5 +231,13 @@ Public Class formTambah
             e.SuppressKeyPress = True
             bSimpan.PerformClick()
         End If
+    End Sub
+
+    Private Sub dTanggal_ValueChanged(sender As Object, e As EventArgs) Handles dTanggal.ValueChanged
+        tHari.Text = dTanggal.Value.DayOfWeek.ToString()
+    End Sub
+
+    Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
+        Me.Close()
     End Sub
 End Class

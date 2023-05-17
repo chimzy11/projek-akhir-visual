@@ -24,13 +24,19 @@ Partial Class dashboardUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardUser))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Username = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.lUsername = New System.Windows.Forms.Label()
+        Me.bExit = New System.Windows.Forms.Button()
         Me.MenuStripProfile = New System.Windows.Forms.MenuStrip()
         Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TransaksiToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TiketToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuProfil = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuTransaksi = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuTiket = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.MenuStripAbout = New System.Windows.Forms.MenuStrip()
@@ -44,20 +50,14 @@ Partial Class dashboardUser
         Me.MenuStripHome = New System.Windows.Forms.MenuStrip()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStripProfile.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuStripAbout.SuspendLayout()
         Me.MenuStripTeater.SuspendLayout()
         Me.MenuStripHome.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -69,8 +69,8 @@ Partial Class dashboardUser
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.Username)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.lUsername)
+        Me.Panel1.Controls.Add(Me.bExit)
         Me.Panel1.Controls.Add(Me.MenuStripProfile)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -79,28 +79,96 @@ Partial Class dashboardUser
         Me.Panel1.Size = New System.Drawing.Size(1924, 108)
         Me.Panel1.TabIndex = 0
         '
-        'Username
+        'Label9
         '
-        Me.Username.AutoSize = True
-        Me.Username.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Username.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Username.Location = New System.Drawing.Point(1578, 35)
-        Me.Username.Name = "Username"
-        Me.Username.Size = New System.Drawing.Size(137, 31)
-        Me.Username.TabIndex = 2
-        Me.Username.Text = "Username"
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label9.Location = New System.Drawing.Point(866, 62)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(296, 24)
+        Me.Label9.TabIndex = 12
+        Me.Label9.Text = "anda ke dunia kilauan seni" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Button1
+        'Label7
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(1802, 35)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(50, 42)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label7.Location = New System.Drawing.Point(784, 21)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(482, 24)
+        Me.Label7.TabIndex = 11
+        Me.Label7.Text = "Teater pilihan penuh kisah yang mengantar"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(47, 62)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(150, 27)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "@equiterhere"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(17, 65)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(24, 24)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(47, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(314, 27)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Samarinda, Kalimantan Timur"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(17, 19)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(24, 24)
+        Me.PictureBox3.TabIndex = 7
+        Me.PictureBox3.TabStop = False
+        '
+        'lUsername
+        '
+        Me.lUsername.AutoSize = True
+        Me.lUsername.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.lUsername.Location = New System.Drawing.Point(1578, 38)
+        Me.lUsername.Name = "lUsername"
+        Me.lUsername.Size = New System.Drawing.Size(137, 31)
+        Me.lUsername.TabIndex = 2
+        Me.lUsername.Text = "Username"
+        '
+        'bExit
+        '
+        Me.bExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bExit.FlatAppearance.BorderSize = 0
+        Me.bExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bExit.Image = CType(resources.GetObject("bExit.Image"), System.Drawing.Image)
+        Me.bExit.Location = New System.Drawing.Point(1802, 35)
+        Me.bExit.Name = "bExit"
+        Me.bExit.Size = New System.Drawing.Size(50, 42)
+        Me.bExit.TabIndex = 1
+        Me.bExit.UseVisualStyleBackColor = False
         '
         'MenuStripProfile
         '
@@ -118,28 +186,28 @@ Partial Class dashboardUser
         '
         'ProfileToolStripMenuItem
         '
-        Me.ProfileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilToolStripMenuItem1, Me.TransaksiToolStripMenuItem1, Me.TiketToolStripMenuItem1})
+        Me.ProfileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuProfil, Me.MenuTransaksi, Me.MenuTiket})
         Me.ProfileToolStripMenuItem.Image = CType(resources.GetObject("ProfileToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
         Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(40, 28)
         '
-        'ProfilToolStripMenuItem1
+        'MenuProfil
         '
-        Me.ProfilToolStripMenuItem1.Name = "ProfilToolStripMenuItem1"
-        Me.ProfilToolStripMenuItem1.Size = New System.Drawing.Size(232, 40)
-        Me.ProfilToolStripMenuItem1.Text = "Profil"
+        Me.MenuProfil.Name = "MenuProfil"
+        Me.MenuProfil.Size = New System.Drawing.Size(232, 40)
+        Me.MenuProfil.Text = "Profil"
         '
-        'TransaksiToolStripMenuItem1
+        'MenuTransaksi
         '
-        Me.TransaksiToolStripMenuItem1.Name = "TransaksiToolStripMenuItem1"
-        Me.TransaksiToolStripMenuItem1.Size = New System.Drawing.Size(232, 40)
-        Me.TransaksiToolStripMenuItem1.Text = "Transaksi"
+        Me.MenuTransaksi.Name = "MenuTransaksi"
+        Me.MenuTransaksi.Size = New System.Drawing.Size(232, 40)
+        Me.MenuTransaksi.Text = "Transaksi"
         '
-        'TiketToolStripMenuItem1
+        'MenuTiket
         '
-        Me.TiketToolStripMenuItem1.Name = "TiketToolStripMenuItem1"
-        Me.TiketToolStripMenuItem1.Size = New System.Drawing.Size(232, 40)
-        Me.TiketToolStripMenuItem1.Text = "Tiket"
+        Me.MenuTiket.Name = "MenuTiket"
+        Me.MenuTiket.Size = New System.Drawing.Size(232, 40)
+        Me.MenuTiket.Text = "Tiket"
         '
         'Panel2
         '
@@ -180,7 +248,7 @@ Partial Class dashboardUser
         Me.MenuStripAbout.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
         Me.MenuStripAbout.Location = New System.Drawing.Point(1129, 55)
         Me.MenuStripAbout.Name = "MenuStripAbout"
-        Me.MenuStripAbout.Size = New System.Drawing.Size(196, 52)
+        Me.MenuStripAbout.Size = New System.Drawing.Size(193, 50)
         Me.MenuStripAbout.TabIndex = 2
         Me.MenuStripAbout.Text = "MenuStrip3"
         '
@@ -256,7 +324,7 @@ Partial Class dashboardUser
         Me.MenuStripHome.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem})
         Me.MenuStripHome.Location = New System.Drawing.Point(595, 55)
         Me.MenuStripHome.Name = "MenuStripHome"
-        Me.MenuStripHome.Size = New System.Drawing.Size(142, 52)
+        Me.MenuStripHome.Size = New System.Drawing.Size(139, 50)
         Me.MenuStripHome.TabIndex = 0
         Me.MenuStripHome.Text = "MenuStrip1"
         '
@@ -274,74 +342,6 @@ Partial Class dashboardUser
         Me.Panel3.Size = New System.Drawing.Size(1924, 310)
         Me.Panel3.TabIndex = 2
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(17, 19)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(24, 24)
-        Me.PictureBox3.TabIndex = 7
-        Me.PictureBox3.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(47, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(314, 27)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Samarinda, Kalimantan Timur"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(47, 62)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(150, 27)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "@equiterhere"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(17, 65)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(24, 24)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label7.Location = New System.Drawing.Point(784, 21)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(482, 24)
-        Me.Label7.TabIndex = 11
-        Me.Label7.Text = "Teater pilihan penuh kisah yang mengantar"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label9.Location = New System.Drawing.Point(866, 62)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(296, 24)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "anda ke dunia kilauan seni" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'dashboardUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -358,6 +358,8 @@ Partial Class dashboardUser
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStripProfile.ResumeLayout(False)
         Me.MenuStripProfile.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -368,8 +370,6 @@ Partial Class dashboardUser
         Me.MenuStripTeater.PerformLayout()
         Me.MenuStripHome.ResumeLayout(False)
         Me.MenuStripHome.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -388,11 +388,11 @@ Partial Class dashboardUser
     Friend WithEvents Panel3 As Panel
     Friend WithEvents MenuStripProfile As MenuStrip
     Friend WithEvents ProfileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ProfilToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents TransaksiToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents TiketToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Username As Label
+    Friend WithEvents MenuProfil As ToolStripMenuItem
+    Friend WithEvents MenuTransaksi As ToolStripMenuItem
+    Friend WithEvents MenuTiket As ToolStripMenuItem
+    Friend WithEvents bExit As Button
+    Friend WithEvents lUsername As Label
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents btnSearch As Button
     Friend WithEvents PictureBox3 As PictureBox

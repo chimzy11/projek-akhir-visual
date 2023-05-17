@@ -70,9 +70,6 @@ Public Class formLupaPass
         lPassword.Text = ""
         lTextPassword.Text = ""
     End Sub
-    Private Sub lExit_Click(sender As Object, e As EventArgs) Handles lExit.Click
-        Me.Hide()
-    End Sub
     Private Sub tEmail_KeyDown(sender As Object, e As KeyEventArgs) Handles tEmail.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
@@ -88,4 +85,7 @@ Public Class formLupaPass
         End If
     End Sub
 
+    Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
+        Me.Close()
+    End Sub
 End Class

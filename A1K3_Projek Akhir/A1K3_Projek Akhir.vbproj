@@ -113,6 +113,12 @@
     <Compile Include="dashboardUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FHapusJadwalTeater.Designer.vb">
+      <DependentUpon>FHapusJadwalTeater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FHapusJadwalTeater.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FLogin.Designer.vb">
       <DependentUpon>FLogin.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataUser.Designer.vb">
+      <DependentUpon>FormDataUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formEdit.Designer.vb">
@@ -210,11 +222,17 @@
     <EmbeddedResource Include="dashboardUser.resx">
       <DependentUpon>dashboardUser.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FHapusJadwalTeater.resx">
+      <DependentUpon>FHapusJadwalTeater.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataUser.resx">
+      <DependentUpon>FormDataUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formEdit.resx">
       <DependentUpon>formEdit.vb</DependentUpon>

@@ -26,7 +26,12 @@ Partial Class formTambah
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formTambah))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.tHari = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.cGenre = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.bPilihGambarTiket = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gJam = New System.Windows.Forms.GroupBox()
@@ -36,7 +41,6 @@ Partial Class formTambah
         Me.rJamPertama = New System.Windows.Forms.RadioButton()
         Me.tHargaTiket = New System.Windows.Forms.TextBox()
         Me.x = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.dTanggal = New System.Windows.Forms.DateTimePicker()
         Me.tTiket = New System.Windows.Forms.TextBox()
@@ -44,24 +48,22 @@ Partial Class formTambah
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.cGenre = New System.Windows.Forms.ComboBox()
-        Me.lExit = New System.Windows.Forms.Label()
         Me.bClear = New System.Windows.Forms.Button()
         Me.bSimpan = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.cHari = New System.Windows.Forms.ComboBox()
         Me.tJudul = New System.Windows.Forms.TextBox()
-        Me.tPemain = New System.Windows.Forms.TextBox()
+        Me.tKelompok = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.gJam.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -80,13 +82,17 @@ Partial Class formTambah
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.tHari)
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.cGenre)
+        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.bPilihGambarTiket)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.gJam)
         Me.Panel1.Controls.Add(Me.tHargaTiket)
         Me.Panel1.Controls.Add(Me.x)
-        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.dTanggal)
         Me.Panel1.Controls.Add(Me.tTiket)
@@ -94,14 +100,10 @@ Partial Class formTambah
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.cGenre)
-        Me.Panel1.Controls.Add(Me.lExit)
         Me.Panel1.Controls.Add(Me.bClear)
         Me.Panel1.Controls.Add(Me.bSimpan)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.cHari)
         Me.Panel1.Controls.Add(Me.tJudul)
-        Me.Panel1.Controls.Add(Me.tPemain)
+        Me.Panel1.Controls.Add(Me.tKelompok)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button2)
@@ -114,17 +116,84 @@ Partial Class formTambah
         Me.Panel1.Size = New System.Drawing.Size(644, 712)
         Me.Panel1.TabIndex = 24
         '
+        'Label11
+        '
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(77, 254)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(192, 22)
+        Me.Label11.TabIndex = 104
+        Me.Label11.Text = "Tanggal Pertunjukan"
+        '
+        'tHari
+        '
+        Me.tHari.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.tHari.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tHari.Enabled = False
+        Me.tHari.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tHari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tHari.Location = New System.Drawing.Point(339, 288)
+        Me.tHari.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tHari.Name = "tHari"
+        Me.tHari.Size = New System.Drawing.Size(216, 26)
+        Me.tHari.TabIndex = 102
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Button1.Enabled = False
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(330, 278)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(240, 48)
+        Me.Button1.TabIndex = 103
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Label4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(326, 417)
+        Me.Label4.Location = New System.Drawing.Point(322, 418)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(150, 22)
         Me.Label4.TabIndex = 101
         Me.Label4.Text = " Tiket"
+        '
+        'cGenre
+        '
+        Me.cGenre.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.cGenre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cGenre.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cGenre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cGenre.FormattingEnabled = True
+        Me.cGenre.IntegralHeight = False
+        Me.cGenre.Items.AddRange(New Object() {"Drama", "Komedi", "Musikal"})
+        Me.cGenre.Location = New System.Drawing.Point(330, 365)
+        Me.cGenre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cGenre.Name = "cGenre"
+        Me.cGenre.Size = New System.Drawing.Size(240, 35)
+        Me.cGenre.TabIndex = 88
+        '
+        'Label10
+        '
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(326, 340)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(150, 22)
+        Me.Label10.TabIndex = 89
+        Me.Label10.Text = "Genre Teater"
         '
         'bPilihGambarTiket
         '
@@ -147,7 +216,7 @@ Partial Class formTambah
         Me.Label5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(331, 499)
+        Me.Label5.Location = New System.Drawing.Point(326, 500)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(105, 26)
         Me.Label5.TabIndex = 97
@@ -236,10 +305,11 @@ Partial Class formTambah
         Me.tHargaTiket.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tHargaTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tHargaTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tHargaTiket.Location = New System.Drawing.Point(343, 537)
+        Me.tHargaTiket.Location = New System.Drawing.Point(339, 539)
         Me.tHargaTiket.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tHargaTiket.MaxLength = 9
         Me.tHargaTiket.Name = "tHargaTiket"
-        Me.tHargaTiket.Size = New System.Drawing.Size(128, 21)
+        Me.tHargaTiket.Size = New System.Drawing.Size(160, 21)
         Me.tHargaTiket.TabIndex = 100
         Me.tHargaTiket.Text = "Rp"
         '
@@ -251,24 +321,12 @@ Partial Class formTambah
         Me.x.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.x.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.x.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.x.Location = New System.Drawing.Point(336, 529)
+        Me.x.Location = New System.Drawing.Point(331, 530)
         Me.x.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.x.Name = "x"
-        Me.x.Size = New System.Drawing.Size(234, 39)
+        Me.x.Size = New System.Drawing.Size(239, 39)
         Me.x.TabIndex = 99
         Me.x.UseVisualStyleBackColor = False
-        '
-        'Label10
-        '
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(332, 255)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(150, 22)
-        Me.Label10.TabIndex = 89
-        Me.Label10.Text = "Genre Teater"
         '
         'Label9
         '
@@ -276,7 +334,7 @@ Partial Class formTambah
         Me.Label9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(523, 454)
+        Me.Label9.Location = New System.Drawing.Point(519, 455)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(86, 29)
         Me.Label9.TabIndex = 98
@@ -303,10 +361,11 @@ Partial Class formTambah
         Me.tTiket.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tTiket.Location = New System.Drawing.Point(343, 454)
+        Me.tTiket.Location = New System.Drawing.Point(342, 455)
         Me.tTiket.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tTiket.MaxLength = 2
         Me.tTiket.Name = "tTiket"
-        Me.tTiket.Size = New System.Drawing.Size(168, 21)
+        Me.tTiket.Size = New System.Drawing.Size(150, 21)
         Me.tTiket.TabIndex = 96
         '
         'TextBox4
@@ -329,7 +388,7 @@ Partial Class formTambah
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(336, 446)
+        Me.Button6.Location = New System.Drawing.Point(332, 447)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(180, 39)
@@ -342,11 +401,11 @@ Partial Class formTambah
         Me.Label8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(76, 254)
+        Me.Label8.Location = New System.Drawing.Point(325, 254)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(287, 22)
         Me.Label8.TabIndex = 91
-        Me.Label8.Text = "Tanggal Pertunjukan"
+        Me.Label8.Text = "Hari"
         '
         'Button4
         '
@@ -362,33 +421,6 @@ Partial Class formTambah
         Me.Button4.Size = New System.Drawing.Size(200, 48)
         Me.Button4.TabIndex = 92
         Me.Button4.UseVisualStyleBackColor = False
-        '
-        'cGenre
-        '
-        Me.cGenre.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.cGenre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cGenre.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cGenre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.cGenre.FormattingEnabled = True
-        Me.cGenre.IntegralHeight = False
-        Me.cGenre.Items.AddRange(New Object() {"Drama", "Komedi", "Musikal"})
-        Me.cGenre.Location = New System.Drawing.Point(336, 280)
-        Me.cGenre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.cGenre.Name = "cGenre"
-        Me.cGenre.Size = New System.Drawing.Size(234, 35)
-        Me.cGenre.TabIndex = 88
-        '
-        'lExit
-        '
-        Me.lExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lExit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lExit.Font = New System.Drawing.Font("Microsoft YaHei UI", 20.0!, System.Drawing.FontStyle.Bold)
-        Me.lExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.lExit.Location = New System.Drawing.Point(576, 5)
-        Me.lExit.Name = "lExit"
-        Me.lExit.Size = New System.Drawing.Size(150, 52)
-        Me.lExit.TabIndex = 82
-        Me.lExit.Text = "x"
         '
         'bClear
         '
@@ -412,7 +444,7 @@ Partial Class formTambah
         Me.bSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bSimpan.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.bSimpan.Location = New System.Drawing.Point(80, 589)
+        Me.bSimpan.Location = New System.Drawing.Point(81, 589)
         Me.bSimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bSimpan.Name = "bSimpan"
         Me.bSimpan.Size = New System.Drawing.Size(488, 48)
@@ -420,56 +452,29 @@ Partial Class formTambah
         Me.bSimpan.Text = "Simpan"
         Me.bSimpan.UseVisualStyleBackColor = False
         '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(332, 336)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(150, 22)
-        Me.Label6.TabIndex = 40
-        Me.Label6.Text = "Hari"
-        '
-        'cHari
-        '
-        Me.cHari.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.cHari.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cHari.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cHari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.cHari.FormattingEnabled = True
-        Me.cHari.IntegralHeight = False
-        Me.cHari.Items.AddRange(New Object() {"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"})
-        Me.cHari.Location = New System.Drawing.Point(336, 361)
-        Me.cHari.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.cHari.Name = "cHari"
-        Me.cHari.Size = New System.Drawing.Size(234, 35)
-        Me.cHari.TabIndex = 39
-        '
         'tJudul
         '
         Me.tJudul.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.tJudul.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tJudul.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tJudul.Location = New System.Drawing.Point(81, 111)
+        Me.tJudul.Location = New System.Drawing.Point(93, 111)
         Me.tJudul.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tJudul.Name = "tJudul"
-        Me.tJudul.Size = New System.Drawing.Size(488, 26)
+        Me.tJudul.Size = New System.Drawing.Size(462, 26)
         Me.tJudul.TabIndex = 26
         '
-        'tPemain
+        'tKelompok
         '
-        Me.tPemain.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.tPemain.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tPemain.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tPemain.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tPemain.Location = New System.Drawing.Point(81, 202)
-        Me.tPemain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tPemain.Name = "tPemain"
-        Me.tPemain.Size = New System.Drawing.Size(488, 26)
-        Me.tPemain.TabIndex = 27
+        Me.tKelompok.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.tKelompok.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tKelompok.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tKelompok.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tKelompok.Location = New System.Drawing.Point(93, 202)
+        Me.tKelompok.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tKelompok.Name = "tKelompok"
+        Me.tKelompok.Size = New System.Drawing.Size(475, 26)
+        Me.tKelompok.TabIndex = 27
         '
         'Label3
         '
@@ -536,6 +541,12 @@ Partial Class formTambah
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "equiter"
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -548,11 +559,16 @@ Partial Class formTambah
         Me.PictureBox1.TabIndex = 42
         Me.PictureBox1.TabStop = False
         '
-        'ContextMenuStrip1
+        'pKembali
         '
-        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(25, 641)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.TabIndex = 105
+        Me.pKembali.TabStop = False
         '
         'formTambah
         '
@@ -561,6 +577,7 @@ Partial Class formTambah
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1238, 712)
         Me.ControlBox = False
+        Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
@@ -575,6 +592,7 @@ Partial Class formTambah
         Me.gJam.ResumeLayout(False)
         Me.gJam.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -582,19 +600,16 @@ Partial Class formTambah
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents tPemain As TextBox
+    Friend WithEvents tKelompok As TextBox
     Friend WithEvents tJudul As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents cHari As ComboBox
     Friend WithEvents bSimpan As Button
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents bClear As Button
-    Friend WithEvents lExit As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents cGenre As ComboBox
     Friend WithEvents TextBox4 As TextBox
@@ -615,4 +630,8 @@ Partial Class formTambah
     Friend WithEvents Label9 As Label
     Friend WithEvents tTiket As TextBox
     Friend WithEvents Button6 As Button
+    Friend WithEvents tHari As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label11 As Label
+    Friend WithEvents pKembali As PictureBox
 End Class

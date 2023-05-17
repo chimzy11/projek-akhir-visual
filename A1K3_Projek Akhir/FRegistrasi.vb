@@ -81,7 +81,7 @@ Public Class FRegistrasi
             End If
             Dim lastID As Integer = GetLastID()
             If lastID = 0 Then
-                IDAkun = 14052002
+                IDAkun = 82417320
             Else
                 IDAkun = lastID + 1
             End If

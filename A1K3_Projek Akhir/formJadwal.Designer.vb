@@ -25,11 +25,13 @@ Partial Class formJadwal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formJadwal))
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.DGVJadwalTeater = New System.Windows.Forms.DataGridView()
+        Me.bHapus = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.bTambahJadwal = New System.Windows.Forms.Button()
-        Me.DGVJadwalTeater = New System.Windows.Forms.DataGridView()
+        Me.Panel1.SuspendLayout()
         CType(Me.DGVJadwalTeater, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,33 +60,58 @@ Partial Class formJadwal
         Me.txtSearch.TabIndex = 1
         Me.txtSearch.Text = "Search"
         '
-        'Label1
+        'Label9
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(453, 155)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(295, 20)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "ini nanti diedit pas udah ada datanya yek"
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Elephant", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(420, 23)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(568, 46)
+        Me.Label9.TabIndex = 24
+        Me.Label9.Text = "Jadwal Pertunjukkan Teater"
         '
-        'Button3
+        'Panel1
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 4
-        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(285, 35)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
-        Me.Button3.Size = New System.Drawing.Size(112, 98)
-        Me.Button3.TabIndex = 21
-        Me.Button3.Text = "Hapus"
-        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.DGVJadwalTeater)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Location = New System.Drawing.Point(16, 160)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1487, 2069)
+        Me.Panel1.TabIndex = 25
+        '
+        'DGVJadwalTeater
+        '
+        Me.DGVJadwalTeater.AllowUserToAddRows = False
+        Me.DGVJadwalTeater.AllowUserToDeleteRows = False
+        Me.DGVJadwalTeater.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.DGVJadwalTeater.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVJadwalTeater.Location = New System.Drawing.Point(11, 92)
+        Me.DGVJadwalTeater.Name = "DGVJadwalTeater"
+        Me.DGVJadwalTeater.ReadOnly = True
+        Me.DGVJadwalTeater.RowHeadersWidth = 62
+        Me.DGVJadwalTeater.RowTemplate.Height = 28
+        Me.DGVJadwalTeater.Size = New System.Drawing.Size(1473, 1922)
+        Me.DGVJadwalTeater.TabIndex = 24
+        '
+        'bHapus
+        '
+        Me.bHapus.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bHapus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bHapus.FlatAppearance.BorderSize = 4
+        Me.bHapus.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bHapus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bHapus.Image = CType(resources.GetObject("bHapus.Image"), System.Drawing.Image)
+        Me.bHapus.Location = New System.Drawing.Point(285, 35)
+        Me.bHapus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bHapus.Name = "bHapus"
+        Me.bHapus.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
+        Me.bHapus.Size = New System.Drawing.Size(112, 98)
+        Me.bHapus.TabIndex = 21
+        Me.bHapus.Text = "Hapus"
+        Me.bHapus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.bHapus.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -120,28 +147,14 @@ Partial Class formJadwal
         Me.bTambahJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.bTambahJadwal.UseVisualStyleBackColor = False
         '
-        'DGVJadwalTeater
-        '
-        Me.DGVJadwalTeater.AllowUserToAddRows = False
-        Me.DGVJadwalTeater.AllowUserToDeleteRows = False
-        Me.DGVJadwalTeater.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVJadwalTeater.Location = New System.Drawing.Point(26, 196)
-        Me.DGVJadwalTeater.Name = "DGVJadwalTeater"
-        Me.DGVJadwalTeater.ReadOnly = True
-        Me.DGVJadwalTeater.RowHeadersWidth = 62
-        Me.DGVJadwalTeater.RowTemplate.Height = 28
-        Me.DGVJadwalTeater.Size = New System.Drawing.Size(1708, 612)
-        Me.DGVJadwalTeater.TabIndex = 23
-        '
         'formJadwal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1712, 855)
-        Me.Controls.Add(Me.DGVJadwalTeater)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button3)
+        Me.ClientSize = New System.Drawing.Size(1924, 1050)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.bHapus)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.bTambahJadwal)
         Me.Controls.Add(Me.txtSearch)
@@ -151,6 +164,8 @@ Partial Class formJadwal
         Me.Name = "formJadwal"
         Me.Text = "A"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.DGVJadwalTeater, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -161,7 +176,8 @@ Partial Class formJadwal
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents bTambahJadwal As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents bHapus As Button
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents DGVJadwalTeater As DataGridView
 End Class
