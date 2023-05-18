@@ -191,6 +191,12 @@
     <Compile Include="formProfilAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formRiwayatUser.Designer.vb">
+      <DependentUpon>formRiwayatUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formRiwayatUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formTambah.Designer.vb">
       <DependentUpon>formTambah.vb</DependentUpon>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formProfilAdmin.resx">
       <DependentUpon>formProfilAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRiwayatUser.resx">
+      <DependentUpon>formRiwayatUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formTambah.resx">
       <DependentUpon>formTambah.vb</DependentUpon>
