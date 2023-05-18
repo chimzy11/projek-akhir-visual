@@ -22,6 +22,21 @@ A1K3_Projek Akhir
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources._1_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources._2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources._3_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.appointment">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -68,6 +83,11 @@ A1K3_Projek Akhir
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.download">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.download__2__removebg_preview">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -187,6 +207,41 @@ A1K3_Projek Akhir
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__3_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__3__removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4__removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4__removebg_preview1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__5__removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.phone_call">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -198,6 +253,11 @@ A1K3_Projek Akhir
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.theater">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.theater__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

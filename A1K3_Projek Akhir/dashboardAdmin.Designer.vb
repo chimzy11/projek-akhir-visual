@@ -111,7 +111,7 @@ Partial Class dashboardAdmin
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Stencil", 24.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(109, 14)
+        Me.Label9.Location = New System.Drawing.Point(40, 20)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(161, 39)
@@ -167,7 +167,7 @@ Partial Class dashboardAdmin
         '
         Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelDesktop.Location = New System.Drawing.Point(270, 62)
-        Me.panelDesktop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panelDesktop.Margin = New System.Windows.Forms.Padding(2)
         Me.panelDesktop.Name = "panelDesktop"
         Me.panelDesktop.Size = New System.Drawing.Size(643, 425)
         Me.panelDesktop.TabIndex = 4
