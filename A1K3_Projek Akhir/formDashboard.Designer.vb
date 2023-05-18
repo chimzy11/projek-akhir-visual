@@ -27,19 +27,19 @@ Partial Class formDashboard
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formDashboard))
         Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.lDataJadwal = New System.Windows.Forms.Label()
+        Me.lTotalPertunjukkan = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.lDataUser = New System.Windows.Forms.Label()
         Me.lblTotalUser = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel14.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel12.SuspendLayout()
@@ -50,36 +50,48 @@ Partial Class formDashboard
         '
         Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel14.Controls.Add(Me.Button10)
-        Me.Panel14.Controls.Add(Me.Label15)
-        Me.Panel14.Controls.Add(Me.Label16)
+        Me.Panel14.Controls.Add(Me.lDataJadwal)
+        Me.Panel14.Controls.Add(Me.lTotalPertunjukkan)
         Me.Panel14.Location = New System.Drawing.Point(1011, 47)
         Me.Panel14.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(426, 214)
         Me.Panel14.TabIndex = 15
         '
-        'Label15
+        'Button10
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(98, 143)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(242, 47)
-        Me.Label15.TabIndex = 1
-        Me.Label15.Text = "Total Teater"
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.theater
+        Me.Button10.Location = New System.Drawing.Point(42, 23)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(96, 109)
+        Me.Button10.TabIndex = 2
+        Me.Button10.UseVisualStyleBackColor = True
         '
-        'Label16
+        'lDataJadwal
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(184, 45)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(136, 55)
-        Me.Label16.TabIndex = 0
-        Me.Label16.Text = "1829"
+        Me.lDataJadwal.AutoSize = True
+        Me.lDataJadwal.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lDataJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lDataJadwal.Location = New System.Drawing.Point(34, 137)
+        Me.lDataJadwal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lDataJadwal.Name = "lDataJadwal"
+        Me.lDataJadwal.Size = New System.Drawing.Size(365, 47)
+        Me.lDataJadwal.TabIndex = 1
+        Me.lDataJadwal.Text = "Total Pertunjukkan"
+        '
+        'lTotalPertunjukkan
+        '
+        Me.lTotalPertunjukkan.AutoSize = True
+        Me.lTotalPertunjukkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lTotalPertunjukkan.Location = New System.Drawing.Point(184, 45)
+        Me.lTotalPertunjukkan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lTotalPertunjukkan.Name = "lTotalPertunjukkan"
+        Me.lTotalPertunjukkan.Size = New System.Drawing.Size(136, 55)
+        Me.lTotalPertunjukkan.TabIndex = 0
+        Me.lTotalPertunjukkan.Text = "1829"
         '
         'Panel13
         '
@@ -92,6 +104,18 @@ Partial Class formDashboard
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(426, 214)
         Me.Panel13.TabIndex = 14
+        '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction_history
+        Me.Button9.Location = New System.Drawing.Point(42, 23)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(96, 109)
+        Me.Button9.TabIndex = 2
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -128,13 +152,25 @@ Partial Class formDashboard
         Me.Panel12.Size = New System.Drawing.Size(426, 214)
         Me.Panel12.TabIndex = 13
         '
+        'Button8
+        '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.group__2_
+        Me.Button8.Location = New System.Drawing.Point(56, 35)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(96, 85)
+        Me.Button8.TabIndex = 2
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'lDataUser
         '
         Me.lDataUser.AutoSize = True
         Me.lDataUser.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lDataUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lDataUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lDataUser.Location = New System.Drawing.Point(116, 143)
+        Me.lDataUser.Location = New System.Drawing.Point(105, 140)
         Me.lDataUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lDataUser.Name = "lDataUser"
         Me.lDataUser.Size = New System.Drawing.Size(211, 47)
@@ -182,42 +218,6 @@ Partial Class formDashboard
         Me.Chart1.TabIndex = 11
         Me.Chart1.Text = "Chart1"
         '
-        'Button10
-        '
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.theater
-        Me.Button10.Location = New System.Drawing.Point(42, 23)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(96, 109)
-        Me.Button10.TabIndex = 2
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.transaction_history
-        Me.Button9.Location = New System.Drawing.Point(42, 23)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(96, 109)
-        Me.Button9.TabIndex = 2
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.group__2_
-        Me.Button8.Location = New System.Drawing.Point(56, 35)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(96, 85)
-        Me.Button8.TabIndex = 2
-        Me.Button8.UseVisualStyleBackColor = True
-        '
         'formDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -247,8 +247,8 @@ Partial Class formDashboard
 
     Friend WithEvents Panel14 As Panel
     Friend WithEvents Button10 As Button
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lDataJadwal As Label
+    Friend WithEvents lTotalPertunjukkan As Label
     Friend WithEvents Panel13 As Panel
     Friend WithEvents Button9 As Button
     Friend WithEvents Label12 As Label

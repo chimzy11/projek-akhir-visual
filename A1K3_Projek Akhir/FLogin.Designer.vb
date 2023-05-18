@@ -36,24 +36,28 @@ Partial Class FLogin
         Me.lForgotPassword = New System.Windows.Forms.Label()
         Me.bLogin = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.pPasswordHide = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tPassword = New System.Windows.Forms.TextBox()
         Me.tUsername = New System.Windows.Forms.TextBox()
+        Me.pPasswordHide = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
+        Me.Panel1.SuspendLayout()
         Me.PanelFormLogin.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.pKembali)
         Me.Panel1.Location = New System.Drawing.Point(2, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
@@ -210,31 +214,6 @@ Partial Class FLogin
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "SIGN IN"
         '
-        'pPasswordHide
-        '
-        Me.pPasswordHide.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of3
-        Me.pPasswordHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pPasswordHide.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pPasswordHide.Location = New System.Drawing.Point(352, 332)
-        Me.pPasswordHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pPasswordHide.Name = "pPasswordHide"
-        Me.pPasswordHide.Size = New System.Drawing.Size(26, 25)
-        Me.pPasswordHide.TabIndex = 7
-        Me.pPasswordHide.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(352, 240)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(22, 22)
-        Me.PictureBox3.TabIndex = 6
-        Me.PictureBox3.TabStop = False
-        '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -284,6 +263,31 @@ Partial Class FLogin
         Me.tUsername.Size = New System.Drawing.Size(318, 35)
         Me.tUsername.TabIndex = 0
         '
+        'pPasswordHide
+        '
+        Me.pPasswordHide.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of3
+        Me.pPasswordHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pPasswordHide.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pPasswordHide.Location = New System.Drawing.Point(352, 332)
+        Me.pPasswordHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pPasswordHide.Name = "pPasswordHide"
+        Me.pPasswordHide.Size = New System.Drawing.Size(26, 25)
+        Me.pPasswordHide.TabIndex = 7
+        Me.pPasswordHide.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(352, 240)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox3.TabIndex = 6
+        Me.PictureBox3.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -295,6 +299,17 @@ Partial Class FLogin
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
+        '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(19, 12)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.TabIndex = 107
+        Me.pKembali.TabStop = False
         '
         'FLogin
         '
@@ -310,6 +325,7 @@ Partial Class FLogin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "FLogin"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.Panel1.ResumeLayout(False)
         Me.PanelFormLogin.ResumeLayout(False)
         Me.PanelFormLogin.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -318,6 +334,7 @@ Partial Class FLogin
         CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -343,4 +360,5 @@ Partial Class FLogin
     Friend WithEvents Label9 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents pKembali As PictureBox
 End Class

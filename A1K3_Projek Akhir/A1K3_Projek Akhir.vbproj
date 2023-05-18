@@ -101,22 +101,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dashboardAdmin.Designer.vb">
-      <DependentUpon>dashboardAdmin.vb</DependentUpon>
+    <Compile Include="DashboardAdmin.Designer.vb">
+      <DependentUpon>DashboardAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="dashboardAdmin.vb">
+    <Compile Include="DashboardAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboardUser.Designer.vb">
-      <DependentUpon>dashboardUser.vb</DependentUpon>
+    <Compile Include="DashboardUser.Designer.vb">
+      <DependentUpon>DashboardUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="dashboardUser.vb">
+    <Compile Include="DashboardUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FHapusJadwalTeater.Designer.vb">
-      <DependentUpon>FHapusJadwalTeater.vb</DependentUpon>
+    <Compile Include="LandingPage.Designer.vb">
+      <DependentUpon>LandingPage.vb</DependentUpon>
     </Compile>
-    <Compile Include="FHapusJadwalTeater.vb">
+    <Compile Include="LandingPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpHapusJadwal.Designer.vb">
+      <DependentUpon>PopUpHapusJadwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpHapusJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpEditJadwal.Designer.vb">
+      <DependentUpon>PopUpEditJadwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpEditJadwal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FLogin.Designer.vb">
@@ -137,18 +149,6 @@
     <Compile Include="FormDataUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formDetailMusikal.Designer.vb">
-      <DependentUpon>formDetailMusikal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formDetailMusikal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formDrama.Designer.vb">
-      <DependentUpon>formDrama.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formDrama.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="formEdit.Designer.vb">
       <DependentUpon>formEdit.vb</DependentUpon>
     </Compile>
@@ -161,22 +161,10 @@
     <Compile Include="formDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formHome.Designer.vb">
-      <DependentUpon>formHome.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formHome.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="formJadwal.Designer.vb">
       <DependentUpon>formJadwal.vb</DependentUpon>
     </Compile>
     <Compile Include="formJadwal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formKomedi.Designer.vb">
-      <DependentUpon>formKomedi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formKomedi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formLupaPass.Designer.vb">
@@ -185,22 +173,10 @@
     <Compile Include="formLupaPass.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMusikal.Designer.vb">
-      <DependentUpon>formMusikal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formMusikal.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="formProfilAdmin.Designer.vb">
       <DependentUpon>formProfilAdmin.vb</DependentUpon>
     </Compile>
     <Compile Include="formProfilAdmin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formRiwayatUser.Designer.vb">
-      <DependentUpon>formRiwayatUser.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formRiwayatUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formTambah.Designer.vb">
@@ -252,14 +228,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="dashboardAdmin.resx">
-      <DependentUpon>dashboardAdmin.vb</DependentUpon>
+    <EmbeddedResource Include="DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dashboardUser.resx">
-      <DependentUpon>dashboardUser.vb</DependentUpon>
+    <EmbeddedResource Include="DashboardUser.resx">
+      <DependentUpon>DashboardUser.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FHapusJadwalTeater.resx">
-      <DependentUpon>FHapusJadwalTeater.vb</DependentUpon>
+    <EmbeddedResource Include="LandingPage.resx">
+      <DependentUpon>LandingPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpHapusJadwal.resx">
+      <DependentUpon>PopUpHapusJadwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpEditJadwal.resx">
+      <DependentUpon>PopUpEditJadwal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.vb</DependentUpon>
@@ -270,38 +252,20 @@
     <EmbeddedResource Include="FormDataUser.resx">
       <DependentUpon>FormDataUser.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formDetailMusikal.resx">
-      <DependentUpon>formDetailMusikal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formDrama.resx">
-      <DependentUpon>formDrama.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formEdit.resx">
       <DependentUpon>formEdit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formDashboard.resx">
       <DependentUpon>formDashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formHome.resx">
-      <DependentUpon>formHome.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formJadwal.resx">
       <DependentUpon>formJadwal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formKomedi.resx">
-      <DependentUpon>formKomedi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLupaPass.resx">
       <DependentUpon>formLupaPass.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formMusikal.resx">
-      <DependentUpon>formMusikal.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formProfilAdmin.resx">
       <DependentUpon>formProfilAdmin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formRiwayatUser.resx">
-      <DependentUpon>formRiwayatUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formTambah.resx">
       <DependentUpon>formTambah.vb</DependentUpon>
@@ -421,60 +385,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye_of2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download__2_-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\theater %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel Purple Pink Neon Yellow Dreamy Clean Beauty Products Sustainable Beauty Instagram Post %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel Purple Pink Neon Yellow Dreamy Clean Beauty Products Sustainable Beauty Instagram Post %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__3_-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4_-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4_-removebg-preview1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__5_-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\284587d05124ed6350d6f8bf453253a5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Brown_3D__Elegant_Umrah_Travel_Flyer-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\globe.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\trending %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\trending %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\placeholder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

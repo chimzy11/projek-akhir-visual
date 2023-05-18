@@ -49,6 +49,7 @@ Partial Class FRegistrasi
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tPassword = New System.Windows.Forms.TextBox()
         Me.tUsername = New System.Windows.Forms.TextBox()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.PanelFormLogin.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -58,6 +59,7 @@ Partial Class FRegistrasi
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -370,12 +372,24 @@ Partial Class FRegistrasi
         Me.tUsername.Size = New System.Drawing.Size(317, 34)
         Me.tUsername.TabIndex = 0
         '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(19, 12)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.TabIndex = 108
+        Me.pKembali.TabStop = False
+        '
         'FRegistrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1924, 1050)
+        Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.PanelFormLogin)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -394,6 +408,7 @@ Partial Class FRegistrasi
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -424,4 +439,5 @@ Partial Class FRegistrasi
     Friend WithEvents Label8 As Label
     Friend WithEvents tKonfirmasi As TextBox
     Friend WithEvents lSignIn As Label
+    Friend WithEvents pKembali As PictureBox
 End Class

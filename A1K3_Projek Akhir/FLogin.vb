@@ -54,16 +54,16 @@ Public Class FLogin
             RD = CMD.ExecuteReader()
             If RD.Read() Then
                 If RD.GetString(3) = "equiter" And RD.GetString(4) = "equiter" Then
-                    dashboardAdmin.lUsername.Text = RD.GetString(1)
+                    DashboardAdmin.lUsername.Text = RD.GetString(1)
                     Me.Visible = False
                     RD.Close()
                     Call ProgramHide()
-                    dashboardAdmin.Show()
+                    DashboardAdmin.Show()
                 Else
-                    dashboardUser.lUsername.Text = RD.GetString(3)
+                    DashboardUser.lUsername.Text = RD.GetString(3)
                     RD.Close()
                     Call ProgramHide()
-                    dashboardUser.Show()
+                    DashboardUser.Show()
                 End If
 
                 If cRememberMe.Checked = True Then
@@ -119,5 +119,10 @@ Public Class FLogin
             e.SuppressKeyPress = True
             bLogin.PerformClick()
         End If
+    End Sub
+
+    Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
+        Me.Close()
+        LandingPage.Show()
     End Sub
 End Class

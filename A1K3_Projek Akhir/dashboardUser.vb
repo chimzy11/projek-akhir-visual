@@ -1,6 +1,6 @@
 ﻿Imports System.Drawing.Drawing2D
 
-Public Class dashboardUser
+Public Class DashboardUser
     Private Sub dashboardUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MenuStripHome.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStripTeater.ForeColor = Color.FromArgb(185, 174, 169)

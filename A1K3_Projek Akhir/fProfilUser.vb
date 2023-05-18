@@ -45,20 +45,26 @@ Public Class fProfilUser
         End If
         RD.Close()
     End Sub
-    Private Sub pProfil_Click(sender As Object, e As EventArgs) Handles pProfil.Click
-        Dim OpenProfil As New OpenFileDialog()
-        OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png;*.gif;*.bmp"
 
-        If OpenProfil.ShowDialog() = DialogResult.OK Then
-            Dim imagePath As String = OpenProfil.FileName
+    Private Function CropToCircle(ByVal image As Image) As Image
+        Dim diameter As Integer = Math.Min(image.Width, image.Height)
+        Dim bitmap As New Bitmap(diameter, diameter)
+        Using g As Graphics = Graphics.FromImage(bitmap)
+            g.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
+            g.Clear(Color.Transparent)
 
-            pProfil.Image = Image.FromFile(imagePath)
-            CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE username = @username", CONN)
-            CMD.Parameters.AddWithValue("@foto", imagePath)
-            CMD.Parameters.AddWithValue("@username", FLogin.tUsername.Text)
-            CMD.ExecuteNonQuery()
-        End If
-    End Sub
+            Dim rectangle As New Rectangle(0, 0, diameter, diameter)
+            Dim path As New Drawing2D.GraphicsPath()
+            path.AddEllipse(rectangle)
+            g.SetClip(path)
+
+            Dim offsetX As Integer = (image.Width - diameter) \ 2
+            Dim offsetY As Integer = (image.Height - diameter) \ 2
+            g.DrawImage(image, -offsetX, -offsetY)
+        End Using
+
+        Return bitmap
+    End Function
     Sub TampilProfil()
         CMD = New MySqlCommand("SELECT foto FROM akun WHERE username = @username", CONN)
         CMD.Parameters.AddWithValue("@username", FLogin.tUsername.Text)
@@ -66,9 +72,12 @@ Public Class fProfilUser
         RD = CMD.ExecuteReader()
         If RD.Read() Then
             Dim imageName As String = RD("foto").ToString()
-            Dim imagePath As String = Path.Combine(Application.StartupPath, imageName)
+            Dim imagePath As String = Path.Combine("C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads", imageName)
             If File.Exists(imagePath) Then
-                pProfil.Image = Image.FromFile(imagePath)
+                Dim image As Image = Image.FromFile(imagePath)
+                pProfil.SizeMode = PictureBoxSizeMode.StretchImage
+                pProfil.Image = CropToCircle(image)
+                pSampul.BackgroundImage = image
             End If
         End If
 
@@ -112,7 +121,30 @@ Public Class fProfilUser
         End If
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+    Private Sub pChangeProfil_Click(sender As Object, e As EventArgs) Handles pChangeProfil.Click
+        Dim OpenProfil As New OpenFileDialog()
+        OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png"
 
+        If OpenProfil.ShowDialog() = DialogResult.OK Then
+            Dim imagePath As String = OpenProfil.FileName
+            Dim image As Image = Image.FromFile(imagePath)
+            pProfil.SizeMode = PictureBoxSizeMode.StretchImage
+            pProfil.Image = CropToCircle(image)
+            pSampul.BackgroundImage = image
+
+            Dim fileName As String = Path.GetFileName(imagePath)
+            Dim extension As String = Path.GetExtension(imagePath)
+            Dim username As String = FLogin.tUsername.Text
+            Dim uploadPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\"
+
+            Dim destinationPath As String = Path.Combine(uploadPath, fileName)
+            File.Copy(imagePath, destinationPath, True)
+
+            CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE username = @username", CONN)
+            CMD.Parameters.AddWithValue("@foto", fileName)
+            CMD.Parameters.AddWithValue("@username", username)
+            CMD.ExecuteNonQuery()
+        End If
     End Sub
+
 End Class

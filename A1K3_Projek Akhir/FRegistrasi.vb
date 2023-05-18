@@ -140,4 +140,8 @@ Public Class FRegistrasi
         End If
     End Sub
 
+    Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
+        Me.Close()
+        LandingPage.Show()
+    End Sub
 End Class

@@ -53,8 +53,8 @@ Public Class formTambah
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
         childForm.Dock = DockStyle.Fill
-        dashboardAdmin.panelDesktop.Controls.Add(childForm)
-        dashboardAdmin.panelDesktop.Tag = childForm
+        DashboardAdmin.panelDesktop.Controls.Add(childForm)
+        DashboardAdmin.panelDesktop.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
     End Sub

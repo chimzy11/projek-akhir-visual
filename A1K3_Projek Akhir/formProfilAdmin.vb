@@ -73,7 +73,7 @@ Public Class formProfilAdmin
         RD = CMD.ExecuteReader()
         If RD.Read() Then
             Dim imageName As String = RD("foto").ToString()
-            Dim imagePath As String = Path.Combine(Application.StartupPath, imageName)
+            Dim imagePath As String = Path.Combine("C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads", imageName)
             If File.Exists(imagePath) Then
                 pProfilAdmin.Image = Image.FromFile(imagePath)
             End If
@@ -83,16 +83,27 @@ Public Class formProfilAdmin
     End Sub
     Private Sub pProfilAdmin_Click(sender As Object, e As EventArgs) Handles pProfilAdmin.Click
         Dim OpenProfil As New OpenFileDialog()
-        OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png;*.gif;*.bmp"
+        OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png"
 
         If OpenProfil.ShowDialog() = DialogResult.OK Then
             Dim imagePath As String = OpenProfil.FileName
-
             pProfilAdmin.Image = Image.FromFile(imagePath)
-            CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE id_akun = @id_akun", CONN)
-            CMD.Parameters.AddWithValue("@foto", imagePath)
-            CMD.Parameters.AddWithValue("@id_akun", "1")
+
+            Dim fileName As String = Path.GetFileName(imagePath)
+            Dim extension As String = Path.GetExtension(imagePath)
+            Dim username As String = FLogin.tUsername.Text
+
+            Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" + username + extension
+
+            If Not File.Exists(destinationPath) Then
+                File.Copy(imagePath, destinationPath, True)
+            End If
+
+            CMD = New MySqlCommand("UPDATE akun SET foto = @foto WHERE username = @username", CONN)
+            CMD.Parameters.AddWithValue("@foto", username + extension)
+            CMD.Parameters.AddWithValue("@username", username)
             CMD.ExecuteNonQuery()
+
         End If
     End Sub
 

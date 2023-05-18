@@ -80,7 +80,6 @@ C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\De
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
-C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\mysql.data.dll
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.dashboardAdmin.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDashboard.resources
@@ -132,7 +131,6 @@ C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debu
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.fProfilUser.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.dashboardUser.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.fProfilUser.resources
-C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FHapusJadwalTeater.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FormDataUser.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.dashboardUser.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FHapusJadwalTeater.resources
@@ -144,3 +142,6 @@ C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\De
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formHome.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailMusikal.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formRiwayatUser.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.PopUpHapusJadwal.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.PopUpEditJadwal.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.LandingPage.resources

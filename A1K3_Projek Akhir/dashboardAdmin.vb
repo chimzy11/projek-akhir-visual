@@ -3,7 +3,7 @@ Imports System.IO
 Imports System.Windows.Forms.DataVisualization.Charting
 Imports System.Xml.Serialization
 Imports MySql.Data.MySqlClient
-Public Class dashboardAdmin
+Public Class DashboardAdmin
     Private currentChildForm As Form
 
 
@@ -69,7 +69,7 @@ Public Class dashboardAdmin
         End If
     End Sub
 
-    Private Sub dashboardAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub DashboardAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
         OpenChildForm(New formDashboard)
     End Sub
@@ -90,14 +90,4 @@ Public Class dashboardAdmin
     Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
         OpenChildForm(New formTransaksi)
     End Sub
-
-    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles panelDesktop.Paint
-
-    End Sub
-
-    Private Sub PanelSidebar_Paint(sender As Object, e As PaintEventArgs) Handles PanelSidebar.Paint
-
-    End Sub
-
-
 End Class

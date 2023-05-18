@@ -25,11 +25,12 @@ Public Class formDashboard
 
     Private Sub formDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTotalUser.Visible = True
-        KoneksiDatabase() ' Panggil fungsi koneksi untuk membuka koneksi ke database
+        KoneksiDatabase()
         HitungTotalUser()
+        HitungTotalPertunjukkan()
     End Sub
     Private Sub HitungTotalUser()
-        Dim query As String = "SELECT COUNT(*) AS total_baris FROM akun WHERE id_Akun <> ''" ' Mengganti query dengan kondisi yang sesuai
+        Dim query As String = "SELECT COUNT(*) AS total_baris FROM akun WHERE id_Akun <> ''"
 
         CMD = New MySqlCommand(query, CONN)
 
@@ -42,8 +43,26 @@ Public Class formDashboard
         End Try
     End Sub
 
+    Private Sub HitungTotalPertunjukkan()
+        Dim query As String = "SELECT COUNT(*) AS total_baris FROM JadwalTeater"
+
+        CMD = New MySqlCommand(query, CONN)
+
+        Try
+            Dim totalUser As Integer = Convert.ToInt32(CMD.ExecuteScalar())
+            lTotalPertunjukkan.Text = totalUser.ToString()
+            lTotalPertunjukkan.Refresh()
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+    End Sub
+
     Private Sub lDataUser_Click(sender As Object, e As EventArgs) Handles lDataUser.Click
         OpenChildForm(New FormDataUser)
+    End Sub
+
+    Private Sub lDataJadwal_Click(sender As Object, e As EventArgs) Handles lDataJadwal.Click
+        OpenChildForm(New formJadwal)
     End Sub
 End Class
 

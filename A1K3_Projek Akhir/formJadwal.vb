@@ -2,9 +2,17 @@
 Imports MySql.Data.MySqlClient
 Imports System.Drawing
 Public Class formJadwal
+    Private Sub HapusDataTanggalLewat()
+        Dim currentDate As Date = Date.Now.Date
 
+        CMD = New MySqlCommand("DELETE FROM JadwalTeater WHERE tanggal_pertunjukkan < @currentDate", CONN)
+        CMD.Parameters.AddWithValue("@currentDate", currentDate)
+        CMD.ExecuteNonQuery()
+    End Sub
 
     Sub TampilJadwalTeater()
+        Call KoneksiDatabase()
+        HapusDataTanggalLewat()
         DA = New MySqlDataAdapter("SELECT * FROM JadwalTeater", CONN)
         DS = New DataSet
         DS.Clear()
@@ -14,15 +22,15 @@ Public Class formJadwal
     End Sub
 
     Sub GridJadwalTeater()
-        DGVJadwalTeater.Columns(0).Width = 80
-        DGVJadwalTeater.Columns(1).Width = 150
-        DGVJadwalTeater.Columns(2).Width = 115
+        DGVJadwalTeater.Columns(0).Width = 90
+        DGVJadwalTeater.Columns(1).Width = 135
+        DGVJadwalTeater.Columns(2).Width = 125
         DGVJadwalTeater.Columns(3).Width = 60
         DGVJadwalTeater.Columns(4).Width = 60
         DGVJadwalTeater.Columns(5).Width = 80
         DGVJadwalTeater.Columns(6).Width = 110
         DGVJadwalTeater.Columns(7).Width = 85
-        DGVJadwalTeater.Columns(8).Width = 90
+        DGVJadwalTeater.Columns(8).Width = 95
         DGVJadwalTeater.Columns(9).Width = 100
 
         DGVJadwalTeater.Columns(0).HeaderText = "ID Teater"
@@ -107,6 +115,10 @@ Public Class formJadwal
         End If
     End Sub
     Private Sub bHapus_Click(sender As Object, e As EventArgs) Handles bHapus.Click
-        FHapusJadwalTeater.Show()
+        PopUpHapusJadwal.Show()
+    End Sub
+
+    Private Sub bEdit_Click(sender As Object, e As EventArgs) Handles bEdit.Click
+        PopUpEditJadwal.Show()
     End Sub
 End Class
