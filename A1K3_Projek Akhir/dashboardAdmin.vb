@@ -90,4 +90,14 @@ Public Class dashboardAdmin
     Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
         OpenChildForm(New formTransaksi)
     End Sub
+
+    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles panelDesktop.Paint
+
+    End Sub
+
+    Private Sub PanelSidebar_Paint(sender As Object, e As PaintEventArgs) Handles PanelSidebar.Paint
+
+    End Sub
+
+
 End Class

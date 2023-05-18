@@ -161,6 +161,12 @@
     <Compile Include="formLupaPass.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formMusikal.Designer.vb">
+      <DependentUpon>formMusikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formMusikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formProfilAdmin.Designer.vb">
       <DependentUpon>formProfilAdmin.vb</DependentUpon>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLupaPass.resx">
       <DependentUpon>formLupaPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMusikal.resx">
+      <DependentUpon>formMusikal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formProfilAdmin.resx">
       <DependentUpon>formProfilAdmin.vb</DependentUpon>

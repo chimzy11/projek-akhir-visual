@@ -65,8 +65,9 @@ Partial Class fProfilUser
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1924, 80)
+        Me.Panel1.Size = New System.Drawing.Size(913, 52)
         Me.Panel1.TabIndex = 0
         '
         'pKembali
@@ -74,9 +75,10 @@ Partial Class fProfilUser
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(35, 24)
+        Me.pKembali.Location = New System.Drawing.Point(23, 16)
+        Me.pKembali.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.Size = New System.Drawing.Size(25, 23)
         Me.pKembali.TabIndex = 106
         Me.pKembali.TabStop = False
         '
@@ -85,9 +87,10 @@ Partial Class fProfilUser
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Stencil", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(919, 21)
+        Me.Label7.Location = New System.Drawing.Point(613, 14)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(127, 38)
+        Me.Label7.Size = New System.Drawing.Size(88, 26)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Profil"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -97,9 +100,10 @@ Partial Class fProfilUser
         Me.lUsername.AutoSize = True
         Me.lUsername.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lUsername.Location = New System.Drawing.Point(139, 557)
+        Me.lUsername.Location = New System.Drawing.Point(93, 362)
+        Me.lUsername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lUsername.Name = "lUsername"
-        Me.lUsername.Size = New System.Drawing.Size(202, 47)
+        Me.lUsername.Size = New System.Drawing.Size(137, 31)
         Me.lUsername.TabIndex = 9
         Me.lUsername.Text = "Username"
         '
@@ -107,27 +111,30 @@ Partial Class fProfilUser
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 80)
+        Me.Panel2.Location = New System.Drawing.Point(0, 52)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1924, 327)
+        Me.Panel2.Size = New System.Drawing.Size(913, 213)
         Me.Panel2.TabIndex = 9
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Location = New System.Drawing.Point(457, 407)
+        Me.Panel3.Location = New System.Drawing.Point(305, 265)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1467, 750)
+        Me.Panel3.Size = New System.Drawing.Size(978, 487)
         Me.Panel3.TabIndex = 10
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(37, 34)
+        Me.Panel4.Location = New System.Drawing.Point(25, 22)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1467, 750)
+        Me.Panel4.Size = New System.Drawing.Size(978, 487)
         Me.Panel4.TabIndex = 11
         '
         'Panel5
@@ -147,9 +154,10 @@ Partial Class fProfilUser
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Controls.Add(Me.tNamaLengkap)
         Me.Panel5.Controls.Add(Me.Button3)
-        Me.Panel5.Location = New System.Drawing.Point(45, 43)
+        Me.Panel5.Location = New System.Drawing.Point(30, 28)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1467, 750)
+        Me.Panel5.Size = New System.Drawing.Size(978, 487)
         Me.Panel5.TabIndex = 12
         '
         'bBatal
@@ -161,10 +169,10 @@ Partial Class fProfilUser
         Me.bBatal.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bBatal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.bBatal.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bBatal.Location = New System.Drawing.Point(1199, 11)
-        Me.bBatal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bBatal.Location = New System.Drawing.Point(799, 7)
+        Me.bBatal.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.bBatal.Name = "bBatal"
-        Me.bBatal.Size = New System.Drawing.Size(174, 51)
+        Me.bBatal.Size = New System.Drawing.Size(116, 33)
         Me.bBatal.TabIndex = 57
         Me.bBatal.Text = "Batal"
         Me.bBatal.UseVisualStyleBackColor = False
@@ -179,10 +187,10 @@ Partial Class fProfilUser
         Me.bSimpan.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.bSimpan.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bSimpan.Location = New System.Drawing.Point(968, 11)
-        Me.bSimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bSimpan.Location = New System.Drawing.Point(645, 7)
+        Me.bSimpan.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.bSimpan.Name = "bSimpan"
-        Me.bSimpan.Size = New System.Drawing.Size(174, 51)
+        Me.bSimpan.Size = New System.Drawing.Size(116, 33)
         Me.bSimpan.TabIndex = 56
         Me.bSimpan.Text = "Simpan"
         Me.bSimpan.UseVisualStyleBackColor = False
@@ -193,9 +201,10 @@ Partial Class fProfilUser
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(200, 483)
+        Me.Label5.Location = New System.Drawing.Point(133, 314)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(130, 31)
+        Me.Label5.Size = New System.Drawing.Size(89, 22)
         Me.Label5.TabIndex = 52
         Me.Label5.Text = "Password"
         '
@@ -206,10 +215,10 @@ Partial Class fProfilUser
         Me.tPassword.Enabled = False
         Me.tPassword.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tPassword.Location = New System.Drawing.Point(435, 488)
-        Me.tPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tPassword.Location = New System.Drawing.Point(290, 317)
+        Me.tPassword.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tPassword.Name = "tPassword"
-        Me.tPassword.Size = New System.Drawing.Size(477, 26)
+        Me.tPassword.Size = New System.Drawing.Size(318, 17)
         Me.tPassword.TabIndex = 53
         '
         'Button5
@@ -220,10 +229,10 @@ Partial Class fProfilUser
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(427, 478)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button5.Location = New System.Drawing.Point(285, 311)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(488, 48)
+        Me.Button5.Size = New System.Drawing.Size(325, 31)
         Me.Button5.TabIndex = 54
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -232,9 +241,10 @@ Partial Class fProfilUser
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(200, 362)
+        Me.Label4.Location = New System.Drawing.Point(133, 235)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 31)
+        Me.Label4.Size = New System.Drawing.Size(64, 22)
         Me.Label4.TabIndex = 49
         Me.Label4.Text = "No Hp"
         '
@@ -245,10 +255,10 @@ Partial Class fProfilUser
         Me.tNotelp.Enabled = False
         Me.tNotelp.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tNotelp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tNotelp.Location = New System.Drawing.Point(435, 367)
-        Me.tNotelp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tNotelp.Location = New System.Drawing.Point(290, 239)
+        Me.tNotelp.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tNotelp.Name = "tNotelp"
-        Me.tNotelp.Size = New System.Drawing.Size(477, 26)
+        Me.tNotelp.Size = New System.Drawing.Size(318, 17)
         Me.tNotelp.TabIndex = 50
         '
         'Button4
@@ -259,10 +269,10 @@ Partial Class fProfilUser
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(428, 358)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button4.Location = New System.Drawing.Point(285, 233)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(488, 48)
+        Me.Button4.Size = New System.Drawing.Size(325, 31)
         Me.Button4.TabIndex = 51
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -271,9 +281,10 @@ Partial Class fProfilUser
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(200, 245)
+        Me.Label3.Location = New System.Drawing.Point(133, 159)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 31)
+        Me.Label3.Size = New System.Drawing.Size(54, 22)
         Me.Label3.TabIndex = 46
         Me.Label3.Text = "Email"
         '
@@ -284,10 +295,10 @@ Partial Class fProfilUser
         Me.tEmail.Enabled = False
         Me.tEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tEmail.Location = New System.Drawing.Point(435, 245)
-        Me.tEmail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tEmail.Location = New System.Drawing.Point(290, 159)
+        Me.tEmail.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tEmail.Name = "tEmail"
-        Me.tEmail.Size = New System.Drawing.Size(477, 26)
+        Me.tEmail.Size = New System.Drawing.Size(318, 17)
         Me.tEmail.TabIndex = 47
         '
         'Button2
@@ -298,10 +309,10 @@ Partial Class fProfilUser
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(428, 232)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Location = New System.Drawing.Point(285, 151)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(488, 48)
+        Me.Button2.Size = New System.Drawing.Size(325, 31)
         Me.Button2.TabIndex = 48
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -310,9 +321,10 @@ Partial Class fProfilUser
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(197, 112)
+        Me.Label2.Location = New System.Drawing.Point(131, 73)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(196, 31)
+        Me.Label2.Size = New System.Drawing.Size(132, 22)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Nama Lengkap"
         '
@@ -324,10 +336,10 @@ Partial Class fProfilUser
         Me.tNamaLengkap.Enabled = False
         Me.tNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tNamaLengkap.Location = New System.Drawing.Point(435, 116)
-        Me.tNamaLengkap.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tNamaLengkap.Location = New System.Drawing.Point(290, 75)
+        Me.tNamaLengkap.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tNamaLengkap.Name = "tNamaLengkap"
-        Me.tNamaLengkap.Size = New System.Drawing.Size(477, 26)
+        Me.tNamaLengkap.Size = New System.Drawing.Size(318, 17)
         Me.tNamaLengkap.TabIndex = 44
         '
         'Button3
@@ -338,10 +350,10 @@ Partial Class fProfilUser
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(431, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Location = New System.Drawing.Point(287, 70)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(488, 48)
+        Me.Button3.Size = New System.Drawing.Size(325, 31)
         Me.Button3.TabIndex = 45
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -354,10 +366,10 @@ Partial Class fProfilUser
         Me.bEdit.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bEdit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.bEdit.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bEdit.Location = New System.Drawing.Point(72, 726)
-        Me.bEdit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bEdit.Location = New System.Drawing.Point(48, 472)
+        Me.bEdit.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.bEdit.Name = "bEdit"
-        Me.bEdit.Size = New System.Drawing.Size(309, 48)
+        Me.bEdit.Size = New System.Drawing.Size(206, 31)
         Me.bEdit.TabIndex = 11
         Me.bEdit.Text = "Edit Profile"
         Me.bEdit.UseVisualStyleBackColor = False
@@ -371,10 +383,10 @@ Partial Class fProfilUser
         Me.bLogOut.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bLogOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.bLogOut.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bLogOut.Location = New System.Drawing.Point(72, 865)
-        Me.bLogOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bLogOut.Location = New System.Drawing.Point(48, 562)
+        Me.bLogOut.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.bLogOut.Name = "bLogOut"
-        Me.bLogOut.Size = New System.Drawing.Size(309, 48)
+        Me.bLogOut.Size = New System.Drawing.Size(206, 31)
         Me.bLogOut.TabIndex = 12
         Me.bLogOut.Text = "Logout"
         Me.bLogOut.UseVisualStyleBackColor = False
@@ -384,9 +396,10 @@ Partial Class fProfilUser
         Me.lNamaLengkap.AutoSize = True
         Me.lNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lNamaLengkap.Location = New System.Drawing.Point(141, 613)
+        Me.lNamaLengkap.Location = New System.Drawing.Point(94, 398)
+        Me.lNamaLengkap.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lNamaLengkap.Name = "lNamaLengkap"
-        Me.lNamaLengkap.Size = New System.Drawing.Size(196, 31)
+        Me.lNamaLengkap.Size = New System.Drawing.Size(132, 22)
         Me.lNamaLengkap.TabIndex = 55
         Me.lNamaLengkap.Text = "Nama Lengkap"
         '
@@ -396,10 +409,10 @@ Partial Class fProfilUser
         Me.pProfil.BackgroundImage = CType(resources.GetObject("pProfil.BackgroundImage"), System.Drawing.Image)
         Me.pProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pProfil.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pProfil.Location = New System.Drawing.Point(107, 286)
-        Me.pProfil.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pProfil.Location = New System.Drawing.Point(71, 186)
+        Me.pProfil.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.pProfil.Name = "pProfil"
-        Me.pProfil.Size = New System.Drawing.Size(234, 250)
+        Me.pProfil.Size = New System.Drawing.Size(156, 162)
         Me.pProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pProfil.TabIndex = 8
         Me.pProfil.TabStop = False
@@ -413,20 +426,20 @@ Partial Class fProfilUser
         Me.bHapusAkun.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bHapusAkun.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.bHapusAkun.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bHapusAkun.Location = New System.Drawing.Point(72, 793)
-        Me.bHapusAkun.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bHapusAkun.Location = New System.Drawing.Point(48, 515)
+        Me.bHapusAkun.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.bHapusAkun.Name = "bHapusAkun"
-        Me.bHapusAkun.Size = New System.Drawing.Size(309, 48)
+        Me.bHapusAkun.Size = New System.Drawing.Size(206, 31)
         Me.bHapusAkun.TabIndex = 56
         Me.bHapusAkun.Text = "Hapus Akun"
         Me.bHapusAkun.UseVisualStyleBackColor = False
         '
         'fProfilUser
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1924, 1050)
+        Me.ClientSize = New System.Drawing.Size(913, 487)
         Me.Controls.Add(Me.bHapusAkun)
         Me.Controls.Add(Me.lNamaLengkap)
         Me.Controls.Add(Me.bLogOut)
@@ -436,6 +449,7 @@ Partial Class fProfilUser
         Me.Controls.Add(Me.pProfil)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "fProfilUser"
         Me.Text = "fProfilUser"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
