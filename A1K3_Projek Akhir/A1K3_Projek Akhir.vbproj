@@ -137,6 +137,12 @@
     <Compile Include="FormDataUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formDrama.Designer.vb">
+      <DependentUpon>formDrama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formDrama.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formEdit.Designer.vb">
       <DependentUpon>formEdit.vb</DependentUpon>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDataUser.resx">
       <DependentUpon>FormDataUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDrama.resx">
+      <DependentUpon>formDrama.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formEdit.resx">
       <DependentUpon>formEdit.vb</DependentUpon>

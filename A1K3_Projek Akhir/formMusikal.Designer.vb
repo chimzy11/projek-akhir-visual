@@ -25,65 +25,65 @@ Partial Class formMusikal
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTanggal = New System.Windows.Forms.Label()
         Me.txtCari = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblHarga1 = New System.Windows.Forms.Label()
+        Me.lblJudul1 = New System.Windows.Forms.Label()
+        Me.lblJudul2 = New System.Windows.Forms.Label()
+        Me.lblHarga2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblJudul3 = New System.Windows.Forms.Label()
+        Me.lblHarga3 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblJudul4 = New System.Windows.Forms.Label()
+        Me.lblHarga4 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.btnDetail1 = New System.Windows.Forms.Button()
+        Me.btnDetail2 = New System.Windows.Forms.Button()
+        Me.btnDetail3 = New System.Windows.Forms.Button()
+        Me.btnDetail4 = New System.Windows.Forms.Button()
+        Me.btnDetail8 = New System.Windows.Forms.Button()
+        Me.btnDetail7 = New System.Windows.Forms.Button()
+        Me.btnDetail6 = New System.Windows.Forms.Button()
+        Me.btnDetail5 = New System.Windows.Forms.Button()
+        Me.lblJudul8 = New System.Windows.Forms.Label()
+        Me.lblJudul7 = New System.Windows.Forms.Label()
+        Me.lblHarga8 = New System.Windows.Forms.Label()
+        Me.lblJudul6 = New System.Windows.Forms.Label()
+        Me.lblHarga7 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.lblHarga6 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblJudul5 = New System.Windows.Forms.Label()
+        Me.lblHarga5 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -119,18 +119,6 @@ Partial Class formMusikal
         Me.txtCari.Size = New System.Drawing.Size(726, 32)
         Me.txtCari.TabIndex = 2
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.loupe__1_
-        Me.Button1.Location = New System.Drawing.Point(685, 51)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(67, 30)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label1)
@@ -145,343 +133,370 @@ Partial Class formMusikal
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.lblHarga1)
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Location = New System.Drawing.Point(293, 235)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(169, 171)
         Me.Panel2.TabIndex = 5
         '
-        'PictureBox1
+        'lblHarga1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 17)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(115, 131)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.lblHarga1.AutoSize = True
+        Me.lblHarga1.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga1.ForeColor = System.Drawing.Color.White
+        Me.lblHarga1.Location = New System.Drawing.Point(62, 17)
+        Me.lblHarga1.Name = "lblHarga1"
+        Me.lblHarga1.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga1.TabIndex = 7
+        Me.lblHarga1.Text = "Harga"
         '
-        'Label2
+        'lblJudul1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(343, 206)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 26)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Judul"
+        Me.lblJudul1.AutoSize = True
+        Me.lblJudul1.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul1.Location = New System.Drawing.Point(343, 206)
+        Me.lblJudul1.Name = "lblJudul1"
+        Me.lblJudul1.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul1.TabIndex = 6
+        Me.lblJudul1.Text = "Judul"
         '
-        'Label3
+        'lblJudul2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(62, 17)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 19)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Harga"
+        Me.lblJudul2.AutoSize = True
+        Me.lblJudul2.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul2.Location = New System.Drawing.Point(544, 206)
+        Me.lblJudul2.Name = "lblJudul2"
+        Me.lblJudul2.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul2.TabIndex = 11
+        Me.lblJudul2.Text = "Judul"
         '
-        'Label4
+        'lblHarga2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(544, 206)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 26)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Judul"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(64, 17)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 19)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Harga"
+        Me.lblHarga2.AutoSize = True
+        Me.lblHarga2.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga2.ForeColor = System.Drawing.Color.White
+        Me.lblHarga2.Location = New System.Drawing.Point(64, 17)
+        Me.lblHarga2.Name = "lblHarga2"
+        Me.lblHarga2.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga2.TabIndex = 12
+        Me.lblHarga2.Text = "Harga"
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.lblHarga2)
         Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Location = New System.Drawing.Point(493, 235)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(169, 171)
         Me.Panel3.TabIndex = 10
         '
-        'PictureBox2
+        'lblJudul3
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox2.Location = New System.Drawing.Point(29, 17)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(115, 131)
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
+        Me.lblJudul3.AutoSize = True
+        Me.lblJudul3.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul3.Location = New System.Drawing.Point(744, 206)
+        Me.lblJudul3.Name = "lblJudul3"
+        Me.lblJudul3.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul3.TabIndex = 11
+        Me.lblJudul3.Text = "Judul"
         '
-        'Label6
+        'lblHarga3
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(744, 206)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 26)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Judul"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(61, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 19)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "Harga"
+        Me.lblHarga3.AutoSize = True
+        Me.lblHarga3.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga3.ForeColor = System.Drawing.Color.White
+        Me.lblHarga3.Location = New System.Drawing.Point(61, 17)
+        Me.lblHarga3.Name = "lblHarga3"
+        Me.lblHarga3.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga3.TabIndex = 12
+        Me.lblHarga3.Text = "Harga"
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Controls.Add(Me.lblHarga3)
         Me.Panel4.Controls.Add(Me.PictureBox3)
         Me.Panel4.Location = New System.Drawing.Point(693, 235)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(169, 171)
         Me.Panel4.TabIndex = 10
         '
-        'PictureBox3
+        'lblJudul4
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox3.Location = New System.Drawing.Point(27, 17)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(115, 131)
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
+        Me.lblJudul4.AutoSize = True
+        Me.lblJudul4.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul4.Location = New System.Drawing.Point(943, 206)
+        Me.lblJudul4.Name = "lblJudul4"
+        Me.lblJudul4.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul4.TabIndex = 11
+        Me.lblJudul4.Text = "Judul"
         '
-        'Label8
+        'lblHarga4
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(943, 206)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 26)
-        Me.Label8.TabIndex = 11
-        Me.Label8.Text = "Judul"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(60, 17)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(51, 19)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "Harga"
+        Me.lblHarga4.AutoSize = True
+        Me.lblHarga4.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga4.ForeColor = System.Drawing.Color.White
+        Me.lblHarga4.Location = New System.Drawing.Point(60, 17)
+        Me.lblHarga4.Name = "lblHarga4"
+        Me.lblHarga4.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga4.TabIndex = 12
+        Me.lblHarga4.Text = "Harga"
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.Label9)
+        Me.Panel5.Controls.Add(Me.lblHarga4)
         Me.Panel5.Controls.Add(Me.PictureBox4)
         Me.Panel5.Location = New System.Drawing.Point(892, 235)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(169, 171)
         Me.Panel5.TabIndex = 10
         '
-        'PictureBox4
+        'btnDetail1
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox4.Location = New System.Drawing.Point(27, 17)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(115, 131)
-        Me.PictureBox4.TabIndex = 0
-        Me.PictureBox4.TabStop = False
+        Me.btnDetail1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail1.FlatAppearance.BorderSize = 0
+        Me.btnDetail1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail1.Location = New System.Drawing.Point(340, 412)
+        Me.btnDetail1.Name = "btnDetail1"
+        Me.btnDetail1.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail1.TabIndex = 13
+        Me.btnDetail1.Text = "Detail"
+        Me.btnDetail1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnDetail2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(340, 412)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 13
-        Me.Button2.Text = "Detail"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnDetail2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail2.FlatAppearance.BorderSize = 0
+        Me.btnDetail2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail2.Location = New System.Drawing.Point(542, 412)
+        Me.btnDetail2.Name = "btnDetail2"
+        Me.btnDetail2.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail2.TabIndex = 14
+        Me.btnDetail2.Text = "Detail"
+        Me.btnDetail2.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnDetail3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(542, 412)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Detail"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnDetail3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail3.FlatAppearance.BorderSize = 0
+        Me.btnDetail3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail3.Location = New System.Drawing.Point(748, 412)
+        Me.btnDetail3.Name = "btnDetail3"
+        Me.btnDetail3.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail3.TabIndex = 15
+        Me.btnDetail3.Text = "Detail"
+        Me.btnDetail3.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnDetail4
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(748, 412)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 15
-        Me.Button4.Text = "Detail"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnDetail4.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail4.FlatAppearance.BorderSize = 0
+        Me.btnDetail4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail4.Location = New System.Drawing.Point(944, 412)
+        Me.btnDetail4.Name = "btnDetail4"
+        Me.btnDetail4.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail4.TabIndex = 16
+        Me.btnDetail4.Text = "Detail"
+        Me.btnDetail4.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnDetail8
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(944, 412)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 16
-        Me.Button5.Text = "Detail"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnDetail8.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail8.FlatAppearance.BorderSize = 0
+        Me.btnDetail8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail8.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail8.Location = New System.Drawing.Point(946, 658)
+        Me.btnDetail8.Name = "btnDetail8"
+        Me.btnDetail8.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail8.TabIndex = 32
+        Me.btnDetail8.Text = "Detail"
+        Me.btnDetail8.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnDetail7
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(946, 658)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 32
-        Me.Button6.Text = "Detail"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnDetail7.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail7.FlatAppearance.BorderSize = 0
+        Me.btnDetail7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail7.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail7.Location = New System.Drawing.Point(748, 656)
+        Me.btnDetail7.Name = "btnDetail7"
+        Me.btnDetail7.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail7.TabIndex = 31
+        Me.btnDetail7.Text = "Detail"
+        Me.btnDetail7.UseVisualStyleBackColor = False
         '
-        'Button7
+        'btnDetail6
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button7.Location = New System.Drawing.Point(748, 656)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 31
-        Me.Button7.Text = "Detail"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btnDetail6.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail6.FlatAppearance.BorderSize = 0
+        Me.btnDetail6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail6.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail6.Location = New System.Drawing.Point(542, 657)
+        Me.btnDetail6.Name = "btnDetail6"
+        Me.btnDetail6.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail6.TabIndex = 30
+        Me.btnDetail6.Text = "Detail"
+        Me.btnDetail6.UseVisualStyleBackColor = False
         '
-        'Button8
+        'btnDetail5
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(542, 657)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 30
-        Me.Button8.Text = "Detail"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btnDetail5.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnDetail5.FlatAppearance.BorderSize = 0
+        Me.btnDetail5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetail5.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetail5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.btnDetail5.Location = New System.Drawing.Point(340, 657)
+        Me.btnDetail5.Name = "btnDetail5"
+        Me.btnDetail5.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetail5.TabIndex = 29
+        Me.btnDetail5.Text = "Detail"
+        Me.btnDetail5.UseVisualStyleBackColor = False
         '
-        'Button9
+        'lblJudul8
         '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Button9.Location = New System.Drawing.Point(340, 657)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 29
-        Me.Button9.Text = "Detail"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.lblJudul8.AutoSize = True
+        Me.lblJudul8.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul8.Location = New System.Drawing.Point(941, 451)
+        Me.lblJudul8.Name = "lblJudul8"
+        Me.lblJudul8.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul8.TabIndex = 23
+        Me.lblJudul8.Text = "Judul"
         '
-        'Label10
+        'lblJudul7
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(941, 451)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(64, 26)
-        Me.Label10.TabIndex = 23
-        Me.Label10.Text = "Judul"
+        Me.lblJudul7.AutoSize = True
+        Me.lblJudul7.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul7.Location = New System.Drawing.Point(744, 451)
+        Me.lblJudul7.Name = "lblJudul7"
+        Me.lblJudul7.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul7.TabIndex = 24
+        Me.lblJudul7.Text = "Judul"
         '
-        'Label11
+        'lblHarga8
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(744, 451)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(64, 26)
-        Me.Label11.TabIndex = 24
-        Me.Label11.Text = "Judul"
+        Me.lblHarga8.AutoSize = True
+        Me.lblHarga8.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga8.ForeColor = System.Drawing.Color.White
+        Me.lblHarga8.Location = New System.Drawing.Point(59, 19)
+        Me.lblHarga8.Name = "lblHarga8"
+        Me.lblHarga8.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga8.TabIndex = 26
+        Me.lblHarga8.Text = "Harga"
         '
-        'Label12
+        'lblJudul6
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(59, 19)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(51, 19)
-        Me.Label12.TabIndex = 26
-        Me.Label12.Text = "Harga"
+        Me.lblJudul6.AutoSize = True
+        Me.lblJudul6.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul6.Location = New System.Drawing.Point(544, 451)
+        Me.lblJudul6.Name = "lblJudul6"
+        Me.lblJudul6.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul6.TabIndex = 25
+        Me.lblJudul6.Text = "Judul"
         '
-        'Label13
+        'lblHarga7
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(544, 451)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(64, 26)
-        Me.Label13.TabIndex = 25
-        Me.Label13.Text = "Judul"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(60, 19)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(51, 19)
-        Me.Label14.TabIndex = 27
-        Me.Label14.Text = "Harga"
+        Me.lblHarga7.AutoSize = True
+        Me.lblHarga7.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga7.ForeColor = System.Drawing.Color.White
+        Me.lblHarga7.Location = New System.Drawing.Point(60, 19)
+        Me.lblHarga7.Name = "lblHarga7"
+        Me.lblHarga7.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga7.TabIndex = 27
+        Me.lblHarga7.Text = "Harga"
         '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.Label12)
+        Me.Panel6.Controls.Add(Me.lblHarga8)
         Me.Panel6.Controls.Add(Me.PictureBox5)
         Me.Panel6.Location = New System.Drawing.Point(892, 480)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(169, 171)
         Me.Panel6.TabIndex = 20
+        '
+        'lblHarga6
+        '
+        Me.lblHarga6.AutoSize = True
+        Me.lblHarga6.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga6.ForeColor = System.Drawing.Color.White
+        Me.lblHarga6.Location = New System.Drawing.Point(63, 20)
+        Me.lblHarga6.Name = "lblHarga6"
+        Me.lblHarga6.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga6.TabIndex = 28
+        Me.lblHarga6.Text = "Harga"
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Panel7.Controls.Add(Me.lblHarga7)
+        Me.Panel7.Controls.Add(Me.PictureBox6)
+        Me.Panel7.Location = New System.Drawing.Point(693, 480)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(169, 171)
+        Me.Panel7.TabIndex = 21
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Panel8.Controls.Add(Me.lblHarga6)
+        Me.Panel8.Controls.Add(Me.PictureBox7)
+        Me.Panel8.Location = New System.Drawing.Point(493, 480)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(169, 171)
+        Me.Panel8.TabIndex = 22
+        '
+        'lblJudul5
+        '
+        Me.lblJudul5.AutoSize = True
+        Me.lblJudul5.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblJudul5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblJudul5.Location = New System.Drawing.Point(343, 451)
+        Me.lblJudul5.Name = "lblJudul5"
+        Me.lblJudul5.Size = New System.Drawing.Size(64, 26)
+        Me.lblJudul5.TabIndex = 18
+        Me.lblJudul5.Text = "Judul"
+        '
+        'lblHarga5
+        '
+        Me.lblHarga5.AutoSize = True
+        Me.lblHarga5.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarga5.ForeColor = System.Drawing.Color.White
+        Me.lblHarga5.Location = New System.Drawing.Point(61, 20)
+        Me.lblHarga5.Name = "lblHarga5"
+        Me.lblHarga5.Size = New System.Drawing.Size(51, 19)
+        Me.lblHarga5.TabIndex = 19
+        Me.lblHarga5.Text = "Harga"
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Panel9.Controls.Add(Me.lblHarga5)
+        Me.Panel9.Controls.Add(Me.PictureBox8)
+        Me.Panel9.Location = New System.Drawing.Point(293, 480)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(169, 171)
+        Me.Panel9.TabIndex = 17
         '
         'PictureBox5
         '
@@ -492,27 +507,6 @@ Partial Class formMusikal
         Me.PictureBox5.TabIndex = 0
         Me.PictureBox5.TabStop = False
         '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(63, 20)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(51, 19)
-        Me.Label15.TabIndex = 28
-        Me.Label15.Text = "Harga"
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel7.Controls.Add(Me.Label14)
-        Me.Panel7.Controls.Add(Me.PictureBox6)
-        Me.Panel7.Location = New System.Drawing.Point(693, 480)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(169, 171)
-        Me.Panel7.TabIndex = 21
-        '
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
@@ -521,16 +515,6 @@ Partial Class formMusikal
         Me.PictureBox6.Size = New System.Drawing.Size(115, 131)
         Me.PictureBox6.TabIndex = 0
         Me.PictureBox6.TabStop = False
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel8.Controls.Add(Me.Label15)
-        Me.Panel8.Controls.Add(Me.PictureBox7)
-        Me.Panel8.Location = New System.Drawing.Point(493, 480)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(169, 171)
-        Me.Panel8.TabIndex = 22
         '
         'PictureBox7
         '
@@ -541,38 +525,6 @@ Partial Class formMusikal
         Me.PictureBox7.TabIndex = 0
         Me.PictureBox7.TabStop = False
         '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(343, 451)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(64, 26)
-        Me.Label16.TabIndex = 18
-        Me.Label16.Text = "Judul"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(61, 20)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(51, 19)
-        Me.Label17.TabIndex = 19
-        Me.Label17.Text = "Harga"
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.Label17)
-        Me.Panel9.Controls.Add(Me.PictureBox8)
-        Me.Panel9.Location = New System.Drawing.Point(293, 480)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(169, 171)
-        Me.Panel9.TabIndex = 17
-        '
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
@@ -582,35 +534,83 @@ Partial Class formMusikal
         Me.PictureBox8.TabIndex = 0
         Me.PictureBox8.TabStop = False
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.PictureBox4.Location = New System.Drawing.Point(27, 17)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(115, 131)
+        Me.PictureBox4.TabIndex = 0
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.PictureBox3.Location = New System.Drawing.Point(27, 17)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(115, 131)
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.PictureBox2.Location = New System.Drawing.Point(29, 17)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(115, 131)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.PictureBox1.Location = New System.Drawing.Point(28, 17)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(115, 131)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.loupe__1_
+        Me.Button1.Location = New System.Drawing.Point(685, 51)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(67, 30)
+        Me.Button1.TabIndex = 3
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'formMusikal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1114, 749)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.btnDetail8)
+        Me.Controls.Add(Me.btnDetail7)
+        Me.Controls.Add(Me.btnDetail6)
+        Me.Controls.Add(Me.btnDetail5)
+        Me.Controls.Add(Me.lblJudul8)
+        Me.Controls.Add(Me.lblJudul7)
+        Me.Controls.Add(Me.lblJudul6)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel8)
-        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.lblJudul5)
         Me.Controls.Add(Me.Panel9)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btnDetail4)
+        Me.Controls.Add(Me.btnDetail3)
+        Me.Controls.Add(Me.btnDetail2)
+        Me.Controls.Add(Me.btnDetail1)
+        Me.Controls.Add(Me.lblJudul4)
+        Me.Controls.Add(Me.lblJudul3)
+        Me.Controls.Add(Me.lblJudul2)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblJudul1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "formMusikal"
@@ -621,28 +621,28 @@ Partial Class formMusikal
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -655,42 +655,42 @@ Partial Class formMusikal
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lblHarga1 As Label
+    Friend WithEvents lblJudul1 As Label
+    Friend WithEvents lblJudul2 As Label
+    Friend WithEvents lblHarga2 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lblJudul3 As Label
+    Friend WithEvents lblHarga3 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lblJudul4 As Label
+    Friend WithEvents lblHarga4 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents btnDetail1 As Button
+    Friend WithEvents btnDetail2 As Button
+    Friend WithEvents btnDetail3 As Button
+    Friend WithEvents btnDetail4 As Button
+    Friend WithEvents btnDetail8 As Button
+    Friend WithEvents btnDetail7 As Button
+    Friend WithEvents btnDetail6 As Button
+    Friend WithEvents btnDetail5 As Button
+    Friend WithEvents lblJudul8 As Label
+    Friend WithEvents lblJudul7 As Label
+    Friend WithEvents lblHarga8 As Label
+    Friend WithEvents lblJudul6 As Label
+    Friend WithEvents lblHarga7 As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents Label15 As Label
+    Friend WithEvents lblHarga6 As Label
     Friend WithEvents Panel7 As Panel
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Panel8 As Panel
     Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
+    Friend WithEvents lblJudul5 As Label
+    Friend WithEvents lblHarga5 As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents PictureBox8 As PictureBox
 End Class

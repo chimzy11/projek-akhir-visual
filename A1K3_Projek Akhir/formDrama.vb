@@ -5,12 +5,12 @@ Imports System.Xml.Serialization
 Imports MySql.Data.MySqlClient
 Imports System.Drawing.Drawing2D
 
-Public Class formMusikal
- 
+Public Class formDrama
 
 
 
-    Private Sub formMusikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub formDrama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTanggal.Text = Today.ToString("dd/MM/yyyy") ' atau DateTime.Now.ToString("dd/MM/yyyy")
         txtCari.BorderStyle = 0
         Dim radiusTop As Integer = 20
