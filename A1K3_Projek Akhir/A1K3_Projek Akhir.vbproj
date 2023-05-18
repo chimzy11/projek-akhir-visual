@@ -440,5 +440,20 @@
   <ItemGroup>
     <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__5_-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\284587d05124ed6350d6f8bf453253a5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown_3D__Elegant_Umrah_Travel_Flyer-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trending %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

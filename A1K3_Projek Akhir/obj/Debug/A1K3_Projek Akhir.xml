@@ -32,6 +32,11 @@ A1K3_Projek Akhir
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources._284587d05124ed6350d6f8bf453253a5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources._3_removebg_preview">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -58,6 +63,11 @@ A1K3_Projek Akhir
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.avatar__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Brown_3D__Elegant_Umrah_Travel_Flyer_removebg_preview">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -128,6 +138,11 @@ A1K3_Projek Akhir
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.frame">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.globe">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -273,6 +288,16 @@ A1K3_Projek Akhir
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.transaction_history">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.trending__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.trending__2_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

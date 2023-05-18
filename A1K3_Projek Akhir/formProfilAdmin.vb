@@ -99,6 +99,10 @@ Public Class formProfilAdmin
     Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
 
     End Sub
+
+    Private Sub Panel14_Paint(sender As Object, e As PaintEventArgs) Handles Panel14.Paint
+
+    End Sub
 End Class
 
 
