@@ -113,6 +113,60 @@
     <Compile Include="DashboardUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formDetailMusikal.Designer.vb">
+      <DependentUpon>formDetailMusikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formDetailMusikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDetailTicket.Designer.vb">
+      <DependentUpon>formDetailTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formDetailTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDrama.Designer.vb">
+      <DependentUpon>formDrama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formDrama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHome.Designer.vb">
+      <DependentUpon>formHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKomedi.Designer.vb">
+      <DependentUpon>formKomedi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formKomedi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMusikal.Designer.vb">
+      <DependentUpon>formMusikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formMusikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPembayaran.Designer.vb">
+      <DependentUpon>formPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPesan.Designer.vb">
+      <DependentUpon>formPesan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPesan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRiwayatUser.Designer.vb">
+      <DependentUpon>formRiwayatUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formRiwayatUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LandingPage.Designer.vb">
       <DependentUpon>LandingPage.vb</DependentUpon>
     </Compile>
@@ -233,6 +287,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardUser.resx">
       <DependentUpon>DashboardUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDetailMusikal.resx">
+      <DependentUpon>formDetailMusikal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDetailTicket.resx">
+      <DependentUpon>formDetailTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDrama.resx">
+      <DependentUpon>formDrama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHome.resx">
+      <DependentUpon>formHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKomedi.resx">
+      <DependentUpon>formKomedi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMusikal.resx">
+      <DependentUpon>formMusikal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPembayaran.resx">
+      <DependentUpon>formPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPesan.resx">
+      <DependentUpon>formPesan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRiwayatUser.resx">
+      <DependentUpon>formRiwayatUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>

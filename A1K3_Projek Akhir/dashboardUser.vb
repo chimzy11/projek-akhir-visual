@@ -1,22 +1,27 @@
 ﻿Imports System.Drawing.Drawing2D
 
 Public Class DashboardUser
-    Private Sub dashboardUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MenuStripHome.ForeColor = Color.FromArgb(185, 174, 169)
-        MenuStripTeater.ForeColor = Color.FromArgb(185, 174, 169)
-        MenuStripAbout.ForeColor = Color.FromArgb(185, 174, 169)
-        MenuStripProfile.ForeColor = Color.FromArgb(185, 174, 169)
-        Dim radiusTop As Integer = 20
-        'utk panel 2
-        Dim borderRectTop2 As New Rectangle(0, 0, Panel4.Width, Panel4.Height)
-        Panel4.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        Dim rectBottom As New Rectangle(0, Panel4.Height - radiusTop, Panel4.Width, radiusTop)
-        Panel4.Region.Union(rectBottom)
 
+    'buat buka formnya di panel
+    Private currentChildForm As Form
 
+    Private Sub OpenChildForm(childForm As Form)
+        'open only form
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+
+        currentChildForm = childForm
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        panelDesktop.Controls.Add(childForm)
+        panelDesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
     End Sub
 
-
+    'tulisan di search
     Private Sub txtSearch_Enter(sender As Object, e As EventArgs) Handles txtSearch.Enter
         If txtSearch.Text = "Search" Then
             txtSearch.Text = ""
@@ -30,11 +35,13 @@ Public Class DashboardUser
             txtSearch.ForeColor = Color.DarkGray
         End If
     End Sub
+    'click menu profil
     Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
         Me.Close()
         fProfilUser.Show()
     End Sub
 
+    'keluar program
     Private Sub bExit_Click(sender As Object, e As EventArgs) Handles bExit.Click
         Dim X As String
         X = MessageBox.Show("Yakin keluar dari program ini?", "Konfirmasi",
@@ -46,28 +53,35 @@ Public Class DashboardUser
         End If
     End Sub
 
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
+
+    Private Sub dashboardUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'warna buat menunya
+        MenuStripHome.ForeColor = Color.FromArgb(185, 174, 169)
+        MenuStripTeater.ForeColor = Color.FromArgb(185, 174, 169)
+        MenuStripAbout.ForeColor = Color.FromArgb(185, 174, 169)
+        MenuStripProfile.ForeColor = Color.FromArgb(185, 174, 169)
+
+        'langsung manggil form home
+        OpenChildForm(New formHome)
+    End Sub
+
+    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        OpenChildForm(New formHome)
+    End Sub
 
-    Private Function CreateRoundRectPath(ByVal rect As Rectangle, ByVal radius As Integer) As GraphicsPath
-        Dim path As New GraphicsPath()
+    Private Sub MusikalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MusikalToolStripMenuItem.Click
+        OpenChildForm(New formMusikal)
+    End Sub
 
-        ' Sudut tumpul atas kiri
-        path.AddArc(rect.X, rect.Y, radius, radius, 180, 90)
+    Private Sub DramaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DramaToolStripMenuItem.Click
+        OpenChildForm(New formDrama)
+    End Sub
 
-        ' Sudut tumpul atas kanan
-        path.AddArc(rect.X + rect.Width - radius, rect.Y, radius, radius, 270, 90)
-
-        ' Garis lurus ke sudut kanan bawah
-        path.AddLine(rect.X + rect.Width, rect.Y + radius, rect.X + rect.Width, rect.Y + rect.Height)
-
-        ' Garis lurus ke sudut kiri bawah
-        path.AddLine(rect.X, rect.Y + rect.Height, rect.X, rect.Y + radius)
-
-        path.CloseFigure()
-        Return path
-    End Function
-
+    Private Sub KomediToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KomediToolStripMenuItem.Click
+        OpenChildForm(New formKomedi)
+    End Sub
 End Class

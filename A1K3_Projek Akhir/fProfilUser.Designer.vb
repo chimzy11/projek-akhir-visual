@@ -24,7 +24,6 @@ Partial Class fProfilUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fProfilUser))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lUsername = New System.Windows.Forms.Label()
         Me.pSampul = New System.Windows.Forms.Panel()
@@ -48,16 +47,17 @@ Partial Class fProfilUser
         Me.bEdit = New System.Windows.Forms.Button()
         Me.bLogOut = New System.Windows.Forms.Button()
         Me.lNamaLengkap = New System.Windows.Forms.Label()
-        Me.pProfil = New System.Windows.Forms.PictureBox()
         Me.bHapusAkun = New System.Windows.Forms.Button()
         Me.pChangeProfil = New System.Windows.Forms.PictureBox()
+        Me.pProfil = New System.Windows.Forms.PictureBox()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pChangeProfil, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -70,17 +70,6 @@ Partial Class fProfilUser
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1370, 80)
         Me.Panel1.TabIndex = 0
-        '
-        'pKembali
-        '
-        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
-        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(34, 25)
-        Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(38, 35)
-        Me.pKembali.TabIndex = 106
-        Me.pKembali.TabStop = False
         '
         'Label7
         '
@@ -326,7 +315,7 @@ Partial Class fProfilUser
         Me.tNamaLengkap.Enabled = False
         Me.tNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tNamaLengkap.Location = New System.Drawing.Point(435, 115)
+        Me.tNamaLengkap.Location = New System.Drawing.Point(430, 117)
         Me.tNamaLengkap.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tNamaLengkap.Name = "tNamaLengkap"
         Me.tNamaLengkap.Size = New System.Drawing.Size(477, 26)
@@ -392,19 +381,6 @@ Partial Class fProfilUser
         Me.lNamaLengkap.TabIndex = 55
         Me.lNamaLengkap.Text = "Nama Lengkap"
         '
-        'pProfil
-        '
-        Me.pProfil.BackColor = System.Drawing.Color.Transparent
-        Me.pProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pProfil.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.pProfil.Location = New System.Drawing.Point(106, 286)
-        Me.pProfil.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pProfil.Name = "pProfil"
-        Me.pProfil.Size = New System.Drawing.Size(234, 249)
-        Me.pProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pProfil.TabIndex = 8
-        Me.pProfil.TabStop = False
-        '
         'bHapusAkun
         '
         Me.bHapusAkun.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -434,6 +410,30 @@ Partial Class fProfilUser
         Me.pChangeProfil.TabIndex = 0
         Me.pChangeProfil.TabStop = False
         '
+        'pProfil
+        '
+        Me.pProfil.BackColor = System.Drawing.Color.Transparent
+        Me.pProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pProfil.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.pProfil.Location = New System.Drawing.Point(106, 286)
+        Me.pProfil.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pProfil.Name = "pProfil"
+        Me.pProfil.Size = New System.Drawing.Size(234, 249)
+        Me.pProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pProfil.TabIndex = 8
+        Me.pProfil.TabStop = False
+        '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(34, 25)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(38, 35)
+        Me.pKembali.TabIndex = 106
+        Me.pKembali.TabStop = False
+        '
         'fProfilUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -455,13 +455,13 @@ Partial Class fProfilUser
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pChangeProfil, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

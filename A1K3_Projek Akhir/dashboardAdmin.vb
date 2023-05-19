@@ -28,6 +28,7 @@ Public Class DashboardAdmin
 
     End Sub
 
+    'buat buka formnya di panel
     Private Sub OpenChildForm(childForm As Form)
         'open only form
         If currentChildForm IsNot Nothing Then
