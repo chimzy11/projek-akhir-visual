@@ -84,9 +84,6 @@ Public Class FLogin
         End If
     End Sub
 
-
-
-
     Private Sub lSignUp_Click(sender As Object, e As EventArgs) Handles lSignUp.Click
         Call ProgramHide()
         FRegistrasi.Show()

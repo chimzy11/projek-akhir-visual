@@ -28,6 +28,8 @@ Partial Class fProfilUser
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lUsername = New System.Windows.Forms.Label()
         Me.pSampul = New System.Windows.Forms.Panel()
+        Me.bLogOut = New System.Windows.Forms.Button()
+        Me.bHapusAkun = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -46,13 +48,12 @@ Partial Class fProfilUser
         Me.tNamaLengkap = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.bEdit = New System.Windows.Forms.Button()
-        Me.bLogOut = New System.Windows.Forms.Button()
         Me.lNamaLengkap = New System.Windows.Forms.Label()
-        Me.bHapusAkun = New System.Windows.Forms.Button()
         Me.pChangeProfil = New System.Windows.Forms.PictureBox()
         Me.pProfil = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pSampul.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -68,7 +69,7 @@ Partial Class fProfilUser
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1370, 80)
+        Me.Panel1.Size = New System.Drawing.Size(1924, 80)
         Me.Panel1.TabIndex = 0
         '
         'pKembali
@@ -108,11 +109,47 @@ Partial Class fProfilUser
         'pSampul
         '
         Me.pSampul.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.pSampul.Controls.Add(Me.bLogOut)
+        Me.pSampul.Controls.Add(Me.bHapusAkun)
         Me.pSampul.Dock = System.Windows.Forms.DockStyle.Top
         Me.pSampul.Location = New System.Drawing.Point(0, 80)
         Me.pSampul.Name = "pSampul"
-        Me.pSampul.Size = New System.Drawing.Size(1370, 328)
+        Me.pSampul.Size = New System.Drawing.Size(1924, 2000)
         Me.pSampul.TabIndex = 9
+        '
+        'bLogOut
+        '
+        Me.bLogOut.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bLogOut.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bLogOut.FlatAppearance.BorderSize = 0
+        Me.bLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bLogOut.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bLogOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bLogOut.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bLogOut.Location = New System.Drawing.Point(72, 782)
+        Me.bLogOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bLogOut.Name = "bLogOut"
+        Me.bLogOut.Size = New System.Drawing.Size(309, 48)
+        Me.bLogOut.TabIndex = 12
+        Me.bLogOut.Text = "Logout"
+        Me.bLogOut.UseVisualStyleBackColor = False
+        '
+        'bHapusAkun
+        '
+        Me.bHapusAkun.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bHapusAkun.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bHapusAkun.FlatAppearance.BorderSize = 0
+        Me.bHapusAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bHapusAkun.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bHapusAkun.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bHapusAkun.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.bHapusAkun.Location = New System.Drawing.Point(72, 714)
+        Me.bHapusAkun.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bHapusAkun.Name = "bHapusAkun"
+        Me.bHapusAkun.Size = New System.Drawing.Size(309, 48)
+        Me.bHapusAkun.TabIndex = 56
+        Me.bHapusAkun.Text = "Hapus Akun"
+        Me.bHapusAkun.UseVisualStyleBackColor = False
         '
         'Panel3
         '
@@ -364,23 +401,6 @@ Partial Class fProfilUser
         Me.bEdit.Text = "Edit Profile"
         Me.bEdit.UseVisualStyleBackColor = False
         '
-        'bLogOut
-        '
-        Me.bLogOut.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bLogOut.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bLogOut.FlatAppearance.BorderSize = 0
-        Me.bLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bLogOut.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bLogOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.bLogOut.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bLogOut.Location = New System.Drawing.Point(72, 865)
-        Me.bLogOut.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.bLogOut.Name = "bLogOut"
-        Me.bLogOut.Size = New System.Drawing.Size(309, 48)
-        Me.bLogOut.TabIndex = 12
-        Me.bLogOut.Text = "Logout"
-        Me.bLogOut.UseVisualStyleBackColor = False
-        '
         'lNamaLengkap
         '
         Me.lNamaLengkap.AutoSize = True
@@ -391,23 +411,6 @@ Partial Class fProfilUser
         Me.lNamaLengkap.Size = New System.Drawing.Size(196, 31)
         Me.lNamaLengkap.TabIndex = 55
         Me.lNamaLengkap.Text = "Nama Lengkap"
-        '
-        'bHapusAkun
-        '
-        Me.bHapusAkun.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bHapusAkun.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bHapusAkun.FlatAppearance.BorderSize = 0
-        Me.bHapusAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bHapusAkun.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bHapusAkun.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.bHapusAkun.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bHapusAkun.Location = New System.Drawing.Point(72, 792)
-        Me.bHapusAkun.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.bHapusAkun.Name = "bHapusAkun"
-        Me.bHapusAkun.Size = New System.Drawing.Size(309, 48)
-        Me.bHapusAkun.TabIndex = 56
-        Me.bHapusAkun.Text = "Hapus Akun"
-        Me.bHapusAkun.UseVisualStyleBackColor = False
         '
         'pChangeProfil
         '
@@ -439,11 +442,9 @@ Partial Class fProfilUser
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1924, 1050)
         Me.Controls.Add(Me.pChangeProfil)
-        Me.Controls.Add(Me.bHapusAkun)
         Me.Controls.Add(Me.lNamaLengkap)
-        Me.Controls.Add(Me.bLogOut)
         Me.Controls.Add(Me.bEdit)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.lUsername)
@@ -456,6 +457,7 @@ Partial Class fProfilUser
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pSampul.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)

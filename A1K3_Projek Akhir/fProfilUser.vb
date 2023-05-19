@@ -29,7 +29,7 @@ Public Class fProfilUser
     End Sub
 
     Private Sub fProfilUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        KoneksiDatabase()
+        Call KoneksiDatabase()
         TampilProfil()
         Dim queryString As String = "SELECT * FROM akun WHERE username='" & FLogin.tUsername.Text & "'"
 
@@ -66,6 +66,7 @@ Public Class fProfilUser
         Return bitmap
     End Function
     Sub TampilProfil()
+        Call KoneksiDatabase()
         CMD = New MySqlCommand("SELECT foto FROM akun WHERE username = @username", CONN)
         CMD.Parameters.AddWithValue("@username", FLogin.tUsername.Text)
 
@@ -96,6 +97,7 @@ Public Class fProfilUser
     End Sub
 
     Private Sub bSimpan_Click(sender As Object, e As EventArgs) Handles bSimpan.Click
+        Call KoneksiDatabase()
         Dim Update As String = "UPDATE akun SET namalengkap = '" & tNamaLengkap.Text & "', " &
             "email = '" & tEmail.Text & "', " &
             "psw = '" & tPassword.Text & "', " &
