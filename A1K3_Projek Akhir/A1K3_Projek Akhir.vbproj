@@ -113,6 +113,12 @@
     <Compile Include="DashboardUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formAbout.Designer.vb">
+      <DependentUpon>formAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formDetailMusikal.Designer.vb">
       <DependentUpon>formDetailMusikal.vb</DependentUpon>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardUser.resx">
       <DependentUpon>DashboardUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAbout.resx">
+      <DependentUpon>formAbout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formDetailMusikal.resx">
       <DependentUpon>formDetailMusikal.vb</DependentUpon>

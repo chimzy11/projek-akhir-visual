@@ -84,4 +84,8 @@ Public Class DashboardUser
     Private Sub KomediToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KomediToolStripMenuItem.Click
         OpenChildForm(New formKomedi)
     End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        OpenChildForm(New formAbout)
+    End Sub
 End Class

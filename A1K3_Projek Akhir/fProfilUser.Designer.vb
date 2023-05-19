@@ -24,6 +24,7 @@ Partial Class fProfilUser
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fProfilUser))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lUsername = New System.Windows.Forms.Label()
         Me.pSampul = New System.Windows.Forms.Panel()
@@ -50,14 +51,13 @@ Partial Class fProfilUser
         Me.bHapusAkun = New System.Windows.Forms.Button()
         Me.pChangeProfil = New System.Windows.Forms.PictureBox()
         Me.pProfil = New System.Windows.Forms.PictureBox()
-        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.pChangeProfil, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -70,6 +70,17 @@ Partial Class fProfilUser
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1370, 80)
         Me.Panel1.TabIndex = 0
+        '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(34, 25)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(38, 35)
+        Me.pKembali.TabIndex = 106
+        Me.pKembali.TabStop = False
         '
         'Label7
         '
@@ -423,17 +434,6 @@ Partial Class fProfilUser
         Me.pProfil.TabIndex = 8
         Me.pProfil.TabStop = False
         '
-        'pKembali
-        '
-        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
-        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(34, 25)
-        Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(38, 35)
-        Me.pKembali.TabIndex = 106
-        Me.pKembali.TabStop = False
-        '
         'fProfilUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -455,13 +455,13 @@ Partial Class fProfilUser
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.pChangeProfil, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

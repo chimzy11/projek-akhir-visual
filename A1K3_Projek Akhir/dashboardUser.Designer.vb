@@ -197,7 +197,7 @@ Partial Class DashboardUser
         Me.MenuStripProfile.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfileToolStripMenuItem})
         Me.MenuStripProfile.Location = New System.Drawing.Point(1718, 32)
         Me.MenuStripProfile.Name = "MenuStripProfile"
-        Me.MenuStripProfile.Size = New System.Drawing.Size(48, 32)
+        Me.MenuStripProfile.Size = New System.Drawing.Size(51, 36)
         Me.MenuStripProfile.TabIndex = 0
         Me.MenuStripProfile.Text = "MenuStrip1"
         '
@@ -206,27 +206,27 @@ Partial Class DashboardUser
         Me.ProfileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuProfil, Me.MenuTransaksi, Me.MenuTiket})
         Me.ProfileToolStripMenuItem.Image = CType(resources.GetObject("ProfileToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
-        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(40, 28)
+        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(40, 32)
         '
         'MenuProfil
         '
         Me.MenuProfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MenuProfil.Name = "MenuProfil"
-        Me.MenuProfil.Size = New System.Drawing.Size(270, 40)
+        Me.MenuProfil.Size = New System.Drawing.Size(232, 40)
         Me.MenuProfil.Text = "Profil"
         '
         'MenuTransaksi
         '
         Me.MenuTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MenuTransaksi.Name = "MenuTransaksi"
-        Me.MenuTransaksi.Size = New System.Drawing.Size(270, 40)
+        Me.MenuTransaksi.Size = New System.Drawing.Size(232, 40)
         Me.MenuTransaksi.Text = "Transaksi"
         '
         'MenuTiket
         '
         Me.MenuTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MenuTiket.Name = "MenuTiket"
-        Me.MenuTiket.Size = New System.Drawing.Size(270, 40)
+        Me.MenuTiket.Size = New System.Drawing.Size(232, 40)
         Me.MenuTiket.Text = "Tiket"
         '
         'Panel2
@@ -307,7 +307,7 @@ Partial Class DashboardUser
         Me.MenuStripAbout.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
         Me.MenuStripAbout.Location = New System.Drawing.Point(1130, 55)
         Me.MenuStripAbout.Name = "MenuStripAbout"
-        Me.MenuStripAbout.Size = New System.Drawing.Size(173, 45)
+        Me.MenuStripAbout.Size = New System.Drawing.Size(353, 45)
         Me.MenuStripAbout.TabIndex = 2
         Me.MenuStripAbout.Text = "MenuStrip3"
         '
@@ -343,7 +343,7 @@ Partial Class DashboardUser
         Me.MenuStripTeater.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStripTeater.Location = New System.Drawing.Point(860, 55)
         Me.MenuStripTeater.Name = "MenuStripTeater"
-        Me.MenuStripTeater.Size = New System.Drawing.Size(311, 45)
+        Me.MenuStripTeater.Size = New System.Drawing.Size(134, 47)
         Me.MenuStripTeater.TabIndex = 1
         Me.MenuStripTeater.Text = "MenuStrip2"
         '
@@ -351,28 +351,28 @@ Partial Class DashboardUser
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MusikalToolStripMenuItem, Me.DramaToolStripMenuItem, Me.KomediToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(123, 41)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(123, 43)
         Me.ToolStripMenuItem1.Text = "Teater"
         '
         'MusikalToolStripMenuItem
         '
         Me.MusikalToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MusikalToolStripMenuItem.Name = "MusikalToolStripMenuItem"
-        Me.MusikalToolStripMenuItem.Size = New System.Drawing.Size(270, 46)
+        Me.MusikalToolStripMenuItem.Size = New System.Drawing.Size(234, 46)
         Me.MusikalToolStripMenuItem.Text = "Musikal"
         '
         'DramaToolStripMenuItem
         '
         Me.DramaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.DramaToolStripMenuItem.Name = "DramaToolStripMenuItem"
-        Me.DramaToolStripMenuItem.Size = New System.Drawing.Size(270, 46)
+        Me.DramaToolStripMenuItem.Size = New System.Drawing.Size(234, 46)
         Me.DramaToolStripMenuItem.Text = "Drama"
         '
         'KomediToolStripMenuItem
         '
         Me.KomediToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.KomediToolStripMenuItem.Name = "KomediToolStripMenuItem"
-        Me.KomediToolStripMenuItem.Size = New System.Drawing.Size(270, 46)
+        Me.KomediToolStripMenuItem.Size = New System.Drawing.Size(234, 46)
         Me.KomediToolStripMenuItem.Text = "Komedi"
         '
         'MenuStripHome
