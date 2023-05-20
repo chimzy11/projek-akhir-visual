@@ -10,68 +10,69 @@ Public Class formMusikal
     Private Sub formMusikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTanggal.Text = Today.ToString("dd/MM/yyyy") ' atau DateTime.Now.ToString("dd/MM/yyyy")
 
-        'For i As Integer = 1 To 5
-        '    Dim myLabel As New Label()
-        '    myLabel.BackColor = Color.FromArgb(221, 212, 199)
-        '    myLabel.ForeColor = Color.FromArgb(132, 123, 112)
-        '    myLabel.Font = New Font("Microsoft YaHei", 14.25, FontStyle.Bold)
-        '    myLabel.Text = "Judul " & i
-        '    myLabel.Size = New Size(80, 31)
-        '    myLabel.Location = New Point(350, 220 + (i - 1) * 70)
-        '    Me.Controls.Add(myLabel)
-        'Next i
+        For i As Integer = 1 To 4
+            Dim labelJudul As New Label()
+            labelJudul.BackColor = Color.FromArgb(221, 212, 199)
+            labelJudul.ForeColor = Color.FromArgb(132, 123, 112)
+            labelJudul.Font = New Font("microsoft yahei", 14.25, FontStyle.Bold)
+            labelJudul.Text = "Judul" & i
+            labelJudul.Size = New Size(80, 31)
+            labelJudul.Location = New Point(180 + (i - 1) * 210, 220)
+            Me.Controls.Add(labelJudul)
+        Next i
 
-        'Dim myLabel As New Label()
-        'myLabel.BackColor = Color.FromArgb(221, 212, 199)
-        'myLabel.ForeColor = Color.FromArgb(132, 123, 112)
-        'myLabel.Font = New Font("Microsoft YaHei", 14.25, FontStyle.Bold)
-        'myLabel.Text = "Judul"
-        'myLabel.Size = New Size(80, 31)
-        'myLabel.Location = New Point(350, 220)
-        'Me.Controls.Add(myLabel)
+        Dim startX As Integer = 120 ' Posisi awal X
+        Dim startY As Integer = 255 ' Posisi awal Y
+        Dim panelSpacing As Integer = 10 ' Jarak antar panel
+
+        For i As Integer = 1 To 4 ' Ubah 5 dengan jumlah panel yang diinginkan
+            Dim labelHarga As New Label()
+            labelHarga.BackColor = Color.FromArgb(185, 174, 169)
+            labelHarga.ForeColor = Color.White
+            labelHarga.Font = New Font("microsoft yahei", 11, FontStyle.Bold)
+            labelHarga.Text = "Harga"
+            labelHarga.Size = New Size(60, 25)
+            labelHarga.TextAlign = ContentAlignment.MiddleCenter
+            labelHarga.Location = New Point(185 + (i - 1) * 210, 255)
+            Me.Controls.Add(labelHarga)
+
+            Dim pictureBox As New PictureBox()
+            pictureBox.Size = New Size(160, 170)
+            pictureBox.Image = Image.FromFile("C:\Users\Asus Gk\Pictures\Saved Pictures\dekstop.jpg") ' Ganti dengan path gambar yang sesuai
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage ' Sesuaikan tata letak gambar
+            pictureBox.Location = New Point((startX + 20) + (200 + panelSpacing) * (i - 1), (startY + 15))
+            Me.Controls.Add(pictureBox)
+
+            Dim button As New Button()
+            button.Text = "Detail" ' Teks yang akan ditampilkan pada tombol
+            button.ForeColor = Color.FromArgb(132, 123, 112)
+            button.BackColor = Color.FromArgb(185, 174, 169)
+            button.Size = New Size(80, 25)
+            button.Font = New Font("microsoft yahei", 9, FontStyle.Bold)
+            button.FlatStyle = FlatStyle.Flat
+            button.Location = New Point(180 + (i - 1) * 210, 465)
+
+            ' Atur event handler untuk tombol
+            AddHandler button.Click, AddressOf Button_Click
+
+            Me.Controls.Add(button)
+
+            Dim myPanel As New Panel()
+            myPanel.Size = New Size(200, 200)
+            myPanel.BackColor = Color.FromArgb(185, 174, 169)
+            myPanel.Location = New Point(startX + (200 + panelSpacing) * (i - 1), startY)
+
+            Me.Controls.Add(myPanel)
+
+        Next
 
 
-        txtCari.BorderStyle = 0
-        Dim radiusTop As Integer = 20
-        'utk panel 2
-        Dim borderRectTop2 As New Rectangle(0, 0, Panel2.Width, Panel2.Height)
-        Panel2.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        'utk panel 3
-        Panel3.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        'utk panel 4
-        Panel4.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        'utk panel 5
-        Panel5.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        Panel6.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        Panel7.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        Panel8.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-        Panel9.Region = New Region(CreateRoundRectPath(borderRectTop2, radiusTop))
-
-
-
-        ' Mengatur sudut lurus pada Panel4 (bagian bawah)
-        Dim rectBottom As New Rectangle(0, Panel2.Height - radiusTop, Panel2.Width, radiusTop)
-        Panel2.Region.Union(rectBottom)
     End Sub
 
-    Private Function CreateRoundRectPath(ByVal rect As Rectangle, ByVal radius As Integer) As GraphicsPath
-        Dim path As New GraphicsPath()
-
-        ' Sudut tumpul atas kiri
-        path.AddArc(rect.X, rect.Y, radius, radius, 90, 90)
-
-        ' Sudut tumpul atas kanan
-        path.AddArc(rect.X + rect.Width - radius, rect.Y, radius, radius, 0, 90)
-
-        ' Sudut tumpul kanan bawah
-        path.AddArc(rect.X + rect.Width - radius, rect.Y + rect.Height - radius, radius, radius, 270, 90)
-
-        ' Sudut tumpul kiri bawah
-        path.AddArc(rect.X, rect.Y + rect.Height - radius, radius, radius, 180, 90)
-
-        path.CloseFigure()
-        Return path
-    End Function
+    Private Sub Button_Click(sender As Object, e As EventArgs)
+        ' Logika yang akan dijalankan saat tombol diklik
+        MessageBox.Show("Tombol diklik!")
+    End Sub
 
 
 End Class

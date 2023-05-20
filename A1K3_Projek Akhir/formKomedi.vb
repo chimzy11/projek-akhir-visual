@@ -7,9 +7,6 @@ Imports System.Drawing.Drawing2D
 
 Public Class formKomedi
 
-
-
-
     Private Sub formKomedi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTanggal.Text = Today.ToString("dd/MM/yyyy") ' atau DateTime.Now.ToString("dd/MM/yyyy")
         txtCari.BorderStyle = 0
@@ -54,5 +51,7 @@ Public Class formKomedi
         Return path
     End Function
 
+    Private Sub btnDetail1_Click(sender As Object, e As EventArgs) Handles btnDetail1.Click
 
+    End Sub
 End Class
