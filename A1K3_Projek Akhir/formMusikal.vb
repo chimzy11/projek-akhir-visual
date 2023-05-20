@@ -6,12 +6,31 @@ Imports MySql.Data.MySqlClient
 Imports System.Drawing.Drawing2D
 
 Public Class formMusikal
- 
-
-
 
     Private Sub formMusikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTanggal.Text = Today.ToString("dd/MM/yyyy") ' atau DateTime.Now.ToString("dd/MM/yyyy")
+
+        'For i As Integer = 1 To 5
+        '    Dim myLabel As New Label()
+        '    myLabel.BackColor = Color.FromArgb(221, 212, 199)
+        '    myLabel.ForeColor = Color.FromArgb(132, 123, 112)
+        '    myLabel.Font = New Font("Microsoft YaHei", 14.25, FontStyle.Bold)
+        '    myLabel.Text = "Judul " & i
+        '    myLabel.Size = New Size(80, 31)
+        '    myLabel.Location = New Point(350, 220 + (i - 1) * 70)
+        '    Me.Controls.Add(myLabel)
+        'Next i
+
+        'Dim myLabel As New Label()
+        'myLabel.BackColor = Color.FromArgb(221, 212, 199)
+        'myLabel.ForeColor = Color.FromArgb(132, 123, 112)
+        'myLabel.Font = New Font("Microsoft YaHei", 14.25, FontStyle.Bold)
+        'myLabel.Text = "Judul"
+        'myLabel.Size = New Size(80, 31)
+        'myLabel.Location = New Point(350, 220)
+        'Me.Controls.Add(myLabel)
+
+
         txtCari.BorderStyle = 0
         Dim radiusTop As Integer = 20
         'utk panel 2
