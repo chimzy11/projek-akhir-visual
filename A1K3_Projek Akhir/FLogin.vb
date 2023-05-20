@@ -25,6 +25,11 @@ Public Class FLogin
 
     Private Sub FLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
+
+        tUsername.Text = ""
+        tPassword.Text = ""
+        cRememberMe.Checked = False
+
         If My.Computer.FileSystem.FileExists("RememberMe.txt") Then
             Dim loginData() As String = My.Computer.FileSystem.ReadAllText("RememberMe.txt").Split(",")
             tUsername.Text = loginData(0)
@@ -72,9 +77,6 @@ Public Class FLogin
                     If My.Computer.FileSystem.FileExists("RememberMe.txt") Then
                         My.Computer.FileSystem.DeleteFile("RememberMe.txt")
                     End If
-                    tUsername.Text = ""
-                    tPassword.Text = ""
-                    cRememberMe.Checked = False
                 End If
             Else
                 RD.Close()

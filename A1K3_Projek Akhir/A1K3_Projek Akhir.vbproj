@@ -476,5 +476,40 @@
   <ItemGroup>
     <None Include="Resources\eye_of2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1-removebg-preview.png" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\284587d05124ed6350d6f8bf453253a5.jpg" />
+    <Content Include="Resources\3-removebg-preview.png" />
+    <Content Include="Resources\Brown_3D__Elegant_Umrah_Travel_Flyer-removebg-preview.png" />
+    <Content Include="Resources\dark-skin-brown-gradation-wallpaper-preview.jpg" />
+    <Content Include="Resources\download.jpg" />
+    <Content Include="Resources\download__2_-removebg-preview.png" />
+    <Content Include="Resources\fall-orange-brown-blur-wallpaper-preview.jpg" />
+    <Content Include="Resources\frame.png" />
+    <Content Include="Resources\globe.jpg" />
+    <Content Include="Resources\gold-shampagne-yellow-gradation-wallpaper-preview.jpg" />
+    <Content Include="Resources\group %281%291.png" />
+    <Content Include="Resources\group %282%29.png" />
+    <Content Include="Resources\id-card %281%29.png" />
+    <Content Include="Resources\id-card.png" />
+    <Content Include="Resources\loupe %281%29.png" />
+    <Content Include="Resources\loupe.png" />
+    <Content Include="Resources\mail.png" />
+    <Content Include="Resources\Pastel Purple Pink Neon Yellow Dreamy Clean Beauty Products Sustainable Beauty Instagram Post %282%29.png" />
+    <Content Include="Resources\Pastel Purple Pink Neon Yellow Dreamy Clean Beauty Products Sustainable Beauty Instagram Post %283%29.png" />
+    <Content Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post-removebg-preview.png" />
+    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__5_-removebg-preview.png" />
+    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__3_-removebg-preview.png" />
+    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4_-removebg-preview.png" />
+    <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4_-removebg-preview1.png" />
+    <Content Include="Resources\placeholder.png" />
+    <Content Include="Resources\press-pass.png" />
+    <Content Include="Resources\theater %281%29.png" />
+    <Content Include="Resources\theater.png" />
+    <Content Include="Resources\transaction-history.png" />
+    <Content Include="Resources\trending %281%29.png" />
+    <Content Include="Resources\trending %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

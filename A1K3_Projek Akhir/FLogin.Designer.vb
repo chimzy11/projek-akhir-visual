@@ -266,7 +266,7 @@ Partial Class FLogin
         'pPasswordHide
         '
         Me.pPasswordHide.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of3
+        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of
         Me.pPasswordHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pPasswordHide.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pPasswordHide.Location = New System.Drawing.Point(352, 332)

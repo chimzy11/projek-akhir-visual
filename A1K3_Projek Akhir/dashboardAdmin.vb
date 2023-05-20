@@ -24,10 +24,6 @@ Public Class DashboardAdmin
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
     'buat buka formnya di panel
     Private Sub OpenChildForm(childForm As Form)
         'open only form
@@ -91,4 +87,5 @@ Public Class DashboardAdmin
     Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
         OpenChildForm(New formTransaksi)
     End Sub
+
 End Class

@@ -488,7 +488,7 @@ Namespace My.Resources
         Friend ReadOnly Property Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__3__removebg_preview() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_In"& _ 
-                        "stagram_Post__3_-removebg-preview", resourceCulture)
+                        "stagram_Post__3__removebg_preview", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -499,7 +499,7 @@ Namespace My.Resources
         Friend ReadOnly Property Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4__removebg_preview() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_In"& _ 
-                        "stagram_Post__4_-removebg-preview", resourceCulture)
+                        "stagram_Post__4__removebg_preview", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -510,7 +510,7 @@ Namespace My.Resources
         Friend ReadOnly Property Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4__removebg_preview1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_In"& _ 
-                        "stagram_Post__4_-removebg-preview1", resourceCulture)
+                        "stagram_Post__4__removebg_preview1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -521,7 +521,7 @@ Namespace My.Resources
         Friend ReadOnly Property Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__5__removebg_preview() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_In"& _ 
-                        "stagram_Post__5_-removebg-preview", resourceCulture)
+                        "stagram_Post__5__removebg_preview", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

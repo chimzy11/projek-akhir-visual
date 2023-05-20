@@ -88,28 +88,6 @@ C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-vis
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.exe.config
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.exe
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.pdb
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.xml
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.AssemblyReference.cache
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.SuggestedBindingRedirects.cache
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.dashboardAdmin.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FLogin.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDashboard.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FRegistrasi.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Resources.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.GenerateResource.cache
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CoreCompileInputs.cache
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.exe
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.xml
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.pdb
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\mysql.data.dll
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
@@ -121,9 +99,6 @@ C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-vis
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
 C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
-C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
@@ -169,3 +144,85 @@ C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-vis
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicket.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formPembayaran.resources
 C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formPesan.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.exe.config
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.exe
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.pdb
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.xml
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.AssemblyReference.cache
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.DashboardAdmin.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.DashboardUser.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formAbout.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailMusikal.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicket.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDrama.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formHome.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formKomedi.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formMusikal.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formPembayaran.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formPesan.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formRiwayatUser.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.LandingPage.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.PopUpHapusJadwal.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.PopUpEditJadwal.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FLogin.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FormDataUser.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDashboard.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.fProfilUser.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FRegistrasi.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Resources.resources
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.GenerateResource.cache
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CoreCompileInputs.cache
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.exe
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.xml
+C:\Users\Asus Gk\Documents\1. Kuliah\4. Semester 4\1. Praktikum\Pemrograman Visual\Project Akhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.pdb
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.exe.config
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.exe
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.pdb
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\bin\Debug\A1K3_Projek Akhir.xml
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.AssemblyReference.cache
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.DashboardAdmin.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.DashboardUser.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formAbout.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailMusikal.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicket.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDrama.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formHome.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formKomedi.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formMusikal.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formPembayaran.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formPesan.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formRiwayatUser.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.LandingPage.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.PopUpHapusJadwal.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.PopUpEditJadwal.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FLogin.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Form1.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FormDataUser.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formEdit.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDashboard.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formJadwal.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formLupaPass.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formProfilAdmin.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTambah.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formTransaksi.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.fProfilUser.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FRegistrasi.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.FJenisTiketTeater.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.Resources.resources
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.GenerateResource.cache
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CoreCompileInputs.cache
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.vbproj.CopyComplete
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.exe
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.xml
+C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek Akhir.pdb

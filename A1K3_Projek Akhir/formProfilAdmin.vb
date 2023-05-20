@@ -33,9 +33,9 @@ Public Class formProfilAdmin
         Panel4.Region.Union(rectBottom)
 
 
-        Dim queryString As String = "SELECT * FROM akun WHERE username='" & FLogin.tUsername.Text & "'"
+        CMD = New MySqlCommand("SELECT * FROM akun WHERE username = @username", CONN)
+        CMD.Parameters.AddWithValue("@username", FLogin.tUsername.Text)
 
-        CMD = New MySqlCommand(queryString, CONN)
         RD = CMD.ExecuteReader()
         If RD.Read() Then
             lNama.Text = RD.GetString(1)
@@ -105,14 +105,6 @@ Public Class formProfilAdmin
             CMD.ExecuteNonQuery()
 
         End If
-    End Sub
-
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
-
-    End Sub
-
-    Private Sub Panel14_Paint(sender As Object, e As PaintEventArgs) Handles Panel14.Paint
-
     End Sub
 End Class
 
