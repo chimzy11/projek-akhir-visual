@@ -35,8 +35,6 @@ Partial Class formTambah
         Me.bPilihGambarTiket = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gJam = New System.Windows.Forms.GroupBox()
-        Me.rJamKeempat = New System.Windows.Forms.RadioButton()
-        Me.rJamKetiga = New System.Windows.Forms.RadioButton()
         Me.rJamKedua = New System.Windows.Forms.RadioButton()
         Me.rJamPertama = New System.Windows.Forms.RadioButton()
         Me.tHargaTiket = New System.Windows.Forms.TextBox()
@@ -224,8 +222,6 @@ Partial Class formTambah
         '
         'gJam
         '
-        Me.gJam.Controls.Add(Me.rJamKeempat)
-        Me.gJam.Controls.Add(Me.rJamKetiga)
         Me.gJam.Controls.Add(Me.rJamKedua)
         Me.gJam.Controls.Add(Me.rJamPertama)
         Me.gJam.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -239,49 +235,19 @@ Partial Class formTambah
         Me.gJam.TabStop = False
         Me.gJam.Text = "Jam Pertunjukan"
         '
-        'rJamKeempat
-        '
-        Me.rJamKeempat.AutoSize = True
-        Me.rJamKeempat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rJamKeempat.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rJamKeempat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKeempat.Location = New System.Drawing.Point(12, 139)
-        Me.rJamKeempat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.rJamKeempat.Name = "rJamKeempat"
-        Me.rJamKeempat.Size = New System.Drawing.Size(176, 25)
-        Me.rJamKeempat.TabIndex = 38
-        Me.rJamKeempat.TabStop = True
-        Me.rJamKeempat.Text = "21.00 - 23.00 WITA"
-        Me.rJamKeempat.UseVisualStyleBackColor = True
-        '
-        'rJamKetiga
-        '
-        Me.rJamKetiga.AutoSize = True
-        Me.rJamKetiga.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rJamKetiga.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rJamKetiga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKetiga.Location = New System.Drawing.Point(12, 105)
-        Me.rJamKetiga.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.rJamKetiga.Name = "rJamKetiga"
-        Me.rJamKetiga.Size = New System.Drawing.Size(176, 25)
-        Me.rJamKetiga.TabIndex = 37
-        Me.rJamKetiga.TabStop = True
-        Me.rJamKetiga.Text = "17.00 - 20.00 WITA"
-        Me.rJamKetiga.UseVisualStyleBackColor = True
-        '
         'rJamKedua
         '
         Me.rJamKedua.AutoSize = True
         Me.rJamKedua.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rJamKedua.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rJamKedua.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKedua.Location = New System.Drawing.Point(12, 66)
+        Me.rJamKedua.Location = New System.Drawing.Point(12, 111)
         Me.rJamKedua.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rJamKedua.Name = "rJamKedua"
         Me.rJamKedua.Size = New System.Drawing.Size(176, 25)
         Me.rJamKedua.TabIndex = 36
         Me.rJamKedua.TabStop = True
-        Me.rJamKedua.Text = "14.00 - 16.00 WITA"
+        Me.rJamKedua.Text = "19.00 - 22.00 WITA"
         Me.rJamKedua.UseVisualStyleBackColor = True
         '
         'rJamPertama
@@ -290,13 +256,13 @@ Partial Class formTambah
         Me.rJamPertama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rJamPertama.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rJamPertama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamPertama.Location = New System.Drawing.Point(12, 29)
+        Me.rJamPertama.Location = New System.Drawing.Point(12, 65)
         Me.rJamPertama.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rJamPertama.Name = "rJamPertama"
         Me.rJamPertama.Size = New System.Drawing.Size(176, 25)
         Me.rJamPertama.TabIndex = 35
         Me.rJamPertama.TabStop = True
-        Me.rJamPertama.Text = "10.00 - 12.00 WITA"
+        Me.rJamPertama.Text = "13.00 - 16.00 WITA"
         Me.rJamPertama.UseVisualStyleBackColor = True
         '
         'tHargaTiket
@@ -617,8 +583,6 @@ Partial Class formTambah
     Friend WithEvents Button4 As Button
     Friend WithEvents dTanggal As DateTimePicker
     Friend WithEvents gJam As GroupBox
-    Friend WithEvents rJamKeempat As RadioButton
-    Friend WithEvents rJamKetiga As RadioButton
     Friend WithEvents rJamKedua As RadioButton
     Friend WithEvents rJamPertama As RadioButton
     Friend WithEvents bPilihGambarTiket As Button

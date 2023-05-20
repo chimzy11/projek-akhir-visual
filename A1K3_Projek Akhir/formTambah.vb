@@ -15,8 +15,6 @@ Public Class formTambah
         dTanggal.Value = DateTime.Today
         rJamPertama.Checked = False
         rJamKedua.Checked = False
-        rJamKetiga.Checked = False
-        rJamKeempat.Checked = False
         cGenre.SelectedIndex = -1
         tTiket.Clear()
         tHari.Clear()
@@ -31,7 +29,7 @@ Public Class formTambah
             Cek = True
         ElseIf tKelompok.Text = "" Then
             Cek = True
-        ElseIf rJamPertama.Checked = False And rJamKedua.Checked = False And rJamKetiga.Checked = False And rJamKeempat.Checked = False Then
+        ElseIf rJamPertama.Checked = False And rJamKedua.Checked = False Then
             Cek = True
         ElseIf cGenre.Text = "" Then
             Cek = True
@@ -79,10 +77,6 @@ Public Class formTambah
             JamTayang = rJamPertama.Text
         ElseIf rJamKedua.Checked Then
             JamTayang = rJamKedua.Text
-        ElseIf rJamKetiga.Checked Then
-            JamTayang = rJamKetiga.Text
-        ElseIf rJamKeempat.Checked Then
-            JamTayang = rJamKeempat.Text
         End If
 
         Dim lastID As Integer = GetLastID()
@@ -117,8 +111,20 @@ Public Class formTambah
     End Sub
     Private Sub formTambah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         bSimpan.Enabled = False
-        dTanggal.MinDate = DateTime.Today
-        dTanggal.Value = DateTime.Today
+        dTanggal.MinDate = DateTime.Today.AddDays(2)
+
+        Dim maxDate As DateTime = DateTime.Today.AddDays(8)
+
+        Do While maxDate.DayOfWeek = DayOfWeek.Monday
+            maxDate = maxDate.AddDays(1)
+        Loop
+
+        If maxDate.DayOfWeek = DayOfWeek.Monday Then
+            maxDate = maxDate.AddDays(1)
+        End If
+
+        dTanggal.MaxDate = maxDate
+        dTanggal.Value = maxDate
     End Sub
 
     Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs) Handles bPilihGambarTiket.Click
@@ -138,11 +144,16 @@ Public Class formTambah
                 Dim fileName As String = Path.GetFileNameWithoutExtension(imagePath)
                 Dim fileExtension As String = Path.GetExtension(imagePath)
                 Dim newFileName As String = $"{tJudul.Text}{fileExtension}"
+                Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+
+                File.Move(imagePath, destinationPath)
+
                 bPilihGambarTiket.Text = newFileName
             End If
 
             bSimpan.Enabled = True
         End If
+
     End Sub
 
 

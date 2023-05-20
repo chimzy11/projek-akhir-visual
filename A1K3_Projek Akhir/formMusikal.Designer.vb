@@ -27,6 +27,7 @@ Partial Class formMusikal
         Me.txtCari = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.bDetail = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -35,10 +36,10 @@ Partial Class formMusikal
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Elephant", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(27, 11)
+        Me.Label1.Location = New System.Drawing.Point(30, 14)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(277, 43)
+        Me.Label1.Size = New System.Drawing.Size(334, 53)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Menu Musikal"
         '
@@ -47,10 +48,10 @@ Partial Class formMusikal
         Me.lblTanggal.AutoSize = True
         Me.lblTanggal.Font = New System.Drawing.Font("Microsoft YaHei", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTanggal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lblTanggal.Location = New System.Drawing.Point(623, 9)
+        Me.lblTanggal.Location = New System.Drawing.Point(701, 11)
         Me.lblTanggal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTanggal.Name = "lblTanggal"
-        Me.lblTanggal.Size = New System.Drawing.Size(219, 36)
+        Me.lblTanggal.Size = New System.Drawing.Size(254, 42)
         Me.lblTanggal.TabIndex = 1
         Me.lblTanggal.Text = "Tanggal Today"
         '
@@ -59,11 +60,11 @@ Partial Class formMusikal
         Me.txtCari.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.txtCari.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtCari.Location = New System.Drawing.Point(35, 63)
-        Me.txtCari.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCari.Location = New System.Drawing.Point(39, 79)
+        Me.txtCari.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtCari.Multiline = True
         Me.txtCari.Name = "txtCari"
-        Me.txtCari.Size = New System.Drawing.Size(967, 38)
+        Me.txtCari.Size = New System.Drawing.Size(1087, 46)
         Me.txtCari.TabIndex = 2
         '
         'Panel1
@@ -72,10 +73,10 @@ Partial Class formMusikal
         Me.Panel1.Controls.Add(Me.lblTanggal)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.txtCari)
-        Me.Panel1.Location = New System.Drawing.Point(191, 85)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel1.Location = New System.Drawing.Point(13, 14)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1039, 117)
+        Me.Panel1.Size = New System.Drawing.Size(1169, 146)
         Me.Panel1.TabIndex = 4
         '
         'Button1
@@ -84,21 +85,37 @@ Partial Class formMusikal
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.loupe__1_
-        Me.Button1.Location = New System.Drawing.Point(913, 63)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(1066, 87)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(89, 37)
+        Me.Button1.Size = New System.Drawing.Size(55, 31)
         Me.Button1.TabIndex = 3
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'bDetail
+        '
+        Me.bDetail.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bDetail.FlatAppearance.BorderSize = 0
+        Me.bDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bDetail.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bDetail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bDetail.Location = New System.Drawing.Point(1245, 93)
+        Me.bDetail.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bDetail.Name = "bDetail"
+        Me.bDetail.Size = New System.Drawing.Size(179, 46)
+        Me.bDetail.TabIndex = 69
+        Me.bDetail.Text = "Detail"
+        Me.bDetail.UseVisualStyleBackColor = False
+        '
         'formMusikal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1485, 922)
+        Me.ClientSize = New System.Drawing.Size(1671, 1050)
+        Me.Controls.Add(Me.bDetail)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "formMusikal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formMusikal"
@@ -114,4 +131,5 @@ Partial Class formMusikal
     Friend WithEvents txtCari As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents bDetail As Button
 End Class
