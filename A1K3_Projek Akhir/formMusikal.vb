@@ -89,21 +89,30 @@ Public Class formMusikal
         End If
 
         If e.KeyChar = Chr(13) Then
-            CMD = New MySqlCommand("Select * From JadwalTeater where judul like '%" & tSearch.Text & "%'", CONN)
-            RD = CMD.ExecuteReader
-            RD.Read()
-            If RD.HasRows Then
-                ' Menghapus konten sebelumnya
-                Me.Controls.Clear()
+            CMD = New MySqlCommand("SELECT * FROM JadwalTeater WHERE judul LIKE '%" & tSearch.Text & "%'", CONN)
+            RD = CMD.ExecuteReader()
 
-                ' Menampilkan data baru berdasarkan hasil pencarian
-                TampilDataTeater()
+            If RD.HasRows Then
+                While RD.Read()
+                    Dim judul As String = RD.GetString(1)
+                    Dim labelJudul As New Label()
+                    labelJudul.BackColor = Color.FromArgb(221, 212, 199)
+                    labelJudul.ForeColor = Color.FromArgb(132, 123, 112)
+                    labelJudul.TextAlign = ContentAlignment.MiddleCenter
+                    labelJudul.Font = New Font("microsoft yahei", 12, FontStyle.Bold)
+                    labelJudul.Text = judul
+                    labelJudul.Size = New Size(150, 30)
+                    labelJudul.Location = New Point(40, 108) ' Fixed location for each label
+                    Me.Controls.Add(labelJudul)
+                End While
+                RD.Close()
             Else
                 RD.Close()
                 MsgBox("Data tidak ditemukan!", MsgBoxStyle.Information, "Attention")
             End If
         End If
     End Sub
+
 
     Private Sub tSearch_Leave(sender As Object, e As EventArgs) Handles tSearch.Leave
         If tSearch.Text = "" Then

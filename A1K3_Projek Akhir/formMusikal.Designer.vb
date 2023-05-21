@@ -67,6 +67,7 @@ Partial Class formMusikal
         Me.tSearch.Name = "tSearch"
         Me.tSearch.Size = New System.Drawing.Size(1087, 46)
         Me.tSearch.TabIndex = 2
+        Me.tSearch.Text = "Search"
         '
         'Panel1
         '
@@ -85,7 +86,7 @@ Partial Class formMusikal
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.loupe__1_
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.Location = New System.Drawing.Point(1070, 89)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
