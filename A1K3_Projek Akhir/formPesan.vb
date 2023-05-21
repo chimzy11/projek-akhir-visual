@@ -5,13 +5,14 @@ Imports System.Windows.Forms.DataVisualization.Charting
 Public Class formPesan
 
     Sub PilihanKursi()
-        Dim queryString As String = "SELECT tiket FROM JadwalTeater WHERE judul = @judul"
+        Dim queryString As String = "SELECT * FROM JadwalTeater WHERE judul = @judul"
 
         CMD = New MySqlCommand(queryString, CONN)
         CMD.Parameters.AddWithValue("@judul", PopUpDataJadwal.cJudul.Text)
         RD = CMD.ExecuteReader()
 
         If RD.Read() Then
+
             Dim jumlahTiket As Integer = RD.GetString(7)
 
             Dim numCheckboxes As Integer = jumlahTiket
@@ -28,10 +29,10 @@ Public Class formPesan
                 checkBox.Text = nama.ToString() & i.ToString()
                 Dim row As Integer = i \ checkBoxesPerRow ' Calculate row
                 Dim col As Integer = i Mod checkBoxesPerRow ' Calculate column
-                Dim x As Integer = 150 + col * (checkBoxWidth + spacing) ' Calculate X position
-                Dim y As Integer = 150 + row * (checkBoxHeight + spacing) ' Calculate Y position
+                Dim x As Integer = 20 + col * (checkBoxWidth + spacing) ' Calculate X position
+                Dim y As Integer = 50 + row * (checkBoxHeight + spacing) ' Calculate Y position
                 checkBox.Location = New Point(x, y)
-                Me.Controls.Add(checkBox)
+                Panel2.Controls.Add(checkBox)
 
                 ' Update character for every group of 5 CheckBoxes
                 If (i + 1) Mod 5 = 0 Then
@@ -44,7 +45,6 @@ Public Class formPesan
 
         RD.Close()
     End Sub
-
 
 
     Private Sub formPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -61,7 +61,7 @@ Public Class formPesan
 
         RD.Close()
 
-        Dim queryString1 As String = "SELECT * FROM akun WHERE judul ='" & FLogin.tUsername.Text & "'"
+        Dim queryString1 As String = "SELECT * FROM akun WHERE username ='" & FLogin.tUsername.Text & "'"
 
         CMD = New MySqlCommand(queryString1, CONN)
         RD = CMD.ExecuteReader()
