@@ -167,12 +167,22 @@ A1K3_Projek Akhir
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.Home__3__removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.id_card">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.id_card__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.instagram">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -262,6 +272,11 @@ A1K3_Projek Akhir
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.pin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.placeholder">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -303,6 +318,11 @@ A1K3_Projek Akhir
 </summary>
 </member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.trending__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.twitter">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

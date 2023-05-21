@@ -491,8 +491,11 @@
     <Content Include="Resources\gold-shampagne-yellow-gradation-wallpaper-preview.jpg" />
     <Content Include="Resources\group %281%291.png" />
     <Content Include="Resources\group %282%29.png" />
+    <None Include="Resources\Home__3_-removebg-preview.png" />
     <Content Include="Resources\id-card %281%29.png" />
     <Content Include="Resources\id-card.png" />
+    <None Include="Resources\twitter.png" />
+    <None Include="Resources\instagram.png" />
     <Content Include="Resources\loupe %281%29.png" />
     <Content Include="Resources\loupe.png" />
     <Content Include="Resources\mail.png" />
@@ -503,6 +506,7 @@
     <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__3_-removebg-preview.png" />
     <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4_-removebg-preview.png" />
     <None Include="Resources\Pastel_Purple_Pink_Neon_Yellow_Dreamy_Clean_Beauty_Products_Sustainable_Beauty_Instagram_Post__4_-removebg-preview1.png" />
+    <None Include="Resources\pin.png" />
     <Content Include="Resources\placeholder.png" />
     <Content Include="Resources\press-pass.png" />
     <Content Include="Resources\theater %281%29.png" />
