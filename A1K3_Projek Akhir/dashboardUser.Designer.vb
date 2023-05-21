@@ -197,21 +197,21 @@ Partial Class DashboardUser
         '
         Me.MenuProfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MenuProfil.Name = "MenuProfil"
-        Me.MenuProfil.Size = New System.Drawing.Size(270, 40)
+        Me.MenuProfil.Size = New System.Drawing.Size(232, 40)
         Me.MenuProfil.Text = "Profil"
         '
         'MenuTransaksi
         '
         Me.MenuTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MenuTransaksi.Name = "MenuTransaksi"
-        Me.MenuTransaksi.Size = New System.Drawing.Size(270, 40)
+        Me.MenuTransaksi.Size = New System.Drawing.Size(232, 40)
         Me.MenuTransaksi.Text = "Transaksi"
         '
         'MenuTiket
         '
         Me.MenuTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MenuTiket.Name = "MenuTiket"
-        Me.MenuTiket.Size = New System.Drawing.Size(270, 40)
+        Me.MenuTiket.Size = New System.Drawing.Size(232, 40)
         Me.MenuTiket.Text = "Tiket"
         '
         'Panel2
@@ -283,10 +283,13 @@ Partial Class DashboardUser
         '
         'ToolStripMenuItem2
         '
+        Me.ToolStripMenuItem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ToolStripMenuItem2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.ToolStripMenuItem2.Image = CType(resources.GetObject("ToolStripMenuItem2.Image"), System.Drawing.Image)
         Me.ToolStripMenuItem2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ToolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.RightToLeftAutoMirrorImage = True
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(165, 41)
         Me.ToolStripMenuItem2.Text = "About Us"
         '
@@ -301,7 +304,7 @@ Partial Class DashboardUser
         Me.MenuStripTeater.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStripTeater.Location = New System.Drawing.Point(860, 55)
         Me.MenuStripTeater.Name = "MenuStripTeater"
-        Me.MenuStripTeater.Size = New System.Drawing.Size(335, 45)
+        Me.MenuStripTeater.Size = New System.Drawing.Size(155, 45)
         Me.MenuStripTeater.TabIndex = 1
         Me.MenuStripTeater.Text = "MenuStrip2"
         '

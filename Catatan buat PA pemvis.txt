@@ -1,6 +1,7 @@
 KODINGAN :
 Error Handling:
 - Button clear harus enabled jika form tidak diisi
+- Batasan untuk tiap genre hanya untuk 12 data
 
 Tambahan : 
 - searching harus bisa semua data berdasarkan kolom database

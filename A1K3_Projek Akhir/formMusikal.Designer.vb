@@ -25,7 +25,7 @@ Partial Class formMusikal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formMusikal))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTanggal = New System.Windows.Forms.Label()
-        Me.txtCari = New System.Windows.Forms.TextBox()
+        Me.tSearch = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.bDetail = New System.Windows.Forms.Button()
@@ -56,24 +56,24 @@ Partial Class formMusikal
         Me.lblTanggal.TabIndex = 1
         Me.lblTanggal.Text = "Tanggal Today"
         '
-        'txtCari
+        'tSearch
         '
-        Me.txtCari.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.txtCari.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtCari.Location = New System.Drawing.Point(39, 79)
-        Me.txtCari.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.txtCari.Multiline = True
-        Me.txtCari.Name = "txtCari"
-        Me.txtCari.Size = New System.Drawing.Size(1087, 46)
-        Me.txtCari.TabIndex = 2
+        Me.tSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.tSearch.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tSearch.Location = New System.Drawing.Point(39, 79)
+        Me.tSearch.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.tSearch.Multiline = True
+        Me.tSearch.Name = "tSearch"
+        Me.tSearch.Size = New System.Drawing.Size(1087, 46)
+        Me.tSearch.TabIndex = 2
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.lblTanggal)
         Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.txtCari)
+        Me.Panel1.Controls.Add(Me.tSearch)
         Me.Panel1.Location = New System.Drawing.Point(13, 14)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
@@ -86,10 +86,10 @@ Partial Class formMusikal
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.loupe__1_
-        Me.Button1.Location = New System.Drawing.Point(1066, 87)
+        Me.Button1.Location = New System.Drawing.Point(1070, 89)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(55, 31)
+        Me.Button1.Size = New System.Drawing.Size(47, 27)
         Me.Button1.TabIndex = 3
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -130,7 +130,7 @@ Partial Class formMusikal
 
     Friend WithEvents Label1 As Label
     Friend WithEvents lblTanggal As Label
-    Friend WithEvents txtCari As TextBox
+    Friend WithEvents tSearch As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents bDetail As Button

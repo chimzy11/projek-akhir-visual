@@ -60,7 +60,8 @@ Public Class DashboardAdmin
         X = MessageBox.Show("Yakin keluar dari program ini?", "Konfirmasi",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If X = MsgBoxResult.Yes Then
-            End
+            Me.Close()
+            LandingPage.Show()
         Else
             Exit Sub
         End If

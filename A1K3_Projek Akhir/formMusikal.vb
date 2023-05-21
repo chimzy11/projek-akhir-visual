@@ -7,10 +7,7 @@ Imports System.Drawing.Drawing2D
 
 Public Class formMusikal
 
-    Private Sub formMusikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call KoneksiDatabase()
-        lblTanggal.Text = Today.ToString("dd/MM/yyyy")
-
+    Sub TampilDataTeater()
         Dim queryString As String = "SELECT COUNT(*) FROM JadwalTeater"
 
         CMD = New MySqlCommand(queryString, CONN)
@@ -29,7 +26,6 @@ Public Class formMusikal
         Dim i As Integer
 
         While RD.Read()
-
             Dim judul As String = RD.GetString(1)
             Dim labelJudul As New Label()
             labelJudul.BackColor = Color.FromArgb(221, 212, 199)
@@ -72,13 +68,48 @@ Public Class formMusikal
                 startY += 200
             End If
         End While
+        RD.Close()
+    End Sub
+
+    Private Sub formMusikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call KoneksiDatabase()
+        lblTanggal.Text = Today.ToString("dd/MM/yyyy")
+        TampilDataTeater()
+
     End Sub
 
     Private Sub Button_Click(sender As Object, e As EventArgs)
         MessageBox.Show("Tombol diklik!")
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
+    Private Sub tSearch_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tSearch.KeyPress
+        If tSearch.Text = "Search" Then
+            tSearch.Text = ""
+            tSearch.ForeColor = Color.FromArgb(132, 123, 112)
+        End If
 
+        If e.KeyChar = Chr(13) Then
+            CMD = New MySqlCommand("Select * From JadwalTeater where judul like '%" & tSearch.Text & "%'", CONN)
+            RD = CMD.ExecuteReader
+            RD.Read()
+            If RD.HasRows Then
+                ' Menghapus konten sebelumnya
+                Me.Controls.Clear()
+
+                ' Menampilkan data baru berdasarkan hasil pencarian
+                TampilDataTeater()
+            Else
+                RD.Close()
+                MsgBox("Data tidak ditemukan!", MsgBoxStyle.Information, "Attention")
+            End If
+        End If
+    End Sub
+
+    Private Sub tSearch_Leave(sender As Object, e As EventArgs) Handles tSearch.Leave
+        If tSearch.Text = "" Then
+            tSearch.Text = "Search"
+            tSearch.ForeColor = Color.DarkGray
+            TampilDataTeater()
+        End If
     End Sub
 End Class

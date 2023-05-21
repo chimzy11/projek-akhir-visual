@@ -23,64 +23,19 @@
         Button3.BackColor = Color.Transparent
         lSignIn.BackColor = Color.Transparent
         lSignUp.BackColor = Color.Transparent
+        PictureBox1.BackColor = Color.Transparent
         Panel1.BackColor = Color.FromArgb(200, 221, 212, 199)
         Panel2.BackColor = Color.FromArgb(230, 132, 123, 112)
-
-        ' Mengatur warna latar belakang dengan tingkat transparansi setengah
-
-
     End Sub
 
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub Panel1_Paint_1(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs)
-
+    Private Sub lSignOut_Click(sender As Object, e As EventArgs) Handles lSignOut.Click
+        Dim X As String
+        X = MessageBox.Show("Yakin keluar dari program ini?", "Konfirmasi",
+                                MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If X = MsgBoxResult.Yes Then
+            End
+        Else
+            Exit Sub
+        End If
     End Sub
 End Class
