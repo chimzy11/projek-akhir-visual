@@ -110,7 +110,7 @@ Public Class formPesan
         End If
     End Sub
 
-    Private Sub CheckBox_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub CheckBox_CheckedChanged(sender As Object, e As EventArgs) 
         Dim checkBox As CheckBox = CType(sender, CheckBox)
 
         If checkBox.Checked Then
@@ -125,4 +125,8 @@ Public Class formPesan
         End If
     End Sub
 
+    Private Sub bPembayaran_Click(sender As Object, e As EventArgs)
+        Me.Hide()
+        formPembayaran.Show()
+    End Sub
 End Class

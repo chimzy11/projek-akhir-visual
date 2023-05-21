@@ -23,6 +23,7 @@ Partial Class formPesan
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPesan))
+        Dim bPembayaran As System.Windows.Forms.Button
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pKembali = New System.Windows.Forms.PictureBox()
@@ -33,10 +34,10 @@ Partial Class formPesan
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lTotalHarga = New System.Windows.Forms.Label()
-        Me.bTambahJadwal = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lUsername = New System.Windows.Forms.Label()
+        bPembayaran = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
@@ -136,7 +137,7 @@ Partial Class formPesan
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Panel3.Controls.Add(Me.lTotalHarga)
-        Me.Panel3.Controls.Add(Me.bTambahJadwal)
+        Me.Panel3.Controls.Add(bPembayaran)
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.lUsername)
@@ -156,24 +157,25 @@ Partial Class formPesan
         Me.lTotalHarga.TabIndex = 56
         Me.lTotalHarga.Text = "50000"
         '
-        'bTambahJadwal
+        'bPembayaran
         '
-        Me.bTambahJadwal.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bTambahJadwal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.bTambahJadwal.FlatAppearance.BorderSize = 0
-        Me.bTambahJadwal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bTambahJadwal.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bTambahJadwal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.bTambahJadwal.Image = CType(resources.GetObject("bTambahJadwal.Image"), System.Drawing.Image)
-        Me.bTambahJadwal.Location = New System.Drawing.Point(590, 2)
-        Me.bTambahJadwal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.bTambahJadwal.Name = "bTambahJadwal"
-        Me.bTambahJadwal.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
-        Me.bTambahJadwal.Size = New System.Drawing.Size(213, 98)
-        Me.bTambahJadwal.TabIndex = 55
-        Me.bTambahJadwal.Text = "Checkout"
-        Me.bTambahJadwal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.bTambahJadwal.UseVisualStyleBackColor = False
+        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderSize = 0
+        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
+        bPembayaran.Location = New System.Drawing.Point(590, 2)
+        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        bPembayaran.Name = "bPembayaran"
+        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
+        bPembayaran.Size = New System.Drawing.Size(213, 98)
+        bPembayaran.TabIndex = 55
+        bPembayaran.Text = "Checkout"
+        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        bPembayaran.UseVisualStyleBackColor = False
+        AddHandler bPembayaran.Click, AddressOf Me.bPembayaran_Click
         '
         'Label6
         '
@@ -250,7 +252,6 @@ Partial Class formPesan
     Friend WithEvents Label5 As Label
     Friend WithEvents lUsername As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents bTambahJadwal As Button
     Friend WithEvents pKembali As PictureBox
     Friend WithEvents lTotalHarga As Label
 End Class

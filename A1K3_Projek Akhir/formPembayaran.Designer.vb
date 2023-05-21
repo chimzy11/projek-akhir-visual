@@ -25,11 +25,13 @@ Partial Class formPembayaran
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPembayaran))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.tNamaLengkap = New System.Windows.Forms.TextBox()
+        Me.tKodePembayaran = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.bCetak = New System.Windows.Forms.Button()
+        Me.cValid = New System.Windows.Forms.CheckBox()
         Me.pKembali = New System.Windows.Forms.PictureBox()
-        Me.bSimpan = New System.Windows.Forms.Button()
+        Me.bChsBuktiPembayaran = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -58,19 +60,20 @@ Partial Class formPembayaran
         Me.Label3.Text = "Pembayaran"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'tNamaLengkap
+        'tKodePembayaran
         '
-        Me.tNamaLengkap.AcceptsReturn = True
-        Me.tNamaLengkap.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tNamaLengkap.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tNamaLengkap.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.tNamaLengkap.Location = New System.Drawing.Point(27, 112)
-        Me.tNamaLengkap.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tNamaLengkap.Name = "tNamaLengkap"
-        Me.tNamaLengkap.Size = New System.Drawing.Size(432, 61)
-        Me.tNamaLengkap.TabIndex = 45
-        Me.tNamaLengkap.Text = "Kode Pembayaran"
+        Me.tKodePembayaran.AcceptsReturn = True
+        Me.tKodePembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.tKodePembayaran.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tKodePembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tKodePembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.tKodePembayaran.Location = New System.Drawing.Point(27, 95)
+        Me.tKodePembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tKodePembayaran.Name = "tKodePembayaran"
+        Me.tKodePembayaran.Size = New System.Drawing.Size(432, 61)
+        Me.tKodePembayaran.TabIndex = 45
+        Me.tKodePembayaran.Text = "Kode Pembayaran"
+        Me.tKodePembayaran.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel2
         '
@@ -84,40 +87,69 @@ Partial Class formPembayaran
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.bCetak)
+        Me.Panel3.Controls.Add(Me.cValid)
         Me.Panel3.Controls.Add(Me.pKembali)
-        Me.Panel3.Controls.Add(Me.bSimpan)
-        Me.Panel3.Controls.Add(Me.tNamaLengkap)
+        Me.Panel3.Controls.Add(Me.bChsBuktiPembayaran)
+        Me.Panel3.Controls.Add(Me.tKodePembayaran)
         Me.Panel3.Location = New System.Drawing.Point(30, 28)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(684, 445)
+        Me.Panel3.Size = New System.Drawing.Size(480, 414)
         Me.Panel3.TabIndex = 2
+        '
+        'bCetak
+        '
+        Me.bCetak.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bCetak.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bCetak.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bCetak.FlatAppearance.BorderSize = 0
+        Me.bCetak.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bCetak.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bCetak.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bCetak.Location = New System.Drawing.Point(276, 354)
+        Me.bCetak.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bCetak.Name = "bCetak"
+        Me.bCetak.Size = New System.Drawing.Size(183, 44)
+        Me.bCetak.TabIndex = 109
+        Me.bCetak.Text = "Cetak Tiket"
+        Me.bCetak.UseVisualStyleBackColor = False
+        '
+        'cValid
+        '
+        Me.cValid.AutoSize = True
+        Me.cValid.Location = New System.Drawing.Point(235, 288)
+        Me.cValid.Name = "cValid"
+        Me.cValid.Size = New System.Drawing.Size(203, 24)
+        Me.cValid.TabIndex = 108
+        Me.cValid.Text = "Bukti Pembayaran Valid"
+        Me.cValid.UseVisualStyleBackColor = True
         '
         'pKembali
         '
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(422, 363)
+        Me.pKembali.Location = New System.Drawing.Point(27, 363)
         Me.pKembali.Name = "pKembali"
         Me.pKembali.Size = New System.Drawing.Size(37, 35)
         Me.pKembali.TabIndex = 107
         Me.pKembali.TabStop = False
         '
-        'bSimpan
+        'bChsBuktiPembayaran
         '
-        Me.bSimpan.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bSimpan.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bSimpan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.bSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bSimpan.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bSimpan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.bSimpan.Location = New System.Drawing.Point(46, 229)
-        Me.bSimpan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.bSimpan.Name = "bSimpan"
-        Me.bSimpan.Size = New System.Drawing.Size(384, 48)
-        Me.bSimpan.TabIndex = 46
-        Me.bSimpan.Text = "Choose Gambar"
-        Me.bSimpan.UseVisualStyleBackColor = False
+        Me.bChsBuktiPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bChsBuktiPembayaran.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bChsBuktiPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bChsBuktiPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bChsBuktiPembayaran.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bChsBuktiPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.bChsBuktiPembayaran.Location = New System.Drawing.Point(54, 225)
+        Me.bChsBuktiPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bChsBuktiPembayaran.Name = "bChsBuktiPembayaran"
+        Me.bChsBuktiPembayaran.Size = New System.Drawing.Size(384, 48)
+        Me.bChsBuktiPembayaran.TabIndex = 46
+        Me.bChsBuktiPembayaran.Text = "Choose Gambar"
+        Me.bChsBuktiPembayaran.UseVisualStyleBackColor = False
         '
         'formPembayaran
         '
@@ -144,10 +176,12 @@ Partial Class formPembayaran
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents tNamaLengkap As TextBox
+    Friend WithEvents tKodePembayaran As TextBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents bSimpan As Button
+    Friend WithEvents bChsBuktiPembayaran As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents pKembali As PictureBox
+    Friend WithEvents cValid As CheckBox
+    Friend WithEvents bCetak As Button
 End Class
