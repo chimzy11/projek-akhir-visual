@@ -22,6 +22,7 @@
     End Sub
 
     Private Sub formTransaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        GridDataTransaksi()
         DataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(185, 174, 169)
         DataGridView2.EnableHeadersVisualStyles = False
 
@@ -34,12 +35,35 @@
         Next
     End Sub
 
+    Sub GridDataTransaksi()
+        DataGridView2.Columns(0).Width = 90
+        DataGridView2.Columns(1).Width = 90
+        DataGridView2.Columns(2).Width = 80
+        DataGridView2.Columns(3).Width = 150
+        DataGridView2.Columns(4).Width = 150
+        DataGridView2.Columns(5).Width = 150
+        DataGridView2.Columns(6).Width = 80
+
+        DataGridView2.Columns(0).HeaderText = "Nama Pengirim"
+        DataGridView2.Columns(1).HeaderText = "Nama Penerima"
+        DataGridView2.Columns(2).HeaderText = "Jumlah Tiket"
+        DataGridView2.Columns(3).HeaderText = "Judul Teater"
+        DataGridView2.Columns(4).HeaderText = "No Rekening Pengirim"
+        DataGridView2.Columns(5).HeaderText = "No Rekening Penerima"
+        DataGridView2.Columns(6).HeaderText = "No Rekening Pengirim"
+
+    End Sub
+
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) 
 
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) 
+
+    End Sub
+
+    Private Sub Panel1_Paint_1(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
 End Class
