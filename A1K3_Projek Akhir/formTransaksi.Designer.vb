@@ -40,12 +40,12 @@ Partial Class formTransaksi
         'DataGridView2
         '
         Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.White
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
@@ -60,8 +60,7 @@ Partial Class formTransaksi
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView2.GridColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.DataGridView2.Location = New System.Drawing.Point(52, 55)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView2.Location = New System.Drawing.Point(35, 36)
         Me.DataGridView2.Name = "DataGridView2"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -72,7 +71,7 @@ Partial Class formTransaksi
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView2.RowHeadersWidth = 62
-        Me.DataGridView2.Size = New System.Drawing.Size(1330, 231)
+        Me.DataGridView2.Size = New System.Drawing.Size(887, 150)
         Me.DataGridView2.TabIndex = 2
         '
         'DataGridViewTextBoxColumn1
@@ -119,13 +118,12 @@ Partial Class formTransaksi
         '
         'formTransaksi
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1462, 692)
+        Me.ClientSize = New System.Drawing.Size(913, 450)
         Me.Controls.Add(Me.DataGridView2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "formTransaksi"
         Me.Text = "formTransaksi"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
