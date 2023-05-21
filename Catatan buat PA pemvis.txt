@@ -11,3 +11,4 @@ DESAIN:
 - yang enabled kan tulisannya bakal itam kalo bis digantii tpi klo ga jg aman harusnya
 - perbaiki jam pertunjukkan di tambah jadwal (done)
 - hapus aja search di navigasi (done)
+- masukin ikon di menu about us (ikonnya ada di folder images)
