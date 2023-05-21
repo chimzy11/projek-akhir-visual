@@ -24,45 +24,221 @@ Partial Class formDetailMusikal
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formDetailMusikal))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnPesan = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.bPesan = New System.Windows.Forms.Button()
         Me.lblLokaso = New System.Windows.Forms.Label()
-        Me.lblHarga = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lblJudul = New System.Windows.Forms.Label()
+        Me.lHarga = New System.Windows.Forms.Label()
+        Me.lJudul = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lSignIn = New System.Windows.Forms.Label()
+        Me.lKelompok = New System.Windows.Forms.Label()
+        Me.lGenre = New System.Windows.Forms.Label()
+        Me.lHari = New System.Windows.Forms.Label()
+        Me.lTanggal = New System.Windows.Forms.Label()
+        Me.lWaktu = New System.Windows.Forms.Label()
+        Me.lStokTiket = New System.Windows.Forms.Label()
+        Me.pTeater = New System.Windows.Forms.PictureBox()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        CType(Me.pTeater, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel1.Controls.Add(Me.btnPesan)
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.pKembali)
+        Me.Panel1.Controls.Add(Me.bPesan)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.lblLokaso)
-        Me.Panel1.Controls.Add(Me.lblHarga)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.lblJudul)
+        Me.Panel1.Controls.Add(Me.lHarga)
+        Me.Panel1.Controls.Add(Me.lJudul)
         Me.Panel1.Location = New System.Drawing.Point(46, 34)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(876, 451)
         Me.Panel1.TabIndex = 0
         '
-        'btnPesan
+        'bPesan
         '
-        Me.btnPesan.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnPesan.FlatAppearance.BorderSize = 0
-        Me.btnPesan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPesan.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPesan.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnPesan.Location = New System.Drawing.Point(393, 383)
-        Me.btnPesan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnPesan.Name = "btnPesan"
-        Me.btnPesan.Size = New System.Drawing.Size(99, 49)
-        Me.btnPesan.TabIndex = 5
-        Me.btnPesan.Text = "Pesan"
-        Me.btnPesan.UseVisualStyleBackColor = False
+        Me.bPesan.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bPesan.FlatAppearance.BorderSize = 0
+        Me.bPesan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bPesan.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bPesan.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.bPesan.Location = New System.Drawing.Point(638, 360)
+        Me.bPesan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.bPesan.Name = "bPesan"
+        Me.bPesan.Size = New System.Drawing.Size(168, 49)
+        Me.bPesan.TabIndex = 5
+        Me.bPesan.Text = "Pesan"
+        Me.bPesan.UseVisualStyleBackColor = False
+        '
+        'lblLokaso
+        '
+        Me.lblLokaso.AutoSize = True
+        Me.lblLokaso.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLokaso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lblLokaso.Location = New System.Drawing.Point(129, 366)
+        Me.lblLokaso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblLokaso.Name = "lblLokaso"
+        Me.lblLokaso.Size = New System.Drawing.Size(296, 31)
+        Me.lblLokaso.TabIndex = 3
+        Me.lblLokaso.Text = "Gedung Teater Musikal"
+        '
+        'lHarga
+        '
+        Me.lHarga.AutoSize = True
+        Me.lHarga.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lHarga.Location = New System.Drawing.Point(80, 315)
+        Me.lHarga.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lHarga.Name = "lHarga"
+        Me.lHarga.Size = New System.Drawing.Size(96, 31)
+        Me.lHarga.TabIndex = 2
+        Me.lHarga.Text = "50.000"
+        '
+        'lJudul
+        '
+        Me.lJudul.AutoSize = True
+        Me.lJudul.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lJudul.Font = New System.Drawing.Font("Modern No. 20", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lJudul.Location = New System.Drawing.Point(80, 21)
+        Me.lJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lJudul.Name = "lJudul"
+        Me.lJudul.Size = New System.Drawing.Size(319, 34)
+        Me.lJudul.TabIndex = 0
+        Me.lJudul.Text = "Judul Teater Musikal"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.lStokTiket)
+        Me.Panel3.Controls.Add(Me.lWaktu)
+        Me.Panel3.Controls.Add(Me.lTanggal)
+        Me.Panel3.Controls.Add(Me.lHari)
+        Me.Panel3.Controls.Add(Me.lGenre)
+        Me.Panel3.Controls.Add(Me.lKelompok)
+        Me.Panel3.Controls.Add(Me.pTeater)
+        Me.Panel3.Controls.Add(Me.lSignIn)
+        Me.Panel3.Location = New System.Drawing.Point(86, 77)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(699, 235)
+        Me.Panel3.TabIndex = 87
+        '
+        'lSignIn
+        '
+        Me.lSignIn.AutoSize = True
+        Me.lSignIn.BackColor = System.Drawing.Color.Transparent
+        Me.lSignIn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lSignIn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lSignIn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.lSignIn.Location = New System.Drawing.Point(302, 550)
+        Me.lSignIn.Name = "lSignIn"
+        Me.lSignIn.Size = New System.Drawing.Size(75, 25)
+        Me.lSignIn.TabIndex = 0
+        Me.lSignIn.Text = "Sign In"
+        '
+        'lKelompok
+        '
+        Me.lKelompok.AutoSize = True
+        Me.lKelompok.BackColor = System.Drawing.Color.Transparent
+        Me.lKelompok.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lKelompok.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lKelompok.Location = New System.Drawing.Point(243, 14)
+        Me.lKelompok.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lKelompok.Name = "lKelompok"
+        Me.lKelompok.Size = New System.Drawing.Size(138, 31)
+        Me.lKelompok.TabIndex = 88
+        Me.lKelompok.Text = "Kelompok"
+        '
+        'lGenre
+        '
+        Me.lGenre.AutoSize = True
+        Me.lGenre.BackColor = System.Drawing.Color.Transparent
+        Me.lGenre.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lGenre.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lGenre.Location = New System.Drawing.Point(243, 55)
+        Me.lGenre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lGenre.Name = "lGenre"
+        Me.lGenre.Size = New System.Drawing.Size(138, 31)
+        Me.lGenre.TabIndex = 89
+        Me.lGenre.Text = "Kelompok"
+        '
+        'lHari
+        '
+        Me.lHari.AutoSize = True
+        Me.lHari.BackColor = System.Drawing.Color.Transparent
+        Me.lHari.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lHari.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lHari.Location = New System.Drawing.Point(243, 100)
+        Me.lHari.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lHari.Name = "lHari"
+        Me.lHari.Size = New System.Drawing.Size(138, 31)
+        Me.lHari.TabIndex = 89
+        Me.lHari.Text = "Kelompok"
+        '
+        'lTanggal
+        '
+        Me.lTanggal.AutoSize = True
+        Me.lTanggal.BackColor = System.Drawing.Color.Transparent
+        Me.lTanggal.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lTanggal.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lTanggal.Location = New System.Drawing.Point(243, 131)
+        Me.lTanggal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lTanggal.Name = "lTanggal"
+        Me.lTanggal.Size = New System.Drawing.Size(138, 31)
+        Me.lTanggal.TabIndex = 90
+        Me.lTanggal.Text = "Kelompok"
+        '
+        'lWaktu
+        '
+        Me.lWaktu.AutoSize = True
+        Me.lWaktu.BackColor = System.Drawing.Color.Transparent
+        Me.lWaktu.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lWaktu.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lWaktu.Location = New System.Drawing.Point(243, 162)
+        Me.lWaktu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lWaktu.Name = "lWaktu"
+        Me.lWaktu.Size = New System.Drawing.Size(138, 31)
+        Me.lWaktu.TabIndex = 91
+        Me.lWaktu.Text = "Kelompok"
+        '
+        'lStokTiket
+        '
+        Me.lStokTiket.AutoSize = True
+        Me.lStokTiket.BackColor = System.Drawing.Color.Transparent
+        Me.lStokTiket.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lStokTiket.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lStokTiket.Location = New System.Drawing.Point(445, 14)
+        Me.lStokTiket.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lStokTiket.Name = "lStokTiket"
+        Me.lStokTiket.Size = New System.Drawing.Size(138, 31)
+        Me.lStokTiket.TabIndex = 92
+        Me.lStokTiket.Text = "Kelompok"
+        '
+        'pTeater
+        '
+        Me.pTeater.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pTeater.Location = New System.Drawing.Point(0, 0)
+        Me.pTeater.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pTeater.Name = "pTeater"
+        Me.pTeater.Size = New System.Drawing.Size(223, 235)
+        Me.pTeater.TabIndex = 1
+        Me.pTeater.TabStop = False
+        '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(19, 410)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(31, 26)
+        Me.pKembali.TabIndex = 86
+        Me.pKembali.TabStop = False
         '
         'Button1
         '
@@ -75,52 +251,6 @@ Partial Class formDetailMusikal
         Me.Button1.Size = New System.Drawing.Size(64, 62)
         Me.Button1.TabIndex = 4
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'lblLokaso
-        '
-        Me.lblLokaso.AutoSize = True
-        Me.lblLokaso.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLokaso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lblLokaso.Location = New System.Drawing.Point(129, 366)
-        Me.lblLokaso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblLokaso.Name = "lblLokaso"
-        Me.lblLokaso.Size = New System.Drawing.Size(90, 31)
-        Me.lblLokaso.TabIndex = 3
-        Me.lblLokaso.Text = "Lokasi"
-        '
-        'lblHarga
-        '
-        Me.lblHarga.AutoSize = True
-        Me.lblHarga.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHarga.Location = New System.Drawing.Point(80, 315)
-        Me.lblHarga.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblHarga.Name = "lblHarga"
-        Me.lblHarga.Size = New System.Drawing.Size(96, 31)
-        Me.lblHarga.TabIndex = 2
-        Me.lblHarga.Text = "50.000"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.PictureBox1.Location = New System.Drawing.Point(82, 60)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(724, 255)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'lblJudul
-        '
-        Me.lblJudul.AutoSize = True
-        Me.lblJudul.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblJudul.Font = New System.Drawing.Font("Modern No. 20", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lblJudul.Location = New System.Drawing.Point(74, 18)
-        Me.lblJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblJudul.Name = "lblJudul"
-        Me.lblJudul.Size = New System.Drawing.Size(319, 34)
-        Me.lblJudul.TabIndex = 0
-        Me.lblJudul.Text = "Judul Teater Musikal"
         '
         'formDetailMusikal
         '
@@ -136,16 +266,28 @@ Partial Class formDetailMusikal
         Me.Text = "formDetail"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        CType(Me.pTeater, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnPesan As Button
+    Friend WithEvents bPesan As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents lblLokaso As Label
-    Friend WithEvents lblHarga As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents lblJudul As Label
+    Friend WithEvents lHarga As Label
+    Friend WithEvents pTeater As PictureBox
+    Friend WithEvents lJudul As Label
+    Friend WithEvents pKembali As PictureBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents lKelompok As Label
+    Friend WithEvents lSignIn As Label
+    Friend WithEvents lStokTiket As Label
+    Friend WithEvents lWaktu As Label
+    Friend WithEvents lTanggal As Label
+    Friend WithEvents lHari As Label
+    Friend WithEvents lGenre As Label
 End Class

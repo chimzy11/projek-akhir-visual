@@ -26,7 +26,7 @@ Partial Class formPesan
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pKembali = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lJudul = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -36,7 +36,7 @@ Partial Class formPesan
         Me.bTambahJadwal = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lUsername = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -56,7 +56,7 @@ Partial Class formPesan
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Panel1.Controls.Add(Me.pKembali)
-        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.lJudul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -74,17 +74,17 @@ Partial Class formPesan
         Me.pKembali.TabIndex = 106
         Me.pKembali.TabStop = False
         '
-        'Label3
+        'lJudul
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Stencil", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(230, 20)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(197, 38)
-        Me.Label3.TabIndex = 108
-        Me.Label3.Text = "Judul Film"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lJudul.AutoSize = True
+        Me.lJudul.Font = New System.Drawing.Font("Stencil", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.lJudul.Location = New System.Drawing.Point(236, 17)
+        Me.lJudul.Name = "lJudul"
+        Me.lJudul.Size = New System.Drawing.Size(197, 38)
+        Me.lJudul.TabIndex = 108
+        Me.lJudul.Text = "Judul Film"
+        Me.lJudul.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel2
         '
@@ -99,7 +99,7 @@ Partial Class formPesan
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(134, 52)
+        Me.Label1.Location = New System.Drawing.Point(137, 52)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(290, 20)
         Me.Label1.TabIndex = 0
@@ -151,7 +151,7 @@ Partial Class formPesan
         Me.Panel3.Controls.Add(Me.bTambahJadwal)
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Controls.Add(Me.lUsername)
         Me.Panel3.Location = New System.Drawing.Point(0, 674)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(683, 110)
@@ -181,7 +181,7 @@ Partial Class formPesan
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(223, 9)
+        Me.Label6.Location = New System.Drawing.Point(223, 20)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(106, 22)
         Me.Label6.TabIndex = 54
@@ -198,16 +198,16 @@ Partial Class formPesan
         Me.Label5.TabIndex = 53
         Me.Label5.Text = "Rp."
         '
-        'Label2
+        'lUsername
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(18, 42)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 27)
-        Me.Label2.TabIndex = 52
-        Me.Label2.Text = "Username"
+        Me.lUsername.AutoSize = True
+        Me.lUsername.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.lUsername.Location = New System.Drawing.Point(18, 42)
+        Me.lUsername.Name = "lUsername"
+        Me.lUsername.Size = New System.Drawing.Size(115, 27)
+        Me.lUsername.TabIndex = 52
+        Me.lUsername.Text = "Username"
         '
         'formPesan
         '
@@ -249,10 +249,10 @@ Partial Class formPesan
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lJudul As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lUsername As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents bTambahJadwal As Button
     Friend WithEvents pKembali As PictureBox

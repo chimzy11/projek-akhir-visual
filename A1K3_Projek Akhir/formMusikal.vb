@@ -4,7 +4,6 @@ Imports System.Windows.Forms.DataVisualization.Charting
 Imports System.Xml.Serialization
 Imports MySql.Data.MySqlClient
 Imports System.Drawing.Drawing2D
-
 Public Class formMusikal
 
     Sub TampilDataTeater()
@@ -82,43 +81,7 @@ Public Class formMusikal
         MessageBox.Show("Tombol diklik!")
     End Sub
 
-    Private Sub tSearch_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tSearch.KeyPress
-        If tSearch.Text = "Search" Then
-            tSearch.Text = ""
-            tSearch.ForeColor = Color.FromArgb(132, 123, 112)
-        End If
-
-        If e.KeyChar = Chr(13) Then
-            CMD = New MySqlCommand("SELECT * FROM JadwalTeater WHERE judul LIKE '%" & tSearch.Text & "%'", CONN)
-            RD = CMD.ExecuteReader()
-
-            If RD.HasRows Then
-                While RD.Read()
-                    Dim judul As String = RD.GetString(1)
-                    Dim labelJudul As New Label()
-                    labelJudul.BackColor = Color.FromArgb(221, 212, 199)
-                    labelJudul.ForeColor = Color.FromArgb(132, 123, 112)
-                    labelJudul.TextAlign = ContentAlignment.MiddleCenter
-                    labelJudul.Font = New Font("microsoft yahei", 12, FontStyle.Bold)
-                    labelJudul.Text = judul
-                    labelJudul.Size = New Size(150, 30)
-                    labelJudul.Location = New Point(40, 108) ' Fixed location for each label
-                    Me.Controls.Add(labelJudul)
-                End While
-                RD.Close()
-            Else
-                RD.Close()
-                MsgBox("Data tidak ditemukan!", MsgBoxStyle.Information, "Attention")
-            End If
-        End If
-    End Sub
-
-
-    Private Sub tSearch_Leave(sender As Object, e As EventArgs) Handles tSearch.Leave
-        If tSearch.Text = "" Then
-            tSearch.Text = "Search"
-            tSearch.ForeColor = Color.DarkGray
-            TampilDataTeater()
-        End If
+    Private Sub bDetail_Click(sender As Object, e As EventArgs) Handles bDetail.Click
+        PopUpDataJadwal.Show()
     End Sub
 End Class

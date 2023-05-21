@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{80B69409-6485-4CE4-A4C2-C871832C2314}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>A1K3_Projek_Akhir.My.MyApplication</StartupObject>
+    <StartupObject>A1K3_Projek_Akhir.DashboardUser</StartupObject>
     <RootNamespace>A1K3_Projek_Akhir</RootNamespace>
     <AssemblyName>A1K3_Projek Akhir</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -179,6 +179,12 @@
     <Compile Include="LandingPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PopUpDataJadwal.Designer.vb">
+      <DependentUpon>PopUpDataJadwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpDataJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PopUpHapusJadwal.Designer.vb">
       <DependentUpon>PopUpHapusJadwal.vb</DependentUpon>
     </Compile>
@@ -326,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpDataJadwal.resx">
+      <DependentUpon>PopUpDataJadwal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopUpHapusJadwal.resx">
       <DependentUpon>PopUpHapusJadwal.vb</DependentUpon>
