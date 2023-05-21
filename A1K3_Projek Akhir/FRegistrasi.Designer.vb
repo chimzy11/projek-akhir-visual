@@ -43,13 +43,13 @@ Partial Class FRegistrasi
         Me.tNamaLengkap = New System.Windows.Forms.TextBox()
         Me.bSignUp = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tPassword = New System.Windows.Forms.TextBox()
         Me.tUsername = New System.Windows.Forms.TextBox()
         Me.pKembali = New System.Windows.Forms.PictureBox()
+        Me.pPasswordHide = New System.Windows.Forms.PictureBox()
         Me.PanelFormLogin.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -57,9 +57,9 @@ Partial Class FRegistrasi
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -140,6 +140,7 @@ Partial Class FRegistrasi
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.pPasswordHide)
         Me.Panel3.Controls.Add(Me.lSignIn)
         Me.Panel3.Controls.Add(Me.PictureBox6)
         Me.Panel3.Controls.Add(Me.Label8)
@@ -152,7 +153,6 @@ Partial Class FRegistrasi
         Me.Panel3.Controls.Add(Me.tNamaLengkap)
         Me.Panel3.Controls.Add(Me.bSignUp)
         Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Controls.Add(Me.PictureBox3)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.Label2)
@@ -303,18 +303,6 @@ Partial Class FRegistrasi
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "SIGN UP"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Location = New System.Drawing.Point(352, 405)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 24)
-        Me.PictureBox2.TabIndex = 7
-        Me.PictureBox2.TabStop = False
-        '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -383,6 +371,19 @@ Partial Class FRegistrasi
         Me.pKembali.TabIndex = 108
         Me.pKembali.TabStop = False
         '
+        'pPasswordHide
+        '
+        Me.pPasswordHide.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of
+        Me.pPasswordHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pPasswordHide.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pPasswordHide.Location = New System.Drawing.Point(353, 406)
+        Me.pPasswordHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pPasswordHide.Name = "pPasswordHide"
+        Me.pPasswordHide.Size = New System.Drawing.Size(26, 25)
+        Me.pPasswordHide.TabIndex = 23
+        Me.pPasswordHide.TabStop = False
+        '
         'FRegistrasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -406,9 +407,9 @@ Partial Class FRegistrasi
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -432,7 +433,6 @@ Partial Class FRegistrasi
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label5 As Label
     Friend WithEvents tEmail As TextBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents tUsername As TextBox
     Friend WithEvents PictureBox6 As PictureBox
@@ -440,4 +440,5 @@ Partial Class FRegistrasi
     Friend WithEvents tKonfirmasi As TextBox
     Friend WithEvents lSignIn As Label
     Friend WithEvents pKembali As PictureBox
+    Friend WithEvents pPasswordHide As PictureBox
 End Class

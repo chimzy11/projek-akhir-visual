@@ -31,13 +31,7 @@ Partial Class formEdit
         Me.Label8 = New System.Windows.Forms.Label()
         Me.cGenre = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.bPilihGambarTiket = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.gJam = New System.Windows.Forms.GroupBox()
-        Me.rJamKeempat = New System.Windows.Forms.RadioButton()
-        Me.rJamKetiga = New System.Windows.Forms.RadioButton()
-        Me.rJamKedua = New System.Windows.Forms.RadioButton()
-        Me.rJamPertama = New System.Windows.Forms.RadioButton()
         Me.tHargaTiket = New System.Windows.Forms.TextBox()
         Me.x = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -78,12 +72,16 @@ Partial Class formEdit
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pKembali = New System.Windows.Forms.PictureBox()
+        Me.rJamPertama = New System.Windows.Forms.RadioButton()
+        Me.gJam = New System.Windows.Forms.GroupBox()
+        Me.rJamKedua = New System.Windows.Forms.RadioButton()
+        Me.bPilihGambarTiket = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.gJam.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gJam.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -114,13 +112,13 @@ Partial Class formEdit
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.bPilihGambarTiket)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.tHari)
         Me.Panel2.Controls.Add(Me.Button6)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.cGenre)
         Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.bPilihGambarTiket)
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.gJam)
         Me.Panel2.Controls.Add(Me.tHargaTiket)
@@ -226,21 +224,6 @@ Partial Class formEdit
         Me.Label10.TabIndex = 114
         Me.Label10.Text = "Genre Teater"
         '
-        'bPilihGambarTiket
-        '
-        Me.bPilihGambarTiket.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.bPilihGambarTiket.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.bPilihGambarTiket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bPilihGambarTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bPilihGambarTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bPilihGambarTiket.Location = New System.Drawing.Point(69, 524)
-        Me.bPilihGambarTiket.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.bPilihGambarTiket.Name = "bPilihGambarTiket"
-        Me.bPilihGambarTiket.Size = New System.Drawing.Size(200, 48)
-        Me.bPilihGambarTiket.TabIndex = 121
-        Me.bPilihGambarTiket.Text = "Pilih Gambar Teater"
-        Me.bPilihGambarTiket.UseVisualStyleBackColor = False
-        '
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -252,83 +235,6 @@ Partial Class formEdit
         Me.Label9.Size = New System.Drawing.Size(105, 26)
         Me.Label9.TabIndex = 123
         Me.Label9.Text = "Harga"
-        '
-        'gJam
-        '
-        Me.gJam.Controls.Add(Me.rJamKeempat)
-        Me.gJam.Controls.Add(Me.rJamKetiga)
-        Me.gJam.Controls.Add(Me.rJamKedua)
-        Me.gJam.Controls.Add(Me.rJamPertama)
-        Me.gJam.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gJam.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.gJam.Location = New System.Drawing.Point(69, 334)
-        Me.gJam.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.gJam.Name = "gJam"
-        Me.gJam.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.gJam.Size = New System.Drawing.Size(200, 176)
-        Me.gJam.TabIndex = 120
-        Me.gJam.TabStop = False
-        Me.gJam.Text = "Jam Pertunjukan"
-        '
-        'rJamKeempat
-        '
-        Me.rJamKeempat.AutoSize = True
-        Me.rJamKeempat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rJamKeempat.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rJamKeempat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKeempat.Location = New System.Drawing.Point(12, 139)
-        Me.rJamKeempat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.rJamKeempat.Name = "rJamKeempat"
-        Me.rJamKeempat.Size = New System.Drawing.Size(176, 25)
-        Me.rJamKeempat.TabIndex = 38
-        Me.rJamKeempat.TabStop = True
-        Me.rJamKeempat.Text = "21.00 - 23.00 WITA"
-        Me.rJamKeempat.UseVisualStyleBackColor = True
-        '
-        'rJamKetiga
-        '
-        Me.rJamKetiga.AutoSize = True
-        Me.rJamKetiga.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rJamKetiga.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rJamKetiga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKetiga.Location = New System.Drawing.Point(12, 105)
-        Me.rJamKetiga.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.rJamKetiga.Name = "rJamKetiga"
-        Me.rJamKetiga.Size = New System.Drawing.Size(176, 25)
-        Me.rJamKetiga.TabIndex = 37
-        Me.rJamKetiga.TabStop = True
-        Me.rJamKetiga.Text = "17.00 - 20.00 WITA"
-        Me.rJamKetiga.UseVisualStyleBackColor = True
-        '
-        'rJamKedua
-        '
-        Me.rJamKedua.AutoSize = True
-        Me.rJamKedua.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rJamKedua.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rJamKedua.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKedua.Location = New System.Drawing.Point(12, 66)
-        Me.rJamKedua.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.rJamKedua.Name = "rJamKedua"
-        Me.rJamKedua.Size = New System.Drawing.Size(176, 25)
-        Me.rJamKedua.TabIndex = 36
-        Me.rJamKedua.TabStop = True
-        Me.rJamKedua.Text = "14.00 - 16.00 WITA"
-        Me.rJamKedua.UseVisualStyleBackColor = True
-        '
-        'rJamPertama
-        '
-        Me.rJamPertama.AutoSize = True
-        Me.rJamPertama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rJamPertama.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rJamPertama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamPertama.Location = New System.Drawing.Point(12, 29)
-        Me.rJamPertama.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.rJamPertama.Name = "rJamPertama"
-        Me.rJamPertama.Size = New System.Drawing.Size(176, 25)
-        Me.rJamPertama.TabIndex = 35
-        Me.rJamPertama.TabStop = True
-        Me.rJamPertama.Text = "10.00 - 12.00 WITA"
-        Me.rJamPertama.UseVisualStyleBackColor = True
         '
         'tHargaTiket
         '
@@ -856,6 +762,68 @@ Partial Class formEdit
         Me.pKembali.TabIndex = 106
         Me.pKembali.TabStop = False
         '
+        'rJamPertama
+        '
+        Me.rJamPertama.AutoSize = True
+        Me.rJamPertama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.rJamPertama.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rJamPertama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.rJamPertama.Location = New System.Drawing.Point(12, 39)
+        Me.rJamPertama.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.rJamPertama.Name = "rJamPertama"
+        Me.rJamPertama.Size = New System.Drawing.Size(176, 25)
+        Me.rJamPertama.TabIndex = 35
+        Me.rJamPertama.TabStop = True
+        Me.rJamPertama.Text = "13.00 - 16.00 WITA"
+        Me.rJamPertama.UseVisualStyleBackColor = True
+        '
+        'gJam
+        '
+        Me.gJam.Controls.Add(Me.rJamKedua)
+        Me.gJam.Controls.Add(Me.rJamPertama)
+        Me.gJam.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gJam.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.gJam.Location = New System.Drawing.Point(69, 334)
+        Me.gJam.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gJam.Name = "gJam"
+        Me.gJam.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.gJam.Size = New System.Drawing.Size(200, 122)
+        Me.gJam.TabIndex = 120
+        Me.gJam.TabStop = False
+        Me.gJam.Text = "Jam Pertunjukan"
+        '
+        'rJamKedua
+        '
+        Me.rJamKedua.AutoSize = True
+        Me.rJamKedua.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.rJamKedua.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rJamKedua.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.rJamKedua.Location = New System.Drawing.Point(12, 76)
+        Me.rJamKedua.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.rJamKedua.Name = "rJamKedua"
+        Me.rJamKedua.Size = New System.Drawing.Size(176, 25)
+        Me.rJamKedua.TabIndex = 36
+        Me.rJamKedua.TabStop = True
+        Me.rJamKedua.Text = "19.00 - 22.00 WITA"
+        Me.rJamKedua.UseVisualStyleBackColor = True
+        '
+        'bPilihGambarTiket
+        '
+        Me.bPilihGambarTiket.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bPilihGambarTiket.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bPilihGambarTiket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bPilihGambarTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bPilihGambarTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bPilihGambarTiket.Image = CType(resources.GetObject("bPilihGambarTiket.Image"), System.Drawing.Image)
+        Me.bPilihGambarTiket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bPilihGambarTiket.Location = New System.Drawing.Point(69, 476)
+        Me.bPilihGambarTiket.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bPilihGambarTiket.Name = "bPilihGambarTiket"
+        Me.bPilihGambarTiket.Size = New System.Drawing.Size(200, 48)
+        Me.bPilihGambarTiket.TabIndex = 131
+        Me.bPilihGambarTiket.Text = "    Pilih Gambar"
+        Me.bPilihGambarTiket.UseVisualStyleBackColor = False
+        '
         'formEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -875,12 +843,12 @@ Partial Class formEdit
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.gJam.ResumeLayout(False)
-        Me.gJam.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gJam.ResumeLayout(False)
+        Me.gJam.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -915,13 +883,7 @@ Partial Class formEdit
     Friend WithEvents Label8 As Label
     Friend WithEvents cGenre As ComboBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents bPilihGambarTiket As Button
     Friend WithEvents Label9 As Label
-    Friend WithEvents gJam As GroupBox
-    Friend WithEvents rJamKeempat As RadioButton
-    Friend WithEvents rJamKetiga As RadioButton
-    Friend WithEvents rJamKedua As RadioButton
-    Friend WithEvents rJamPertama As RadioButton
     Friend WithEvents tHargaTiket As TextBox
     Friend WithEvents x As Button
     Friend WithEvents Label12 As Label
@@ -940,4 +902,8 @@ Partial Class formEdit
     Friend WithEvents Label15 As Label
     Friend WithEvents Button10 As Button
     Friend WithEvents pKembali As PictureBox
+    Friend WithEvents gJam As GroupBox
+    Friend WithEvents rJamPertama As RadioButton
+    Friend WithEvents rJamKedua As RadioButton
+    Friend WithEvents bPilihGambarTiket As Button
 End Class

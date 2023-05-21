@@ -21,20 +21,7 @@ Public Class DashboardUser
         childForm.Show()
     End Sub
 
-    'tulisan di search
-    Private Sub txtSearch_Enter(sender As Object, e As EventArgs) Handles txtSearch.Enter
-        If txtSearch.Text = "Search" Then
-            txtSearch.Text = ""
-            txtSearch.ForeColor = Color.FromArgb(250, 246, 243)
-        End If
-    End Sub
 
-    Private Sub txtSearch_Leave(sender As Object, e As EventArgs) Handles txtSearch.Leave
-        If txtSearch.Text = "" Then
-            txtSearch.Text = "Search"
-            txtSearch.ForeColor = Color.DarkGray
-        End If
-    End Sub
     'click menu profil
     Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
         Me.Close()
@@ -88,4 +75,10 @@ Public Class DashboardUser
     Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
         OpenChildForm(New formAbout)
     End Sub
+
+    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles panelDesktop.Paint
+
+    End Sub
+
+
 End Class

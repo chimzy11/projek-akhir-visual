@@ -200,12 +200,14 @@ Partial Class formTambah
         Me.bPilihGambarTiket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPilihGambarTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bPilihGambarTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bPilihGambarTiket.Location = New System.Drawing.Point(81, 526)
+        Me.bPilihGambarTiket.Image = CType(resources.GetObject("bPilihGambarTiket.Image"), System.Drawing.Image)
+        Me.bPilihGambarTiket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bPilihGambarTiket.Location = New System.Drawing.Point(81, 478)
         Me.bPilihGambarTiket.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bPilihGambarTiket.Name = "bPilihGambarTiket"
         Me.bPilihGambarTiket.Size = New System.Drawing.Size(200, 48)
         Me.bPilihGambarTiket.TabIndex = 96
-        Me.bPilihGambarTiket.Text = "Pilih Gambar Teater"
+        Me.bPilihGambarTiket.Text = "    Pilih Gambar"
         Me.bPilihGambarTiket.UseVisualStyleBackColor = False
         '
         'Label5
@@ -230,7 +232,7 @@ Partial Class formTambah
         Me.gJam.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.gJam.Name = "gJam"
         Me.gJam.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.gJam.Size = New System.Drawing.Size(200, 176)
+        Me.gJam.Size = New System.Drawing.Size(200, 123)
         Me.gJam.TabIndex = 95
         Me.gJam.TabStop = False
         Me.gJam.Text = "Jam Pertunjukan"
@@ -241,7 +243,7 @@ Partial Class formTambah
         Me.rJamKedua.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rJamKedua.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rJamKedua.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamKedua.Location = New System.Drawing.Point(12, 111)
+        Me.rJamKedua.Location = New System.Drawing.Point(12, 85)
         Me.rJamKedua.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rJamKedua.Name = "rJamKedua"
         Me.rJamKedua.Size = New System.Drawing.Size(176, 25)
@@ -256,7 +258,7 @@ Partial Class formTambah
         Me.rJamPertama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rJamPertama.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rJamPertama.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.rJamPertama.Location = New System.Drawing.Point(12, 65)
+        Me.rJamPertama.Location = New System.Drawing.Point(12, 39)
         Me.rJamPertama.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rJamPertama.Name = "rJamPertama"
         Me.rJamPertama.Size = New System.Drawing.Size(176, 25)

@@ -22,6 +22,7 @@ Partial Class FormDataUser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormDataUser))
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -39,10 +40,10 @@ Partial Class FormDataUser
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(657, 44)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.txtSearch.Location = New System.Drawing.Point(986, 68)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(287, 17)
+        Me.txtSearch.Size = New System.Drawing.Size(430, 26)
         Me.txtSearch.TabIndex = 23
         Me.txtSearch.Text = "Search"
         '
@@ -50,10 +51,10 @@ Partial Class FormDataUser
         '
         Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.btnSearch.Enabled = False
-        Me.btnSearch.Location = New System.Drawing.Point(649, 37)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.btnSearch.Location = New System.Drawing.Point(974, 57)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(317, 33)
+        Me.btnSearch.Size = New System.Drawing.Size(476, 51)
         Me.btnSearch.TabIndex = 22
         Me.btnSearch.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.btnSearch.UseVisualStyleBackColor = False
@@ -63,20 +64,18 @@ Partial Class FormDataUser
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Location = New System.Drawing.Point(60, 98)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Location = New System.Drawing.Point(90, 151)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(907, 975)
+        Me.Panel1.Size = New System.Drawing.Size(1360, 1500)
         Me.Panel1.TabIndex = 27
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Panel2.Controls.Add(Me.DGVDataUser)
-        Me.Panel2.Location = New System.Drawing.Point(27, 64)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Location = New System.Drawing.Point(40, 98)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(877, 975)
+        Me.Panel2.Size = New System.Drawing.Size(1316, 1500)
         Me.Panel2.TabIndex = 28
         '
         'DGVDataUser
@@ -85,13 +84,12 @@ Partial Class FormDataUser
         Me.DGVDataUser.AllowUserToDeleteRows = False
         Me.DGVDataUser.BackgroundColor = System.Drawing.Color.White
         Me.DGVDataUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVDataUser.Location = New System.Drawing.Point(15, 10)
-        Me.DGVDataUser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DGVDataUser.Location = New System.Drawing.Point(22, 15)
         Me.DGVDataUser.Name = "DGVDataUser"
         Me.DGVDataUser.ReadOnly = True
         Me.DGVDataUser.RowHeadersWidth = 62
         Me.DGVDataUser.RowTemplate.Height = 28
-        Me.DGVDataUser.Size = New System.Drawing.Size(826, 975)
+        Me.DGVDataUser.Size = New System.Drawing.Size(1239, 1500)
         Me.DGVDataUser.TabIndex = 24
         '
         'Label9
@@ -99,23 +97,22 @@ Partial Class FormDataUser
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Elephant", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(363, 19)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(544, 29)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(256, 31)
+        Me.Label9.Size = New System.Drawing.Size(371, 46)
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "Data User Equiter"
         '
         'FormDataUser
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(913, 487)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.btnSearch)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormDataUser"
         Me.Text = "FormDataUser"
         Me.Panel1.ResumeLayout(False)

@@ -92,11 +92,14 @@ Partial Class PopUpEditJadwal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(320, 180)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cIdTeater)
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.bPilih)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PopUpEditJadwal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pilih ID Jadwal"
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

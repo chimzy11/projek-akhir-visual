@@ -1,9 +1,7 @@
 ﻿Public Class formAbout
-    Private Sub pProfil_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
-
+    'supaya bisa scroll
+    Private Sub formAbout_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.HorizontalScroll.Maximum = 0
+        Me.AutoScroll = True
     End Sub
 End Class

@@ -24,8 +24,8 @@ Public Class formEdit
         dTanggal.Value = DateTime.Today
         rJamPertama.Checked = False
         rJamKedua.Checked = False
-        rJamKetiga.Checked = False
-        rJamKeempat.Checked = False
+        'rJamKetiga.Checked = False
+        'rJamKeempat.Checked = False
         cGenre.SelectedIndex = -1
         tTiket.Clear()
         tHari.Clear()
@@ -40,7 +40,7 @@ Public Class formEdit
             Cek = True
         ElseIf tKelompok.Text = "" Then
             Cek = True
-        ElseIf rJamPertama.Checked = False And rJamKedua.Checked = False And rJamKetiga.Checked = False And rJamKeempat.Checked = False Then
+        ElseIf rJamPertama.Checked = False And rJamKedua.Checked = False Then
             Cek = True
         ElseIf cGenre.Text = "" Then
             Cek = True
@@ -59,10 +59,10 @@ Public Class formEdit
             JamTayang = rJamPertama.Text
         ElseIf rJamKedua.Checked Then
             JamTayang = rJamKedua.Text
-        ElseIf rJamKetiga.Checked Then
-            JamTayang = rJamKetiga.Text
-        ElseIf rJamKeempat.Checked Then
-            JamTayang = rJamKeempat.Text
+            'ElseIf rJamKetiga.Checked Then
+            '  JamTayang = rJamKetiga.Text
+            'ElseIf rJamKeempat.Checked Then
+            'JamTayang = rJamKeempat.Text
         End If
 
         CMD = New MySqlCommand("SELECT * FROM JadwalTeater WHERE id_teater = '" & PopUpEditJadwal.cIdTeater.Text & "'", CONN)
@@ -108,10 +108,10 @@ Public Class formEdit
                     rJamPertama.Checked = True
                 Case rJamKedua.Text
                     rJamKedua.Checked = True
-                Case rJamKetiga.Text
-                    rJamKetiga.Checked = True
-                Case rJamKeempat.Text
-                    rJamKeempat.Checked = True
+                    ' Case rJamKetiga.Text
+                    ' rJamKetiga.Checked = True
+                    'Case rJamKeempat.Text
+                    ' rJamKeempat.Checked = True
             End Select
 
             tTiket.Text = RD.GetString(7)
@@ -131,7 +131,7 @@ Public Class formEdit
         Simpan()
     End Sub
 
-    Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs) Handles bPilihGambarTiket.Click
+    Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs)
         Dim Kosong As Boolean = CekData()
 
         If Kosong = True Then

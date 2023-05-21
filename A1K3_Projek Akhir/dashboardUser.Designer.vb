@@ -27,16 +27,22 @@ Partial Class DashboardUser
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.lUsername = New System.Windows.Forms.Label()
+        Me.bExit = New System.Windows.Forms.Button()
         Me.MenuStripProfile = New System.Windows.Forms.MenuStrip()
+        Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuProfil = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuTransaksi = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuTiket = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.pProfil = New System.Windows.Forms.PictureBox()
         Me.MenuStripAbout = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnSearch = New System.Windows.Forms.Button()
         Me.MenuStripTeater = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MusikalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,23 +51,15 @@ Partial Class DashboardUser
         Me.MenuStripHome = New System.Windows.Forms.MenuStrip()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.panelDesktop = New System.Windows.Forms.Panel()
-        Me.pProfil = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.bExit = New System.Windows.Forms.Button()
-        Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuProfil = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuTransaksi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuTiket = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStripProfile.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStripAbout.SuspendLayout()
         Me.MenuStripTeater.SuspendLayout()
         Me.MenuStripHome.SuspendLayout()
-        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -116,6 +114,18 @@ Partial Class DashboardUser
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "@equiterhere"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 65)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(24, 25)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -126,6 +136,18 @@ Partial Class DashboardUser
         Me.Label1.Size = New System.Drawing.Size(314, 27)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Samarinda, Kalimantan Timur"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(16, 18)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(24, 25)
+        Me.PictureBox3.TabIndex = 7
+        Me.PictureBox3.TabStop = False
         '
         'lUsername
         '
@@ -138,6 +160,18 @@ Partial Class DashboardUser
         Me.lUsername.TabIndex = 2
         Me.lUsername.Text = "Username"
         '
+        'bExit
+        '
+        Me.bExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bExit.FlatAppearance.BorderSize = 0
+        Me.bExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bExit.Image = CType(resources.GetObject("bExit.Image"), System.Drawing.Image)
+        Me.bExit.Location = New System.Drawing.Point(1802, 35)
+        Me.bExit.Name = "bExit"
+        Me.bExit.Size = New System.Drawing.Size(50, 42)
+        Me.bExit.TabIndex = 1
+        Me.bExit.UseVisualStyleBackColor = False
+        '
         'MenuStripProfile
         '
         Me.MenuStripProfile.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -148,9 +182,37 @@ Partial Class DashboardUser
         Me.MenuStripProfile.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfileToolStripMenuItem})
         Me.MenuStripProfile.Location = New System.Drawing.Point(1718, 32)
         Me.MenuStripProfile.Name = "MenuStripProfile"
-        Me.MenuStripProfile.Size = New System.Drawing.Size(51, 36)
+        Me.MenuStripProfile.Size = New System.Drawing.Size(48, 32)
         Me.MenuStripProfile.TabIndex = 0
         Me.MenuStripProfile.Text = "MenuStrip1"
+        '
+        'ProfileToolStripMenuItem
+        '
+        Me.ProfileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuProfil, Me.MenuTransaksi, Me.MenuTiket})
+        Me.ProfileToolStripMenuItem.Image = CType(resources.GetObject("ProfileToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
+        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(40, 28)
+        '
+        'MenuProfil
+        '
+        Me.MenuProfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.MenuProfil.Name = "MenuProfil"
+        Me.MenuProfil.Size = New System.Drawing.Size(270, 40)
+        Me.MenuProfil.Text = "Profil"
+        '
+        'MenuTransaksi
+        '
+        Me.MenuTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.MenuTransaksi.Name = "MenuTransaksi"
+        Me.MenuTransaksi.Size = New System.Drawing.Size(270, 40)
+        Me.MenuTransaksi.Text = "Transaksi"
+        '
+        'MenuTiket
+        '
+        Me.MenuTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.MenuTiket.Name = "MenuTiket"
+        Me.MenuTiket.Size = New System.Drawing.Size(270, 40)
+        Me.MenuTiket.Text = "Tiket"
         '
         'Panel2
         '
@@ -158,9 +220,7 @@ Partial Class DashboardUser
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.pProfil)
-        Me.Panel2.Controls.Add(Me.txtSearch)
         Me.Panel2.Controls.Add(Me.MenuStripAbout)
-        Me.Panel2.Controls.Add(Me.btnSearch)
         Me.Panel2.Controls.Add(Me.MenuStripTeater)
         Me.Panel2.Controls.Add(Me.MenuStripHome)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -192,18 +252,19 @@ Partial Class DashboardUser
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Equiter"
         '
-        'txtSearch
+        'pProfil
         '
-        Me.txtSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSearch.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.txtSearch.Location = New System.Drawing.Point(1422, 69)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(430, 26)
-        Me.txtSearch.TabIndex = 3
-        Me.txtSearch.Text = "Search"
+        Me.pProfil.BackColor = System.Drawing.Color.Transparent
+        Me.pProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pProfil.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.pProfil.Image = CType(resources.GetObject("pProfil.Image"), System.Drawing.Image)
+        Me.pProfil.Location = New System.Drawing.Point(0, -33)
+        Me.pProfil.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pProfil.Name = "pProfil"
+        Me.pProfil.Size = New System.Drawing.Size(234, 249)
+        Me.pProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pProfil.TabIndex = 9
+        Me.pProfil.TabStop = False
         '
         'MenuStripAbout
         '
@@ -223,23 +284,11 @@ Partial Class DashboardUser
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripMenuItem2.Image = CType(resources.GetObject("ToolStripMenuItem2.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(165, 41)
         Me.ToolStripMenuItem2.Text = "About Us"
-        '
-        'btnSearch
-        '
-        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnSearch.Enabled = False
-        Me.btnSearch.FlatAppearance.BorderSize = 0
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Location = New System.Drawing.Point(1410, 58)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(476, 51)
-        Me.btnSearch.TabIndex = 2
-        Me.btnSearch.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.btnSearch.UseVisualStyleBackColor = False
         '
         'MenuStripTeater
         '
@@ -252,36 +301,38 @@ Partial Class DashboardUser
         Me.MenuStripTeater.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStripTeater.Location = New System.Drawing.Point(860, 55)
         Me.MenuStripTeater.Name = "MenuStripTeater"
-        Me.MenuStripTeater.Size = New System.Drawing.Size(131, 45)
+        Me.MenuStripTeater.Size = New System.Drawing.Size(335, 45)
         Me.MenuStripTeater.TabIndex = 1
         Me.MenuStripTeater.Text = "MenuStrip2"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MusikalToolStripMenuItem, Me.DramaToolStripMenuItem, Me.KomediToolStripMenuItem})
+        Me.ToolStripMenuItem1.Image = CType(resources.GetObject("ToolStripMenuItem1.Image"), System.Drawing.Image)
+        Me.ToolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(123, 41)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(147, 41)
         Me.ToolStripMenuItem1.Text = "Teater"
         '
         'MusikalToolStripMenuItem
         '
         Me.MusikalToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.MusikalToolStripMenuItem.Name = "MusikalToolStripMenuItem"
-        Me.MusikalToolStripMenuItem.Size = New System.Drawing.Size(234, 46)
+        Me.MusikalToolStripMenuItem.Size = New System.Drawing.Size(270, 46)
         Me.MusikalToolStripMenuItem.Text = "Musikal"
         '
         'DramaToolStripMenuItem
         '
         Me.DramaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.DramaToolStripMenuItem.Name = "DramaToolStripMenuItem"
-        Me.DramaToolStripMenuItem.Size = New System.Drawing.Size(234, 46)
+        Me.DramaToolStripMenuItem.Size = New System.Drawing.Size(270, 46)
         Me.DramaToolStripMenuItem.Text = "Drama"
         '
         'KomediToolStripMenuItem
         '
         Me.KomediToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.KomediToolStripMenuItem.Name = "KomediToolStripMenuItem"
-        Me.KomediToolStripMenuItem.Size = New System.Drawing.Size(234, 46)
+        Me.KomediToolStripMenuItem.Size = New System.Drawing.Size(270, 46)
         Me.KomediToolStripMenuItem.Text = "Komedi"
         '
         'MenuStripHome
@@ -295,101 +346,26 @@ Partial Class DashboardUser
         Me.MenuStripHome.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem})
         Me.MenuStripHome.Location = New System.Drawing.Point(596, 55)
         Me.MenuStripHome.Name = "MenuStripHome"
-        Me.MenuStripHome.Size = New System.Drawing.Size(126, 45)
+        Me.MenuStripHome.Size = New System.Drawing.Size(150, 45)
         Me.MenuStripHome.TabIndex = 0
         Me.MenuStripHome.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
+        Me.HomeToolStripMenuItem.Image = CType(resources.GetObject("HomeToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.HomeToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(118, 41)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(142, 41)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'panelDesktop
         '
+        Me.panelDesktop.AutoScroll = True
         Me.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelDesktop.Location = New System.Drawing.Point(0, 262)
         Me.panelDesktop.Name = "panelDesktop"
         Me.panelDesktop.Size = New System.Drawing.Size(1896, 788)
         Me.panelDesktop.TabIndex = 2
-        '
-        'pProfil
-        '
-        Me.pProfil.BackColor = System.Drawing.Color.Transparent
-        Me.pProfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pProfil.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.pProfil.Image = CType(resources.GetObject("pProfil.Image"), System.Drawing.Image)
-        Me.pProfil.Location = New System.Drawing.Point(0, -33)
-        Me.pProfil.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pProfil.Name = "pProfil"
-        Me.pProfil.Size = New System.Drawing.Size(234, 249)
-        Me.pProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pProfil.TabIndex = 9
-        Me.pProfil.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(16, 65)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(24, 25)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(16, 18)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(24, 25)
-        Me.PictureBox3.TabIndex = 7
-        Me.PictureBox3.TabStop = False
-        '
-        'bExit
-        '
-        Me.bExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.bExit.FlatAppearance.BorderSize = 0
-        Me.bExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bExit.Image = CType(resources.GetObject("bExit.Image"), System.Drawing.Image)
-        Me.bExit.Location = New System.Drawing.Point(1802, 35)
-        Me.bExit.Name = "bExit"
-        Me.bExit.Size = New System.Drawing.Size(50, 42)
-        Me.bExit.TabIndex = 1
-        Me.bExit.UseVisualStyleBackColor = False
-        '
-        'ProfileToolStripMenuItem
-        '
-        Me.ProfileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuProfil, Me.MenuTransaksi, Me.MenuTiket})
-        Me.ProfileToolStripMenuItem.Image = CType(resources.GetObject("ProfileToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
-        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(40, 32)
-        '
-        'MenuProfil
-        '
-        Me.MenuProfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.MenuProfil.Name = "MenuProfil"
-        Me.MenuProfil.Size = New System.Drawing.Size(232, 40)
-        Me.MenuProfil.Text = "Profil"
-        '
-        'MenuTransaksi
-        '
-        Me.MenuTransaksi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.MenuTransaksi.Name = "MenuTransaksi"
-        Me.MenuTransaksi.Size = New System.Drawing.Size(232, 40)
-        Me.MenuTransaksi.Text = "Transaksi"
-        '
-        'MenuTiket
-        '
-        Me.MenuTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.MenuTiket.Name = "MenuTiket"
-        Me.MenuTiket.Size = New System.Drawing.Size(232, 40)
-        Me.MenuTiket.Text = "Tiket"
         '
         'DashboardUser
         '
@@ -401,25 +377,26 @@ Partial Class DashboardUser
         Me.Controls.Add(Me.panelDesktop)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStripHome
         Me.Name = "DashboardUser"
         Me.Text = "dashboardUser"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStripProfile.ResumeLayout(False)
         Me.MenuStripProfile.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStripAbout.ResumeLayout(False)
         Me.MenuStripAbout.PerformLayout()
         Me.MenuStripTeater.ResumeLayout(False)
         Me.MenuStripTeater.PerformLayout()
         Me.MenuStripHome.ResumeLayout(False)
         Me.MenuStripHome.PerformLayout()
-        CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -443,8 +420,6 @@ Partial Class DashboardUser
     Friend WithEvents MenuTiket As ToolStripMenuItem
     Friend WithEvents bExit As Button
     Friend WithEvents lUsername As Label
-    Friend WithEvents txtSearch As TextBox
-    Friend WithEvents btnSearch As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label

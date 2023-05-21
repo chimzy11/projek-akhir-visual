@@ -22,6 +22,7 @@ Partial Class formMusikal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formMusikal))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTanggal = New System.Windows.Forms.Label()
         Me.txtCari = New System.Windows.Forms.TextBox()
@@ -115,6 +116,7 @@ Partial Class formMusikal
         Me.ClientSize = New System.Drawing.Size(1671, 1050)
         Me.Controls.Add(Me.bDetail)
         Me.Controls.Add(Me.Panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "formMusikal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

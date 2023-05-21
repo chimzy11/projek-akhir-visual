@@ -24,12 +24,12 @@ Partial Class formPembayaran
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPembayaran))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.tNamaLengkap = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.bSimpan = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.pKembali = New System.Windows.Forms.PictureBox()
+        Me.bSimpan = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -45,6 +45,18 @@ Partial Class formPembayaran
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(501, 87)
         Me.Panel1.TabIndex = 0
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Stencil", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(128, 27)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(224, 38)
+        Me.Label3.TabIndex = 109
+        Me.Label3.Text = "Pembayaran"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'tNamaLengkap
         '
@@ -80,6 +92,17 @@ Partial Class formPembayaran
         Me.Panel3.Size = New System.Drawing.Size(684, 445)
         Me.Panel3.TabIndex = 2
         '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(422, 363)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.TabIndex = 107
+        Me.pKembali.TabStop = False
+        '
         'bSimpan
         '
         Me.bSimpan.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -96,29 +119,6 @@ Partial Class formPembayaran
         Me.bSimpan.Text = "Choose Gambar"
         Me.bSimpan.UseVisualStyleBackColor = False
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Stencil", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(128, 27)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(224, 38)
-        Me.Label3.TabIndex = 109
-        Me.Label3.Text = "Pembayaran"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'pKembali
-        '
-        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
-        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(422, 363)
-        Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(37, 35)
-        Me.pKembali.TabIndex = 107
-        Me.pKembali.TabStop = False
-        '
         'formPembayaran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -128,6 +128,7 @@ Partial Class formPembayaran
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "formPembayaran"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
