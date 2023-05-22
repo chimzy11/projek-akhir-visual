@@ -45,9 +45,10 @@ Partial Class formDetailTicket
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(0, 67)
+        Me.Panel1.Location = New System.Drawing.Point(0, 44)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(376, 10)
+        Me.Panel1.Size = New System.Drawing.Size(251, 6)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -55,9 +56,10 @@ Partial Class formDetailTicket
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Stencil", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(92, 17)
+        Me.Label1.Location = New System.Drawing.Point(61, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(194, 47)
+        Me.Label1.Size = New System.Drawing.Size(134, 32)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "equiter"
         '
@@ -66,20 +68,22 @@ Partial Class formDetailTicket
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(12, 101)
+        Me.Label2.Location = New System.Drawing.Point(8, 66)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(216, 42)
+        Me.Label2.Size = New System.Drawing.Size(182, 30)
         Me.Label2.TabIndex = 53
-        Me.Label2.Text = "JUDUL FILM"
+        Me.Label2.Text = "JUDUL DRAMA"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(14, 184)
+        Me.Label3.Location = New System.Drawing.Point(9, 120)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 27)
+        Me.Label3.Size = New System.Drawing.Size(40, 19)
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "DAY"
         '
@@ -88,9 +92,10 @@ Partial Class formDetailTicket
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(14, 244)
+        Me.Label4.Location = New System.Drawing.Point(9, 159)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 27)
+        Me.Label4.Size = New System.Drawing.Size(45, 19)
         Me.Label4.TabIndex = 55
         Me.Label4.Text = "TIME"
         '
@@ -99,9 +104,10 @@ Partial Class formDetailTicket
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(14, 305)
+        Me.Label5.Location = New System.Drawing.Point(9, 198)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 27)
+        Me.Label5.Size = New System.Drawing.Size(45, 19)
         Me.Label5.TabIndex = 56
         Me.Label5.Text = "SEAT"
         '
@@ -110,9 +116,10 @@ Partial Class formDetailTicket
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(15, 362)
+        Me.Label6.Location = New System.Drawing.Point(10, 235)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(70, 27)
+        Me.Label6.Size = New System.Drawing.Size(50, 19)
         Me.Label6.TabIndex = 57
         Me.Label6.Text = "PRICE"
         '
@@ -121,9 +128,10 @@ Partial Class formDetailTicket
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(134, 184)
+        Me.Label7.Location = New System.Drawing.Point(89, 120)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(18, 27)
+        Me.Label7.Size = New System.Drawing.Size(13, 19)
         Me.Label7.TabIndex = 58
         Me.Label7.Text = ":"
         '
@@ -132,9 +140,10 @@ Partial Class formDetailTicket
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(134, 244)
+        Me.Label8.Location = New System.Drawing.Point(89, 159)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(18, 27)
+        Me.Label8.Size = New System.Drawing.Size(13, 19)
         Me.Label8.TabIndex = 59
         Me.Label8.Text = ":"
         '
@@ -143,9 +152,10 @@ Partial Class formDetailTicket
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(134, 305)
+        Me.Label9.Location = New System.Drawing.Point(89, 198)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(18, 27)
+        Me.Label9.Size = New System.Drawing.Size(13, 19)
         Me.Label9.TabIndex = 60
         Me.Label9.Text = ":"
         '
@@ -154,9 +164,10 @@ Partial Class formDetailTicket
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(134, 362)
+        Me.Label10.Location = New System.Drawing.Point(89, 235)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(18, 27)
+        Me.Label10.Size = New System.Drawing.Size(13, 19)
         Me.Label10.TabIndex = 61
         Me.Label10.Text = ":"
         '
@@ -165,9 +176,10 @@ Partial Class formDetailTicket
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(158, 184)
+        Me.Label11.Location = New System.Drawing.Point(105, 120)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(21, 27)
+        Me.Label11.Size = New System.Drawing.Size(15, 19)
         Me.Label11.TabIndex = 62
         Me.Label11.Text = "-"
         '
@@ -176,9 +188,10 @@ Partial Class formDetailTicket
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(158, 244)
+        Me.Label12.Location = New System.Drawing.Point(105, 159)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(21, 27)
+        Me.Label12.Size = New System.Drawing.Size(15, 19)
         Me.Label12.TabIndex = 63
         Me.Label12.Text = "-"
         '
@@ -187,9 +200,10 @@ Partial Class formDetailTicket
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(158, 305)
+        Me.Label13.Location = New System.Drawing.Point(105, 198)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(21, 27)
+        Me.Label13.Size = New System.Drawing.Size(15, 19)
         Me.Label13.TabIndex = 64
         Me.Label13.Text = "-"
         '
@@ -198,9 +212,10 @@ Partial Class formDetailTicket
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(158, 362)
+        Me.Label14.Location = New System.Drawing.Point(105, 235)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(21, 27)
+        Me.Label14.Size = New System.Drawing.Size(15, 19)
         Me.Label14.TabIndex = 65
         Me.Label14.Text = "-"
         '
@@ -209,18 +224,19 @@ Partial Class formDetailTicket
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(325, 403)
+        Me.pKembali.Location = New System.Drawing.Point(217, 262)
+        Me.pKembali.Margin = New System.Windows.Forms.Padding(2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.Size = New System.Drawing.Size(25, 23)
         Me.pKembali.TabIndex = 108
         Me.pKembali.TabStop = False
         '
         'formDetailTicket
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(374, 450)
+        Me.ClientSize = New System.Drawing.Size(249, 292)
         Me.ControlBox = False
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Label14)
@@ -239,6 +255,7 @@ Partial Class formDetailTicket
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "formDetailTicket"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formDetailTicket"
