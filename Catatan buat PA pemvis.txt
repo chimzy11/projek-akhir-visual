@@ -13,3 +13,4 @@ DESAIN:
 - perbaiki jam pertunjukkan di tambah jadwal (done)
 - hapus aja search di navigasi (done)
 - masukin ikon di menu about us (ikonnya ada di folder images)
+- ikon mata di regis gabisa diklik yah
