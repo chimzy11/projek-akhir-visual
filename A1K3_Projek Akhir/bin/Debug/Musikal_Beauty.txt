@@ -1,0 +1,2 @@
+A1,True
+A2,False

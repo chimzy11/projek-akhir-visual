@@ -22,8 +22,8 @@ Partial Class formPesan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPesan))
         Dim bPembayaran As System.Windows.Forms.Button
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPesan))
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pKembali = New System.Windows.Forms.PictureBox()
@@ -42,6 +42,26 @@ Partial Class formPesan
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'bPembayaran
+        '
+        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderSize = 0
+        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
+        bPembayaran.Location = New System.Drawing.Point(590, 2)
+        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        bPembayaran.Name = "bPembayaran"
+        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
+        bPembayaran.Size = New System.Drawing.Size(213, 98)
+        bPembayaran.TabIndex = 55
+        bPembayaran.Text = "Checkout"
+        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        bPembayaran.UseVisualStyleBackColor = False
+        AddHandler bPembayaran.Click, AddressOf Me.bPembayaran_Click
         '
         'FlowLayoutPanel1
         '
@@ -156,26 +176,6 @@ Partial Class formPesan
         Me.lTotalHarga.Size = New System.Drawing.Size(72, 27)
         Me.lTotalHarga.TabIndex = 56
         Me.lTotalHarga.Text = "50000"
-        '
-        'bPembayaran
-        '
-        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        bPembayaran.FlatAppearance.BorderSize = 0
-        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
-        bPembayaran.Location = New System.Drawing.Point(590, 2)
-        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        bPembayaran.Name = "bPembayaran"
-        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
-        bPembayaran.Size = New System.Drawing.Size(213, 98)
-        bPembayaran.TabIndex = 55
-        bPembayaran.Text = "Checkout"
-        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        bPembayaran.UseVisualStyleBackColor = False
-        AddHandler bPembayaran.Click, AddressOf Me.bPembayaran_Click
         '
         'Label6
         '

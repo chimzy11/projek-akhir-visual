@@ -239,3 +239,7 @@ C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\De
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailKomedi.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicketMusikal.resources
 C:\Users\User\OneDrive\Documents\pa\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicketKomedi.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailDrama.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailKomedi.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicketMusikal.resources
+C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\A1K3_Projek Akhir\obj\Debug\A1K3_Projek_Akhir.formDetailTicketKomedi.resources

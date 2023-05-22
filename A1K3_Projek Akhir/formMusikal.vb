@@ -5,7 +5,6 @@ Imports System.Xml.Serialization
 Imports MySql.Data.MySqlClient
 Imports System.Drawing.Drawing2D
 Public Class formMusikal
-
     Sub TampilDataTeater()
         Dim queryString As String = "SELECT COUNT(*) FROM JadwalTeater"
 

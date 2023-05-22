@@ -3,6 +3,23 @@ Imports System.IO
 Imports System.Windows.Forms.DataVisualization.Charting
 
 Public Class formDetailMusikal
+    Private currentChildForm As Form
+
+    Private Sub OpenChildForm(childForm As Form)
+        'open only form
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+
+        currentChildForm = childForm
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        DashboardUser.panelDesktop.Controls.Add(childForm)
+        DashboardUser.panelDesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
+    End Sub
 
     Sub TampilProfilJadwal()
         Call KoneksiDatabase()
@@ -52,5 +69,11 @@ Public Class formDetailMusikal
     Private Sub bPesan_Click(sender As Object, e As EventArgs) Handles bPesan.Click
         Me.Hide()
         formPesan.Show()
+    End Sub
+
+    Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
+        Me.Hide()
+        PopUpDataJadwal.Close()
+        OpenChildForm(New formMusikal)
     End Sub
 End Class
