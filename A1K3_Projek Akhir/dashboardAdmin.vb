@@ -21,7 +21,9 @@ Public Class DashboardAdmin
     End Sub
 
     Private Sub btnMin_Click(sender As Object, e As EventArgs) Handles btnMin.Click
-        Me.WindowState = FormWindowState.Minimized
+        If Me.WindowState = FormWindowState.Maximized Then
+            Me.WindowState = FormWindowState.Minimized
+        End If
     End Sub
 
     'buat buka formnya di panel
