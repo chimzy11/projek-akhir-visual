@@ -28,6 +28,7 @@ Public Class formDashboard
         KoneksiDatabase()
         HitungTotalUser()
         HitungTotalPertunjukkan()
+        HitungTotalTransaksi()
     End Sub
     Private Sub HitungTotalUser()
         Dim query As String = "SELECT COUNT(*) AS total_baris FROM akun WHERE id_Akun <> ''"
@@ -49,9 +50,23 @@ Public Class formDashboard
         CMD = New MySqlCommand(query, CONN)
 
         Try
-            Dim totalUser As Integer = Convert.ToInt32(CMD.ExecuteScalar())
-            lTotalPertunjukkan.Text = totalUser.ToString()
+            Dim totalpertunjukkan As Integer = Convert.ToInt32(CMD.ExecuteScalar())
+            lTotalPertunjukkan.Text = totalpertunjukkan.ToString()
             lTotalPertunjukkan.Refresh()
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub HitungTotalTransaksi()
+        Dim query As String = "SELECT COUNT(*) AS total_baris FROM transaksi"
+
+        CMD = New MySqlCommand(query, CONN)
+
+        Try
+            Dim totaltransaksi As Integer = Convert.ToInt32(CMD.ExecuteScalar())
+            lDataTransaksi.Text = totaltransaksi.ToString()
+            lDataTransaksi.Refresh()
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         End Try
@@ -63,6 +78,14 @@ Public Class formDashboard
 
     Private Sub lDataJadwal_Click(sender As Object, e As EventArgs) Handles lDataJadwal.Click
         OpenChildForm(New formJadwal)
+    End Sub
+
+    Private Sub lDataTransaksi_Click(sender As Object, e As EventArgs) Handles lDataTransaksi.Click
+
+    End Sub
+
+    Private Sub ChartKeuntungan_Click(sender As Object, e As EventArgs) Handles ChartKeuntungan.Click
+
     End Sub
 End Class
 

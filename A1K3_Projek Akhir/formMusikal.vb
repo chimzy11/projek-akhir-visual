@@ -81,6 +81,11 @@ Public Class formMusikal
     End Sub
 
     Private Sub bDetail_Click(sender As Object, e As EventArgs) Handles bDetail.Click
+        formDetailTicket.Close()
+        formPembayaran.Close()
+        formPesan.Close()
+        formDetailMusikal.Close()
+        PopUpDataJadwal.Close()
         PopUpDataJadwal.Show()
     End Sub
 End Class

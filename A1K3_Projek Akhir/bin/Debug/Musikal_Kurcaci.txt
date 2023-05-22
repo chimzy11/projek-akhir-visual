@@ -1,0 +1,4 @@
+A1,True
+A2,True
+A3,True
+A6,True

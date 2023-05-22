@@ -16,6 +16,77 @@ Public Class formPembayaran
         Return selectedCount
     End Function
 
+    Private Function GetLastID() As Integer
+        Dim lastID As Integer = 0
+        Dim commandText As String = "SELECT MAX(id_transaksi) FROM transaksi"
+        Dim command As MySqlCommand = New MySqlCommand(commandText, CONN)
+
+        Dim result As Object = command.ExecuteScalar()
+        If result IsNot Nothing AndAlso Not DBNull.Value.Equals(result) Then
+            lastID = Convert.ToInt32(result)
+        End If
+
+        Return lastID
+    End Function
+
+    Sub Simpan()
+        Dim IdTransaksi As Integer = 0
+        Dim lastID As Integer = GetLastID()
+
+        If lastID = 0 Then
+            IdTransaksi = 36911780
+        Else
+            IdTransaksi = lastID + 1
+        End If
+
+        CMD = New MySqlCommand("SELECT * FROM transaksi WHERE id_transaksi = @idtransaksi", CONN)
+        CMD.Parameters.AddWithValue("@idtransaksi", IdTransaksi)
+        RD = CMD.ExecuteReader()
+        RD.Read()
+
+        If Not RD.HasRows Then
+            RD.Close() ' Close the first DataReader before executing the second query
+
+            CMD = New MySqlCommand("SELECT * FROM akun WHERE username = @Username", CONN)
+            CMD.Parameters.AddWithValue("@Username", FLogin.tUsername.Text)
+            RD = CMD.ExecuteReader()
+            RD.Read()
+
+            Dim Id_Akun As Integer = RD.GetInt32(0)
+            Dim Nama As String = RD.GetString(1)
+            Dim Email As String = RD.GetString(2)
+
+            RD.Close() ' Close the second DataReader before executing the INSERT query
+
+            Dim Simpan As String = "INSERT INTO transaksi (id_transaksi, id_akun, kode_pembayaran, nama, email, judul, jumlah, harga, total_transaksi, seat, gambar_bukti) VALUES " &
+                           "(@idtransaksi, @IdAkun, @KodePembayaran, @Nama, @Email, @Judul, @Jumlah, @Harga, @TotalTransaksi, @Seat, @GambarBukti)"
+
+            CMD = New MySqlCommand(Simpan, CONN)
+            CMD.Parameters.AddWithValue("@idtransaksi", IdTransaksi)
+            CMD.Parameters.AddWithValue("@IdAkun", Id_Akun)
+            CMD.Parameters.AddWithValue("@KodePembayaran", tKodePembayaran.Text)
+            CMD.Parameters.AddWithValue("@Nama", Nama)
+            CMD.Parameters.AddWithValue("@Email", Email)
+            CMD.Parameters.AddWithValue("@Judul", formPesan.lJudul.Text)
+            CMD.Parameters.AddWithValue("@Jumlah", formPesan.tBanyakTiket.Text)
+            CMD.Parameters.AddWithValue("@Harga", formDetailMusikal.lHarga.Text)
+            CMD.Parameters.AddWithValue("@TotalTransaksi", formPesan.lTotalHarga.Text)
+            CMD.Parameters.AddWithValue("@Seat", "null")
+            CMD.Parameters.AddWithValue("@GambarBukti", bChsBuktiPembayaran.Text)
+
+            CMD.ExecuteNonQuery()
+            MsgBox("Jadwal Teater Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+            Me.Close()
+        Else
+            MsgBox("ID sudah ada!", MsgBoxStyle.Exclamation, "Attention")
+        End If
+
+        RD.Close()
+    End Sub
+
+
+
+
     Public Sub KodePembayaran()
         Dim KodeRandom As String
         Dim Kode As String
@@ -68,6 +139,8 @@ Public Class formPembayaran
     Private Sub bCetak_Click(sender As Object, e As EventArgs) Handles bCetak.Click
         Dim selectedCheckboxes As New List(Of CheckBox)
 
+        Simpan()
+
         For Each control As Control In formPesan.Panel2.Controls
             If TypeOf control Is CheckBox AndAlso DirectCast(control, CheckBox).Checked Then
                 selectedCheckboxes.Add(DirectCast(control, CheckBox))
@@ -78,30 +151,21 @@ Public Class formPembayaran
 
         Using writer As New StreamWriter(fileMusikal)
             For Each checkBox As CheckBox In formPesan.Panel2.Controls.OfType(Of CheckBox)()
-                writer.WriteLine(checkBox.Text & "," & checkBox.Checked.ToString())
+                Dim isChecked As Boolean = selectedCheckboxes.Contains(checkBox)
+                writer.WriteLine(checkBox.Text & "," & isChecked.ToString())
             Next
         End Using
 
-        ' Menghapus checkbox yang dipilih
-        For Each checkBox As CheckBox In selectedCheckboxes
-            formPesan.Panel2.Controls.Remove(checkBox)
-        Next
+        Dim queryString As String = "UPDATE JadwalTeater SET tiket = tiket - @jumlahTiket WHERE judul = @judul"
 
-        ' Dim queryString As String = "UPDATE JadwalTeater SET tiket = tiket - @jumlahTiket WHERE judul = @judul"
-
-        ' CMD = New MySqlCommand(queryString, CONN)
-        'CMD.Parameters.AddWithValue("@jumlahTiket", selectedCheckboxes.Count)
-        'CMD.Parameters.AddWithValue("@judul", formPesan.lJudul.Text)
-        'CMD.ExecuteNonQuery()
+        CMD = New MySqlCommand(queryString, CONN)
+        CMD.Parameters.AddWithValue("@jumlahTiket", selectedCheckboxes.Count)
+        CMD.Parameters.AddWithValue("@judul", formPesan.lJudul.Text)
+        CMD.ExecuteNonQuery()
 
         Me.Hide()
         formDetailTicket.Show()
     End Sub
-
-
-
-
-
 
     Private Sub cValid_CheckedChanged(sender As Object, e As EventArgs) Handles cValid.CheckedChanged
         If cValid.Checked = True Then

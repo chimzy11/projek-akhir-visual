@@ -7,7 +7,6 @@ Public Class formPesan
     Dim Total As Integer = 0
     Dim HargaPerTiket As Integer = 0
     Dim jumlahTiket As Integer = 0
-
     Sub PilihanKursi()
         Dim queryString As String = "SELECT * FROM JadwalTeater WHERE judul = @judul"
 
@@ -22,72 +21,42 @@ Public Class formPesan
             Dim checkBoxWidth As Integer = 40
             Dim checkBoxHeight As Integer = 30
 
-            Dim nama As Char = "A"c
-            Dim nomorKursi As Integer = 1
-
             Dim fileMusikal As String = "Musikal_" + PopUpDataJadwal.cJudul.Text.Replace(" ", "_") + ".txt"
-            Dim kursiTerisi As New List(Of String)()
-
             If File.Exists(fileMusikal) Then
-                ' Membaca file Musikal.txt dan mengambil kursi yang telah terisi
-                Using reader As New StreamReader(fileMusikal)
-                    Dim line As String = reader.ReadLine()
-                    While line IsNot Nothing
-                        kursiTerisi.Add(line)
-                        line = reader.ReadLine()
-                    End While
-                End Using
-            End If
+                ' File ada, baca data dari file
+                Dim lines As String() = File.ReadAllLines(fileMusikal)
 
-            For i As Integer = 0 To numCheckboxes - 1
-                Dim checkBox As New CheckBox()
-                checkBox.Name = "chkKursi" & nomorKursi.ToString()
-                checkBox.Text = nama.ToString() & nomorKursi.ToString()
-                checkBox.AutoSize = True ' Mengatur AutoSize ke True
-                Dim row As Integer = i \ checkBoxesPerRow
-                Dim col As Integer = i Mod checkBoxesPerRow
-                Dim x As Integer = 33 + col * (checkBoxWidth + 5)
-                Dim y As Integer = 43 + row * (checkBoxHeight + 5)
-                checkBox.Location = New Point(x, y)
-                checkBox.Width = checkBoxWidth ' Mengatur lebar CheckBox
-
-                If File.Exists(fileMusikal) Then
-                    ' Mengatur keadaan CheckBox berdasarkan apakah kursi telah terisi atau tidak
-                    checkBox.Enabled = Not kursiTerisi.Contains(checkBox.Text)
-                Else
-                    ' Jika file Musikal.txt tidak ada, maka semua kursi tersedia
-                    checkBox.Enabled = True
-                End If
-
-                Panel2.Controls.Add(checkBox)
-
-                nomorKursi += 1
-                If nomorKursi > 9 Then
-                    nomorKursi = 1
-                    If nama < "Z"c Then
-                        nama = Chr(Asc(nama) + 1)
-                    End If
-                End If
-            Next
-
-            ' Menghapus kursi yang telah terisi berdasarkan file Musikal.txt
-            If File.Exists(fileMusikal) Then
-                Dim checkboxesToRemove As New List(Of CheckBox)()
-
-                For Each checkBox As CheckBox In Panel2.Controls.OfType(Of CheckBox)()
-                    If kursiTerisi.Contains(checkBox.Text) Then
-                        checkboxesToRemove.Add(checkBox)
+                For Each line As String In lines
+                    Dim values As String() = line.Split(","c)
+                    If values.Length = 2 AndAlso values(1).Trim().Equals("False") Then
+                        Dim checkBox As New CheckBox()
+                        checkBox.Name = "chkKursi" & values(0).Trim()
+                        checkBox.Text = values(0).Trim()
+                        checkBox.AutoSize = True
+                        Dim row As Integer = Panel2.Controls.Count \ checkBoxesPerRow
+                        Dim col As Integer = Panel2.Controls.Count Mod checkBoxesPerRow
+                        Dim x As Integer = 33 + col * (checkBoxWidth + 5)
+                        Dim y As Integer = 43 + row * (checkBoxHeight + 5)
+                        checkBox.Location = New Point(x, y)
+                        checkBox.Width = checkBoxWidth
+                        checkBox.Enabled = False
+                        Panel2.Controls.Add(checkBox)
                     End If
                 Next
-
-                For Each checkBox As CheckBox In checkboxesToRemove
-                    Panel2.Controls.Remove(checkBox)
-                Next
+            Else
+                ' File tidak ada, tampilkan pesan kesalahan atau ambil tindakan yang sesuai
+                MessageBox.Show("File tidak ditemukan.")
             End If
+
+            RD.Close()
         End If
-
-        RD.Close()
     End Sub
+
+
+
+
+
+
 
 
     Private Sub formPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -165,18 +134,20 @@ Public Class formPesan
     Private Sub bPembayaran_Click(sender As Object, e As EventArgs)
         Dim selectedCount As Integer = GetSelectedSeatCount()
 
-        If selectedCount = CInt(tBanyakTiket.Text) Then
-            ' Remove selected checkboxes
-
+        If selectedCount <> CInt(tBanyakTiket.Text) Then
+            MessageBox.Show("Jumlah kursi yang dipilih tidak sesuai dengan jumlah tiket yang dibeli.")
+        Else
             Me.Hide()
             formPembayaran.Show()
-        Else
-            MessageBox.Show("Jumlah kursi yang dipilih tidak sesuai dengan jumlah tiket yang dibeli.")
         End If
     End Sub
 
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
         Me.Hide()
         formDetailMusikal.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
     End Sub
 End Class

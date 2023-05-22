@@ -10,6 +10,7 @@
     End Sub
 
     Private Sub LandingPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Call KoneksiDatabase()
         Label9.BackColor = Color.Transparent
         Label1.BackColor = Color.Transparent

@@ -25,7 +25,8 @@ Public Class FLogin
 
     Private Sub FLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
-
+        DashboardUser.Close()
+        DashboardAdmin.Close()
         tUsername.Text = ""
         tPassword.Text = ""
         cRememberMe.Checked = False

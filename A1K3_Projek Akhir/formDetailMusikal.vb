@@ -1,9 +1,49 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.IO
 Imports System.Windows.Forms.DataVisualization.Charting
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 
 Public Class formDetailMusikal
     Private currentChildForm As Form
+
+    Sub FileMusikal()
+        Dim jumlahTiket As Integer = 0
+        Dim queryString As String = "SELECT * FROM JadwalTeater WHERE judul = @judul"
+
+        CMD = New MySqlCommand(queryString, CONN)
+        CMD.Parameters.AddWithValue("@judul", PopUpDataJadwal.cJudul.Text)
+        RD = CMD.ExecuteReader()
+
+        If RD.Read() Then
+            jumlahTiket = RD.GetInt32(7)
+
+            Dim fileMusikal As String = "Musikal_" + PopUpDataJadwal.cJudul.Text.Replace(" ", "_") + ".txt"
+            If Not File.Exists(fileMusikal) Then
+                Dim nama As Char = "A"c
+                Dim nomorKursi As Integer = 1
+
+                Dim writer As New StreamWriter(fileMusikal)
+
+                For i As Integer = 0 To jumlahTiket - 1
+                    Dim kursi As String = nama.ToString() & nomorKursi.ToString()
+                    writer.WriteLine(kursi & ",False")
+
+                    nomorKursi += 1
+                    If nomorKursi > 9 Then
+                        nomorKursi = 1
+                        If nama < "Z"c Then
+                            nama = Chr(Asc(nama) + 1)
+                        End If
+                    End If
+                Next
+
+                writer.Close()
+            End If
+        End If
+
+        RD.Close()
+    End Sub
+
 
     Private Sub OpenChildForm(childForm As Form)
         'open only form
@@ -46,7 +86,7 @@ Public Class formDetailMusikal
     Private Sub formDetailMusikal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
         Call TampilProfilJadwal()
-
+        FileMusikal()
         Dim queryString As String = "SELECT * FROM JadwalTeater WHERE judul ='" & PopUpDataJadwal.cJudul.Text & "'"
 
         CMD = New MySqlCommand(queryString, CONN)

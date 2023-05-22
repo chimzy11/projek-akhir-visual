@@ -33,17 +33,16 @@ Partial Class formDashboard
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lDataTransaksi = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.lDataUser = New System.Windows.Forms.Label()
         Me.lblTotalUser = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.ChartKeuntungan = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel14.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel12.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChartKeuntungan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel14
@@ -98,7 +97,7 @@ Partial Class formDashboard
         Me.Panel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel13.Controls.Add(Me.Button9)
         Me.Panel13.Controls.Add(Me.Label12)
-        Me.Panel13.Controls.Add(Me.Label14)
+        Me.Panel13.Controls.Add(Me.lDataTransaksi)
         Me.Panel13.Location = New System.Drawing.Point(557, 44)
         Me.Panel13.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel13.Name = "Panel13"
@@ -129,16 +128,16 @@ Partial Class formDashboard
         Me.Label12.TabIndex = 1
         Me.Label12.Text = "Total Transaksi"
         '
-        'Label14
+        'lDataTransaksi
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(186, 52)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(136, 55)
-        Me.Label14.TabIndex = 0
-        Me.Label14.Text = "1829"
+        Me.lDataTransaksi.AutoSize = True
+        Me.lDataTransaksi.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lDataTransaksi.Location = New System.Drawing.Point(186, 52)
+        Me.lDataTransaksi.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lDataTransaksi.Name = "lDataTransaksi"
+        Me.lDataTransaksi.Size = New System.Drawing.Size(136, 55)
+        Me.lDataTransaksi.TabIndex = 0
+        Me.lDataTransaksi.Text = "1829"
         '
         'Panel12
         '
@@ -188,35 +187,25 @@ Partial Class formDashboard
         Me.lblTotalUser.TabIndex = 0
         Me.lblTotalUser.Text = "1829"
         '
-        'Label13
+        'ChartKeuntungan
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(504, 324)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(190, 20)
-        Me.Label13.TabIndex = 12
-        Me.Label13.Text = "nnti disini grafik penjualan"
-        '
-        'Chart1
-        '
-        Me.Chart1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Chart1.BorderlineColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.ChartKeuntungan.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.ChartKeuntungan.BorderlineColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Me.ChartKeuntungan.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(90, 357)
-        Me.Chart1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Chart1.Name = "Chart1"
-        Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel
+        Me.ChartKeuntungan.Legends.Add(Legend1)
+        Me.ChartKeuntungan.Location = New System.Drawing.Point(90, 357)
+        Me.ChartKeuntungan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ChartKeuntungan.Name = "ChartKeuntungan"
+        Me.ChartKeuntungan.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(1347, 514)
-        Me.Chart1.TabIndex = 11
-        Me.Chart1.Text = "Chart1"
+        Me.ChartKeuntungan.Series.Add(Series1)
+        Me.ChartKeuntungan.Size = New System.Drawing.Size(1347, 514)
+        Me.ChartKeuntungan.TabIndex = 11
+        Me.ChartKeuntungan.Text = "Chart1"
         '
         'formDashboard
         '
@@ -227,8 +216,7 @@ Partial Class formDashboard
         Me.Controls.Add(Me.Panel14)
         Me.Controls.Add(Me.Panel13)
         Me.Controls.Add(Me.Panel12)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Chart1)
+        Me.Controls.Add(Me.ChartKeuntungan)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "formDashboard"
         Me.Text = "formDashboard"
@@ -239,9 +227,8 @@ Partial Class formDashboard
         Me.Panel13.PerformLayout()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChartKeuntungan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -252,11 +239,10 @@ Partial Class formDashboard
     Friend WithEvents Panel13 As Panel
     Friend WithEvents Button9 As Button
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents lDataTransaksi As Label
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Button8 As Button
     Friend WithEvents lDataUser As Label
     Friend WithEvents lblTotalUser As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents ChartKeuntungan As DataVisualization.Charting.Chart
 End Class
