@@ -119,6 +119,18 @@
     <Compile Include="formAbout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formDetailDrama.Designer.vb">
+      <DependentUpon>formDetailDrama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formDetailDrama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDetailKomedi.Designer.vb">
+      <DependentUpon>formDetailKomedi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formDetailKomedi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formDetailMusikal.Designer.vb">
       <DependentUpon>formDetailMusikal.vb</DependentUpon>
     </Compile>
@@ -314,6 +326,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formAbout.resx">
       <DependentUpon>formAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDetailDrama.resx">
+      <DependentUpon>formDetailDrama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDetailKomedi.resx">
+      <DependentUpon>formDetailKomedi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formDetailMusikal.resx">
       <DependentUpon>formDetailMusikal.vb</DependentUpon>
