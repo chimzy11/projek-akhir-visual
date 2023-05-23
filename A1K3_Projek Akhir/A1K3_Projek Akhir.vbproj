@@ -143,10 +143,10 @@
     <Compile Include="formDetailTicket.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formDetailTicketMusikal.Designer.vb">
-      <DependentUpon>formDetailTicketMusikal.vb</DependentUpon>
+    <Compile Include="formDetailTicketDrama.Designer.vb">
+      <DependentUpon>formDetailTicketDrama.vb</DependentUpon>
     </Compile>
-    <Compile Include="formDetailTicketMusikal.vb">
+    <Compile Include="formDetailTicketDrama.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formDrama.Designer.vb">
@@ -185,10 +185,10 @@
     <Compile Include="formPembayaranKomedi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formPembayaranMusikal.Designer.vb">
-      <DependentUpon>formPembayaranMusikal.vb</DependentUpon>
+    <Compile Include="formPembayaranDrama.Designer.vb">
+      <DependentUpon>formPembayaranDrama.vb</DependentUpon>
     </Compile>
-    <Compile Include="formPembayaranMusikal.vb">
+    <Compile Include="formPembayaranDrama.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formPesan.Designer.vb">
@@ -197,16 +197,16 @@
     <Compile Include="formPesan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formPesanDrama.Designer.vb">
+      <DependentUpon>formPesanDrama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPesanDrama.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formPesanKomedi.Designer.vb">
       <DependentUpon>formPesanKomedi.vb</DependentUpon>
     </Compile>
     <Compile Include="formPesanKomedi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formPesanMusikal.Designer.vb">
-      <DependentUpon>formPesanMusikal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formPesanMusikal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formRiwayatUser.Designer.vb">
@@ -221,6 +221,12 @@
     <Compile Include="formDetailTicketKomedi.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formTiketUser.Designer.vb">
+      <DependentUpon>formTiketUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formTiketUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LandingPage.Designer.vb">
       <DependentUpon>LandingPage.vb</DependentUpon>
     </Compile>
@@ -231,6 +237,18 @@
       <DependentUpon>PopUpDataJadwal.vb</DependentUpon>
     </Compile>
     <Compile Include="PopUpDataJadwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpDataJadwalDrama.Designer.vb">
+      <DependentUpon>PopUpDataJadwalDrama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpDataJadwalDrama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpDataJadwalKomedi.Designer.vb">
+      <DependentUpon>PopUpDataJadwalKomedi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpDataJadwalKomedi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PopUpHapusJadwal.Designer.vb">
@@ -363,8 +381,8 @@
     <EmbeddedResource Include="formDetailTicket.resx">
       <DependentUpon>formDetailTicket.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formDetailTicketMusikal.resx">
-      <DependentUpon>formDetailTicketMusikal.vb</DependentUpon>
+    <EmbeddedResource Include="formDetailTicketDrama.resx">
+      <DependentUpon>formDetailTicketDrama.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formDrama.resx">
       <DependentUpon>formDrama.vb</DependentUpon>
@@ -384,17 +402,17 @@
     <EmbeddedResource Include="formPembayaranKomedi.resx">
       <DependentUpon>formPembayaranKomedi.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formPembayaranMusikal.resx">
-      <DependentUpon>formPembayaranMusikal.vb</DependentUpon>
+    <EmbeddedResource Include="formPembayaranDrama.resx">
+      <DependentUpon>formPembayaranDrama.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formPesan.resx">
       <DependentUpon>formPesan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formPesanDrama.resx">
+      <DependentUpon>formPesanDrama.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formPesanKomedi.resx">
       <DependentUpon>formPesanKomedi.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formPesanMusikal.resx">
-      <DependentUpon>formPesanMusikal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formRiwayatUser.resx">
       <DependentUpon>formRiwayatUser.vb</DependentUpon>
@@ -402,11 +420,20 @@
     <EmbeddedResource Include="formDetailTicketKomedi.resx">
       <DependentUpon>formDetailTicketKomedi.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formTiketUser.resx">
+      <DependentUpon>formTiketUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopUpDataJadwal.resx">
       <DependentUpon>PopUpDataJadwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpDataJadwalDrama.resx">
+      <DependentUpon>PopUpDataJadwalDrama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpDataJadwalKomedi.resx">
+      <DependentUpon>PopUpDataJadwalKomedi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopUpHapusJadwal.resx">
       <DependentUpon>PopUpHapusJadwal.vb</DependentUpon>

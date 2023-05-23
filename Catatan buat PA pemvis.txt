@@ -3,6 +3,7 @@ Error Handling:
 - Button clear harus enabled jika form tidak diisi
 - Batasan untuk tiap genre hanya untuk 12 data
 
+- habis masuk ke profil terus kembali ke dashboard username ilang
 Tambahan : 
 - searching harus bisa semua data berdasarkan kolom database
 
@@ -16,3 +17,5 @@ DESAIN:
 - ikon mata di regis gabisa diklik yah
 - semua button label yang bisa diklik ikonnya ganti jad hand
 - Pop up jadikan center hilangin control
+- Perbaiki desain yang berantakan
+- Kalo Kembali dari form transaksi user langsung tekeluar

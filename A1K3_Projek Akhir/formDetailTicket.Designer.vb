@@ -67,9 +67,9 @@ Partial Class formDetailTicket
         Me.lJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.lJudul.Location = New System.Drawing.Point(39, 102)
         Me.lJudul.Name = "lJudul"
-        Me.lJudul.Size = New System.Drawing.Size(264, 42)
+        Me.lJudul.Size = New System.Drawing.Size(288, 42)
         Me.lJudul.TabIndex = 53
-        Me.lJudul.Text = "JUDUL DRAMA"
+        Me.lJudul.Text = "JUDUL MUSIKAL"
         '
         'Label3
         '

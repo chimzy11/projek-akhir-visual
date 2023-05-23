@@ -39,10 +39,18 @@ Partial Class formDashboard
         Me.lDataUser = New System.Windows.Forms.Label()
         Me.lblTotalUser = New System.Windows.Forms.Label()
         Me.ChartKeuntungan = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.bTanggal = New System.Windows.Forms.Button()
+        Me.bBulan = New System.Windows.Forms.Button()
+        Me.bTahun = New System.Windows.Forms.Button()
+        Me.pKeuntungan = New System.Windows.Forms.Panel()
+        Me.lTotalKeuntungan = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel14.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel12.SuspendLayout()
         CType(Me.ChartKeuntungan, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pKeuntungan.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel14
@@ -196,7 +204,7 @@ Partial Class formDashboard
         Me.ChartKeuntungan.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.ChartKeuntungan.Legends.Add(Legend1)
-        Me.ChartKeuntungan.Location = New System.Drawing.Point(90, 357)
+        Me.ChartKeuntungan.Location = New System.Drawing.Point(90, 381)
         Me.ChartKeuntungan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ChartKeuntungan.Name = "ChartKeuntungan"
         Me.ChartKeuntungan.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel
@@ -204,16 +212,117 @@ Partial Class formDashboard
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.ChartKeuntungan.Series.Add(Series1)
-        Me.ChartKeuntungan.Size = New System.Drawing.Size(1347, 514)
+        Me.ChartKeuntungan.Size = New System.Drawing.Size(863, 472)
         Me.ChartKeuntungan.TabIndex = 11
         Me.ChartKeuntungan.Text = "Chart1"
+        '
+        'bTanggal
+        '
+        Me.bTanggal.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bTanggal.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bTanggal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bTanggal.FlatAppearance.BorderSize = 0
+        Me.bTanggal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bTanggal.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bTanggal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bTanggal.Location = New System.Drawing.Point(259, 309)
+        Me.bTanggal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bTanggal.Name = "bTanggal"
+        Me.bTanggal.Size = New System.Drawing.Size(176, 37)
+        Me.bTanggal.TabIndex = 116
+        Me.bTanggal.Text = "Tanggal"
+        Me.bTanggal.UseVisualStyleBackColor = False
+        '
+        'bBulan
+        '
+        Me.bBulan.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bBulan.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bBulan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bBulan.FlatAppearance.BorderSize = 0
+        Me.bBulan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bBulan.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bBulan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bBulan.Location = New System.Drawing.Point(441, 309)
+        Me.bBulan.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bBulan.Name = "bBulan"
+        Me.bBulan.Size = New System.Drawing.Size(176, 37)
+        Me.bBulan.TabIndex = 117
+        Me.bBulan.Text = "Bulan"
+        Me.bBulan.UseVisualStyleBackColor = False
+        '
+        'bTahun
+        '
+        Me.bTahun.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.bTahun.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bTahun.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.bTahun.FlatAppearance.BorderSize = 0
+        Me.bTahun.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bTahun.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bTahun.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bTahun.Location = New System.Drawing.Point(623, 309)
+        Me.bTahun.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.bTahun.Name = "bTahun"
+        Me.bTahun.Size = New System.Drawing.Size(176, 37)
+        Me.bTahun.TabIndex = 118
+        Me.bTahun.Text = "Tahun"
+        Me.bTahun.UseVisualStyleBackColor = False
+        '
+        'pKeuntungan
+        '
+        Me.pKeuntungan.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.pKeuntungan.Controls.Add(Me.Label2)
+        Me.pKeuntungan.Controls.Add(Me.Label1)
+        Me.pKeuntungan.Controls.Add(Me.lTotalKeuntungan)
+        Me.pKeuntungan.Location = New System.Drawing.Point(1053, 433)
+        Me.pKeuntungan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pKeuntungan.Name = "pKeuntungan"
+        Me.pKeuntungan.Size = New System.Drawing.Size(426, 278)
+        Me.pKeuntungan.TabIndex = 16
+        '
+        'lTotalKeuntungan
+        '
+        Me.lTotalKeuntungan.AutoSize = True
+        Me.lTotalKeuntungan.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lTotalKeuntungan.Location = New System.Drawing.Point(173, 124)
+        Me.lTotalKeuntungan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lTotalKeuntungan.Name = "lTotalKeuntungan"
+        Me.lTotalKeuntungan.Size = New System.Drawing.Size(136, 55)
+        Me.lTotalKeuntungan.TabIndex = 0
+        Me.lTotalKeuntungan.Text = "1829"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(74, 67)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(272, 32)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Pendapatan Saat Ini"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(86, 124)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(102, 55)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Rp."
         '
         'formDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1515, 749)
+        Me.ClientSize = New System.Drawing.Size(1564, 918)
+        Me.Controls.Add(Me.pKeuntungan)
+        Me.Controls.Add(Me.bTahun)
+        Me.Controls.Add(Me.bBulan)
+        Me.Controls.Add(Me.bTanggal)
         Me.Controls.Add(Me.Panel14)
         Me.Controls.Add(Me.Panel13)
         Me.Controls.Add(Me.Panel12)
@@ -229,6 +338,8 @@ Partial Class formDashboard
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
         CType(Me.ChartKeuntungan, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pKeuntungan.ResumeLayout(False)
+        Me.pKeuntungan.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -246,4 +357,11 @@ Partial Class formDashboard
     Friend WithEvents lDataUser As Label
     Friend WithEvents lblTotalUser As Label
     Friend WithEvents ChartKeuntungan As DataVisualization.Charting.Chart
+    Friend WithEvents bTanggal As Button
+    Friend WithEvents bBulan As Button
+    Friend WithEvents bTahun As Button
+    Friend WithEvents pKeuntungan As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lTotalKeuntungan As Label
+    Friend WithEvents Label2 As Label
 End Class

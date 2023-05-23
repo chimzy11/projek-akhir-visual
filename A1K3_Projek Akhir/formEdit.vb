@@ -53,35 +53,40 @@ Public Class formEdit
         Return Cek
     End Function
     Sub Simpan()
-        Dim JamTayang As String = ""
-
-        If rJamPertama.Checked Then
-            JamTayang = rJamPertama.Text
-        ElseIf rJamKedua.Checked Then
-            JamTayang = rJamKedua.Text
-            'ElseIf rJamKetiga.Checked Then
-            '  JamTayang = rJamKetiga.Text
-            'ElseIf rJamKeempat.Checked Then
-            'JamTayang = rJamKeempat.Text
-        End If
-
-        CMD = New MySqlCommand("SELECT * FROM JadwalTeater WHERE id_teater = '" & PopUpEditJadwal.cIdTeater.Text & "'", CONN)
-        RD = CMD.ExecuteReader
-        RD.Read()
-
-        If RD.HasRows Then
-            RD.Close()
-
-            Dim UpdateQuery As String = "UPDATE JadwalTeater SET judul = '" & tJudul.Text & "', kelompok = '" & tKelompok.Text & "', genre = '" & cGenre.Text & "', hari = '" & tHari.Text & "', tanggal_pertunjukkan = '" & dTanggal.Value.ToString("yyyy-MM-dd") & "', waktu = '" & JamTayang & "', tiket = '" & tTiket.Text & "', harga_tiket = '" & tHargaTiket.Text & "', gambar = '" & bPilihGambarTiket.Text & "' WHERE id_teater = '" & PopUpEditJadwal.cIdTeater.Text & "'"
-
-            CMD = New MySqlCommand(UpdateQuery, CONN)
-            CMD.ExecuteNonQuery()
-            MsgBox("Jadwal Teater Berhasil Diperbarui", MsgBoxStyle.Information, "Perhatian")
-            Me.Close()
-            OpenChildForm(New formJadwal)
+        If (tHari.Text = "Monday") Then
+            MsgBox("Tidak bisa memilih hari Monday", MsgBoxStyle.Information, "Perhatian")
         Else
-            RD.Close()
-            MsgBox("ID tidak ditemukan!", MsgBoxStyle.Exclamation, "Perhatian")
+            Dim JamTayang As String = ""
+
+            If rJamPertama.Checked Then
+                JamTayang = rJamPertama.Text
+            ElseIf rJamKedua.Checked Then
+                JamTayang = rJamKedua.Text
+                'ElseIf rJamKetiga.Checked Then
+                '  JamTayang = rJamKetiga.Text
+                'ElseIf rJamKeempat.Checked Then
+                'JamTayang = rJamKeempat.Text
+            End If
+
+            CMD = New MySqlCommand("SELECT * FROM JadwalTeater WHERE id_teater = '" & PopUpEditJadwal.cIdTeater.Text & "'", CONN)
+            RD = CMD.ExecuteReader
+            RD.Read()
+
+            If RD.HasRows Then
+                RD.Close()
+
+                Dim UpdateQuery As String = "UPDATE JadwalTeater SET judul = '" & tJudul.Text & "', kelompok = '" & tKelompok.Text & "', genre = '" & cGenre.Text & "', hari = '" & tHari.Text & "', tanggal_pertunjukkan = '" & dTanggal.Value.ToString("yyyy-MM-dd") & "', waktu = '" & JamTayang & "', tiket = '" & tTiket.Text & "', harga_tiket = '" & tHargaTiket.Text & "', gambar = '" & bPilihGambarTiket.Text & "' WHERE id_teater = '" & PopUpEditJadwal.cIdTeater.Text & "'"
+
+                CMD = New MySqlCommand(UpdateQuery, CONN)
+                CMD.ExecuteNonQuery()
+                MsgBox("Jadwal Teater Berhasil Diperbarui", MsgBoxStyle.Information, "Perhatian")
+                PopUpEditJadwal.Close()
+                Me.Close()
+                OpenChildForm(New formJadwal)
+            Else
+                RD.Close()
+                MsgBox("ID tidak ditemukan!", MsgBoxStyle.Exclamation, "Perhatian")
+            End If
         End If
     End Sub
 
@@ -108,10 +113,6 @@ Public Class formEdit
                     rJamPertama.Checked = True
                 Case rJamKedua.Text
                     rJamKedua.Checked = True
-                    ' Case rJamKetiga.Text
-                    ' rJamKetiga.Checked = True
-                    'Case rJamKeempat.Text
-                    ' rJamKeempat.Checked = True
             End Select
 
             tTiket.Text = RD.GetString(7)
@@ -119,6 +120,21 @@ Public Class formEdit
         End If
 
         RD.Close()
+
+        dTanggal.MinDate = DateTime.Today.AddDays(2)
+
+        Dim maxDate As DateTime = DateTime.Today.AddDays(8)
+
+        Do While maxDate.DayOfWeek = DayOfWeek.Monday
+            maxDate = maxDate.AddDays(1)
+        Loop
+
+        If maxDate.DayOfWeek = DayOfWeek.Monday Then
+            maxDate = maxDate.AddDays(1)
+        End If
+
+        dTanggal.MaxDate = maxDate
+        dTanggal.Value = maxDate
     End Sub
 
 
@@ -131,7 +147,7 @@ Public Class formEdit
         Simpan()
     End Sub
 
-    Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs)
+    Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs) Handles bPilihGambarTiket.Click
         Dim Kosong As Boolean = CekData()
 
         If Kosong = True Then
@@ -143,17 +159,25 @@ Public Class formEdit
             Dim OpenProfil As New OpenFileDialog()
             OpenProfil.Filter = "File Gambar|*.jpg;*.jpeg;*.png"
 
+
             If OpenProfil.ShowDialog() = DialogResult.OK Then
                 imagePath = OpenProfil.FileName
-                Dim fileName As String = Path.GetFileNameWithoutExtension(imagePath)
+                Dim fileName As String = Path.GetFileName(imagePath)
                 Dim fileExtension As String = Path.GetExtension(imagePath)
-                Dim newFileName As String = $"{tJudul.Text}{fileExtension}"
+
+                Dim i As Integer = 1
+                Dim newFileName As String = tJudul.Text & i.ToString() & fileExtension
+                Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+
+                While File.Exists(destinationPath)
+                    i += 1
+                    newFileName = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
+                    destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                End While
+
+                File.Copy(imagePath, destinationPath)
+
                 bPilihGambarTiket.Text = newFileName
-
-                Dim uploadPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\"
-                Dim destinationPath As String = Path.Combine(uploadPath, newFileName)
-
-                File.Copy(imagePath, destinationPath, True)
             End If
 
             bSimpan.Enabled = True
@@ -164,13 +188,18 @@ Public Class formEdit
     Private Sub bClear_Click(sender As Object, e As EventArgs) Handles bClear.Click
         Clear()
     End Sub
-    Private Sub dTanggal_ValueChanged(sender As Object, e As EventArgs) Handles dTanggal.ValueChanged
-        tHari.Text = dTanggal.Value.DayOfWeek.ToString()
-    End Sub
+
     Private Sub textbox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tHargaTiket.KeyPress, tTiket.KeyPress
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             MsgBox("Data harus berupa angka!", MsgBoxStyle.Information, "Error")
             e.Handled = True
+        End If
+    End Sub
+
+    Private Sub dTanggal_ValueChanged(sender As Object, e As EventArgs) Handles dTanggal.ValueChanged
+        tHari.Text = dTanggal.Value.DayOfWeek.ToString()
+        If (tHari.Text = "Monday") Then
+            MsgBox("Tidak bisa memilih hari Monday", MsgBoxStyle.Information, "Perhatian")
         End If
     End Sub
 End Class

@@ -55,9 +55,10 @@ Partial Class formDetailKomedi
         Me.Panel1.Controls.Add(Me.lblLokaso)
         Me.Panel1.Controls.Add(Me.lHarga)
         Me.Panel1.Controls.Add(Me.lJudul)
-        Me.Panel1.Location = New System.Drawing.Point(32, 24)
+        Me.Panel1.Location = New System.Drawing.Point(48, 37)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(584, 293)
+        Me.Panel1.Size = New System.Drawing.Size(876, 451)
         Me.Panel1.TabIndex = 2
         '
         'Panel3
@@ -71,10 +72,9 @@ Partial Class formDetailKomedi
         Me.Panel3.Controls.Add(Me.lKelompok)
         Me.Panel3.Controls.Add(Me.pTeater)
         Me.Panel3.Controls.Add(Me.lSignIn)
-        Me.Panel3.Location = New System.Drawing.Point(57, 50)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel3.Location = New System.Drawing.Point(86, 77)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(466, 153)
+        Me.Panel3.Size = New System.Drawing.Size(699, 235)
         Me.Panel3.TabIndex = 87
         '
         'lStokTiket
@@ -83,9 +83,10 @@ Partial Class formDetailKomedi
         Me.lStokTiket.BackColor = System.Drawing.Color.Transparent
         Me.lStokTiket.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lStokTiket.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lStokTiket.Location = New System.Drawing.Point(297, 9)
+        Me.lStokTiket.Location = New System.Drawing.Point(446, 14)
+        Me.lStokTiket.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lStokTiket.Name = "lStokTiket"
-        Me.lStokTiket.Size = New System.Drawing.Size(94, 22)
+        Me.lStokTiket.Size = New System.Drawing.Size(138, 31)
         Me.lStokTiket.TabIndex = 92
         Me.lStokTiket.Text = "Kelompok"
         '
@@ -95,9 +96,10 @@ Partial Class formDetailKomedi
         Me.lWaktu.BackColor = System.Drawing.Color.Transparent
         Me.lWaktu.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lWaktu.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lWaktu.Location = New System.Drawing.Point(162, 105)
+        Me.lWaktu.Location = New System.Drawing.Point(243, 162)
+        Me.lWaktu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lWaktu.Name = "lWaktu"
-        Me.lWaktu.Size = New System.Drawing.Size(94, 22)
+        Me.lWaktu.Size = New System.Drawing.Size(138, 31)
         Me.lWaktu.TabIndex = 91
         Me.lWaktu.Text = "Kelompok"
         '
@@ -107,9 +109,10 @@ Partial Class formDetailKomedi
         Me.lTanggal.BackColor = System.Drawing.Color.Transparent
         Me.lTanggal.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lTanggal.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lTanggal.Location = New System.Drawing.Point(162, 85)
+        Me.lTanggal.Location = New System.Drawing.Point(243, 131)
+        Me.lTanggal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lTanggal.Name = "lTanggal"
-        Me.lTanggal.Size = New System.Drawing.Size(94, 22)
+        Me.lTanggal.Size = New System.Drawing.Size(138, 31)
         Me.lTanggal.TabIndex = 90
         Me.lTanggal.Text = "Kelompok"
         '
@@ -119,9 +122,10 @@ Partial Class formDetailKomedi
         Me.lHari.BackColor = System.Drawing.Color.Transparent
         Me.lHari.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lHari.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lHari.Location = New System.Drawing.Point(162, 65)
+        Me.lHari.Location = New System.Drawing.Point(243, 100)
+        Me.lHari.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lHari.Name = "lHari"
-        Me.lHari.Size = New System.Drawing.Size(94, 22)
+        Me.lHari.Size = New System.Drawing.Size(138, 31)
         Me.lHari.TabIndex = 89
         Me.lHari.Text = "Kelompok"
         '
@@ -131,9 +135,10 @@ Partial Class formDetailKomedi
         Me.lGenre.BackColor = System.Drawing.Color.Transparent
         Me.lGenre.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lGenre.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lGenre.Location = New System.Drawing.Point(162, 36)
+        Me.lGenre.Location = New System.Drawing.Point(243, 55)
+        Me.lGenre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lGenre.Name = "lGenre"
-        Me.lGenre.Size = New System.Drawing.Size(94, 22)
+        Me.lGenre.Size = New System.Drawing.Size(138, 31)
         Me.lGenre.TabIndex = 89
         Me.lGenre.Text = "Kelompok"
         '
@@ -143,9 +148,10 @@ Partial Class formDetailKomedi
         Me.lKelompok.BackColor = System.Drawing.Color.Transparent
         Me.lKelompok.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lKelompok.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lKelompok.Location = New System.Drawing.Point(162, 9)
+        Me.lKelompok.Location = New System.Drawing.Point(243, 14)
+        Me.lKelompok.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lKelompok.Name = "lKelompok"
-        Me.lKelompok.Size = New System.Drawing.Size(94, 22)
+        Me.lKelompok.Size = New System.Drawing.Size(138, 31)
         Me.lKelompok.TabIndex = 88
         Me.lKelompok.Text = "Kelompok"
         '
@@ -153,8 +159,9 @@ Partial Class formDetailKomedi
         '
         Me.pTeater.BackColor = System.Drawing.Color.WhiteSmoke
         Me.pTeater.Location = New System.Drawing.Point(0, 0)
+        Me.pTeater.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pTeater.Name = "pTeater"
-        Me.pTeater.Size = New System.Drawing.Size(149, 153)
+        Me.pTeater.Size = New System.Drawing.Size(224, 235)
         Me.pTeater.TabIndex = 1
         Me.pTeater.TabStop = False
         '
@@ -165,10 +172,9 @@ Partial Class formDetailKomedi
         Me.lSignIn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lSignIn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lSignIn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.lSignIn.Location = New System.Drawing.Point(201, 358)
-        Me.lSignIn.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lSignIn.Location = New System.Drawing.Point(302, 551)
         Me.lSignIn.Name = "lSignIn"
-        Me.lSignIn.Size = New System.Drawing.Size(51, 17)
+        Me.lSignIn.Size = New System.Drawing.Size(75, 25)
         Me.lSignIn.TabIndex = 0
         Me.lSignIn.Text = "Sign In"
         '
@@ -177,10 +183,9 @@ Partial Class formDetailKomedi
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(13, 266)
-        Me.pKembali.Margin = New System.Windows.Forms.Padding(2)
+        Me.pKembali.Location = New System.Drawing.Point(20, 409)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(21, 17)
+        Me.pKembali.Size = New System.Drawing.Size(32, 26)
         Me.pKembali.TabIndex = 86
         Me.pKembali.TabStop = False
         '
@@ -191,9 +196,10 @@ Partial Class formDetailKomedi
         Me.bPesan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPesan.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bPesan.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.bPesan.Location = New System.Drawing.Point(425, 234)
+        Me.bPesan.Location = New System.Drawing.Point(638, 360)
+        Me.bPesan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.bPesan.Name = "bPesan"
-        Me.bPesan.Size = New System.Drawing.Size(112, 32)
+        Me.bPesan.Size = New System.Drawing.Size(168, 49)
         Me.bPesan.TabIndex = 5
         Me.bPesan.Text = "Pesan"
         Me.bPesan.UseVisualStyleBackColor = False
@@ -203,9 +209,10 @@ Partial Class formDetailKomedi
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.placeholder
-        Me.Button1.Location = New System.Drawing.Point(45, 227)
+        Me.Button1.Location = New System.Drawing.Point(68, 349)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(43, 40)
+        Me.Button1.Size = New System.Drawing.Size(64, 62)
         Me.Button1.TabIndex = 4
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -214,9 +221,10 @@ Partial Class formDetailKomedi
         Me.lblLokaso.AutoSize = True
         Me.lblLokaso.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLokaso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lblLokaso.Location = New System.Drawing.Point(86, 238)
+        Me.lblLokaso.Location = New System.Drawing.Point(129, 366)
+        Me.lblLokaso.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLokaso.Name = "lblLokaso"
-        Me.lblLokaso.Size = New System.Drawing.Size(197, 22)
+        Me.lblLokaso.Size = New System.Drawing.Size(296, 31)
         Me.lblLokaso.TabIndex = 3
         Me.lblLokaso.Text = "Gedung Teater Musikal"
         '
@@ -224,9 +232,10 @@ Partial Class formDetailKomedi
         '
         Me.lHarga.AutoSize = True
         Me.lHarga.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lHarga.Location = New System.Drawing.Point(53, 205)
+        Me.lHarga.Location = New System.Drawing.Point(80, 315)
+        Me.lHarga.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lHarga.Name = "lHarga"
-        Me.lHarga.Size = New System.Drawing.Size(65, 22)
+        Me.lHarga.Size = New System.Drawing.Size(96, 31)
         Me.lHarga.TabIndex = 2
         Me.lHarga.Text = "50.000"
         '
@@ -236,19 +245,21 @@ Partial Class formDetailKomedi
         Me.lJudul.BackColor = System.Drawing.Color.WhiteSmoke
         Me.lJudul.Font = New System.Drawing.Font("Modern No. 20", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lJudul.Location = New System.Drawing.Point(53, 14)
+        Me.lJudul.Location = New System.Drawing.Point(80, 22)
+        Me.lJudul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lJudul.Name = "lJudul"
-        Me.lJudul.Size = New System.Drawing.Size(209, 24)
+        Me.lJudul.Size = New System.Drawing.Size(312, 34)
         Me.lJudul.TabIndex = 0
         Me.lJudul.Text = "Judul Teater Komedi"
         '
         'formDetailKomedi
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(649, 340)
+        Me.ClientSize = New System.Drawing.Size(974, 523)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "formDetailKomedi"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formDetailKomedi"

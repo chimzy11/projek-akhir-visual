@@ -8,26 +8,121 @@ Imports MySql.Data.MySqlClient
 Public Class formDashboard
     Private currentChildForm As Form
     Private Sub PopulateChartKeuntungan()
-        Dim query As String = "SELECT genre, SUM(total_transaksi) AS total_keuntungan FROM transaksi GROUP BY genre"
-        Dim cmd As New MySqlCommand(query, CONN)
-        Dim reader As MySqlDataReader = cmd.ExecuteReader()
+        Dim query As String = "SELECT tanggal, SUM(total_transaksi) AS total_keuntungan, AVG(total_transaksi) AS rata_keuntungan FROM transaksi GROUP BY tanggal"
+        CMD = New MySqlCommand(query, CONN)
+        RD = CMD.ExecuteReader()
 
         ChartKeuntungan.Series.Clear()
 
-        Dim series As New Series("Keuntungan")
-        series.ChartType = SeriesChartType.Column
+        Dim seriesPendapatan As New Series("Pendapatan")
+        seriesPendapatan.ChartType = SeriesChartType.Column
 
-        While reader.Read()
-            Dim genre As String = reader("genre").ToString()
-            Dim keuntungan As Double = Convert.ToDouble(reader("total_keuntungan"))
+        Dim seriesRataRata As New Series("Rata-Rata Pendapatan")
+        seriesRataRata.ChartType = SeriesChartType.Column
 
-            series.Points.AddXY(genre, keuntungan)
+        While RD.Read()
+            Dim tanggal As DateTime = Convert.ToDateTime(RD("tanggal"))
+            Dim keuntungan As Double = Convert.ToDouble(RD("total_keuntungan"))
+            Dim rataKeuntungan As Double = Convert.ToDouble(RD("rata_keuntungan"))
+
+            seriesPendapatan.Points.AddXY(tanggal.ToShortDateString(), keuntungan)
+            seriesRataRata.Points.AddXY(tanggal.ToShortDateString(), rataKeuntungan)
         End While
 
-        ChartKeuntungan.Series.Add(series)
+        ChartKeuntungan.Series.Add(seriesPendapatan)
+        ChartKeuntungan.Series.Add(seriesRataRata)
 
-        reader.Close()
+        RD.Close()
     End Sub
+    Private Function GetMonthName(month As Integer) As String
+        Select Case month
+            Case 1
+                Return "Januari"
+            Case 2
+                Return "Februari"
+            Case 3
+                Return "Maret"
+            Case 4
+                Return "April"
+            Case 5
+                Return "Mei"
+            Case 6
+                Return "Juni"
+            Case 7
+                Return "Juli"
+            Case 8
+                Return "Agustus"
+            Case 9
+                Return "September"
+            Case 10
+                Return "Oktober"
+            Case 11
+                Return "November"
+            Case 12
+                Return "Desember"
+            Case Else
+                Return ""
+        End Select
+    End Function
+
+    Private Sub PopulateChartKeuntunganBulanan()
+        Dim query As String = "SELECT DATE_FORMAT(tanggal, '%Y-%m') AS bulan, SUM(total_transaksi) AS total_keuntungan, AVG(total_transaksi) AS rata_keuntungan FROM transaksi GROUP BY bulan"
+        CMD = New MySqlCommand(query, CONN)
+        RD = cmd.ExecuteReader()
+
+        ChartKeuntungan.Series.Clear()
+
+        Dim seriesPendapatan As New Series("Pendapatan")
+        seriesPendapatan.ChartType = SeriesChartType.Column
+
+        Dim seriesRataRata As New Series("Rata-Rata Pendapatan")
+        seriesRataRata.ChartType = SeriesChartType.Column
+
+        While RD.Read()
+            Dim bulan As String = GetMonthName(Month(CDate(RD("bulan"))))
+            Dim keuntungan As Double = Convert.ToDouble(RD("total_keuntungan"))
+            Dim rataKeuntungan As Double = Convert.ToDouble(RD("rata_keuntungan"))
+
+            seriesPendapatan.Points.AddXY(bulan, keuntungan)
+            seriesRataRata.Points.AddXY(bulan, rataKeuntungan)
+        End While
+
+        ChartKeuntungan.Series.Add(seriesPendapatan)
+        ChartKeuntungan.Series.Add(seriesRataRata)
+
+        RD.Close()
+    End Sub
+
+    Private Sub PopulateChartKeuntunganTahunan()
+        Dim query As String = "SELECT YEAR(tanggal) AS tahun, SUM(total_transaksi) AS total_keuntungan, AVG(total_transaksi) AS rata_keuntungan FROM transaksi GROUP BY tahun"
+        CMD = New MySqlCommand(query, CONN)
+        RD = cmd.ExecuteReader()
+
+        ChartKeuntungan.Series.Clear()
+
+        Dim seriesPendapatan As New Series("Pendapatan")
+        seriesPendapatan.ChartType = SeriesChartType.Column
+
+        Dim seriesRataRata As New Series("Rata-Rata Pendapatan")
+        seriesRataRata.ChartType = SeriesChartType.Column
+
+        While RD.Read()
+            Dim tahun As Integer = Convert.ToInt32(RD("tahun"))
+            Dim keuntungan As Double = Convert.ToDouble(RD("total_keuntungan"))
+            Dim rataKeuntungan As Double = Convert.ToDouble(RD("rata_keuntungan"))
+
+            seriesPendapatan.Points.AddXY(tahun.ToString(), keuntungan)
+            seriesRataRata.Points.AddXY(tahun.ToString(), rataKeuntungan)
+        End While
+
+        ChartKeuntungan.Series.Add(seriesPendapatan)
+        ChartKeuntungan.Series.Add(seriesRataRata)
+
+        RD.Close()
+    End Sub
+
+
+
 
     Private Sub OpenChildForm(childForm As Form)
 
@@ -51,7 +146,31 @@ Public Class formDashboard
         HitungTotalPertunjukkan()
         HitungTotalTransaksi()
         PopulateChartKeuntungan()
+
+        pKeuntungan.BackColor = Color.FromArgb(221, 212, 199)
+        pKeuntungan.Region = New Region(New Rectangle(0, 0, pKeuntungan.Width, pKeuntungan.Height))
+        pKeuntungan.Padding = New Padding(1)
+        pKeuntungan.BorderStyle = BorderStyle.None
+
+        Dim path As New Drawing2D.GraphicsPath()
+        path.AddEllipse(0, 0, pKeuntungan.Width, pKeuntungan.Height)
+        pKeuntungan.Region = New Region(path)
+
+
+        Dim query As String = "SELECT SUM(total_transaksi) AS total_pendapatan FROM transaksi"
+        CMD = New MySqlCommand(query, CONN)
+        RD = CMD.ExecuteReader()
+        Dim total_pendapatan As Double = 0
+
+        While RD.Read()
+            total_pendapatan += RD.GetDouble("total_pendapatan")
+        End While
+
+        RD.Close()
+        lTotalKeuntungan.Text = total_pendapatan.ToString()
+
     End Sub
+
     Private Sub HitungTotalUser()
         Dim query As String = "SELECT COUNT(*) AS total_baris FROM akun WHERE id_Akun <> ''"
 
@@ -108,6 +227,22 @@ Public Class formDashboard
 
     Sub DataTransaksiChanged()
         PopulateChartKeuntungan()
+    End Sub
+
+    Private Sub bTanggal_Click(sender As Object, e As EventArgs) Handles bTanggal.Click
+        PopulateChartKeuntungan()
+    End Sub
+
+    Private Sub bBulan_Click(sender As Object, e As EventArgs) Handles bBulan.Click
+        PopulateChartKeuntunganBulanan()
+    End Sub
+
+    Private Sub bTahun_Click(sender As Object, e As EventArgs) Handles bTahun.Click
+        PopulateChartKeuntunganTahunan()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
 

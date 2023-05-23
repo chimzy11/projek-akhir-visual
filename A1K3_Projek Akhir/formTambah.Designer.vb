@@ -26,6 +26,7 @@ Partial Class formTambah
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formTambah))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.dTanggal = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.tHari = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -40,7 +41,6 @@ Partial Class formTambah
         Me.tHargaTiket = New System.Windows.Forms.TextBox()
         Me.x = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.dTanggal = New System.Windows.Forms.DateTimePicker()
         Me.tTiket = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -80,6 +80,7 @@ Partial Class formTambah
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.dTanggal)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.tHari)
         Me.Panel1.Controls.Add(Me.Button1)
@@ -92,7 +93,6 @@ Partial Class formTambah
         Me.Panel1.Controls.Add(Me.tHargaTiket)
         Me.Panel1.Controls.Add(Me.x)
         Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.dTanggal)
         Me.Panel1.Controls.Add(Me.tTiket)
         Me.Panel1.Controls.Add(Me.TextBox4)
         Me.Panel1.Controls.Add(Me.Button6)
@@ -113,6 +113,14 @@ Partial Class formTambah
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(644, 712)
         Me.Panel1.TabIndex = 24
+        '
+        'dTanggal
+        '
+        Me.dTanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dTanggal.Location = New System.Drawing.Point(81, 288)
+        Me.dTanggal.Name = "dTanggal"
+        Me.dTanggal.Size = New System.Drawing.Size(200, 26)
+        Me.dTanggal.TabIndex = 105
         '
         'Label11
         '
@@ -307,21 +315,6 @@ Partial Class formTambah
         Me.Label9.Size = New System.Drawing.Size(86, 29)
         Me.Label9.TabIndex = 98
         Me.Label9.Text = "STOK"
-        '
-        'dTanggal
-        '
-        Me.dTanggal.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.dTanggal.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.dTanggal.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.dTanggal.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.dTanggal.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.dTanggal.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dTanggal.Location = New System.Drawing.Point(81, 288)
-        Me.dTanggal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.dTanggal.Name = "dTanggal"
-        Me.dTanggal.Size = New System.Drawing.Size(200, 26)
-        Me.dTanggal.TabIndex = 93
-        Me.dTanggal.Value = New Date(2023, 5, 15, 20, 35, 0, 0)
         '
         'tTiket
         '
@@ -583,7 +576,6 @@ Partial Class formTambah
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Button4 As Button
-    Friend WithEvents dTanggal As DateTimePicker
     Friend WithEvents gJam As GroupBox
     Friend WithEvents rJamKedua As RadioButton
     Friend WithEvents rJamPertama As RadioButton
@@ -600,4 +592,5 @@ Partial Class formTambah
     Friend WithEvents Button1 As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents pKembali As PictureBox
+    Friend WithEvents dTanggal As DateTimePicker
 End Class

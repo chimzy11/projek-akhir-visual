@@ -70,41 +70,45 @@ Public Class formTambah
     End Function
 
     Sub Simpan()
-        Dim JamTayang As String = ""
-        Dim IdTeater As Integer
-
-        If rJamPertama.Checked Then
-            JamTayang = rJamPertama.Text
-        ElseIf rJamKedua.Checked Then
-            JamTayang = rJamKedua.Text
-        End If
-
-        Dim lastID As Integer = GetLastID()
-        If lastID = 0 Then
-            IdTeater = 2109106020
+        If tHari.Text = "Monday" Then
+            MsgBox("Silahkan ganti hari!", MsgBoxStyle.Information, "Perhatian")
         Else
-            IdTeater = lastID + 1
-        End If
+            Dim JamTayang As String = ""
+            Dim IdTeater As Integer
 
-        CMD = New MySqlCommand("Select * From JadwalTeater where id_teater ='" & IdTeater & "'", CONN)
-        RD = CMD.ExecuteReader
-        RD.Read()
+            If rJamPertama.Checked Then
+                JamTayang = rJamPertama.Text
+            ElseIf rJamKedua.Checked Then
+                JamTayang = rJamKedua.Text
+            End If
 
-        If Not RD.HasRows Then
-            RD.Close()
+            Dim lastID As Integer = GetLastID()
+            If lastID = 0 Then
+                IdTeater = 2109106020
+            Else
+                IdTeater = lastID + 1
+            End If
 
-            Dim Simpan As String = "INSERT INTO JadwalTeater (id_teater, judul, kelompok, genre, hari, tanggal_pertunjukkan, waktu, tiket, harga_tiket, gambar) VALUES
+            CMD = New MySqlCommand("Select * From JadwalTeater where id_teater ='" & IdTeater & "'", CONN)
+            RD = CMD.ExecuteReader
+            RD.Read()
+
+            If Not RD.HasRows Then
+                RD.Close()
+
+                Dim Simpan As String = "INSERT INTO JadwalTeater (id_teater, judul, kelompok, genre, hari, tanggal_pertunjukkan, waktu, tiket, harga_tiket, gambar) VALUES
                         ('" & IdTeater & "', '" & tJudul.Text & "', '" & tKelompok.Text & "', '" & cGenre.Text & "', '" & tHari.Text & "', '" & dTanggal.Value.ToString("yyyy-MM-dd") & "', '" & JamTayang & "', '" & tTiket.Text & "', '" & tHargaTiket.Text & "', '" & bPilihGambarTiket.Text & "')"
 
-            CMD = New MySqlCommand(Simpan, CONN)
-            CMD.ExecuteNonQuery()
-            MsgBox("Jadwal Teater Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
-            Me.Close()
-            OpenChildForm(New formJadwal)
-        Else
-            MsgBox("ID sudah ada!", MsgBoxStyle.Exclamation, "Attention")
+                CMD = New MySqlCommand(Simpan, CONN)
+                CMD.ExecuteNonQuery()
+                MsgBox("Jadwal Teater Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+                Me.Close()
+                OpenChildForm(New formJadwal)
+            Else
+                MsgBox("ID sudah ada!", MsgBoxStyle.Exclamation, "Attention")
+            End If
+            RD.Close()
         End If
-        RD.Close()
     End Sub
     Private Sub bSimpan_Click(sender As Object, e As EventArgs) Handles bSimpan.Click
         Simpan()
@@ -194,7 +198,7 @@ Public Class formTambah
             dTanggal.Select()
         End If
     End Sub
-    Private Sub dTanggal_KeyDown(sender As Object, e As KeyEventArgs) Handles dTanggal.KeyDown
+    Private Sub dTanggal_KeyDown(sender As Object, e As KeyEventArgs)
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True
             rJamPertama.Focus()
@@ -244,11 +248,14 @@ Public Class formTambah
         End If
     End Sub
 
-    Private Sub dTanggal_ValueChanged(sender As Object, e As EventArgs) Handles dTanggal.ValueChanged
-        tHari.Text = dTanggal.Value.DayOfWeek.ToString()
-    End Sub
-
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
         Me.Close()
+    End Sub
+
+    Private Sub dTanggal_ValueChanged(sender As Object, e As EventArgs) Handles dTanggal.ValueChanged
+        tHari.Text = dTanggal.Value.DayOfWeek.ToString()
+        If (tHari.Text = "Monday") Then
+            MsgBox("Tidak bisa memilih hari Monday", MsgBoxStyle.Information, "Perhatian")
+        End If
     End Sub
 End Class

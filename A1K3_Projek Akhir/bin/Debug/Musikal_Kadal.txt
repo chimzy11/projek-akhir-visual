@@ -21,10 +21,6 @@ C2,False
 C3,False
 C4,False
 C5,False
-C6,False
-C7,True
-C8,True
-C9,False
 D1,False
 D2,False
 D3,False
@@ -35,6 +31,6 @@ D7,False
 D8,False
 D9,False
 E1,False
-E2,False
-E3,False
-E4,False
+E2,True
+E3,True
+E4,True

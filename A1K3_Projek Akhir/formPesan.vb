@@ -23,7 +23,6 @@ Public Class formPesan
 
             Dim fileMusikal As String = "Musikal_" + PopUpDataJadwal.cJudul.Text.Replace(" ", "_") + ".txt"
             If File.Exists(fileMusikal) Then
-                ' File ada, baca data dari file
                 Dim lines As String() = File.ReadAllLines(fileMusikal)
 
                 For Each line As String In lines
@@ -44,7 +43,6 @@ Public Class formPesan
                     End If
                 Next
             Else
-                ' File tidak ada, tampilkan pesan kesalahan atau ambil tindakan yang sesuai
                 MessageBox.Show("File tidak ditemukan.")
             End If
 
@@ -137,9 +135,5 @@ Public Class formPesan
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
         Me.Hide()
         formDetailMusikal.Show()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
     End Sub
 End Class

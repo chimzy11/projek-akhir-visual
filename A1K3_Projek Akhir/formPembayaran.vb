@@ -56,14 +56,24 @@ Public Class formPembayaran
             Dim Nama As String = RD.GetString(1)
             Dim Email As String = RD.GetString(2)
 
-            RD.Close() ' Close the second DataReader before executing the INSERT query
+            RD.Close()
 
-            Dim Simpan As String = "INSERT INTO transaksi (id_transaksi, id_akun, kode_pembayaran, nama, email, judul, genre, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti) VALUES " &
-                           "(@idtransaksi, @IdAkun, @KodePembayaran, @Nama, @Email, @Judul, @Genre, @Jumlah, @Harga, @TotalTransaksi, @Seat, @Tanggal, @GambarBukti)"
+            CMD = New MySqlCommand("SELECT * FROM jadwalteater WHERE judul = @Judul", CONN)
+            CMD.Parameters.AddWithValue("@Judul", formPesan.lJudul.Text)
+            RD = CMD.ExecuteReader()
+            RD.Read()
+
+            Dim Id_Teater As Integer = RD.GetInt32(0)
+
+            RD.Close()
+
+            Dim Simpan As String = "INSERT INTO transaksi (id_transaksi, id_akun, id_teater, kode_pembayaran, nama, email, judul, genre, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti) VALUES " &
+                           "(@idtransaksi, @IdAkun, @IdTeater, @KodePembayaran, @Nama, @Email, @Judul, @Genre, @Jumlah, @Harga, @TotalTransaksi, @Seat, @Tanggal, @GambarBukti)"
 
             CMD = New MySqlCommand(Simpan, CONN)
             CMD.Parameters.AddWithValue("@idtransaksi", IdTransaksi)
             CMD.Parameters.AddWithValue("@IdAkun", Id_Akun)
+            CMD.Parameters.AddWithValue("@IdTeater", Id_Teater)
             CMD.Parameters.AddWithValue("@KodePembayaran", tKodePembayaran.Text)
             CMD.Parameters.AddWithValue("@Nama", Nama)
             CMD.Parameters.AddWithValue("@Email", Email)
@@ -85,8 +95,6 @@ Public Class formPembayaran
 
         RD.Close()
     End Sub
-
-
     Public Sub KodePembayaran()
         Dim KodeRandom As String
         Dim Kode As String
@@ -128,7 +136,7 @@ Public Class formPembayaran
                 destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
             End While
 
-            File.Move(imagePath, destinationPath)
+            File.Copy(imagePath, destinationPath)
 
             bChsBuktiPembayaran.Text = newFileName
         End If

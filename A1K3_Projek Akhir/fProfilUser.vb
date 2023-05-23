@@ -24,8 +24,8 @@ Public Class fProfilUser
     End Sub
 
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
-        Me.Close()
-        dashboardUser.Show()
+        Me.Hide()
+        DashboardUser.Show()
     End Sub
 
     Private Sub fProfilUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load

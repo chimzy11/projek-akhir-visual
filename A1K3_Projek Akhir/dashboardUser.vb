@@ -21,13 +21,6 @@ Public Class DashboardUser
         childForm.Show()
     End Sub
 
-
-    'click menu profil
-    Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
-        Me.Close()
-        fProfilUser.Show()
-    End Sub
-
     'keluar program
     Private Sub bExit_Click(sender As Object, e As EventArgs) Handles bExit.Click
         Dim X As String
@@ -51,35 +44,32 @@ Public Class DashboardUser
 
         'langsung manggil form home
         OpenChildForm(New formHome)
+        lUsername.Text = FLogin.tUsername.Text
     End Sub
-
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+    Private Sub MenuHome_Click(sender As Object, e As EventArgs) Handles MenuHome.Click
         OpenChildForm(New formHome)
     End Sub
 
-    Private Sub MusikalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MusikalToolStripMenuItem.Click
+    Private Sub MenuMusikal_Click(sender As Object, e As EventArgs) Handles MenuMusikal.Click
         OpenChildForm(New formMusikal)
     End Sub
 
-    Private Sub DramaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DramaToolStripMenuItem.Click
+    Private Sub MenuDrama_Click(sender As Object, e As EventArgs) Handles MenuDrama.Click
         OpenChildForm(New formDrama)
     End Sub
 
-    Private Sub KomediToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KomediToolStripMenuItem.Click
+    Private Sub MenuKomedi_Click(sender As Object, e As EventArgs) Handles MenuKomedi.Click
         OpenChildForm(New formKomedi)
     End Sub
-
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+    Private Sub MenuAboutUs_Click(sender As Object, e As EventArgs) Handles MenuAboutUs.Click
         OpenChildForm(New formAbout)
     End Sub
-
-    Private Sub panelDesktop_Paint(sender As Object, e As PaintEventArgs) Handles panelDesktop.Paint
-
+    Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
+        Me.Close()
+        fProfilUser.Show()
     End Sub
-
-
+    Private Sub MenuTransaksi_Click(sender As Object, e As EventArgs) Handles MenuTransaksi.Click
+        Me.Close()
+        formRiwayatUser.Show()
+    End Sub
 End Class

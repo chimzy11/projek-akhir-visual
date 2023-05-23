@@ -22,11 +22,10 @@ Partial Class formDetailTicketKomedi
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formDetailTicketKomedi))
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lHarga = New System.Windows.Forms.Label()
+        Me.lSeat = New System.Windows.Forms.Label()
+        Me.lWaktu = New System.Windows.Forms.Label()
+        Me.lHari = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -35,70 +34,64 @@ Partial Class formDetailTicketKomedi
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lJudul = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pKembali = New System.Windows.Forms.PictureBox()
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lExit = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label14
+        'lHarga
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(104, 233)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(15, 19)
-        Me.Label14.TabIndex = 139
-        Me.Label14.Text = "-"
+        Me.lHarga.AutoSize = True
+        Me.lHarga.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lHarga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lHarga.Location = New System.Drawing.Point(156, 358)
+        Me.lHarga.Name = "lHarga"
+        Me.lHarga.Size = New System.Drawing.Size(21, 27)
+        Me.lHarga.TabIndex = 139
+        Me.lHarga.Text = "-"
         '
-        'Label13
+        'lSeat
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(104, 196)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(15, 19)
-        Me.Label13.TabIndex = 138
-        Me.Label13.Text = "-"
+        Me.lSeat.AutoSize = True
+        Me.lSeat.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lSeat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lSeat.Location = New System.Drawing.Point(156, 302)
+        Me.lSeat.Name = "lSeat"
+        Me.lSeat.Size = New System.Drawing.Size(21, 27)
+        Me.lSeat.TabIndex = 138
+        Me.lSeat.Text = "-"
         '
-        'Label12
+        'lWaktu
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(104, 157)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(15, 19)
-        Me.Label12.TabIndex = 137
-        Me.Label12.Text = "-"
+        Me.lWaktu.AutoSize = True
+        Me.lWaktu.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lWaktu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lWaktu.Location = New System.Drawing.Point(156, 242)
+        Me.lWaktu.Name = "lWaktu"
+        Me.lWaktu.Size = New System.Drawing.Size(21, 27)
+        Me.lWaktu.TabIndex = 137
+        Me.lWaktu.Text = "-"
         '
-        'Label11
+        'lHari
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(104, 118)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(15, 19)
-        Me.Label11.TabIndex = 136
-        Me.Label11.Text = "-"
+        Me.lHari.AutoSize = True
+        Me.lHari.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lHari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lHari.Location = New System.Drawing.Point(156, 182)
+        Me.lHari.Name = "lHari"
+        Me.lHari.Size = New System.Drawing.Size(21, 27)
+        Me.lHari.TabIndex = 136
+        Me.lHari.Text = "-"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(88, 233)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(132, 358)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(13, 19)
+        Me.Label10.Size = New System.Drawing.Size(18, 27)
         Me.Label10.TabIndex = 135
         Me.Label10.Text = ":"
         '
@@ -107,10 +100,9 @@ Partial Class formDetailTicketKomedi
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(88, 196)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(132, 302)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(13, 19)
+        Me.Label9.Size = New System.Drawing.Size(18, 27)
         Me.Label9.TabIndex = 134
         Me.Label9.Text = ":"
         '
@@ -119,10 +111,9 @@ Partial Class formDetailTicketKomedi
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(88, 157)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(132, 242)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(13, 19)
+        Me.Label8.Size = New System.Drawing.Size(18, 27)
         Me.Label8.TabIndex = 133
         Me.Label8.Text = ":"
         '
@@ -131,10 +122,9 @@ Partial Class formDetailTicketKomedi
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(88, 118)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(132, 182)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(13, 19)
+        Me.Label7.Size = New System.Drawing.Size(18, 27)
         Me.Label7.TabIndex = 132
         Me.Label7.Text = ":"
         '
@@ -143,10 +133,9 @@ Partial Class formDetailTicketKomedi
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(9, 233)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(14, 358)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 19)
+        Me.Label6.Size = New System.Drawing.Size(70, 27)
         Me.Label6.TabIndex = 131
         Me.Label6.Text = "PRICE"
         '
@@ -155,10 +144,9 @@ Partial Class formDetailTicketKomedi
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(8, 196)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(12, 302)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 19)
+        Me.Label5.Size = New System.Drawing.Size(63, 27)
         Me.Label5.TabIndex = 130
         Me.Label5.Text = "SEAT"
         '
@@ -167,10 +155,9 @@ Partial Class formDetailTicketKomedi
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(8, 157)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(12, 242)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 19)
+        Me.Label4.Size = New System.Drawing.Size(64, 27)
         Me.Label4.TabIndex = 129
         Me.Label4.Text = "TIME"
         '
@@ -179,70 +166,65 @@ Partial Class formDetailTicketKomedi
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(8, 118)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(12, 182)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 19)
+        Me.Label3.Size = New System.Drawing.Size(56, 27)
         Me.Label3.TabIndex = 128
         Me.Label3.Text = "DAY"
         '
-        'Label2
+        'lJudul
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(7, 64)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(186, 30)
-        Me.Label2.TabIndex = 127
-        Me.Label2.Text = "JUDUL KOMEDI"
+        Me.lJudul.AutoSize = True
+        Me.lJudul.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lJudul.Location = New System.Drawing.Point(10, 98)
+        Me.lJudul.Name = "lJudul"
+        Me.lJudul.Size = New System.Drawing.Size(271, 42)
+        Me.lJudul.TabIndex = 127
+        Me.lJudul.Text = "JUDUL KOMEDI"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Stencil", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(60, 9)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(90, 14)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(134, 32)
+        Me.Label1.Size = New System.Drawing.Size(194, 47)
         Me.Label1.TabIndex = 126
         Me.Label1.Text = "equiter"
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(-1, 42)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Location = New System.Drawing.Point(-2, 65)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(251, 6)
+        Me.Panel1.Size = New System.Drawing.Size(376, 9)
         Me.Panel1.TabIndex = 125
         '
-        'pKembali
+        'lExit
         '
-        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
-        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(216, 260)
-        Me.pKembali.Margin = New System.Windows.Forms.Padding(2)
-        Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(25, 23)
-        Me.pKembali.TabIndex = 140
-        Me.pKembali.TabStop = False
+        Me.lExit.AutoSize = True
+        Me.lExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.lExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lExit.Location = New System.Drawing.Point(332, 14)
+        Me.lExit.Name = "lExit"
+        Me.lExit.Size = New System.Drawing.Size(30, 29)
+        Me.lExit.TabIndex = 141
+        Me.lExit.Text = "X"
         '
-        'formTicketKomedi
+        'formDetailTicketKomedi
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(249, 292)
+        Me.ClientSize = New System.Drawing.Size(374, 449)
         Me.ControlBox = False
-        Me.Controls.Add(Me.pKembali)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.lExit)
+        Me.Controls.Add(Me.lHarga)
+        Me.Controls.Add(Me.lSeat)
+        Me.Controls.Add(Me.lWaktu)
+        Me.Controls.Add(Me.lHari)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -251,23 +233,20 @@ Partial Class formDetailTicketKomedi
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lJudul)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "formTicketKomedi"
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Name = "formDetailTicketKomedi"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formTicketKomedi"
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents pKembali As PictureBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
+    Friend WithEvents lHarga As Label
+    Friend WithEvents lSeat As Label
+    Friend WithEvents lHari As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
@@ -276,7 +255,9 @@ Partial Class formDetailTicketKomedi
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lJudul As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents lExit As Label
+    Friend WithEvents lWaktu As Label
 End Class

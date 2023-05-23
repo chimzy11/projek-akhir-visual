@@ -73,11 +73,6 @@ Public Class formMusikal
         Call KoneksiDatabase()
         lblTanggal.Text = Today.ToString("dd/MM/yyyy")
         TampilDataTeater()
-
-    End Sub
-
-    Private Sub Button_Click(sender As Object, e As EventArgs)
-        MessageBox.Show("Tombol diklik!")
     End Sub
 
     Private Sub bDetail_Click(sender As Object, e As EventArgs) Handles bDetail.Click

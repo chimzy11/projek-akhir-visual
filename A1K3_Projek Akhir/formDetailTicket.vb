@@ -60,11 +60,10 @@ Public Class formDetailTicket
         CMD.Parameters.AddWithValue("@judul", formPesan.lJudul.Text)
         CMD.ExecuteNonQuery()
 
-        Me.Close()
-        formPembayaran.Close()
+        Me.Hide()
         formPesan.Close()
         formDetailMusikal.Close()
         PopUpDataJadwal.Close()
-        OpenChildForm(New formHome)
+        OpenChildForm(New formMusikal)
     End Sub
 End Class

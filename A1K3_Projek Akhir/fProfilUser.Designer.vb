@@ -28,7 +28,6 @@ Partial Class fProfilUser
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lUsername = New System.Windows.Forms.Label()
         Me.pSampul = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.bLogOut = New System.Windows.Forms.Button()
         Me.bHapusAkun = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -56,8 +55,6 @@ Partial Class fProfilUser
         Me.pProfil = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pSampul.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -117,26 +114,12 @@ Partial Class fProfilUser
         'pSampul
         '
         Me.pSampul.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.pSampul.Controls.Add(Me.PictureBox1)
         Me.pSampul.Dock = System.Windows.Forms.DockStyle.Top
         Me.pSampul.Location = New System.Drawing.Point(0, 80)
         Me.pSampul.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pSampul.Name = "pSampul"
         Me.pSampul.Size = New System.Drawing.Size(1924, 331)
         Me.pSampul.TabIndex = 9
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1881, 291)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 57
-        Me.PictureBox1.TabStop = False
         '
         'bLogOut
         '
@@ -507,8 +490,6 @@ Partial Class fProfilUser
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pSampul.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
@@ -552,5 +533,4 @@ Partial Class fProfilUser
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
 End Class

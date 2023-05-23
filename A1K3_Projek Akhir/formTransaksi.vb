@@ -32,8 +32,8 @@ Public Class formTransaksi
         DGVTransaksiUser.Columns(5).HeaderText = "Harga"
         DGVTransaksiUser.Columns(6).HeaderText = "Total Transaksi"
         DGVTransaksiUser.Columns(7).HeaderText = "Seat"
-        DGVTransaksiUser.Columns(7).HeaderText = "Tanggal"
-        DGVTransaksiUser.Columns(8).HeaderText = "Gambar Bukti"
+        DGVTransaksiUser.Columns(8).HeaderText = "Tanggal"
+        DGVTransaksiUser.Columns(9).HeaderText = "Gambar Bukti"
     End Sub
 
     Private Sub formTransaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load

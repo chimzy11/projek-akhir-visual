@@ -22,8 +22,8 @@ Partial Class formPesanKomedi
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim bPembayaran As System.Windows.Forms.Button
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPesanKomedi))
+        Dim bPembayaran As System.Windows.Forms.Button
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pKembali = New System.Windows.Forms.PictureBox()
@@ -42,25 +42,6 @@ Partial Class formPesanKomedi
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'bPembayaran
-        '
-        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        bPembayaran.FlatAppearance.BorderSize = 0
-        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
-        bPembayaran.Location = New System.Drawing.Point(590, 2)
-        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        bPembayaran.Name = "bPembayaran"
-        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
-        bPembayaran.Size = New System.Drawing.Size(213, 98)
-        bPembayaran.TabIndex = 55
-        bPembayaran.Text = "Checkout"
-        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        bPembayaran.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -116,8 +97,8 @@ Partial Class formPesanKomedi
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.lTotalHarga)
         Me.Panel3.Controls.Add(bPembayaran)
+        Me.Panel3.Controls.Add(Me.lTotalHarga)
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.lUsername)
@@ -208,6 +189,26 @@ Partial Class formPesanKomedi
         Me.Button1.Size = New System.Drawing.Size(194, 43)
         Me.Button1.TabIndex = 64
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'bPembayaran
+        '
+        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderSize = 0
+        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
+        bPembayaran.Location = New System.Drawing.Point(584, 7)
+        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        bPembayaran.Name = "bPembayaran"
+        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
+        bPembayaran.Size = New System.Drawing.Size(213, 98)
+        bPembayaran.TabIndex = 57
+        bPembayaran.Text = "Checkout"
+        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        bPembayaran.UseVisualStyleBackColor = False
+        AddHandler bPembayaran.Click, AddressOf Me.bPembayaran_Click
         '
         'formPesanKomedi
         '
