@@ -117,9 +117,11 @@ Partial Class formPembayaran
         'cValid
         '
         Me.cValid.AutoSize = True
+        Me.cValid.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cValid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cValid.Location = New System.Drawing.Point(235, 288)
         Me.cValid.Name = "cValid"
-        Me.cValid.Size = New System.Drawing.Size(203, 24)
+        Me.cValid.Size = New System.Drawing.Size(218, 25)
         Me.cValid.TabIndex = 108
         Me.cValid.Text = "Bukti Pembayaran Valid"
         Me.cValid.UseVisualStyleBackColor = True

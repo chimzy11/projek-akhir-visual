@@ -22,10 +22,11 @@ Partial Class formPesanMusikal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPesanMusikal))
         Dim bPembayaran As System.Windows.Forms.Button
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPesanMusikal))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pKembali = New System.Windows.Forms.PictureBox()
         Me.lJudul = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -36,12 +37,30 @@ Partial Class formPesanMusikal
         Me.Label4 = New System.Windows.Forms.Label()
         Me.tBanyakTiket = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.pKembali = New System.Windows.Forms.PictureBox()
         bPembayaran = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'bPembayaran
+        '
+        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
+        bPembayaran.FlatAppearance.BorderSize = 0
+        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
+        bPembayaran.Location = New System.Drawing.Point(590, 2)
+        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        bPembayaran.Name = "bPembayaran"
+        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
+        bPembayaran.Size = New System.Drawing.Size(213, 98)
+        bPembayaran.TabIndex = 55
+        bPembayaran.Text = "Checkout"
+        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        bPembayaran.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -61,6 +80,17 @@ Partial Class formPesanMusikal
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 76)
         Me.Panel1.TabIndex = 53
+        '
+        'pKembali
+        '
+        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
+        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pKembali.Location = New System.Drawing.Point(3, 20)
+        Me.pKembali.Name = "pKembali"
+        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.TabIndex = 106
+        Me.pKembali.TabStop = False
         '
         'lJudul
         '
@@ -179,42 +209,13 @@ Partial Class formPesanMusikal
         Me.Button1.TabIndex = 57
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'pKembali
-        '
-        Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
-        Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(3, 20)
-        Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(37, 35)
-        Me.pKembali.TabIndex = 106
-        Me.pKembali.TabStop = False
-        '
-        'bPembayaran
-        '
-        bPembayaran.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        bPembayaran.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        bPembayaran.FlatAppearance.BorderSize = 0
-        bPembayaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
-        bPembayaran.Location = New System.Drawing.Point(590, 2)
-        bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        bPembayaran.Name = "bPembayaran"
-        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
-        bPembayaran.Size = New System.Drawing.Size(213, 98)
-        bPembayaran.TabIndex = 55
-        bPembayaran.Text = "Checkout"
-        bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        bPembayaran.UseVisualStyleBackColor = False
-        '
         'formPesanMusikal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 777)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
@@ -223,12 +224,13 @@ Partial Class formPesanMusikal
         Me.Controls.Add(Me.tBanyakTiket)
         Me.Controls.Add(Me.Button1)
         Me.Name = "formPesanMusikal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formPesanMusikal"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

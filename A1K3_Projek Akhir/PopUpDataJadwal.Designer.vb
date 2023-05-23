@@ -92,11 +92,13 @@ Partial Class PopUpDataJadwal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(320, 180)
+        Me.ControlBox = False
         Me.Controls.Add(Me.cJudul)
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.bLihat)
         Me.Name = "PopUpDataJadwal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PopUpDataJadwal"
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

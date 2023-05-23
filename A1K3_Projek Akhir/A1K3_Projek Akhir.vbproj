@@ -179,6 +179,18 @@
     <Compile Include="formPembayaran.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formPembayaranKomedi.Designer.vb">
+      <DependentUpon>formPembayaranKomedi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPembayaranKomedi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPembayaranMusikal.Designer.vb">
+      <DependentUpon>formPembayaranMusikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPembayaranMusikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formPesan.Designer.vb">
       <DependentUpon>formPesan.vb</DependentUpon>
     </Compile>
@@ -368,6 +380,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formPembayaran.resx">
       <DependentUpon>formPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPembayaranKomedi.resx">
+      <DependentUpon>formPembayaranKomedi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPembayaranMusikal.resx">
+      <DependentUpon>formPembayaranMusikal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formPesan.resx">
       <DependentUpon>formPesan.vb</DependentUpon>
