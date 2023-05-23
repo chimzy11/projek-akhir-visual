@@ -51,14 +51,6 @@ Public Class formPesan
             RD.Close()
         End If
     End Sub
-
-
-
-
-
-
-
-
     Private Sub formPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
         PilihanKursi()

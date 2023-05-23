@@ -111,7 +111,7 @@ Public Class formJadwal
             CMD = New MySqlCommand("DELETE FROM JadwalTeater WHERE id_teater = " & IdTeater, CONN)
             CMD.ExecuteNonQuery()
         Else
-            End
+            Exit Sub
         End If
     End Sub
     Private Sub bHapus_Click(sender As Object, e As EventArgs) Handles bHapus.Click

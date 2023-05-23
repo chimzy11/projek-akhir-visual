@@ -1,12 +1,4 @@
 A1,False
-A2,False
-A7,False
-A8,False
-A9,False
-B1,False
-B2,False
-B3,False
-B7,False
+A2,True
+B7,True
 B8,False
-B9,True
-C2,True

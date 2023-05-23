@@ -45,28 +45,13 @@ Public Class formDetailTicket
 
         lSeat.Text = String.Join(", ", selectedSeats)
 
-        Dim queryString1 As String = "SELECT * FROM akun WHERE username = @username"
-
-        CMD = New MySqlCommand(queryString1, CONN)
-        CMD.Parameters.AddWithValue("@username", FLogin.tUsername.Text)
-        RD = CMD.ExecuteReader()
-
-        Dim idAkun As String = ""
-
-        If RD.Read() Then
-            idAkun = RD.GetString(0)
-        End If
-        RD.Close()
-
-        Dim updateQuery As String = "UPDATE transaksi SET seat = @seat WHERE id_akun = @idAkun"
+        Dim updateQuery As String = "UPDATE transaksi SET seat = @seat WHERE id_transaksi = (SELECT MAX(id_transaksi) FROM transaksi)"
 
         CMD = New MySqlCommand(updateQuery, CONN)
         CMD.Parameters.AddWithValue("@seat", lSeat.Text)
-        CMD.Parameters.AddWithValue("@idAkun", idAkun)
         CMD.ExecuteNonQuery()
+
     End Sub
-
-
 
     Private Sub lExit_Click(sender As Object, e As EventArgs) Handles lExit.Click
         Dim queryString As String = "DELETE FROM JadwalTeater WHERE judul = @judul AND tiket = 0"

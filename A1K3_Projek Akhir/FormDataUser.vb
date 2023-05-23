@@ -75,7 +75,7 @@ Public Class FormDataUser
             CMD = New MySqlCommand("DELETE FROM akun WHERE id_akun = " & IdAkun, CONN)
             CMD.ExecuteNonQuery()
         Else
-            End
+            Exit Sub
         End If
     End Sub
 

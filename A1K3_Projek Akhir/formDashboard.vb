@@ -2,10 +2,33 @@
 Imports System.Data.Common
 Imports System.Data.SqlClient
 Imports System.Windows
+Imports System.Windows.Forms.DataVisualization.Charting
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 Public Class formDashboard
     Private currentChildForm As Form
+    Private Sub PopulateChartKeuntungan()
+        Dim query As String = "SELECT genre, SUM(total_transaksi) AS total_keuntungan FROM transaksi GROUP BY genre"
+        Dim cmd As New MySqlCommand(query, CONN)
+        Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+        ChartKeuntungan.Series.Clear()
+
+        Dim series As New Series("Keuntungan")
+        series.ChartType = SeriesChartType.Column
+
+        While reader.Read()
+            Dim genre As String = reader("genre").ToString()
+            Dim keuntungan As Double = Convert.ToDouble(reader("total_keuntungan"))
+
+            series.Points.AddXY(genre, keuntungan)
+        End While
+
+        ChartKeuntungan.Series.Add(series)
+
+        reader.Close()
+    End Sub
+
     Private Sub OpenChildForm(childForm As Form)
 
         If currentChildForm IsNot Nothing Then
@@ -16,19 +39,18 @@ Public Class formDashboard
         childForm.TopLevel = False
         childForm.FormBorderStyle = FormBorderStyle.None
         childForm.Dock = DockStyle.Fill
-        dashboardAdmin.panelDesktop.Controls.Add(childForm)
+        DashboardAdmin.panelDesktop.Controls.Add(childForm)
         dashboardAdmin.panelDesktop.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
     End Sub
-
-
     Private Sub formDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTotalUser.Visible = True
         KoneksiDatabase()
         HitungTotalUser()
         HitungTotalPertunjukkan()
         HitungTotalTransaksi()
+        PopulateChartKeuntungan()
     End Sub
     Private Sub HitungTotalUser()
         Dim query As String = "SELECT COUNT(*) AS total_baris FROM akun WHERE id_Akun <> ''"
@@ -80,12 +102,12 @@ Public Class formDashboard
         OpenChildForm(New formJadwal)
     End Sub
 
-    Private Sub lDataTransaksi_Click(sender As Object, e As EventArgs) Handles lDataTransaksi.Click
-
+    Private Sub lDataTransaksiUser_Click(sender As Object, e As EventArgs) Handles lDataTransaksiUser.Click
+        OpenChildForm(New formTransaksi)
     End Sub
 
-    Private Sub ChartKeuntungan_Click(sender As Object, e As EventArgs) Handles ChartKeuntungan.Click
-
+    Sub DataTransaksiChanged()
+        PopulateChartKeuntungan()
     End Sub
 End Class
 

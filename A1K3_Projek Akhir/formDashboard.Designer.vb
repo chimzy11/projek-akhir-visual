@@ -32,7 +32,7 @@ Partial Class formDashboard
         Me.lTotalPertunjukkan = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lDataTransaksiUser = New System.Windows.Forms.Label()
         Me.lDataTransaksi = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -96,7 +96,7 @@ Partial Class formDashboard
         '
         Me.Panel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel13.Controls.Add(Me.Button9)
-        Me.Panel13.Controls.Add(Me.Label12)
+        Me.Panel13.Controls.Add(Me.lDataTransaksiUser)
         Me.Panel13.Controls.Add(Me.lDataTransaksi)
         Me.Panel13.Location = New System.Drawing.Point(557, 44)
         Me.Panel13.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -116,17 +116,18 @@ Partial Class formDashboard
         Me.Button9.TabIndex = 2
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'Label12
+        'lDataTransaksiUser
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(74, 145)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(304, 47)
-        Me.Label12.TabIndex = 1
-        Me.Label12.Text = "Total Transaksi"
+        Me.lDataTransaksiUser.AutoSize = True
+        Me.lDataTransaksiUser.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lDataTransaksiUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lDataTransaksiUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.lDataTransaksiUser.Location = New System.Drawing.Point(74, 145)
+        Me.lDataTransaksiUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lDataTransaksiUser.Name = "lDataTransaksiUser"
+        Me.lDataTransaksiUser.Size = New System.Drawing.Size(304, 47)
+        Me.lDataTransaksiUser.TabIndex = 1
+        Me.lDataTransaksiUser.Text = "Total Transaksi"
         '
         'lDataTransaksi
         '
@@ -238,7 +239,7 @@ Partial Class formDashboard
     Friend WithEvents lTotalPertunjukkan As Label
     Friend WithEvents Panel13 As Panel
     Friend WithEvents Button9 As Button
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lDataTransaksiUser As Label
     Friend WithEvents lDataTransaksi As Label
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Button8 As Button

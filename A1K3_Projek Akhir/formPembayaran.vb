@@ -58,8 +58,8 @@ Public Class formPembayaran
 
             RD.Close() ' Close the second DataReader before executing the INSERT query
 
-            Dim Simpan As String = "INSERT INTO transaksi (id_transaksi, id_akun, kode_pembayaran, nama, email, judul, jumlah, harga, total_transaksi, seat, gambar_bukti) VALUES " &
-                           "(@idtransaksi, @IdAkun, @KodePembayaran, @Nama, @Email, @Judul, @Jumlah, @Harga, @TotalTransaksi, @Seat, @GambarBukti)"
+            Dim Simpan As String = "INSERT INTO transaksi (id_transaksi, id_akun, kode_pembayaran, nama, email, judul, genre, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti) VALUES " &
+                           "(@idtransaksi, @IdAkun, @KodePembayaran, @Nama, @Email, @Judul, @Genre, @Jumlah, @Harga, @TotalTransaksi, @Seat, @Tanggal, @GambarBukti)"
 
             CMD = New MySqlCommand(Simpan, CONN)
             CMD.Parameters.AddWithValue("@idtransaksi", IdTransaksi)
@@ -68,14 +68,16 @@ Public Class formPembayaran
             CMD.Parameters.AddWithValue("@Nama", Nama)
             CMD.Parameters.AddWithValue("@Email", Email)
             CMD.Parameters.AddWithValue("@Judul", formPesan.lJudul.Text)
+            CMD.Parameters.AddWithValue("@Genre", "Musikal")
             CMD.Parameters.AddWithValue("@Jumlah", formPesan.tBanyakTiket.Text)
             CMD.Parameters.AddWithValue("@Harga", formDetailMusikal.lHarga.Text)
             CMD.Parameters.AddWithValue("@TotalTransaksi", formPesan.lTotalHarga.Text)
             CMD.Parameters.AddWithValue("@Seat", "null")
+            CMD.Parameters.AddWithValue("@Tanggal", Now.Date)
             CMD.Parameters.AddWithValue("@GambarBukti", bChsBuktiPembayaran.Text)
 
             CMD.ExecuteNonQuery()
-            MsgBox("Jadwal Teater Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+            MsgBox("Anda berhasil melakukan pembelian tiket teater!", MsgBoxStyle.Information, "Perhatian")
             Me.Close()
         Else
             MsgBox("ID sudah ada!", MsgBoxStyle.Exclamation, "Attention")
@@ -83,8 +85,6 @@ Public Class formPembayaran
 
         RD.Close()
     End Sub
-
-
 
 
     Public Sub KodePembayaran()
