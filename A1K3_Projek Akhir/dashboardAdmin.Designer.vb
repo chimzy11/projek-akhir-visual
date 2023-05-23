@@ -319,6 +319,7 @@ Partial Class DashboardAdmin
         '
         'bLogout
         '
+        Me.bLogout.Cursor = System.Windows.Forms.Cursors.Hand
         Me.bLogout.FlatAppearance.BorderSize = 0
         Me.bLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -337,6 +338,7 @@ Partial Class DashboardAdmin
         '
         'btnTransaksi
         '
+        Me.btnTransaksi.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTransaksi.FlatAppearance.BorderSize = 0
         Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTransaksi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -355,6 +357,7 @@ Partial Class DashboardAdmin
         '
         'btnJadwal
         '
+        Me.btnJadwal.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnJadwal.FlatAppearance.BorderSize = 0
         Me.btnJadwal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnJadwal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -373,6 +376,7 @@ Partial Class DashboardAdmin
         '
         'btnProfil
         '
+        Me.btnProfil.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnProfil.FlatAppearance.BorderSize = 0
         Me.btnProfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProfil.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -391,6 +395,7 @@ Partial Class DashboardAdmin
         '
         'btnDashboard
         '
+        Me.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

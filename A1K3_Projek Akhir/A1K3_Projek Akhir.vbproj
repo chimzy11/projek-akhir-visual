@@ -185,6 +185,18 @@
     <Compile Include="formPesan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formPesanKomedi.Designer.vb">
+      <DependentUpon>formPesanKomedi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPesanKomedi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPesanMusikal.Designer.vb">
+      <DependentUpon>formPesanMusikal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPesanMusikal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formRiwayatUser.Designer.vb">
       <DependentUpon>formRiwayatUser.vb</DependentUpon>
     </Compile>
@@ -359,6 +371,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formPesan.resx">
       <DependentUpon>formPesan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPesanKomedi.resx">
+      <DependentUpon>formPesanKomedi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPesanMusikal.resx">
+      <DependentUpon>formPesanMusikal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formRiwayatUser.resx">
       <DependentUpon>formRiwayatUser.vb</DependentUpon>

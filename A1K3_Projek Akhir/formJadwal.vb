@@ -31,7 +31,7 @@ Public Class formJadwal
         DGVJadwalTeater.Columns(6).Width = 110
         DGVJadwalTeater.Columns(7).Width = 85
         DGVJadwalTeater.Columns(8).Width = 95
-        DGVJadwalTeater.Columns(9).Width = 100
+        DGVJadwalTeater.Columns(9).Width = 125
 
         DGVJadwalTeater.Columns(0).HeaderText = "ID Teater"
         DGVJadwalTeater.Columns(1).HeaderText = "Judul Teater"
@@ -120,5 +120,9 @@ Public Class formJadwal
 
     Private Sub bEdit_Click(sender As Object, e As EventArgs) Handles bEdit.Click
         PopUpEditJadwal.Show()
+    End Sub
+
+    Private Sub DGVJadwalTeater_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVJadwalTeater.CellContentClick
+
     End Sub
 End Class

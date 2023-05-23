@@ -38,4 +38,12 @@ Public Class formTransaksi
         TampilDataRiwayatTransaksi()
         GridDataRiwayatTransaksi()
     End Sub
+
+    Private Sub DGVTransaksiUser_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVTransaksiUser.CellContentClick
+
+    End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+
+    End Sub
 End Class
