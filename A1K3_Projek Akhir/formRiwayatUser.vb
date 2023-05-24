@@ -52,12 +52,12 @@ Public Class formRiwayatUser
     Sub GridDataRiwayatTransaksi()
 
         DGVTransaksiUser.Columns(0).Width = 120
-        DGVTransaksiUser.Columns(1).Width = 140
+        DGVTransaksiUser.Columns(1).Width = 180
         DGVTransaksiUser.Columns(2).Width = 100
         DGVTransaksiUser.Columns(3).Width = 120
         DGVTransaksiUser.Columns(4).Width = 100
-        DGVTransaksiUser.Columns(5).Width = 100
-        DGVTransaksiUser.Columns(6).Width = 100
+        DGVTransaksiUser.Columns(5).Width = 120
+        DGVTransaksiUser.Columns(6).Width = 150
         DGVTransaksiUser.Columns(7).Width = 150
 
         DGVTransaksiUser.Columns(0).HeaderText = "Kode Pembayaran"
@@ -136,5 +136,9 @@ Public Class formRiwayatUser
                 MsgBox("Data tidak ditemukan!", MsgBoxStyle.Information, "Attention")
             End If
         End If
+    End Sub
+
+    Private Sub DGVTransaksiUser_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVTransaksiUser.CellContentClick
+
     End Sub
 End Class

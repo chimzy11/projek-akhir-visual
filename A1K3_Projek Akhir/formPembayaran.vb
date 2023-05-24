@@ -128,12 +128,12 @@ Public Class formPembayaran
 
             Dim i As Integer = 1
             Dim newFileName As String = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-            Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+            Dim destinationPath As String = "C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\uploads\" & newFileName
 
             While File.Exists(destinationPath)
                 i += 1
                 newFileName = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-                destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                destinationPath = "C:\Users\ASUS\Documents\PA VISUAL\projek-akhir-visual\uploads\" & newFileName
             End While
 
             File.Copy(imagePath, destinationPath)
