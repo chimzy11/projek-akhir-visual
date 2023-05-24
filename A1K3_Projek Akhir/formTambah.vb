@@ -288,7 +288,6 @@ Public Class formTambah
             If RD.HasRows Then
                 RD.Read()
                 Dim jumlahDrama As Integer = CInt(RD("JumlahDrama"))
-                Label6.Text = jumlahDrama
                 If (jumlahDrama >= 12) Then
                     cGenre.SelectedIndex = -1
                     MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
@@ -306,7 +305,6 @@ Public Class formTambah
             If RD.HasRows Then
                 RD.Read()
                 Dim jumlahKomedi As Integer = CInt(RD("JumlahKomedi"))
-                Label6.Text = jumlahKomedi
                 If (jumlahKomedi >= 12) Then
                     cGenre.SelectedIndex = -1
                     MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
@@ -324,7 +322,6 @@ Public Class formTambah
             If RD.HasRows Then
                 RD.Read()
                 Dim jumlahMusikal As Integer = CInt(RD("JumlahMusikal"))
-                Label6.Text = jumlahMusikal
                 If (jumlahMusikal >= 12) Then
                     cGenre.SelectedIndex = -1
                     MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
