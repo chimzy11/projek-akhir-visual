@@ -39,6 +39,11 @@ Partial Class formDetailMusikal
         Me.lblLokaso = New System.Windows.Forms.Label()
         Me.lHarga = New System.Windows.Forms.Label()
         Me.lJudul = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.pTeater, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +53,7 @@ Partial Class formDetailMusikal
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.pKembali)
         Me.Panel1.Controls.Add(Me.bPesan)
@@ -64,6 +70,10 @@ Partial Class formDetailMusikal
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.lStokTiket)
         Me.Panel3.Controls.Add(Me.lWaktu)
         Me.Panel3.Controls.Add(Me.lTanggal)
@@ -83,12 +93,12 @@ Partial Class formDetailMusikal
         Me.lStokTiket.BackColor = System.Drawing.Color.Transparent
         Me.lStokTiket.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lStokTiket.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lStokTiket.Location = New System.Drawing.Point(445, 14)
+        Me.lStokTiket.Location = New System.Drawing.Point(434, 193)
         Me.lStokTiket.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lStokTiket.Name = "lStokTiket"
-        Me.lStokTiket.Size = New System.Drawing.Size(138, 31)
+        Me.lStokTiket.Size = New System.Drawing.Size(135, 31)
         Me.lStokTiket.TabIndex = 92
-        Me.lStokTiket.Text = "Kelompok"
+        Me.lStokTiket.Text = "Stok Tiket"
         '
         'lWaktu
         '
@@ -96,12 +106,12 @@ Partial Class formDetailMusikal
         Me.lWaktu.BackColor = System.Drawing.Color.Transparent
         Me.lWaktu.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lWaktu.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lWaktu.Location = New System.Drawing.Point(243, 162)
+        Me.lWaktu.Location = New System.Drawing.Point(434, 151)
         Me.lWaktu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lWaktu.Name = "lWaktu"
-        Me.lWaktu.Size = New System.Drawing.Size(138, 31)
+        Me.lWaktu.Size = New System.Drawing.Size(94, 31)
         Me.lWaktu.TabIndex = 91
-        Me.lWaktu.Text = "Kelompok"
+        Me.lWaktu.Text = "Waktu"
         '
         'lTanggal
         '
@@ -109,12 +119,12 @@ Partial Class formDetailMusikal
         Me.lTanggal.BackColor = System.Drawing.Color.Transparent
         Me.lTanggal.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lTanggal.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lTanggal.Location = New System.Drawing.Point(243, 131)
+        Me.lTanggal.Location = New System.Drawing.Point(497, 10)
         Me.lTanggal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lTanggal.Name = "lTanggal"
-        Me.lTanggal.Size = New System.Drawing.Size(138, 31)
+        Me.lTanggal.Size = New System.Drawing.Size(112, 31)
         Me.lTanggal.TabIndex = 90
-        Me.lTanggal.Text = "Kelompok"
+        Me.lTanggal.Text = "Tanggal"
         '
         'lHari
         '
@@ -122,12 +132,12 @@ Partial Class formDetailMusikal
         Me.lHari.BackColor = System.Drawing.Color.Transparent
         Me.lHari.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lHari.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lHari.Location = New System.Drawing.Point(243, 100)
+        Me.lHari.Location = New System.Drawing.Point(387, 10)
         Me.lHari.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lHari.Name = "lHari"
-        Me.lHari.Size = New System.Drawing.Size(138, 31)
+        Me.lHari.Size = New System.Drawing.Size(65, 31)
         Me.lHari.TabIndex = 89
-        Me.lHari.Text = "Kelompok"
+        Me.lHari.Text = "Hari"
         '
         'lGenre
         '
@@ -135,12 +145,12 @@ Partial Class formDetailMusikal
         Me.lGenre.BackColor = System.Drawing.Color.Transparent
         Me.lGenre.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lGenre.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lGenre.Location = New System.Drawing.Point(243, 55)
+        Me.lGenre.Location = New System.Drawing.Point(434, 102)
         Me.lGenre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lGenre.Name = "lGenre"
-        Me.lGenre.Size = New System.Drawing.Size(138, 31)
+        Me.lGenre.Size = New System.Drawing.Size(86, 31)
         Me.lGenre.TabIndex = 89
-        Me.lGenre.Text = "Kelompok"
+        Me.lGenre.Text = "Genre"
         '
         'lKelompok
         '
@@ -148,7 +158,7 @@ Partial Class formDetailMusikal
         Me.lKelompok.BackColor = System.Drawing.Color.Transparent
         Me.lKelompok.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lKelompok.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.lKelompok.Location = New System.Drawing.Point(243, 14)
+        Me.lKelompok.Location = New System.Drawing.Point(434, 57)
         Me.lKelompok.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lKelompok.Name = "lKelompok"
         Me.lKelompok.Size = New System.Drawing.Size(138, 31)
@@ -183,7 +193,7 @@ Partial Class formDetailMusikal
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(19, 410)
+        Me.pKembali.Location = New System.Drawing.Point(86, 409)
         Me.pKembali.Name = "pKembali"
         Me.pKembali.Size = New System.Drawing.Size(31, 26)
         Me.pKembali.TabIndex = 86
@@ -196,7 +206,7 @@ Partial Class formDetailMusikal
         Me.bPesan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPesan.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bPesan.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.bPesan.Location = New System.Drawing.Point(638, 360)
+        Me.bPesan.Location = New System.Drawing.Point(617, 386)
         Me.bPesan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.bPesan.Name = "bPesan"
         Me.bPesan.Size = New System.Drawing.Size(168, 49)
@@ -232,7 +242,7 @@ Partial Class formDetailMusikal
         '
         Me.lHarga.AutoSize = True
         Me.lHarga.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lHarga.Location = New System.Drawing.Point(80, 315)
+        Me.lHarga.Location = New System.Drawing.Point(129, 315)
         Me.lHarga.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lHarga.Name = "lHarga"
         Me.lHarga.Size = New System.Drawing.Size(96, 31)
@@ -252,12 +262,76 @@ Partial Class formDetailMusikal
         Me.lJudul.TabIndex = 0
         Me.lJudul.Text = "Judul Teater Musikal"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(80, 313)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(54, 31)
+        Me.Label1.TabIndex = 88
+        Me.Label1.Text = "RP."
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label5.Location = New System.Drawing.Point(256, 193)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(170, 31)
+        Me.Label5.TabIndex = 100
+        Me.Label5.Text = "Stok Tiket    :"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label4.Location = New System.Drawing.Point(258, 151)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(168, 31)
+        Me.Label4.TabIndex = 99
+        Me.Label4.Text = "Jam              :"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label3.Location = New System.Drawing.Point(256, 102)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(170, 31)
+        Me.Label3.TabIndex = 98
+        Me.Label3.Text = "Genre           :"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label2.Location = New System.Drawing.Point(253, 57)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(173, 31)
+        Me.Label2.TabIndex = 97
+        Me.Label2.Text = "Kelompok    :"
+        '
         'formDetailMusikal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(974, 523)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -290,4 +364,9 @@ Partial Class formDetailMusikal
     Friend WithEvents lTanggal As Label
     Friend WithEvents lHari As Label
     Friend WithEvents lGenre As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
 End Class

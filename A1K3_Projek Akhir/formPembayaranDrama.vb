@@ -103,7 +103,7 @@ Public Class formPembayaranDrama
             KodeRandom = KodeRandom & Mid(Kode, Int(Rnd() * Len(Kode) + 1), 1)
         Next i
         tKodePembayaran.Text = KodeRandom
-        tKodePembayaran.ReadOnly = True ' Mengatur TextBox menjadi hanya baca
+        tKodePembayaran.ReadOnly = True
     End Sub
     Private Sub formPembayaranDrama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
@@ -125,12 +125,12 @@ Public Class formPembayaranDrama
 
             Dim i As Integer = 1
             Dim newFileName As String = FLogin.tUsername.Text & "_drama_" & i.ToString() & fileExtension
-            Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
+            Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
 
             While File.Exists(destinationPath)
                 i += 1
                 newFileName = FLogin.tUsername.Text & "_drama_" & i.ToString() & fileExtension
-                destinationPath = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads" & newFileName
+                destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
             End While
 
             File.Copy(imagePath, destinationPath)

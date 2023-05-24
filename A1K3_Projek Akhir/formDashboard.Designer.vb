@@ -272,7 +272,7 @@ Partial Class formDashboard
         '
         Me.lTotalKeuntungan.AutoSize = True
         Me.lTotalKeuntungan.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lTotalKeuntungan.Location = New System.Drawing.Point(204, 254)
+        Me.lTotalKeuntungan.Location = New System.Drawing.Point(158, 254)
         Me.lTotalKeuntungan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lTotalKeuntungan.Name = "lTotalKeuntungan"
         Me.lTotalKeuntungan.Size = New System.Drawing.Size(136, 55)
@@ -283,7 +283,7 @@ Partial Class formDashboard
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(92, 254)
+        Me.Label2.Location = New System.Drawing.Point(71, 254)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(102, 55)
@@ -293,14 +293,14 @@ Partial Class formDashboard
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(34, 342)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(365, 47)
+        Me.Label1.Size = New System.Drawing.Size(343, 32)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Total Pertunjukkan"
+        Me.Label1.Text = "Total Pendapatan Saat Ini"
         '
         'Button1
         '

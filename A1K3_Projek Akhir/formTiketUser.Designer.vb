@@ -232,8 +232,10 @@ Partial Class formTiketUser
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(508, 566)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Name = "formTiketUser"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formTiketUser"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

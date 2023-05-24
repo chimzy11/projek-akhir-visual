@@ -14,15 +14,15 @@ Public Class formTransaksi
 
     Sub GridDataRiwayatTransaksi()
         DGVTransaksiUser.Columns(0).Width = 90
-        DGVTransaksiUser.Columns(1).Width = 100
-        DGVTransaksiUser.Columns(2).Width = 100
+        DGVTransaksiUser.Columns(1).Width = 150
+        DGVTransaksiUser.Columns(2).Width = 130
         DGVTransaksiUser.Columns(3).Width = 100
-        DGVTransaksiUser.Columns(4).Width = 100
+        DGVTransaksiUser.Columns(4).Width = 70
         DGVTransaksiUser.Columns(5).Width = 70
         DGVTransaksiUser.Columns(6).Width = 70
         DGVTransaksiUser.Columns(7).Width = 70
-        DGVTransaksiUser.Columns(8).Width = 70
-        DGVTransaksiUser.Columns(9).Width = 70
+        DGVTransaksiUser.Columns(8).Width = 80
+        DGVTransaksiUser.Columns(9).Width = 100
 
         DGVTransaksiUser.Columns(0).HeaderText = "Kode Pembayaran"
         DGVTransaksiUser.Columns(1).HeaderText = "Nama Lengkap"

@@ -47,7 +47,7 @@ Public Class formMusikal
 
             Dim pictureBox As New PictureBox()
             pictureBox.Size = New Size(120, 120)
-            pictureBox.Image = Image.FromFile("C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" + RD.GetString(9))
+            pictureBox.Image = Image.FromFile("C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" + RD.GetString(9))
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage
             pictureBox.Location = New Point((startX + 20) + (200 + panelSpacing) * (i), (startY + 20))
             Me.Controls.Add(pictureBox)

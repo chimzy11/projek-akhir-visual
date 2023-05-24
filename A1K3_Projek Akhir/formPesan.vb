@@ -94,18 +94,18 @@ Public Class formPesan
             End If
 
             For Each checkBox As CheckBox In Panel2.Controls.OfType(Of CheckBox)()
-                checkBox.Enabled = True ' Mengaktifkan semua cekbox
+                checkBox.Enabled = True
             Next
 
-            Total = BanyakTiket * HargaPerTiket ' Hitung total harga
+            Total = BanyakTiket * HargaPerTiket
             lTotalHarga.Text = Total.ToString()
         Else
-            lTotalHarga.Text = "0" ' Tampilkan 0 jika input tidak valid
+            lTotalHarga.Text = "0"
         End If
 
         If BanyakTiket = 0 Then
             For Each checkBox As CheckBox In Panel2.Controls.OfType(Of CheckBox)()
-                checkBox.Enabled = False ' Mengaktifkan semua cekbox
+                checkBox.Enabled = False
                 tBanyakTiket.Focus()
             Next
         End If

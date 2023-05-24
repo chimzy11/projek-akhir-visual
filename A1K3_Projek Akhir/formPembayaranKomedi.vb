@@ -123,13 +123,13 @@ Public Class formPembayaranKomedi
             Dim fileExtension As String = Path.GetExtension(imagePath)
 
             Dim i As Integer = 1
-            Dim newFileName As String = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-            Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
+            Dim newFileName As String = FLogin.tUsername.Text & "_komedi_" & i.ToString() & fileExtension
+            Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
 
             While File.Exists(destinationPath)
                 i += 1
-                newFileName = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-                destinationPath = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
+                newFileName = FLogin.tUsername.Text & "_komedi_" & i.ToString() & fileExtension
+                destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
             End While
 
             File.Copy(imagePath, destinationPath)
