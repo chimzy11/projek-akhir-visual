@@ -1,9 +1,12 @@
 ﻿Imports System.Collections.ObjectModel
 Imports System.Data.Common
 Imports System.Data.SqlClient
+Imports System.Drawing.Drawing2D
 Imports System.Windows
 Imports System.Windows.Forms.DataVisualization.Charting
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
 Imports MySql.Data.MySqlClient
 Public Class formDashboard
     Private currentChildForm As Form
@@ -68,7 +71,7 @@ Public Class formDashboard
     Private Sub PopulateChartKeuntunganBulanan()
         Dim query As String = "SELECT DATE_FORMAT(tanggal, '%Y-%m') AS bulan, SUM(total_transaksi) AS total_keuntungan, AVG(total_transaksi) AS rata_keuntungan FROM transaksi GROUP BY bulan"
         CMD = New MySqlCommand(query, CONN)
-        RD = cmd.ExecuteReader()
+        RD = CMD.ExecuteReader()
 
         ChartKeuntungan.Series.Clear()
 
@@ -96,7 +99,7 @@ Public Class formDashboard
     Private Sub PopulateChartKeuntunganTahunan()
         Dim query As String = "SELECT YEAR(tanggal) AS tahun, SUM(total_transaksi) AS total_keuntungan, AVG(total_transaksi) AS rata_keuntungan FROM transaksi GROUP BY tahun"
         CMD = New MySqlCommand(query, CONN)
-        RD = cmd.ExecuteReader()
+        RD = CMD.ExecuteReader()
 
         ChartKeuntungan.Series.Clear()
 
@@ -135,7 +138,7 @@ Public Class formDashboard
         childForm.FormBorderStyle = FormBorderStyle.None
         childForm.Dock = DockStyle.Fill
         DashboardAdmin.panelDesktop.Controls.Add(childForm)
-        dashboardAdmin.panelDesktop.Tag = childForm
+        DashboardAdmin.panelDesktop.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
     End Sub
@@ -147,14 +150,27 @@ Public Class formDashboard
         HitungTotalTransaksi()
         PopulateChartKeuntungan()
 
-        pKeuntungan.BackColor = Color.FromArgb(221, 212, 199)
-        pKeuntungan.Region = New Region(New Rectangle(0, 0, pKeuntungan.Width, pKeuntungan.Height))
-        pKeuntungan.Padding = New Padding(1)
-        pKeuntungan.BorderStyle = BorderStyle.None
 
-        Dim path As New Drawing2D.GraphicsPath()
-        path.AddEllipse(0, 0, pKeuntungan.Width, pKeuntungan.Height)
-        pKeuntungan.Region = New Region(path)
+        bTanggal.BackColor = Color.Transparent
+        bBulan.BackColor = Color.Transparent
+        bTahun.BackColor = Color.Transparent
+
+        'untuk panel 12
+        Dim radiusTop3 As Integer = 10
+        Dim borderRectTop3 As New Rectangle(0, 0, Panel12.Width, Panel12.Height)
+        Panel12.Region = New Region(CreateRoundRectPath1(borderRectTop3, radiusTop3))
+        Dim rectBottom3 As New Rectangle(0, Panel12.Height - radiusTop3, Panel12.Width, radiusTop3)
+        Panel12.Region.Union(rectBottom3)
+
+        Panel13.Region = New Region(CreateRoundRectPath1(borderRectTop3, radiusTop3))
+        Panel13.Region.Union(rectBottom3)
+
+        Panel14.Region = New Region(CreateRoundRectPath1(borderRectTop3, radiusTop3))
+        Panel14.Region.Union(rectBottom3)
+
+
+
+
 
 
         Dim query As String = "SELECT SUM(total_transaksi) AS total_pendapatan FROM transaksi"
@@ -170,6 +186,60 @@ Public Class formDashboard
         lTotalKeuntungan.Text = total_pendapatan.ToString()
 
     End Sub
+
+    Private Function CreateRoundRectPath(ByVal rect As Rectangle, ByVal radius As Integer) As GraphicsPath
+        Dim path As New GraphicsPath()
+
+        ' Sudut tumpul atas kiri
+        path.AddArc(rect.X, rect.Y, radius, radius, 180, 90)
+
+        ' Sudut tumpul atas kanan
+        path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90)
+
+        ' Garis lurus ke sudut kanan bawah
+        path.AddLine(rect.Right, rect.Y + radius, rect.Right, rect.Bottom - radius)
+
+        ' Sudut tumpul bawah kanan
+        path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90)
+
+        ' Sudut tumpul bawah kiri
+        path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90)
+
+        ' Garis lurus ke sudut kiri atas
+        path.AddLine(rect.X, rect.Bottom - radius, rect.X, rect.Y + radius)
+
+        path.CloseFigure()
+        Return path
+    End Function
+
+    Private Function CreateRoundRectPath1(ByVal rect As Rectangle, ByVal radius As Integer) As GraphicsPath
+        Dim path As New GraphicsPath()
+
+        ' Sudut tumpul atas kiri
+        path.AddArc(rect.X, rect.Y, radius, radius, 180, 90)
+
+        ' Sudut tumpul atas kanan
+        path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90)
+
+        ' Garis lurus ke sudut kanan bawah
+        path.AddLine(rect.Right, rect.Y + radius, rect.Right, rect.Bottom - radius)
+
+        ' Sudut tumpul bawah kanan
+        path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90)
+
+        ' Sudut tumpul bawah kiri
+        path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90)
+
+        ' Garis lurus ke sudut kiri atas
+        path.AddLine(rect.X, rect.Bottom - radius, rect.X, rect.Y + radius)
+
+        path.CloseFigure()
+        Return path
+    End Function
+
+
+
+
 
     Private Sub HitungTotalUser()
         Dim query As String = "SELECT COUNT(*) AS total_baris FROM akun WHERE id_Akun <> ''"
@@ -242,6 +312,22 @@ Public Class formDashboard
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub pKeuntungan_Paint(sender As Object, e As PaintEventArgs) Handles pKeuntungan.Paint
+
+    End Sub
+
+    Private Sub Panel12_Paint(sender As Object, e As PaintEventArgs) Handles Panel12.Paint
+
+    End Sub
+
+    Private Sub Panel13_Paint(sender As Object, e As PaintEventArgs) Handles Panel13.Paint
+
+    End Sub
+
+    Private Sub Panel14_Paint(sender As Object, e As PaintEventArgs) Handles Panel14.Paint
 
     End Sub
 End Class

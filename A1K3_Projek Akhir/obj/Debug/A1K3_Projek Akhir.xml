@@ -242,6 +242,11 @@ A1K3_Projek Akhir
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:A1K3_Projek_Akhir.My.Resources.Resources.money_flow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:A1K3_Projek_Akhir.My.Resources.Resources.opera_paris">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
