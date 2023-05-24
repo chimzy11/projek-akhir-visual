@@ -235,9 +235,9 @@ Partial Class DashboardUser
         Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAboutUs})
-        Me.MenuStrip1.Location = New System.Drawing.Point(1078, 55)
+        Me.MenuStrip1.Location = New System.Drawing.Point(1116, 55)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(197, 45)
+        Me.MenuStrip1.Size = New System.Drawing.Size(377, 45)
         Me.MenuStrip1.TabIndex = 16
         Me.MenuStrip1.Text = "MenuStripAbout"
         '
@@ -296,7 +296,7 @@ Partial Class DashboardUser
         Me.MenuStripTeater.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStripTeater.Location = New System.Drawing.Point(860, 55)
         Me.MenuStripTeater.Name = "MenuStripTeater"
-        Me.MenuStripTeater.Size = New System.Drawing.Size(335, 45)
+        Me.MenuStripTeater.Size = New System.Drawing.Size(155, 45)
         Me.MenuStripTeater.TabIndex = 1
         Me.MenuStripTeater.Text = "MenuStrip2"
         '
