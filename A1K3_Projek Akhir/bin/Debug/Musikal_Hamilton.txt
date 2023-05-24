@@ -12,9 +12,7 @@ B2,False
 B3,False
 B4,False
 B5,False
-B6,False
-B7,True
-B8,True
-B9,False
+B6,True
+B9,True
 C1,False
 C2,False

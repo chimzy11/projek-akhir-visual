@@ -64,6 +64,7 @@ Public Class DashboardUser
     End Sub
     Private Sub MenuTransaksi_Click(sender As Object, e As EventArgs) Handles MenuTransaksi.Click
         Me.Close()
+        formRiwayatUser.Close()
         formRiwayatUser.Show()
     End Sub
 

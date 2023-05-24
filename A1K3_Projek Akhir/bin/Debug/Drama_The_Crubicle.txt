@@ -18,8 +18,6 @@ B8,False
 B9,False
 C1,False
 C2,False
-C3,False
-C4,False
-C5,False
-C6,True
-C7,True
+C3,True
+C4,True
+C5,True

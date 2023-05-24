@@ -118,27 +118,35 @@ Public Class formRiwayatUser
             txtSearch.ForeColor = Color.FromArgb(132, 123, 112)
         End If
 
-        If e.KeyChar = Chr(13) Then
-            CMD = New MySqlCommand("SELECT kode_pembayaran, nama, email, judul, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti FROM transaksi where judul like '%" & txtSearch.Text & "%'", CONN)
-            RD = CMD.ExecuteReader
-            RD.Read()
+        CMD = New MySqlCommand("SELECT * FROM akun WHERE username = @Username", CONN)
+        CMD.Parameters.AddWithValue("@Username", FLogin.tUsername.Text)
+        RD = CMD.ExecuteReader()
 
-            If RD.HasRows Then
+        If RD.Read() Then
+            Dim id_akun As Integer = RD.GetInt32(0)
+            RD.Close()
 
-                DA = New MySqlDataAdapter("SELECT kode_pembayaran, nama, email, judul, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti FROM transaksi where judul like '%" & txtSearch.Text & "%'", CONN)
-                DS = New DataSet
-                RD.Close()
-                DA.Fill(DS, "Found")
-                DGVTransaksiUser.DataSource = DS.Tables("Found")
-                DGVTransaksiUser.ReadOnly = True
-            Else
-                RD.Close()
-                MsgBox("Data tidak ditemukan!", MsgBoxStyle.Information, "Attention")
+            If e.KeyChar = Chr(13) Then
+                CMD = New MySqlCommand("SELECT kode_pembayaran, nama, email, judul, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti FROM transaksi WHERE judul LIKE @Search AND id_akun = @id_akun", CONN)
+                CMD.Parameters.AddWithValue("@Search", "%" & txtSearch.Text & "%")
+                CMD.Parameters.AddWithValue("@id_akun", id_akun)
+                RD = CMD.ExecuteReader()
+
+                If RD.HasRows Then
+                    RD.Close()
+                    DA = New MySqlDataAdapter("SELECT kode_pembayaran, nama, email, judul, jumlah, harga, total_transaksi, seat, tanggal, gambar_bukti FROM transaksi WHERE judul LIKE @Search AND id_akun = @id_akun", CONN)
+                    DA.SelectCommand.Parameters.AddWithValue("@Search", "%" & txtSearch.Text & "%")
+                    DA.SelectCommand.Parameters.AddWithValue("@id_akun", id_akun)
+                    DS = New DataSet
+                    DA.Fill(DS, "Found")
+                    DGVTransaksiUser.DataSource = DS.Tables("Found")
+                    DGVTransaksiUser.ReadOnly = True
+                Else
+                    RD.Close()
+                    MsgBox("Data tidak ditemukan!", MsgBoxStyle.Information, "Attention")
+                End If
             End If
         End If
-    End Sub
-
-    Private Sub DGVTransaksiUser_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVTransaksiUser.CellContentClick
 
     End Sub
 End Class

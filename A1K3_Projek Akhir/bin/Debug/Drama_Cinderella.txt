@@ -20,11 +20,6 @@ C1,False
 C2,False
 C3,False
 C4,False
-C5,False
-C6,False
-C7,True
-C8,True
-C9,True
-D1,True
-D2,True
+C5,True
+C6,True
 D3,False

@@ -34,7 +34,6 @@ Partial Class formRiwayatUser
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.pKembali = New System.Windows.Forms.PictureBox()
-        Me.lEmail = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.DGVTransaksiUser, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -157,24 +156,12 @@ Partial Class formRiwayatUser
         Me.pKembali.TabIndex = 108
         Me.pKembali.TabStop = False
         '
-        'lEmail
-        '
-        Me.lEmail.AutoSize = True
-        Me.lEmail.Font = New System.Drawing.Font("Elephant", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.lEmail.Location = New System.Drawing.Point(162, 41)
-        Me.lEmail.Name = "lEmail"
-        Me.lEmail.Size = New System.Drawing.Size(135, 46)
-        Me.lEmail.TabIndex = 29
-        Me.lEmail.Text = "Email"
-        '
         'formRiwayatUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1924, 1050)
-        Me.Controls.Add(Me.lEmail)
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.btnSearch)
@@ -202,5 +189,4 @@ Partial Class formRiwayatUser
     Friend WithEvents txtSearch As TextBox
     Friend WithEvents btnSearch As Button
     Friend WithEvents pKembali As PictureBox
-    Friend WithEvents lEmail As Label
 End Class
