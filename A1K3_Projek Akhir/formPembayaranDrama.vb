@@ -125,12 +125,12 @@ Public Class formPembayaranDrama
 
             Dim i As Integer = 1
             Dim newFileName As String = FLogin.tUsername.Text & "_drama_" & i.ToString() & fileExtension
-            Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+            Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
 
             While File.Exists(destinationPath)
                 i += 1
                 newFileName = FLogin.tUsername.Text & "_drama_" & i.ToString() & fileExtension
-                destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                destinationPath = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads" & newFileName
             End While
 
             File.Copy(imagePath, destinationPath)
@@ -175,6 +175,8 @@ Public Class formPembayaranDrama
     Private Sub cValid_CheckedChanged(sender As Object, e As EventArgs) Handles cValid.CheckedChanged
         If cValid.Checked = True Then
             bCetak.Enabled = True
+        Else
+            bCetak.Enabled = False
         End If
     End Sub
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click

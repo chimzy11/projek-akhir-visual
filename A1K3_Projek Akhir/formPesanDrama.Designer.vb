@@ -52,11 +52,11 @@ Partial Class formPesanDrama
         bPembayaran.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         bPembayaran.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         bPembayaran.Image = CType(resources.GetObject("bPembayaran.Image"), System.Drawing.Image)
-        bPembayaran.Location = New System.Drawing.Point(587, 2)
+        bPembayaran.Location = New System.Drawing.Point(522, 2)
         bPembayaran.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         bPembayaran.Name = "bPembayaran"
-        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 15, 0, 0)
-        bPembayaran.Size = New System.Drawing.Size(213, 98)
+        bPembayaran.Padding = New System.Windows.Forms.Padding(4, 12, 0, 0)
+        bPembayaran.Size = New System.Drawing.Size(189, 78)
         bPembayaran.TabIndex = 57
         bPembayaran.Text = "Checkout"
         bPembayaran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -70,8 +70,9 @@ Partial Class formPesanDrama
         Me.Panel1.Controls.Add(Me.lJudul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 76)
+        Me.Panel1.Size = New System.Drawing.Size(711, 61)
         Me.Panel1.TabIndex = 53
         '
         'pKembali
@@ -79,9 +80,10 @@ Partial Class formPesanDrama
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(3, 20)
+        Me.pKembali.Location = New System.Drawing.Point(3, 16)
+        Me.pKembali.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.Size = New System.Drawing.Size(33, 28)
         Me.pKembali.TabIndex = 106
         Me.pKembali.TabStop = False
         '
@@ -90,9 +92,9 @@ Partial Class formPesanDrama
         Me.lJudul.AutoSize = True
         Me.lJudul.Font = New System.Drawing.Font("Stencil", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lJudul.ForeColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.lJudul.Location = New System.Drawing.Point(275, 17)
+        Me.lJudul.Location = New System.Drawing.Point(244, 14)
         Me.lJudul.Name = "lJudul"
-        Me.lJudul.Size = New System.Drawing.Size(197, 38)
+        Me.lJudul.Size = New System.Drawing.Size(164, 32)
         Me.lJudul.TabIndex = 108
         Me.lJudul.Text = "Judul Film"
         Me.lJudul.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -101,9 +103,10 @@ Partial Class formPesanDrama
         '
         Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.FlowLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(212, 108)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(188, 86)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(329, 33)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(292, 26)
         Me.FlowLayoutPanel1.TabIndex = 52
         '
         'Panel3
@@ -114,9 +117,10 @@ Partial Class formPesanDrama
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.lUsername)
-        Me.Panel3.Location = New System.Drawing.Point(-1, 670)
+        Me.Panel3.Location = New System.Drawing.Point(-1, 536)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(803, 110)
+        Me.Panel3.Size = New System.Drawing.Size(714, 88)
         Me.Panel3.TabIndex = 58
         '
         'lTotalHarga
@@ -124,9 +128,9 @@ Partial Class formPesanDrama
         Me.lTotalHarga.AutoSize = True
         Me.lTotalHarga.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lTotalHarga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.lTotalHarga.Location = New System.Drawing.Point(368, 54)
+        Me.lTotalHarga.Location = New System.Drawing.Point(327, 43)
         Me.lTotalHarga.Name = "lTotalHarga"
-        Me.lTotalHarga.Size = New System.Drawing.Size(72, 27)
+        Me.lTotalHarga.Size = New System.Drawing.Size(60, 24)
         Me.lTotalHarga.TabIndex = 56
         Me.lTotalHarga.Text = "50000"
         '
@@ -135,9 +139,9 @@ Partial Class formPesanDrama
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(329, 32)
+        Me.Label6.Location = New System.Drawing.Point(292, 26)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 22)
+        Me.Label6.Size = New System.Drawing.Size(92, 19)
         Me.Label6.TabIndex = 54
         Me.Label6.Text = "Total Harga"
         '
@@ -146,9 +150,9 @@ Partial Class formPesanDrama
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(317, 54)
+        Me.Label5.Location = New System.Drawing.Point(282, 43)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 27)
+        Me.Label5.Size = New System.Drawing.Size(38, 24)
         Me.Label5.TabIndex = 53
         Me.Label5.Text = "Rp."
         '
@@ -157,9 +161,9 @@ Partial Class formPesanDrama
         Me.lUsername.AutoSize = True
         Me.lUsername.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.lUsername.Location = New System.Drawing.Point(18, 42)
+        Me.lUsername.Location = New System.Drawing.Point(16, 34)
         Me.lUsername.Name = "lUsername"
-        Me.lUsername.Size = New System.Drawing.Size(115, 27)
+        Me.lUsername.Size = New System.Drawing.Size(96, 24)
         Me.lUsername.TabIndex = 52
         Me.lUsername.Text = "Username"
         '
@@ -168,9 +172,9 @@ Partial Class formPesanDrama
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(18, 578)
+        Me.Label4.Location = New System.Drawing.Point(16, 462)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(114, 22)
+        Me.Label4.Size = New System.Drawing.Size(99, 19)
         Me.Label4.TabIndex = 55
         Me.Label4.Text = "Jumlah Tiket"
         '
@@ -181,10 +185,10 @@ Partial Class formPesanDrama
         Me.tBanyakTiket.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tBanyakTiket.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tBanyakTiket.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.tBanyakTiket.Location = New System.Drawing.Point(22, 617)
+        Me.tBanyakTiket.Location = New System.Drawing.Point(20, 494)
         Me.tBanyakTiket.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tBanyakTiket.Name = "tBanyakTiket"
-        Me.tBanyakTiket.Size = New System.Drawing.Size(183, 26)
+        Me.tBanyakTiket.Size = New System.Drawing.Size(163, 22)
         Me.tBanyakTiket.TabIndex = 56
         '
         'Button1
@@ -195,27 +199,28 @@ Partial Class formPesanDrama
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(17, 608)
+        Me.Button1.Location = New System.Drawing.Point(15, 486)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(194, 43)
+        Me.Button1.Size = New System.Drawing.Size(172, 34)
         Me.Button1.TabIndex = 57
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(22, 167)
+        Me.Panel2.Location = New System.Drawing.Point(20, 134)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(757, 374)
+        Me.Panel2.Size = New System.Drawing.Size(673, 299)
         Me.Panel2.TabIndex = 54
         '
         'formPesanDrama
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 777)
+        Me.ClientSize = New System.Drawing.Size(711, 622)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.Panel3)
@@ -223,6 +228,7 @@ Partial Class formPesanDrama
         Me.Controls.Add(Me.tBanyakTiket)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "formPesanDrama"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formPesanDrama"

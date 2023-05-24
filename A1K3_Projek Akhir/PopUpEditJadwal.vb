@@ -31,4 +31,9 @@ Public Class PopUpEditJadwal
             MessageBox.Show("Pilih ID teater yang akan diperbarui", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
+    Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
+        Me.Close()
+    End Sub
+
 End Class

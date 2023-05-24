@@ -51,6 +51,7 @@ Public Class formPesan
     End Sub
     Private Sub formPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
+
         PilihanKursi()
 
         tBanyakTiket.Focus()
@@ -87,6 +88,7 @@ Public Class formPesan
         If Integer.TryParse(tBanyakTiket.Text, BanyakTiket) Then
             If (BanyakTiket > jumlahTiket) Then
                 MessageBox.Show("Banyak tiket tidak boleh lebih dari banyak kursi yang tersisa", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                tBanyakTiket.Text = ""
                 tBanyakTiket.Focus()
                 Return
             End If
@@ -122,18 +124,29 @@ Public Class formPesan
     End Function
 
     Private Sub bPembayaran_Click(sender As Object, e As EventArgs)
-        Dim selectedCount As Integer = GetSelectedSeatCount()
-
-        If selectedCount <> CInt(tBanyakTiket.Text) Then
-            MessageBox.Show("Jumlah kursi yang dipilih tidak sesuai dengan jumlah tiket yang dibeli.")
+        If (tBanyakTiket.Text = "" Or tBanyakTiket.Text = "0") Then
+            MessageBox.Show("Masukkan Jumlah Tiket Dahulu")
         Else
-            Me.Hide()
-            formPembayaran.Show()
+            Dim selectedCount As Integer = GetSelectedSeatCount()
+
+            If selectedCount <> CInt(tBanyakTiket.Text) Then
+                MessageBox.Show("Jumlah kursi yang dipilih tidak sesuai dengan jumlah tiket yang dibeli.")
+            Else
+                Me.Hide()
+                formPembayaran.Show()
+            End If
         End If
     End Sub
 
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
         Me.Hide()
         formDetailMusikal.Show()
+    End Sub
+
+    Private Sub tBanyakTiket_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tBanyakTiket.KeyPress
+        If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
+            MessageBox.Show("Hanya Untuk Inputan Angka")
+            e.Handled = True
+        End If
     End Sub
 End Class

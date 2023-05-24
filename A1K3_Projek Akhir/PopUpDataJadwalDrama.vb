@@ -25,13 +25,13 @@ Public Class PopUpDataJadwalDrama
     Private Sub bLihat_Click(sender As Object, e As EventArgs) Handles bLihat.Click
         If Not String.IsNullOrEmpty(cJudul.Text) Then
             If cJudul.SelectedIndex = 0 Then
-                MessageBox.Show("Pilih ID teater yang akan diperbarui", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Pilih Judul Yang Tersedia", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
                 Me.Hide()
                 formDetailDrama.Show()
             End If
         Else
-            MessageBox.Show("Pilih ID teater yang akan diperbarui", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Pilih Judul Yang Tersedia", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 End Class

@@ -163,12 +163,12 @@ Public Class formTambah
 
                 Dim i As Integer = 1
                 Dim newFileName As String = "Jadwal_" & tJudul.Text & i.ToString() & fileExtension
-                Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
 
                 While File.Exists(destinationPath)
                     i += 1
                     newFileName = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-                    destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                    destinationPath = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
                 End While
 
                 File.Copy(imagePath, destinationPath)
@@ -281,15 +281,16 @@ Public Class formTambah
     End Sub
 
     Private Sub cGenre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cGenre.SelectedIndexChanged
-        If (cGenre.Text = "Musikal") Then
-            CMD = New MySqlCommand("SELECT COUNT(*) AS JumlahMusik FROM JadwalTeater WHERE Genre = 'Musikal'", CONN)
+        If (cGenre.Text = "Drama") Then
+            CMD = New MySqlCommand("SELECT COUNT(*) AS JumlahDrama FROM JadwalTeater WHERE Genre = 'Drama'", CONN)
             RD = CMD.ExecuteReader
 
             If RD.HasRows Then
                 RD.Read()
-                Dim jumlahMusik As Integer = CInt(RD("JumlahMusik"))
-                Label6.Text = jumlahMusik
-                If (jumlahMusik > 12) Then
+                Dim jumlahDrama As Integer = CInt(RD("JumlahDrama"))
+                Label6.Text = jumlahDrama
+                If (jumlahDrama >= 12) Then
+                    cGenre.SelectedIndex = -1
                     MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
                 End If
             Else
@@ -297,6 +298,44 @@ Public Class formTambah
             End If
 
             RD.Close()
+
+        ElseIf (cGenre.Text = "Komedi") Then
+            CMD = New MySqlCommand("SELECT COUNT(*) AS JumlahKomedi FROM JadwalTeater WHERE Genre = 'Komedi'", CONN)
+            RD = CMD.ExecuteReader
+
+            If RD.HasRows Then
+                RD.Read()
+                Dim jumlahKomedi As Integer = CInt(RD("JumlahKomedi"))
+                Label6.Text = jumlahKomedi
+                If (jumlahKomedi >= 12) Then
+                    cGenre.SelectedIndex = -1
+                    MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
+                End If
+            Else
+                MessageBox.Show("Tidak Ada Data")
+            End If
+
+            RD.Close()
+
+        ElseIf (cGenre.Text = "Musikal") Then
+            CMD = New MySqlCommand("SELECT COUNT(*) AS JumlahMusikal FROM JadwalTeater WHERE Genre = 'Musikal'", CONN)
+            RD = CMD.ExecuteReader
+
+            If RD.HasRows Then
+                RD.Read()
+                Dim jumlahMusikal As Integer = CInt(RD("JumlahMusikal"))
+                Label6.Text = jumlahMusikal
+                If (jumlahMusikal >= 12) Then
+                    cGenre.SelectedIndex = -1
+                    MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
+                End If
+            Else
+                MessageBox.Show("Tidak Ada Data")
+            End If
+
+            RD.Close()
+
         End If
+
     End Sub
 End Class

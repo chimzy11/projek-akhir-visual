@@ -1,7 +1,4 @@
-A1,False
-A2,False
-A3,False
-A4,False
+A4,True
 A5,False
 A6,False
 A7,False

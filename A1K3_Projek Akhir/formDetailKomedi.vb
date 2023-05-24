@@ -109,6 +109,6 @@ Public Class formDetailKomedi
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
         Me.Hide()
         PopUpDataJadwalKomedi.Close()
-        OpenChildForm(New formMusikal)
+        OpenChildForm(New formKomedi)
     End Sub
 End Class

@@ -24,8 +24,6 @@ Public Class formEdit
         dTanggal.Value = DateTime.Today
         rJamPertama.Checked = False
         rJamKedua.Checked = False
-        'rJamKetiga.Checked = False
-        'rJamKeempat.Checked = False
         cGenre.SelectedIndex = -1
         tTiket.Clear()
         tHari.Clear()
@@ -46,6 +44,10 @@ Public Class formEdit
             Cek = True
         ElseIf tHari.Text = "" Then
             Cek = True
+        ElseIf tTiket.Text = "" Then
+            Cek = True
+        ElseIf tHargaTiket.Text = "" Or tHargaTiket.Text = "Rp" Then
+            Cek = True
         Else
             Cek = False
         End If
@@ -62,10 +64,6 @@ Public Class formEdit
                 JamTayang = rJamPertama.Text
             ElseIf rJamKedua.Checked Then
                 JamTayang = rJamKedua.Text
-                'ElseIf rJamKetiga.Checked Then
-                '  JamTayang = rJamKetiga.Text
-                'ElseIf rJamKeempat.Checked Then
-                'JamTayang = rJamKeempat.Text
             End If
 
             CMD = New MySqlCommand("SELECT * FROM JadwalTeater WHERE id_teater = '" & PopUpEditJadwal.cIdTeater.Text & "'", CONN)
@@ -144,7 +142,14 @@ Public Class formEdit
     End Sub
 
     Private Sub bSimpan_Click(sender As Object, e As EventArgs) Handles bSimpan.Click
-        Simpan()
+        Dim Kosong As Boolean = CekData()
+
+        If Kosong = True Then
+            MessageBox.Show("Lengkapi Data Dahulu")
+            Exit Sub
+        Else
+            Simpan()
+        End If
     End Sub
 
     Private Sub bPilihGambarTiket_Click(sender As Object, e As EventArgs) Handles bPilihGambarTiket.Click
@@ -167,12 +172,12 @@ Public Class formEdit
 
                 Dim i As Integer = 1
                 Dim newFileName As String = "Jadwal_Teater_" & tJudul.Text & i.ToString() & fileExtension
-                Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
 
                 While File.Exists(destinationPath)
                     i += 1
                     newFileName = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-                    destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                    destinationPath = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
                 End While
 
                 File.Copy(imagePath, destinationPath)

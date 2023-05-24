@@ -36,4 +36,5 @@ Public Class PopUpDataJadwal
             MessageBox.Show("Pilih Judul Yang Tersedia", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
 End Class

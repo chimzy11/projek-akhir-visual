@@ -39,10 +39,10 @@ Partial Class PopUpHapusJadwal
         Me.bHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bHapus.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bHapus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bHapus.Location = New System.Drawing.Point(159, 132)
+        Me.bHapus.Location = New System.Drawing.Point(141, 106)
         Me.bHapus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bHapus.Name = "bHapus"
-        Me.bHapus.Size = New System.Drawing.Size(129, 37)
+        Me.bHapus.Size = New System.Drawing.Size(115, 30)
         Me.bHapus.TabIndex = 80
         Me.bHapus.Text = "Hapus"
         Me.bHapus.UseVisualStyleBackColor = False
@@ -52,9 +52,10 @@ Partial Class PopUpHapusJadwal
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(30, 137)
+        Me.pKembali.Location = New System.Drawing.Point(27, 110)
+        Me.pKembali.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(31, 26)
+        Me.pKembali.Size = New System.Drawing.Size(28, 21)
         Me.pKembali.TabIndex = 85
         Me.pKembali.TabStop = False
         '
@@ -64,9 +65,9 @@ Partial Class PopUpHapusJadwal
         Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label2.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(5, 24)
+        Me.Label2.Location = New System.Drawing.Point(4, 19)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(313, 39)
+        Me.Label2.Size = New System.Drawing.Size(278, 31)
         Me.Label2.TabIndex = 84
         Me.Label2.Text = "Hapus Jadwal teater"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -74,30 +75,32 @@ Partial Class PopUpHapusJadwal
         'cIdTeater
         '
         Me.cIdTeater.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.cIdTeater.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cIdTeater.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cIdTeater.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cIdTeater.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cIdTeater.FormattingEnabled = True
         Me.cIdTeater.IntegralHeight = False
         Me.cIdTeater.Items.AddRange(New Object() {"-- Pilih ID --"})
-        Me.cIdTeater.Location = New System.Drawing.Point(40, 73)
+        Me.cIdTeater.Location = New System.Drawing.Point(36, 58)
         Me.cIdTeater.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cIdTeater.Name = "cIdTeater"
-        Me.cIdTeater.Size = New System.Drawing.Size(240, 35)
+        Me.cIdTeater.Size = New System.Drawing.Size(214, 31)
         Me.cIdTeater.TabIndex = 115
         '
         'PopUpHapusJadwal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(320, 180)
+        Me.ClientSize = New System.Drawing.Size(284, 144)
         Me.ControlBox = False
         Me.Controls.Add(Me.cIdTeater)
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.bHapus)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "PopUpHapusJadwal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pilih ID Jadwal"
