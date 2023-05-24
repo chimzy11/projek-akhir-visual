@@ -39,7 +39,7 @@ Public Class formTambah
             Cek = True
         ElseIf tTiket.Text = "" Then
             Cek = True
-        ElseIf tHargaTiket.Text = "" Then
+        ElseIf tHargaTiket.Text = "" Or tHargaTiket.Text = "Rp" Then
             Cek = True
         Else
             Cek = False
@@ -163,7 +163,7 @@ Public Class formTambah
                 Dim newFileName As String = $"{tJudul.Text}{fileExtension}"
                 Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
 
-                File.Move(imagePath, destinationPath)
+                File.Copy(imagePath, destinationPath)
 
                 bPilihGambarTiket.Text = newFileName
             End If
@@ -269,6 +269,26 @@ Public Class formTambah
         tHari.Text = dTanggal.Value.DayOfWeek.ToString()
         If (tHari.Text = "Monday") Then
             MsgBox("Tidak bisa memilih hari Monday", MsgBoxStyle.Information, "Perhatian")
+        End If
+    End Sub
+
+    Private Sub cGenre_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cGenre.SelectedIndexChanged
+        If (cGenre.Text = "Musikal") Then
+            CMD = New MySqlCommand("SELECT COUNT(*) AS JumlahMusik FROM JadwalTeater WHERE Genre = 'Musikal'", CONN)
+            RD = CMD.ExecuteReader
+
+            If RD.HasRows Then
+                RD.Read()
+                Dim jumlahMusik As Integer = CInt(RD("JumlahMusik"))
+                Label6.Text = jumlahMusik
+                If (jumlahMusik > 12) Then
+                    MessageBox.Show("Data Sudah Penuh Untuk Minggu Ini")
+                End If
+            Else
+                MessageBox.Show("Tidak Ada Data")
+            End If
+
+            RD.Close()
         End If
     End Sub
 End Class

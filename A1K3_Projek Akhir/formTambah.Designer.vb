@@ -58,6 +58,7 @@ Partial Class formTambah
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pKembali = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.gJam.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -178,6 +179,7 @@ Partial Class formTambah
         'cGenre
         '
         Me.cGenre.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.cGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cGenre.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cGenre.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cGenre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -533,6 +535,15 @@ Partial Class formTambah
         Me.pKembali.TabIndex = 105
         Me.pKembali.TabStop = False
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(160, 29)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(48, 16)
+        Me.Label6.TabIndex = 106
+        Me.Label6.Text = "Label6"
+        '
         'formTambah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -540,6 +551,7 @@ Partial Class formTambah
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1100, 570)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
@@ -595,4 +607,5 @@ Partial Class formTambah
     Friend WithEvents Label11 As Label
     Friend WithEvents pKembali As PictureBox
     Friend WithEvents dTanggal As DateTimePicker
+    Friend WithEvents Label6 As Label
 End Class
