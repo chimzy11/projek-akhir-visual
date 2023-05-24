@@ -166,7 +166,7 @@ Public Class formEdit
                 Dim fileExtension As String = Path.GetExtension(imagePath)
 
                 Dim i As Integer = 1
-                Dim newFileName As String = tJudul.Text & i.ToString() & fileExtension
+                Dim newFileName As String = "Jadwal_Teater_" & tJudul.Text & i.ToString() & fileExtension
                 Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
 
                 While File.Exists(destinationPath)
