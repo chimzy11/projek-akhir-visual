@@ -21,8 +21,8 @@ Public Class FormDataUser
         DGVDataUser.Columns(1).Width = 170
         DGVDataUser.Columns(2).Width = 170
         DGVDataUser.Columns(3).Width = 150
-        DGVDataUser.Columns(4).Width = 120
-        DGVDataUser.Columns(5).Width = 70
+        DGVDataUser.Columns(4).Width = 130
+        DGVDataUser.Columns(5).Width = 140
 
         DGVDataUser.Columns(0).HeaderText = "ID User"
         DGVDataUser.Columns(1).HeaderText = "Nama Lengkap"
@@ -77,5 +77,9 @@ Public Class FormDataUser
         Else
             Exit Sub
         End If
+    End Sub
+
+    Private Sub DGVDataUser_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVDataUser.CellContentClick
+
     End Sub
 End Class
