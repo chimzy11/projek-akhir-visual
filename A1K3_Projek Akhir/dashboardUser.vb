@@ -39,7 +39,7 @@ Public Class DashboardUser
         'warna buat menunya
         MenuStripHome.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStripTeater.ForeColor = Color.FromArgb(185, 174, 169)
-        MenuStripAbout.ForeColor = Color.FromArgb(185, 174, 169)
+        MenuStrip1.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStripProfile.ForeColor = Color.FromArgb(185, 174, 169)
 
         'langsung manggil form home
@@ -61,7 +61,7 @@ Public Class DashboardUser
     Private Sub MenuKomedi_Click(sender As Object, e As EventArgs) Handles MenuKomedi.Click
         OpenChildForm(New formKomedi)
     End Sub
-    Private Sub MenuAboutUs_Click(sender As Object, e As EventArgs) Handles MenuAboutUs.Click
+    Private Sub MenuAboutUs_Click(sender As Object, e As EventArgs)
         OpenChildForm(New formAbout)
     End Sub
     Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
@@ -71,5 +71,9 @@ Public Class DashboardUser
     Private Sub MenuTransaksi_Click(sender As Object, e As EventArgs) Handles MenuTransaksi.Click
         Me.Close()
         formRiwayatUser.Show()
+    End Sub
+
+    Private Sub MenuAboutUs_Click_1(sender As Object, e As EventArgs) Handles MenuAboutUs.Click
+        OpenChildForm(New formAbout)
     End Sub
 End Class

@@ -37,11 +37,11 @@ Partial Class DashboardUser
         Me.MenuTransaksi = New System.Windows.Forms.ToolStripMenuItem()
         Me.bExit = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MenuAboutUs = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.pProfil = New System.Windows.Forms.PictureBox()
-        Me.MenuStripAbout = New System.Windows.Forms.MenuStrip()
-        Me.MenuAboutUs = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStripTeater = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuMusikal = New System.Windows.Forms.ToolStripMenuItem()
@@ -55,8 +55,8 @@ Partial Class DashboardUser
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStripProfile.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         CType(Me.pProfil, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStripAbout.SuspendLayout()
         Me.MenuStripTeater.SuspendLayout()
         Me.MenuStripHome.SuspendLayout()
         Me.SuspendLayout()
@@ -169,7 +169,6 @@ Partial Class DashboardUser
         Me.MenuStripProfile.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfileToolStripMenuItem})
         Me.MenuStripProfile.Location = New System.Drawing.Point(1800, 35)
         Me.MenuStripProfile.Name = "MenuStripProfile"
-        Me.MenuStripProfile.Padding = New System.Windows.Forms.Padding(6, 2, 0, 2)
         Me.MenuStripProfile.Size = New System.Drawing.Size(48, 32)
         Me.MenuStripProfile.TabIndex = 0
         Me.MenuStripProfile.Text = "MenuStrip1"
@@ -198,6 +197,7 @@ Partial Class DashboardUser
         'bExit
         '
         Me.bExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.bExit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.bExit.FlatAppearance.BorderSize = 0
         Me.bExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bExit.Image = CType(resources.GetObject("bExit.Image"), System.Drawing.Image)
@@ -211,10 +211,10 @@ Partial Class DashboardUser
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.MenuStrip1)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.pProfil)
-        Me.Panel2.Controls.Add(Me.MenuStripAbout)
         Me.Panel2.Controls.Add(Me.MenuStripTeater)
         Me.Panel2.Controls.Add(Me.MenuStripHome)
         Me.Panel2.Controls.Add(Me.bExit)
@@ -225,6 +225,29 @@ Partial Class DashboardUser
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1924, 154)
         Me.Panel2.TabIndex = 1
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.MenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAboutUs})
+        Me.MenuStrip1.Location = New System.Drawing.Point(1078, 55)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(197, 45)
+        Me.MenuStrip1.TabIndex = 16
+        Me.MenuStrip1.Text = "MenuStripAbout"
+        '
+        'MenuAboutUs
+        '
+        Me.MenuAboutUs.Image = CType(resources.GetObject("MenuAboutUs.Image"), System.Drawing.Image)
+        Me.MenuAboutUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.MenuAboutUs.Name = "MenuAboutUs"
+        Me.MenuAboutUs.Size = New System.Drawing.Size(189, 41)
+        Me.MenuAboutUs.Text = "About Us"
         '
         'Label5
         '
@@ -262,34 +285,6 @@ Partial Class DashboardUser
         Me.pProfil.TabIndex = 9
         Me.pProfil.TabStop = False
         '
-        'MenuStripAbout
-        '
-        Me.MenuStripAbout.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.MenuStripAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.MenuStripAbout.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStripAbout.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.MenuStripAbout.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
-        Me.MenuStripAbout.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.MenuStripAbout.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAboutUs})
-        Me.MenuStripAbout.Location = New System.Drawing.Point(1130, 55)
-        Me.MenuStripAbout.Name = "MenuStripAbout"
-        Me.MenuStripAbout.Padding = New System.Windows.Forms.Padding(6, 2, 0, 2)
-        Me.MenuStripAbout.Size = New System.Drawing.Size(173, 45)
-        Me.MenuStripAbout.TabIndex = 2
-        Me.MenuStripAbout.Text = "MenuStrip3"
-        '
-        'MenuAboutUs
-        '
-        Me.MenuAboutUs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MenuAboutUs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.MenuAboutUs.Image = CType(resources.GetObject("MenuAboutUs.Image"), System.Drawing.Image)
-        Me.MenuAboutUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MenuAboutUs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.MenuAboutUs.Name = "MenuAboutUs"
-        Me.MenuAboutUs.RightToLeftAutoMirrorImage = True
-        Me.MenuAboutUs.Size = New System.Drawing.Size(165, 41)
-        Me.MenuAboutUs.Text = "About Us"
-        '
         'MenuStripTeater
         '
         Me.MenuStripTeater.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -301,8 +296,7 @@ Partial Class DashboardUser
         Me.MenuStripTeater.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStripTeater.Location = New System.Drawing.Point(860, 55)
         Me.MenuStripTeater.Name = "MenuStripTeater"
-        Me.MenuStripTeater.Padding = New System.Windows.Forms.Padding(6, 2, 0, 2)
-        Me.MenuStripTeater.Size = New System.Drawing.Size(155, 45)
+        Me.MenuStripTeater.Size = New System.Drawing.Size(335, 45)
         Me.MenuStripTeater.TabIndex = 1
         Me.MenuStripTeater.Text = "MenuStrip2"
         '
@@ -347,7 +341,6 @@ Partial Class DashboardUser
         Me.MenuStripHome.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuHome})
         Me.MenuStripHome.Location = New System.Drawing.Point(596, 55)
         Me.MenuStripHome.Name = "MenuStripHome"
-        Me.MenuStripHome.Padding = New System.Windows.Forms.Padding(6, 2, 0, 2)
         Me.MenuStripHome.Size = New System.Drawing.Size(150, 45)
         Me.MenuStripHome.TabIndex = 0
         Me.MenuStripHome.Text = "MenuStrip1"
@@ -394,9 +387,9 @@ Partial Class DashboardUser
         Me.MenuStripProfile.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         CType(Me.pProfil, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStripAbout.ResumeLayout(False)
-        Me.MenuStripAbout.PerformLayout()
         Me.MenuStripTeater.ResumeLayout(False)
         Me.MenuStripTeater.PerformLayout()
         Me.MenuStripHome.ResumeLayout(False)
@@ -411,12 +404,9 @@ Partial Class DashboardUser
     Friend WithEvents MenuHome As ToolStripMenuItem
     Friend WithEvents MenuStripTeater As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents MenuStripAbout As MenuStrip
-    Friend WithEvents MenuAboutUs As ToolStripMenuItem
     Friend WithEvents MenuMusikal As ToolStripMenuItem
     Friend WithEvents MenuDrama As ToolStripMenuItem
     Friend WithEvents MenuKomedi As ToolStripMenuItem
-    Friend WithEvents panelDesktop As Panel
     Friend WithEvents MenuStripProfile As MenuStrip
     Friend WithEvents ProfileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MenuProfil As ToolStripMenuItem
@@ -432,4 +422,7 @@ Partial Class DashboardUser
     Friend WithEvents pProfil As PictureBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents panelDesktop As Panel
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents MenuAboutUs As ToolStripMenuItem
 End Class

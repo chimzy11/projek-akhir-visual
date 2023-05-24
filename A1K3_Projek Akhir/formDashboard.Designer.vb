@@ -304,6 +304,7 @@ Partial Class formDashboard
         '
         'Button1
         '
+        Me.Button1.Enabled = False
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.A1K3_Projek_Akhir.My.Resources.Resources.money_flow
