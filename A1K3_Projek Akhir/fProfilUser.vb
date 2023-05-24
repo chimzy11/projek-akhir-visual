@@ -87,16 +87,25 @@ Public Class fProfilUser
 
     Private Sub bLogOut_Click(sender As Object, e As EventArgs) Handles bLogOut.Click
         Dim X As String
-        X = MessageBox.Show("Yakin keluar dari program ini?", "Konfirmasi",
+        X = MessageBox.Show("Yakin Untuk Logout?", "Konfirmasi",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If X = MsgBoxResult.Yes Then
-            End
+            Me.Close()
+            LandingPage.Show()
         Else
             Exit Sub
         End If
     End Sub
 
     Private Sub bSimpan_Click(sender As Object, e As EventArgs) Handles bSimpan.Click
+        Dim Email As String = tEmail.Text
+        If Not Email.Contains("@") Then
+            MsgBox("Invalid email address!", MsgBoxStyle.Exclamation, "Attention")
+            tEmail.Text = ""
+            tEmail.Focus()
+            Exit Sub
+        End If
+
         Call KoneksiDatabase()
         Dim Update As String = "UPDATE akun SET namalengkap = '" & tNamaLengkap.Text & "', " &
             "email = '" & tEmail.Text & "', " &
@@ -112,12 +121,15 @@ Public Class fProfilUser
 
     Private Sub bHapusAkun_Click(sender As Object, e As EventArgs) Handles bHapusAkun.Click
         Dim X As String
+
         X = MessageBox.Show("Yakin hapus akun anda?", "Konfirmasi",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If X = MsgBoxResult.Yes Then
             CMD = New MySqlCommand("DELETE FROM akun WHERE username = '" & FLogin.tUsername.Text & "'", CONN)
             CMD.ExecuteNonQuery()
-            End
+
+            Me.Close()
+            LandingPage.Show()
         Else
             Exit Sub
         End If
@@ -149,11 +161,11 @@ Public Class fProfilUser
         End If
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub pSampul_Paint(sender As Object, e As PaintEventArgs) Handles pSampul.Paint
-
+    Private Sub tNotelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tNotelp.KeyPress
+        If Not (((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Or e.KeyChar = "+") Then
+            MsgBox("Hanya Boleh Angka!", MsgBoxStyle.Information, "Attention")
+            e.Handled = True
+            tNotelp.Focus()
+        End If
     End Sub
 End Class

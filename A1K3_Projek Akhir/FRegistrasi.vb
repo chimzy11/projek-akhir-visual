@@ -144,4 +144,5 @@ Public Class FRegistrasi
         Me.Close()
         LandingPage.Show()
     End Sub
+
 End Class

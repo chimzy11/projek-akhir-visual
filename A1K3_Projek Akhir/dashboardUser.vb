@@ -24,7 +24,7 @@ Public Class DashboardUser
     'keluar program
     Private Sub bExit_Click(sender As Object, e As EventArgs) Handles bExit.Click
         Dim X As String
-        X = MessageBox.Show("Yakin keluar dari program ini?", "Konfirmasi",
+        X = MessageBox.Show("Yakin Untuk Logout ?", "Konfirmasi",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If X = MsgBoxResult.Yes Then
             Me.Close()

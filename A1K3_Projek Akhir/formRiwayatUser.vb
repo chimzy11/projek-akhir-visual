@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
+
 Public Class formRiwayatUser
     Private currentChildForm As Form
 
@@ -48,6 +48,7 @@ Public Class formRiwayatUser
 
 
     Sub GridDataRiwayatTransaksi()
+
         DGVTransaksiUser.Columns(0).Width = 90
         DGVTransaksiUser.Columns(1).Width = 100
         DGVTransaksiUser.Columns(2).Width = 100

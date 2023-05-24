@@ -10,9 +10,11 @@ Public Class formTambah
     Private currentChildForm As Form
     Dim gambar As Object
     Sub Clear()
+        Dim maxDate As DateTime = DateTime.Today.AddDays(8)
+
         tJudul.Clear()
         tKelompok.Clear()
-        dTanggal.Value = DateTime.Today
+        dTanggal.Value = maxDate
         rJamPertama.Checked = False
         rJamKedua.Checked = False
         cGenre.SelectedIndex = -1
@@ -34,6 +36,10 @@ Public Class formTambah
         ElseIf cGenre.Text = "" Then
             Cek = True
         ElseIf tHari.Text = "" Then
+            Cek = True
+        ElseIf tTiket.Text = "" Then
+            Cek = True
+        ElseIf tHargaTiket.Text = "" Then
             Cek = True
         Else
             Cek = False
@@ -111,7 +117,14 @@ Public Class formTambah
         End If
     End Sub
     Private Sub bSimpan_Click(sender As Object, e As EventArgs) Handles bSimpan.Click
-        Simpan()
+        Dim Kosong As Boolean = CekData()
+
+        If Kosong = True Then
+            MessageBox.Show("Lengkapi Data Dahulu")
+            Exit Sub
+        Else
+            Simpan()
+        End If
     End Sub
     Private Sub formTambah_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         bSimpan.Enabled = False
@@ -148,7 +161,7 @@ Public Class formTambah
                 Dim fileName As String = Path.GetFileNameWithoutExtension(imagePath)
                 Dim fileExtension As String = Path.GetExtension(imagePath)
                 Dim newFileName As String = $"{tJudul.Text}{fileExtension}"
-                Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
+                Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
 
                 File.Move(imagePath, destinationPath)
 

@@ -31,6 +31,7 @@ Partial Class FRegistrasi
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.pPasswordHide = New System.Windows.Forms.PictureBox()
         Me.lSignIn = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -49,26 +50,26 @@ Partial Class FRegistrasi
         Me.tPassword = New System.Windows.Forms.TextBox()
         Me.tUsername = New System.Windows.Forms.TextBox()
         Me.pKembali = New System.Windows.Forms.PictureBox()
-        Me.pPasswordHide = New System.Windows.Forms.PictureBox()
         Me.PanelFormLogin.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(1000, 0)
+        Me.Panel1.Location = New System.Drawing.Point(889, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(924, 1050)
+        Me.Panel1.Size = New System.Drawing.Size(821, 840)
         Me.Panel1.TabIndex = 1
         '
         'PanelFormLogin
@@ -79,9 +80,10 @@ Partial Class FRegistrasi
         Me.PanelFormLogin.Controls.Add(Me.Label1)
         Me.PanelFormLogin.Controls.Add(Me.PictureBox1)
         Me.PanelFormLogin.Controls.Add(Me.Panel2)
-        Me.PanelFormLogin.Location = New System.Drawing.Point(230, 136)
+        Me.PanelFormLogin.Location = New System.Drawing.Point(204, 109)
+        Me.PanelFormLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelFormLogin.Name = "PanelFormLogin"
-        Me.PanelFormLogin.Size = New System.Drawing.Size(1447, 784)
+        Me.PanelFormLogin.Size = New System.Drawing.Size(1286, 627)
         Me.PanelFormLogin.TabIndex = 3
         '
         'Label9
@@ -89,9 +91,9 @@ Partial Class FRegistrasi
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(993, 721)
+        Me.Label9.Location = New System.Drawing.Point(883, 577)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(223, 22)
+        Me.Label9.Size = New System.Drawing.Size(192, 19)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "anda ke dunia kilauan seni" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -100,9 +102,9 @@ Partial Class FRegistrasi
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(918, 694)
+        Me.Label7.Location = New System.Drawing.Point(816, 555)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(360, 22)
+        Me.Label7.Size = New System.Drawing.Size(312, 19)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Teater pilihan penuh kisah yang mengantar"
         '
@@ -111,9 +113,9 @@ Partial Class FRegistrasi
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Stencil", 30.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(962, 600)
+        Me.Label1.Location = New System.Drawing.Point(855, 480)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(288, 71)
+        Me.Label1.Size = New System.Drawing.Size(241, 59)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "equiter"
         '
@@ -121,9 +123,10 @@ Partial Class FRegistrasi
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(792, 145)
+        Me.PictureBox1.Location = New System.Drawing.Point(704, 116)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(631, 407)
+        Me.PictureBox1.Size = New System.Drawing.Size(561, 326)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
@@ -132,9 +135,10 @@ Partial Class FRegistrasi
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Location = New System.Drawing.Point(21, 23)
+        Me.Panel2.Location = New System.Drawing.Point(19, 18)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(750, 740)
+        Me.Panel2.Size = New System.Drawing.Size(667, 592)
         Me.Panel2.TabIndex = 4
         '
         'Panel3
@@ -158,10 +162,24 @@ Partial Class FRegistrasi
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.tPassword)
         Me.Panel3.Controls.Add(Me.tUsername)
-        Me.Panel3.Location = New System.Drawing.Point(168, 54)
+        Me.Panel3.Location = New System.Drawing.Point(149, 43)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(443, 639)
+        Me.Panel3.Size = New System.Drawing.Size(394, 511)
         Me.Panel3.TabIndex = 4
+        '
+        'pPasswordHide
+        '
+        Me.pPasswordHide.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of
+        Me.pPasswordHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pPasswordHide.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pPasswordHide.Location = New System.Drawing.Point(314, 325)
+        Me.pPasswordHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pPasswordHide.Name = "pPasswordHide"
+        Me.pPasswordHide.Size = New System.Drawing.Size(23, 20)
+        Me.pPasswordHide.TabIndex = 23
+        Me.pPasswordHide.TabStop = False
         '
         'lSignIn
         '
@@ -170,9 +188,9 @@ Partial Class FRegistrasi
         Me.lSignIn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lSignIn.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lSignIn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.lSignIn.Location = New System.Drawing.Point(302, 550)
+        Me.lSignIn.Location = New System.Drawing.Point(268, 440)
         Me.lSignIn.Name = "lSignIn"
-        Me.lSignIn.Size = New System.Drawing.Size(75, 25)
+        Me.lSignIn.Size = New System.Drawing.Size(61, 19)
         Me.lSignIn.TabIndex = 0
         Me.lSignIn.Text = "Sign In"
         '
@@ -182,9 +200,10 @@ Partial Class FRegistrasi
         Me.PictureBox6.BackgroundImage = CType(resources.GetObject("PictureBox6.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox6.Location = New System.Drawing.Point(352, 490)
+        Me.PictureBox6.Location = New System.Drawing.Point(313, 392)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(25, 24)
+        Me.PictureBox6.Size = New System.Drawing.Size(22, 19)
         Me.PictureBox6.TabIndex = 22
         Me.PictureBox6.TabStop = False
         '
@@ -192,10 +211,10 @@ Partial Class FRegistrasi
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(62, 451)
+        Me.Label8.Location = New System.Drawing.Point(55, 361)
         Me.Label8.Name = "Label8"
         Me.Label8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label8.Size = New System.Drawing.Size(101, 31)
+        Me.Label8.Size = New System.Drawing.Size(90, 25)
         Me.Label8.TabIndex = 21
         Me.Label8.Text = "Konfirmasi Password"
         '
@@ -206,11 +225,12 @@ Partial Class FRegistrasi
         Me.tKonfirmasi.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.tKonfirmasi.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tKonfirmasi.ForeColor = System.Drawing.Color.DimGray
-        Me.tKonfirmasi.Location = New System.Drawing.Point(66, 485)
+        Me.tKonfirmasi.Location = New System.Drawing.Point(59, 388)
+        Me.tKonfirmasi.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tKonfirmasi.Multiline = True
         Me.tKonfirmasi.Name = "tKonfirmasi"
         Me.tKonfirmasi.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.tKonfirmasi.Size = New System.Drawing.Size(317, 34)
+        Me.tKonfirmasi.Size = New System.Drawing.Size(282, 28)
         Me.tKonfirmasi.TabIndex = 2
         '
         'PictureBox5
@@ -218,9 +238,10 @@ Partial Class FRegistrasi
         Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox5.Location = New System.Drawing.Point(353, 150)
+        Me.PictureBox5.Location = New System.Drawing.Point(314, 120)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(23, 21)
+        Me.PictureBox5.Size = New System.Drawing.Size(20, 17)
         Me.PictureBox5.TabIndex = 19
         Me.PictureBox5.TabStop = False
         '
@@ -229,9 +250,10 @@ Partial Class FRegistrasi
         Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Location = New System.Drawing.Point(352, 235)
+        Me.PictureBox4.Location = New System.Drawing.Point(313, 188)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(23, 21)
+        Me.PictureBox4.Size = New System.Drawing.Size(20, 17)
         Me.PictureBox4.TabIndex = 18
         Me.PictureBox4.TabStop = False
         '
@@ -239,9 +261,9 @@ Partial Class FRegistrasi
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(62, 195)
+        Me.Label5.Location = New System.Drawing.Point(55, 156)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(154, 31)
+        Me.Label5.Size = New System.Drawing.Size(137, 25)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "E-mail"
         '
@@ -250,19 +272,20 @@ Partial Class FRegistrasi
         Me.tEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.tEmail.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tEmail.ForeColor = System.Drawing.Color.DimGray
-        Me.tEmail.Location = New System.Drawing.Point(66, 229)
+        Me.tEmail.Location = New System.Drawing.Point(59, 183)
+        Me.tEmail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tEmail.Multiline = True
         Me.tEmail.Name = "tEmail"
-        Me.tEmail.Size = New System.Drawing.Size(317, 34)
+        Me.tEmail.Size = New System.Drawing.Size(282, 28)
         Me.tEmail.TabIndex = 0
         '
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(62, 109)
+        Me.Label6.Location = New System.Drawing.Point(55, 87)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(154, 31)
+        Me.Label6.Size = New System.Drawing.Size(137, 25)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Nama Lengkap"
         '
@@ -271,10 +294,11 @@ Partial Class FRegistrasi
         Me.tNamaLengkap.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.tNamaLengkap.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tNamaLengkap.ForeColor = System.Drawing.Color.DimGray
-        Me.tNamaLengkap.Location = New System.Drawing.Point(66, 143)
+        Me.tNamaLengkap.Location = New System.Drawing.Point(59, 114)
+        Me.tNamaLengkap.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tNamaLengkap.Multiline = True
         Me.tNamaLengkap.Name = "tNamaLengkap"
-        Me.tNamaLengkap.Size = New System.Drawing.Size(317, 34)
+        Me.tNamaLengkap.Size = New System.Drawing.Size(282, 28)
         Me.tNamaLengkap.TabIndex = 1
         Me.tNamaLengkap.TabStop = False
         '
@@ -285,9 +309,10 @@ Partial Class FRegistrasi
         Me.bSignUp.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bSignUp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.bSignUp.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.bSignUp.Location = New System.Drawing.Point(66, 539)
+        Me.bSignUp.Location = New System.Drawing.Point(59, 431)
+        Me.bSignUp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bSignUp.Name = "bSignUp"
-        Me.bSignUp.Size = New System.Drawing.Size(114, 47)
+        Me.bSignUp.Size = New System.Drawing.Size(101, 38)
         Me.bSignUp.TabIndex = 0
         Me.bSignUp.Text = "Sign Up"
         Me.bSignUp.UseVisualStyleBackColor = False
@@ -297,9 +322,9 @@ Partial Class FRegistrasi
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Imprint MT Shadow", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(114, 18)
+        Me.Label4.Location = New System.Drawing.Point(101, 14)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(240, 57)
+        Me.Label4.Size = New System.Drawing.Size(202, 47)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "SIGN UP"
         '
@@ -308,9 +333,10 @@ Partial Class FRegistrasi
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(352, 318)
+        Me.PictureBox3.Location = New System.Drawing.Point(313, 254)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(23, 21)
+        Me.PictureBox3.Size = New System.Drawing.Size(20, 17)
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
         '
@@ -318,10 +344,10 @@ Partial Class FRegistrasi
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(62, 366)
+        Me.Label3.Location = New System.Drawing.Point(55, 293)
         Me.Label3.Name = "Label3"
         Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label3.Size = New System.Drawing.Size(101, 31)
+        Me.Label3.Size = New System.Drawing.Size(90, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Password"
         '
@@ -329,9 +355,9 @@ Partial Class FRegistrasi
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(62, 279)
+        Me.Label2.Location = New System.Drawing.Point(55, 223)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 31)
+        Me.Label2.Size = New System.Drawing.Size(90, 25)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Username"
         '
@@ -342,11 +368,12 @@ Partial Class FRegistrasi
         Me.tPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.tPassword.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tPassword.ForeColor = System.Drawing.Color.DimGray
-        Me.tPassword.Location = New System.Drawing.Point(66, 400)
+        Me.tPassword.Location = New System.Drawing.Point(59, 320)
+        Me.tPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tPassword.Multiline = True
         Me.tPassword.Name = "tPassword"
         Me.tPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.tPassword.Size = New System.Drawing.Size(317, 34)
+        Me.tPassword.Size = New System.Drawing.Size(282, 28)
         Me.tPassword.TabIndex = 0
         '
         'tUsername
@@ -354,10 +381,11 @@ Partial Class FRegistrasi
         Me.tUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.tUsername.Font = New System.Drawing.Font("Microsoft YaHei", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tUsername.ForeColor = System.Drawing.Color.DimGray
-        Me.tUsername.Location = New System.Drawing.Point(66, 313)
+        Me.tUsername.Location = New System.Drawing.Point(59, 250)
+        Me.tUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tUsername.Multiline = True
         Me.tUsername.Name = "tUsername"
-        Me.tUsername.Size = New System.Drawing.Size(317, 34)
+        Me.tUsername.Size = New System.Drawing.Size(282, 28)
         Me.tUsername.TabIndex = 0
         '
         'pKembali
@@ -365,35 +393,24 @@ Partial Class FRegistrasi
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(19, 12)
+        Me.pKembali.Location = New System.Drawing.Point(17, 10)
+        Me.pKembali.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(37, 35)
+        Me.pKembali.Size = New System.Drawing.Size(33, 28)
         Me.pKembali.TabIndex = 108
         Me.pKembali.TabStop = False
         '
-        'pPasswordHide
-        '
-        Me.pPasswordHide.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.pPasswordHide.BackgroundImage = Global.A1K3_Projek_Akhir.My.Resources.Resources.eye_of
-        Me.pPasswordHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pPasswordHide.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pPasswordHide.Location = New System.Drawing.Point(353, 406)
-        Me.pPasswordHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pPasswordHide.Name = "pPasswordHide"
-        Me.pPasswordHide.Size = New System.Drawing.Size(26, 25)
-        Me.pPasswordHide.TabIndex = 23
-        Me.pPasswordHide.TabStop = False
-        '
         'FRegistrasi
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1924, 1050)
+        Me.ClientSize = New System.Drawing.Size(1710, 840)
         Me.Controls.Add(Me.pKembali)
         Me.Controls.Add(Me.PanelFormLogin)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FRegistrasi"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "FRegistrasi"
@@ -404,12 +421,12 @@ Partial Class FRegistrasi
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pKembali, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pPasswordHide, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
