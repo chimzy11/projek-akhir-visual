@@ -5,7 +5,6 @@ Public Class formDetailTicketDrama
     Private currentChildForm As Form
 
     Private Sub OpenChildForm(childForm As Form)
-        'open only form
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If

@@ -64,7 +64,7 @@ Public Class formPesan
 
         If RD.Read() Then
             lJudul.Text = RD.GetString(1)
-            HargaPerTiket = RD.GetInt32(8) ' Simpan harga per tiket dari database
+            HargaPerTiket = RD.GetInt32(8)
         End If
 
         RD.Close()

@@ -121,8 +121,4 @@ Public Class formJadwal
     Private Sub bEdit_Click(sender As Object, e As EventArgs) Handles bEdit.Click
         PopUpEditJadwal.Show()
     End Sub
-
-    Private Sub DGVJadwalTeater_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVJadwalTeater.CellContentClick
-
-    End Sub
 End Class

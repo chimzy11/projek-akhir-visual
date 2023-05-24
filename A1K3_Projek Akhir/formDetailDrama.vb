@@ -41,7 +41,6 @@ Public Class formDetailDrama
         RD.Close()
     End Sub
     Private Sub OpenChildForm(childForm As Form)
-        'open only form
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If

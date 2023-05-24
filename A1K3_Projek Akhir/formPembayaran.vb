@@ -45,7 +45,7 @@ Public Class formPembayaran
         RD.Read()
 
         If Not RD.HasRows Then
-            RD.Close() ' Close the first DataReader before executing the second query
+            RD.Close()
 
             CMD = New MySqlCommand("SELECT * FROM akun WHERE username = @Username", CONN)
             CMD.Parameters.AddWithValue("@Username", FLogin.tUsername.Text)
@@ -105,7 +105,7 @@ Public Class formPembayaran
             KodeRandom = KodeRandom & Mid(Kode, Int(Rnd() * Len(Kode) + 1), 1)
         Next i
         tKodePembayaran.Text = KodeRandom
-        tKodePembayaran.ReadOnly = True ' Mengatur TextBox menjadi hanya baca
+        tKodePembayaran.ReadOnly = True
     End Sub
 
     Private Sub formPembayaran_Load(sender As Object, e As EventArgs) Handles MyBase.Load

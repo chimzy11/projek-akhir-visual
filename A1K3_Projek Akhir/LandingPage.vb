@@ -8,7 +8,6 @@
         Me.Hide()
         FRegistrasi.Show()
     End Sub
-
     Private Sub LandingPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Call KoneksiDatabase()

@@ -4,7 +4,6 @@ Public Class PopUpDataJadwal
     Private Sub pKembali_Click(sender As Object, e As EventArgs) Handles pKembali.Click
         Me.Close()
     End Sub
-
     Private Sub PopUpDataJadwal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
 

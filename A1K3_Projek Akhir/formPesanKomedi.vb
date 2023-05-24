@@ -62,7 +62,7 @@ Public Class formPesanKomedi
 
         If RD.Read() Then
             lJudul.Text = RD.GetString(1)
-            HargaPerTiket = RD.GetInt32(8) ' Simpan harga per tiket dari database
+            HargaPerTiket = RD.GetInt32(8)
         End If
 
         RD.Close()
@@ -92,18 +92,18 @@ Public Class formPesanKomedi
             End If
 
             For Each checkBox As CheckBox In Panel2.Controls.OfType(Of CheckBox)()
-                checkBox.Enabled = True ' Mengaktifkan semua cekbox
+                checkBox.Enabled = True
             Next
 
-            Total = BanyakTiket * HargaPerTiket ' Hitung total harga
+            Total = BanyakTiket * HargaPerTiket
             lTotalHarga.Text = Total.ToString()
         Else
-            lTotalHarga.Text = "0" ' Tampilkan 0 jika input tidak valid
+            lTotalHarga.Text = "0"
         End If
 
         If BanyakTiket = 0 Then
             For Each checkBox As CheckBox In Panel2.Controls.OfType(Of CheckBox)()
-                checkBox.Enabled = False ' Mengaktifkan semua cekbox
+                checkBox.Enabled = False
                 tBanyakTiket.Focus()
             Next
         End If

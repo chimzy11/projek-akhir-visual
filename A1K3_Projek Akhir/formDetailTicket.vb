@@ -5,7 +5,6 @@ Public Class formDetailTicket
     Private currentChildForm As Form
 
     Private Sub OpenChildForm(childForm As Form)
-        'open only form
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
@@ -50,7 +49,6 @@ Public Class formDetailTicket
         CMD = New MySqlCommand(updateQuery, CONN)
         CMD.Parameters.AddWithValue("@seat", lSeat.Text)
         CMD.ExecuteNonQuery()
-
     End Sub
 
     Private Sub lExit_Click(sender As Object, e As EventArgs) Handles lExit.Click

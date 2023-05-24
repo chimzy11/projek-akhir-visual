@@ -43,7 +43,7 @@ Public Class formPembayaranDrama
         RD.Read()
 
         If Not RD.HasRows Then
-            RD.Close() ' Close the first DataReader before executing the second query
+            RD.Close()
 
             CMD = New MySqlCommand("SELECT * FROM akun WHERE username = @Username", CONN)
             CMD.Parameters.AddWithValue("@Username", FLogin.tUsername.Text)

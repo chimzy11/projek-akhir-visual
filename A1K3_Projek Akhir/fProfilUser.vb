@@ -168,4 +168,5 @@ Public Class fProfilUser
             tNotelp.Focus()
         End If
     End Sub
+
 End Class

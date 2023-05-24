@@ -4,7 +4,6 @@ Public Class formRiwayatUser
     Private currentChildForm As Form
 
     Private Sub OpenChildForm(childForm As Form)
-        'open only form
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
@@ -45,8 +44,6 @@ Public Class formRiwayatUser
         End If
 
     End Sub
-
-
     Sub GridDataRiwayatTransaksi()
 
         DGVTransaksiUser.Columns(0).Width = 90
@@ -84,7 +81,7 @@ Public Class formRiwayatUser
                 formTiketUser.lHarga.Text = .Cells(3).Value
 
                 CMD = New MySqlCommand("SELECT j.hari, j.waktu FROM jadwalteater j INNER JOIN transaksi t ON j.id_teater = t.id_teater WHERE j.judul = @judul AND t.judul = @judul", CONN)
-                CMD.Parameters.AddWithValue("@judul", .Cells(1).Value) ' Menggunakan nilai judul dari baris yang diklik
+                CMD.Parameters.AddWithValue("@judul", .Cells(1).Value)
                 RD = CMD.ExecuteReader()
 
                 If RD.Read() Then
@@ -102,8 +99,6 @@ Public Class formRiwayatUser
             Exit Sub
         End If
     End Sub
-
-
     Private Sub txtSearch_Leave(sender As Object, e As EventArgs) Handles txtSearch.Leave
         If txtSearch.Text = "" Then
             txtSearch.Text = "Search"

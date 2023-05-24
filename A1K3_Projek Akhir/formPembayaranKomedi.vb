@@ -102,7 +102,7 @@ Public Class formPembayaranKomedi
             KodeRandom = KodeRandom & Mid(Kode, Int(Rnd() * Len(Kode) + 1), 1)
         Next i
         tKodePembayaran.Text = KodeRandom
-        tKodePembayaran.ReadOnly = True ' Mengatur TextBox menjadi hanya baca
+        tKodePembayaran.ReadOnly = True
     End Sub
     Private Sub formPembayaranKomedi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()

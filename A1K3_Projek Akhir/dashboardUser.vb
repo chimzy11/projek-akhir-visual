@@ -2,11 +2,9 @@
 
 Public Class DashboardUser
 
-    'buat buka formnya di panel
     Private currentChildForm As Form
 
     Private Sub OpenChildForm(childForm As Form)
-        'open only form
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
@@ -20,8 +18,6 @@ Public Class DashboardUser
         childForm.BringToFront()
         childForm.Show()
     End Sub
-
-    'keluar program
     Private Sub bExit_Click(sender As Object, e As EventArgs) Handles bExit.Click
         Dim X As String
         X = MessageBox.Show("Yakin Untuk Logout ?", "Konfirmasi",
@@ -36,13 +32,11 @@ Public Class DashboardUser
 
 
     Private Sub dashboardUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'warna buat menunya
         MenuStripHome.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStripTeater.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStrip1.ForeColor = Color.FromArgb(185, 174, 169)
         MenuStripProfile.ForeColor = Color.FromArgb(185, 174, 169)
 
-        'langsung manggil form home
         OpenChildForm(New formHome)
         lUsername.Text = FLogin.tUsername.Text
     End Sub

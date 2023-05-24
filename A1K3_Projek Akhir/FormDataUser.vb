@@ -78,8 +78,4 @@ Public Class FormDataUser
             Exit Sub
         End If
     End Sub
-
-    Private Sub DGVDataUser_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGVDataUser.CellContentClick
-
-    End Sub
 End Class
