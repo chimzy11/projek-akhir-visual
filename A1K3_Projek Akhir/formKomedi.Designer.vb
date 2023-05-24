@@ -37,9 +37,9 @@ Partial Class formKomedi
         Me.Label1.Location = New System.Drawing.Point(20, 14)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(334, 53)
+        Me.Label1.Size = New System.Drawing.Size(325, 53)
         Me.Label1.TabIndex = 70
-        Me.Label1.Text = "Menu Musikal"
+        Me.Label1.Text = "Menu Komedi"
         '
         'lblTanggal
         '
