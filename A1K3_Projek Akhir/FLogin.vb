@@ -59,7 +59,7 @@ Public Class FLogin
             CMD = New MySqlCommand(queryString, CONN)
             RD = CMD.ExecuteReader()
             If RD.Read() Then
-                If RD.GetString(3) = "equiter" And RD.GetString(4) = "equiter" Then
+                If RD.GetString(3) = "Equiter" And RD.GetString(4) = "equiter" Then
                     DashboardAdmin.lUsername.Text = RD.GetString(1)
                     Me.Visible = False
                     RD.Close()

@@ -21,7 +21,7 @@ Public Class formEdit
     Sub Clear()
         tJudul.Clear()
         tKelompok.Clear()
-        dTanggal.Value = DateTime.Today
+
         rJamPertama.Checked = False
         rJamKedua.Checked = False
         cGenre.SelectedIndex = -1
@@ -172,12 +172,12 @@ Public Class formEdit
 
                 Dim i As Integer = 1
                 Dim newFileName As String = "Jadwal_Teater_" & tJudul.Text & i.ToString() & fileExtension
-                Dim destinationPath As String = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
+                Dim destinationPath As String = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
 
                 While File.Exists(destinationPath)
                     i += 1
                     newFileName = FLogin.tUsername.Text & "_musikal_" & i.ToString() & fileExtension
-                    destinationPath = "C:\Users\Asus Gk\Documents\2. Tugas-Tugas\Project Akhir PV\projek-akhir-visual\uploads\" & newFileName
+                    destinationPath = "C:\Users\Latitude 5480\Documents\Kuliah_Chimss\A1K3-ProjekAkhir\projek-akhir-visual\uploads\" & newFileName
                 End While
 
                 File.Copy(imagePath, destinationPath)

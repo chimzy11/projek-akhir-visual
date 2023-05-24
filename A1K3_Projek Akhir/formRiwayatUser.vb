@@ -19,6 +19,11 @@ Public Class formRiwayatUser
     End Sub
     Private Sub formRiwayatUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KoneksiDatabase()
+        formMusikal.Close()
+        formKomedi.Close()
+        formDrama.Close()
+        fProfilUser.Close()
+        DashboardUser.Close()
         TampilDataRiwayatTransaksi()
         GridDataRiwayatTransaksi()
     End Sub
@@ -46,14 +51,14 @@ Public Class formRiwayatUser
     End Sub
     Sub GridDataRiwayatTransaksi()
 
-        DGVTransaksiUser.Columns(0).Width = 90
-        DGVTransaksiUser.Columns(1).Width = 100
+        DGVTransaksiUser.Columns(0).Width = 120
+        DGVTransaksiUser.Columns(1).Width = 140
         DGVTransaksiUser.Columns(2).Width = 100
-        DGVTransaksiUser.Columns(3).Width = 100
+        DGVTransaksiUser.Columns(3).Width = 120
         DGVTransaksiUser.Columns(4).Width = 100
-        DGVTransaksiUser.Columns(5).Width = 70
-        DGVTransaksiUser.Columns(6).Width = 70
-        DGVTransaksiUser.Columns(7).Width = 70
+        DGVTransaksiUser.Columns(5).Width = 100
+        DGVTransaksiUser.Columns(6).Width = 100
+        DGVTransaksiUser.Columns(7).Width = 150
 
         DGVTransaksiUser.Columns(0).HeaderText = "Kode Pembayaran"
         DGVTransaksiUser.Columns(1).HeaderText = "Judul"

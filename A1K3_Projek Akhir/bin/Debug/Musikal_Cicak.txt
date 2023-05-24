@@ -1,3 +1,0 @@
-A1,False
-A2,True
-A3,False

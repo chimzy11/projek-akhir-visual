@@ -1,4 +1,4 @@
-A1,True
+A1,False
 A2,False
 A3,False
 A4,False
@@ -13,14 +13,18 @@ B3,False
 B4,False
 B5,False
 B6,False
-B7,False
-B8,False
-B9,False
+B7,True
+B8,True
+B9,True
 C1,False
 C2,False
 C3,False
 C4,False
 C5,False
+C6,False
+C7,False
+C8,False
+C9,False
 D1,False
 D2,False
 D3,False
@@ -31,3 +35,6 @@ D7,False
 D8,False
 D9,False
 E1,False
+E2,False
+E3,False
+E4,False
