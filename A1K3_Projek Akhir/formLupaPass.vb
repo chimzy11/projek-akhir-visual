@@ -76,8 +76,6 @@ Public Class formLupaPass
             tKodeKeamanan.Focus()
         End If
     End Sub
-
-
     Private Sub tKodeKeamanan_KeyDown(sender As Object, e As KeyEventArgs) Handles tKodeKeamanan.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.SuppressKeyPress = True

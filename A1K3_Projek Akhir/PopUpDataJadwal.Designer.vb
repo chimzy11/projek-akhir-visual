@@ -40,10 +40,10 @@ Partial Class PopUpDataJadwal
         Me.cJudul.FormattingEnabled = True
         Me.cJudul.IntegralHeight = False
         Me.cJudul.Items.AddRange(New Object() {"-- Pilih Judul --"})
-        Me.cJudul.Location = New System.Drawing.Point(36, 58)
+        Me.cJudul.Location = New System.Drawing.Point(40, 72)
         Me.cJudul.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cJudul.Name = "cJudul"
-        Me.cJudul.Size = New System.Drawing.Size(214, 31)
+        Me.cJudul.Size = New System.Drawing.Size(240, 35)
         Me.cJudul.TabIndex = 118
         '
         'pKembali
@@ -51,10 +51,10 @@ Partial Class PopUpDataJadwal
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(26, 105)
+        Me.pKembali.Location = New System.Drawing.Point(40, 131)
         Me.pKembali.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(28, 21)
+        Me.pKembali.Size = New System.Drawing.Size(32, 26)
         Me.pKembali.TabIndex = 117
         Me.pKembali.TabStop = False
         '
@@ -64,9 +64,9 @@ Partial Class PopUpDataJadwal
         Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label2.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(4, 14)
+        Me.Label2.Location = New System.Drawing.Point(4, 18)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(278, 31)
+        Me.Label2.Size = New System.Drawing.Size(313, 39)
         Me.Label2.TabIndex = 116
         Me.Label2.Text = "Pilih Data Jadwal"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -80,20 +80,20 @@ Partial Class PopUpDataJadwal
         Me.bLihat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bLihat.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bLihat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bLihat.Location = New System.Drawing.Point(117, 102)
+        Me.bLihat.Location = New System.Drawing.Point(104, 119)
         Me.bLihat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bLihat.Name = "bLihat"
-        Me.bLihat.Size = New System.Drawing.Size(156, 30)
+        Me.bLihat.Size = New System.Drawing.Size(176, 38)
         Me.bLihat.TabIndex = 115
         Me.bLihat.Text = "Lihat Detail"
         Me.bLihat.UseVisualStyleBackColor = False
         '
         'PopUpDataJadwal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(284, 144)
+        Me.ClientSize = New System.Drawing.Size(320, 180)
         Me.ControlBox = False
         Me.Controls.Add(Me.cJudul)
         Me.Controls.Add(Me.pKembali)

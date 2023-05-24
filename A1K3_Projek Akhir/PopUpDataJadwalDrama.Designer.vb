@@ -68,7 +68,7 @@ Partial Class PopUpDataJadwalDrama
         Me.bLihat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bLihat.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bLihat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bLihat.Location = New System.Drawing.Point(132, 126)
+        Me.bLihat.Location = New System.Drawing.Point(104, 131)
         Me.bLihat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bLihat.Name = "bLihat"
         Me.bLihat.Size = New System.Drawing.Size(176, 38)
@@ -81,7 +81,7 @@ Partial Class PopUpDataJadwalDrama
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(29, 130)
+        Me.pKembali.Location = New System.Drawing.Point(40, 143)
         Me.pKembali.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pKembali.Name = "pKembali"
         Me.pKembali.Size = New System.Drawing.Size(32, 26)

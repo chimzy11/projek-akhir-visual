@@ -36,9 +36,9 @@ Partial Class PopUpEditJadwal
         Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label2.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(4, 14)
+        Me.Label2.Location = New System.Drawing.Point(4, 18)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(278, 31)
+        Me.Label2.Size = New System.Drawing.Size(313, 39)
         Me.Label2.TabIndex = 89
         Me.Label2.Text = "Edit Jadwal teater"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -52,10 +52,10 @@ Partial Class PopUpEditJadwal
         Me.bPilih.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bPilih.Font = New System.Drawing.Font("Stencil", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bPilih.ForeColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.bPilih.Location = New System.Drawing.Point(140, 101)
+        Me.bPilih.Location = New System.Drawing.Point(151, 131)
         Me.bPilih.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bPilih.Name = "bPilih"
-        Me.bPilih.Size = New System.Drawing.Size(115, 30)
+        Me.bPilih.Size = New System.Drawing.Size(129, 38)
         Me.bPilih.TabIndex = 86
         Me.bPilih.Text = "Pilih"
         Me.bPilih.UseVisualStyleBackColor = False
@@ -65,10 +65,10 @@ Partial Class PopUpEditJadwal
         Me.pKembali.BackgroundImage = CType(resources.GetObject("pKembali.BackgroundImage"), System.Drawing.Image)
         Me.pKembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pKembali.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pKembali.Location = New System.Drawing.Point(26, 105)
+        Me.pKembali.Location = New System.Drawing.Point(40, 143)
         Me.pKembali.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pKembali.Name = "pKembali"
-        Me.pKembali.Size = New System.Drawing.Size(28, 21)
+        Me.pKembali.Size = New System.Drawing.Size(32, 26)
         Me.pKembali.TabIndex = 90
         Me.pKembali.TabStop = False
         '
@@ -82,18 +82,18 @@ Partial Class PopUpEditJadwal
         Me.cIdTeater.FormattingEnabled = True
         Me.cIdTeater.IntegralHeight = False
         Me.cIdTeater.Items.AddRange(New Object() {"-- Pilih ID --"})
-        Me.cIdTeater.Location = New System.Drawing.Point(36, 58)
+        Me.cIdTeater.Location = New System.Drawing.Point(40, 72)
         Me.cIdTeater.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cIdTeater.Name = "cIdTeater"
-        Me.cIdTeater.Size = New System.Drawing.Size(214, 31)
+        Me.cIdTeater.Size = New System.Drawing.Size(240, 35)
         Me.cIdTeater.TabIndex = 114
         '
         'PopUpEditJadwal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(284, 144)
+        Me.ClientSize = New System.Drawing.Size(320, 180)
         Me.ControlBox = False
         Me.Controls.Add(Me.cIdTeater)
         Me.Controls.Add(Me.pKembali)

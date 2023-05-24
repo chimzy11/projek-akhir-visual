@@ -6,7 +6,6 @@ Imports MySql.Data.MySqlClient
 Public Class DashboardAdmin
     Private currentChildForm As Form
 
-
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -26,9 +25,7 @@ Public Class DashboardAdmin
         End If
     End Sub
 
-    'buat buka formnya di panel
     Private Sub OpenChildForm(childForm As Form)
-        'open only form
         If currentChildForm IsNot Nothing Then
             currentChildForm.Close()
         End If
@@ -42,12 +39,6 @@ Public Class DashboardAdmin
         childForm.BringToFront()
         childForm.Show()
     End Sub
-
-
-    ' Private Sub Label10_Click(sender As Object, e As EventArgs)
-    ' Label10.Font = New Font(Label10.Font, FontStyle.Underline)
-    ' End Sub
-
 
     Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
         OpenChildForm(New formDashboard)
